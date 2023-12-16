@@ -1,0 +1,6 @@
+data/io.fizzyizzy05.binary.desktop.in
+data/io.fizzyizzy05.binary.metainfo.xml.in
+data/io.fizzyizzy05.binary.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

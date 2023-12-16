@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="binary">
+	<schema id="io.fizzyizzy05.binary" path="/io/fizzyizzy05/binary/">
+	</schema>
+</schemalist>
