@@ -2,7 +2,7 @@
 
 Binary calculator for GNOME, made in Python and with Libadwaita/GTK widgets. **Heavily WIP** with a lot of features planned and missing right now.
 
-# Current features:
+## Current features:
 - Binary to decimal conversion
 
 ## TODO/WIP
