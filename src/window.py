@@ -19,7 +19,6 @@
 
 from gi.repository import Adw
 from gi.repository import Gtk
-import math
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
