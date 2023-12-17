@@ -56,7 +56,7 @@ class BinaryApplication(Adw.Application):
                                 developer_name='Izzy Jackson',
                                 version='0.1.0',
                                 developers=['Izzy Jackson'],
-                                copyright='© 2023 Isabelle Jackson')
+                                copyright='© 2023 Izzy Jackson')
         about.present()
 
     def on_preferences_action(self, widget, _):
