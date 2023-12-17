@@ -1,4 +1,4 @@
-application_id = 'io.fizzyizzy05.binary'
+application_id = 'io.github.fizzyizzy05.binary'
 
 scalable_dir = 'hicolor' / 'scalable' / 'apps'
 install_data(
