@@ -26,7 +26,6 @@ gi.require_version('Adw', '1')
 from gi.repository import Gtk, Gio, Adw
 from .window import BinaryWindow
 
-
 class BinaryApplication(Adw.Application):
     """The main application singleton class."""
 
@@ -73,7 +72,6 @@ class BinaryApplication(Adw.Application):
             shortcuts: an optional list of accelerators
         """
         action = Gio.SimpleAction.new(name, None)
-        action.connect("activate", callback)
         self.add_action(action)
         if shortcuts:
             self.set_accels_for_action(f"app.{name}", shortcuts)

@@ -55,7 +55,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     # Toast to tell the user binary only accepts 0 or 1 digits
                     wrongToast = Adw.Toast(
                         title="Binary only accepts the digits 0 and 1",
-                        timeout=1,
+                        timeout=1.5,
                     )
                     self.overlay.add_toast(wrongToast)
 
