@@ -42,6 +42,7 @@
                   <object class="GtkEntry" id="entry">
                     <property name="placeholder-text">Binary input</property>
                     <property name="margin-end">10</property>
+                    <signal name="changed" handler="calc" swapped="no" />
                   </object>
                 </child>
                 <child>
@@ -49,12 +50,6 @@
                     <property name="label">Output goes here</property>
                   </object>
                 </child>
-              </object>
-            </child>
-            <child>
-              <object class="GtkButton" id="button">
-                <property name="label">Calculate</property>
-                <signal name="clicked" handler="btnClick" swapped="no" />
               </object>
             </child>
           </object>

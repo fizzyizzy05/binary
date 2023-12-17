@@ -32,7 +32,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
-    def btnClick(self, *args):
+    def calc(self, *args):
         inStr = self.entry.get_text()
 
         if inStr != "":
@@ -47,6 +47,9 @@ class BinaryWindow(Adw.ApplicationWindow):
                 if char == '1':
                     ans += mult
                 elif char != '1' and char != '0':
+                    # Change the contents of entry to not contain the invalid character
+                    newStr = inStr.replace(char, "")
+                    self.entry.set_text(newStr)
                     # Pop up dialogue explaining that this number system only supports 1 and 0 as input
                     wrongChar = Adw.MessageDialog(
                         heading="Invalid input",
@@ -57,19 +60,12 @@ class BinaryWindow(Adw.ApplicationWindow):
                     )
                     wrongChar.add_response("okay", "Okay")
                     wrongChar.choose(None)
+
                     return
 
                 mult = mult / 2
 
             self.outLbl.set_text(f"= {int(ans)}")
         else:
-            # Pop up dialogue explaining that this is a blank input
-            blankIn = Adw.MessageDialog(
-                heading="Blank input",
-                body="The input you have given is blank",
-                close_response="okay",
-                modal=True,
-                transient_for=self
-            )
-            blankIn.add_response("okay", "Okay")
-            blankIn.choose(None)
+            # Return the label to it's original content
+            self.outLbl.set_text("Output goes here")
