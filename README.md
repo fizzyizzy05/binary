@@ -1,6 +1,6 @@
 # Binary
 
-Binary calculator app, made in Python and with Libadwaita/GTK widgets. **Heavily WIP** with a lot of features planned and missing right now.
+Binary calculator app, written in Python and designed with GTK and Libadwaita. ***Very*** early in development with a lot of features planned and missing right now.
 
 ## Features
 ### Current features:
