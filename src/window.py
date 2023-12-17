@@ -26,6 +26,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
     outLbl = Gtk.Template.Child()
+    overlay = Gtk.Template.Child()
     entry = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
@@ -50,16 +51,13 @@ class BinaryWindow(Adw.ApplicationWindow):
                     # Change the contents of entry to not contain the invalid character
                     newStr = inStr.replace(char, "")
                     self.entry.set_text(newStr)
-                    # Pop up dialogue explaining that this number system only supports 1 and 0 as input
-                    wrongChar = Adw.MessageDialog(
-                        heading="Invalid input",
-                        body="The binary number system only supports 1 and 0 as input",
-                        close_response="okay",
-                        modal=True,
-                        transient_for=self
+
+                    # Toast to tell the user binary only accepts 0 or 1 digits
+                    wrongToast = Adw.Toast(
+                        title="Binary only accepts the digits 0 and 1",
+                        timeout=1,
                     )
-                    wrongChar.add_response("okay", "Okay")
-                    wrongChar.choose(None)
+                    self.overlay.add_toast(wrongToast)
 
                     return
 

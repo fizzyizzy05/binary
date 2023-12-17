@@ -20,34 +20,38 @@
           </object>
         </child>
         <property name="content">
-          <object class="GtkBox" id="box">
-            <property name="orientation">1</property>
-            <property name="valign">3</property>
-            <property name="halign">3</property>
+          <object class="AdwToastOverlay" id="overlay">
             <child>
-              <object class="GtkLabel" id="label">
-                <property name="label">Binary calculator</property>
-                <property name="margin-bottom">10</property>
-                <style>
-                  <class name="title-1"/>
-                </style>
-              </object>
-            </child>
-            <child>
-              <object class="GtkBox" id="box2">
+              <object class="GtkBox" id="box">
+                <property name="orientation">1</property>
                 <property name="valign">3</property>
                 <property name="halign">3</property>
-                <property name="margin-bottom">10</property>
                 <child>
-                  <object class="GtkEntry" id="entry">
-                    <property name="placeholder-text">Binary input</property>
-                    <property name="margin-end">10</property>
-                    <signal name="changed" handler="calc" swapped="no" />
+                  <object class="GtkLabel" id="label">
+                    <property name="label">Binary calculator</property>
+                    <property name="margin-bottom">10</property>
+                    <style>
+                      <class name="title-1"/>
+                    </style>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="outLbl">
-                    <property name="label">Output goes here</property>
+                  <object class="GtkBox" id="box2">
+                    <property name="valign">3</property>
+                    <property name="halign">3</property>
+                    <property name="margin-bottom">10</property>
+                    <child>
+                      <object class="GtkEntry" id="entry">
+                        <property name="placeholder-text">Binary input</property>
+                        <property name="margin-end">10</property>
+                        <signal name="changed" handler="calc" swapped="no" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="outLbl">
+                        <property name="label">Output goes here</property>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>
