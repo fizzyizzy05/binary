@@ -53,9 +53,9 @@ class BinaryApplication(Adw.Application):
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
-                                developer_name='Isabelle Jackson',
+                                developer_name='Izzy Jackson',
                                 version='0.1.0',
-                                developers=['Isabelle Jackson'],
+                                developers=['Izzy Jackson'],
                                 copyright='© 2023 Isabelle Jackson')
         about.present()
 
