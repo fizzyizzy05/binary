@@ -31,7 +31,7 @@ class BinaryApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.fizzyizzy05.binary',
+        super().__init__(application_id='io.github.fizzyizzy05.binary',
                          flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
@@ -52,7 +52,7 @@ class BinaryApplication(Adw.Application):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='Binary',
-                                application_icon='io.fizzyizzy05.binary',
+                                application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Isabelle Jackson',
                                 version='0.1.0',
                                 developers=['Isabelle Jackson'],
