@@ -15,4 +15,4 @@ Binary calculator app, made in Python and with Libadwaita/GTK widgets. **Heavily
 - History
   
 ## Testing/building
-Binary was created with GNOME Builder. The easiest way to build this app (and the way I'm building it) is to clone this project and build it in there. 
+Binary was created with [GNOME Builder](https://apps.gnome.org/en-GB/Builder/). The easiest way to build this app (and the way I'm building it) is to clone this project and build it in there. 
