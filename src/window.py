@@ -67,12 +67,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 # Decrease the value of the bits until you arrive at 1 (or the end bit)
                 mult = mult / 2
 
+            # Remove brackets and spaces from the array string
             bitStr = str(bits).strip('[')
             bitStr = bitStr.strip(']')
+            bitStr = bitStr.strip(' ')
             # Set the output label and bit counter label
-            self.outLbl.set_text(f"= {int(ans)}")
+            self.outLbl.set_text(f"{int(ans)}")
             self.bitLbl.set_text(f"{bitStr} ({len(inStr)} bits)")
         else:
             # Return the label to it's original content
-            self.outLbl.set_text("(output goes here)")
+            self.outLbl.set_text("0")
             self.bitLbl.set_text("0 bits")

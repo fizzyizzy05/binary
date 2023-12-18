@@ -59,8 +59,19 @@
                           </object>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="outLbl">
-                            <property name="label">(output goes here)</property>
+                          <object class="GtkLabel" id="eqlLbl">
+                            <property name="label">=</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwClamp" id="ansClamp">
+                            <property name="maximum-size">50</property>
+                            <property name="tightening-threshold">200</property>
+                            <child>
+                              <object class="GtkLabel" id="outLbl">
+                                <property name="label">0</property>
+                              </object>
+                            </child>
                           </object>
                         </child>
                       </object>
