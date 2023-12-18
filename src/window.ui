@@ -69,6 +69,7 @@
                             <property name="tightening-threshold">200</property>
                             <child>
                               <object class="GtkLabel" id="outLbl">
+                                <property name="xalign">0.1</property>
                                 <property name="label">0</property>
                               </object>
                             </child>
