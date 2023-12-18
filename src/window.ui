@@ -61,30 +61,36 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkBox" id="inBox">
+                      <object class="AdwClamp" id="inClamp">
+                        <property name="maximum-size">250</property>
+                        <property name="tightening-threshold">1000</property>
                         <child>
-                          <object class="GtkEntry" id="entry">
-                            <style>
-                              <class name="bin"/>
-                            </style>
-                            <property name="placeholder-text">Binary input</property>
-                            <property name="margin-end">10</property>
-                            <signal name="changed" handler="bin2dec" swapped="no" />
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="eqlLbl">
-                            <style>
-                              <class name="bin"/>
-                            </style>
-                            <property name="margin-end">10</property>
-                            <property name="label">=</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="AdwClamp" id="ansClamp">
-                            <property name="maximum-size">50</property>
-                            <property name="tightening-threshold">1000</property>
+                          <object class="GtkBox" id="inBox">
+                            <child>
+                              <object class="AdwClamp" id="etrClamp">
+                                <property name="maximum-size">250</property>
+                                <property name="tightening-threshold">1000</property>
+                                <child>
+                                  <object class="GtkEntry" id="entry">
+                                    <style>
+                                      <class name="bin"/>
+                                    </style>
+                                    <property name="placeholder-text">Binary input</property>
+                                    <property name="margin-end">10</property>
+                                    <signal name="changed" handler="bin2dec" swapped="no" />
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="eqlLbl">
+                                <style>
+                                  <class name="bin"/>
+                                </style>
+                                <property name="margin-end">10</property>
+                                <property name="label">=</property>
+                              </object>
+                            </child>
                             <child>
                               <object class="GtkLabel" id="outLbl">
                                 <style>
