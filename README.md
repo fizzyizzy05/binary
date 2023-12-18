@@ -6,9 +6,9 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita. *
 ### Current features:
 - Binary to decimal conversion
 - Performs calculations as the user types 
+- Bit counter
 
 ### TODO/WIP
-- Bit counter
 - Bidirectional conversion
 - Hexadecmial conversion
 - Nicer UI, in line with the GNOME HIG (the current one is relatively simple).
