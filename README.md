@@ -1,5 +1,7 @@
 # Binary
 
+![Image of Binary](img/image.png)
+
 Binary calculator app, written in Python and designed with GTK and Libadwaita. ***Very*** early in development with a lot of features planned and missing right now.
 
 ## Features
