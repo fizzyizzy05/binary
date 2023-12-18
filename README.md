@@ -14,7 +14,6 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita. *
 ### TODO/WIP
 - Flatpak release
 - Hexadecmial conversion
-- Nicer UI, in line with the GNOME HIG (the current one is relatively simple).
 - Icon (thinking of a terminal with 1s and 0s)
 - History
   
