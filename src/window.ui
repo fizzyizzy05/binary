@@ -11,6 +11,21 @@
       <object class="AdwToolbarView">
         <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
+            <child>
+              <object class="GtkDropDown" id="inDropdown">
+                <property name="model">typeList</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">to</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkDropDown" id="outDropdown">
+                <property name="model">typeList</property>
+              </object>
+            </child>
             <child type="end">
               <object class="GtkMenuButton">
                 <property name="primary">True</property>
@@ -82,7 +97,7 @@
                                     </style>
                                     <property name="placeholder-text">Binary input</property>
                                     <property name="margin-end">10</property>
-                                    <signal name="changed" handler="bin2dec" swapped="no" />
+                                    <signal name="changed" handler="inputHandler" swapped="no" />
                                   </object>
                                 </child>
                               </object>
@@ -118,6 +133,12 @@
       </object>
     </property>
   </template>
+  <object class="GtkStringList" id="typeList">
+  <items>
+    <item>Bin</item>
+    <item>Dec</item>
+  </items>
+  </object>
   <menu id="primary_menu">
     <section>
       <item>

@@ -7,11 +7,10 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita. *
 - Binary to decimal conversion
 - Performs calculations as the user types 
 - Bit counter
+- Bidirectional conversion
 
 ### TODO/WIP
-- App shortcut
 - Flatpak release
-- Bidirectional conversion
 - Hexadecmial conversion
 - Nicer UI, in line with the GNOME HIG (the current one is relatively simple).
 - Icon (thinking of a terminal with 1s and 0s)
