@@ -45,7 +45,7 @@
                     <child>
                       <object class="AdwClamp">
                         <property name="maximum-size">250</property>
-                        <property name="tightening-threshold"></property>
+                        <property name="tightening-threshold">1000</property>
                         <child>
                           <object class="GtkLabel" id="bitLbl">
                             <property name="wrap">true</property>
@@ -84,7 +84,7 @@
                         <child>
                           <object class="AdwClamp" id="ansClamp">
                             <property name="maximum-size">50</property>
-                            <property name="tightening-threshold">200</property>
+                            <property name="tightening-threshold">1000</property>
                             <child>
                               <object class="GtkLabel" id="outLbl">
                                 <style>
