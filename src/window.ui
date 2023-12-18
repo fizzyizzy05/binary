@@ -40,26 +40,29 @@
                   <object class="GtkBox" id="calcBox">
                     <property name="valign">3</property>
                     <property name="halign">3</property>
+                    <property name="orientation">1</property>
                     <property name="margin-bottom">10</property>
-                    <child>
-                      <object class="GtkEntry" id="entry">
-                        <property name="placeholder-text">Binary input</property>
-                        <property name="margin-end">10</property>
-                        <signal name="changed" handler="bin2dec" swapped="no" />
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="outLbl">
-                        <property name="label">Output goes here</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child> <!-- Clamp is used here to make sure the label doesn't weirdly move -->
-                  <object class="AdwClamp" id="bitClamp">
                     <child>
                       <object class="GtkLabel" id="bitLbl">
                         <property name="label">0 bits</property>
+                        <property name="xalign">0</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="inBox">
+                        <child>
+                          <object class="GtkEntry" id="entry">
+                            <property name="placeholder-text">Binary input</property>
+                            <property name="margin-end">10</property>
+                            <signal name="changed" handler="bin2dec" swapped="no" />
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="outLbl">
+                            <property name="label">(output goes here)</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>

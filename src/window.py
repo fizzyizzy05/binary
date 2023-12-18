@@ -40,6 +40,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         if inStr != "":
             ans = 0
             mult = 1
+            bits = []
 
             # Work out how many bits the binary input is, and work out the largest bits value
             for count in range(len(inStr) - 1):
@@ -47,6 +48,7 @@ class BinaryWindow(Adw.ApplicationWindow):
 
             # Check each bit in the input
             for char in inStr:
+                bits.append(int(mult))
                 if char == '1':
                     ans += mult
                 elif char != '1' and char != '0':
@@ -65,9 +67,12 @@ class BinaryWindow(Adw.ApplicationWindow):
                 # Decrease the value of the bits until you arrive at 1 (or the end bit)
                 mult = mult / 2
 
+            bitStr = str(bits).strip('[')
+            bitStr = bitStr.strip(']')
+            # Set the output label and bit counter label
             self.outLbl.set_text(f"= {int(ans)}")
-            self.bitLbl.set_text(f"{len(inStr)} bits")
+            self.bitLbl.set_text(f"{bitStr} ({len(inStr)} bits)")
         else:
             # Return the label to it's original content
-            self.outLbl.set_text("Output goes here")
+            self.outLbl.set_text("(output goes here)")
             self.bitLbl.set_text("0 bits")
