@@ -52,8 +52,8 @@ class BinaryWindow(Adw.ApplicationWindow):
 
             # Check each bit in the input
             for char in inStr:
+                bits.append(int(mult))
                 if char == '1':
-                    bits.append(int(mult))
                     ans += mult
                 elif char != '1' and char != '0':
                     # Change the contents of entry to not contain the invalid character
@@ -74,7 +74,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             # Remove brackets from the array string
             bitStr = str(bits).strip('[')
             bitStr = bitStr.strip(']')
-            bitStr = bitStr.strip('  ')
             # Set the output label and bit counter label
             self.outLbl.set_text(f"{int(ans)}")
             self.bitLbl.set_text(f"{bitStr} ({len(inStr)} bits)")

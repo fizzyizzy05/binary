@@ -43,13 +43,21 @@
                     <property name="orientation">1</property>
                     <property name="margin-bottom">10</property>
                     <child>
-                      <object class="GtkLabel" id="bitLbl">
-                        <style>
-                          <class name="bitLbl"/>
-                        </style>
-                        <property name="label">0 bits</property>
-                        <property name="xalign">0</property>
-                        <property name="margin-bottom">10</property>
+                      <object class="AdwClamp">
+                        <property name="maximum-size">250</property>
+                        <property name="tightening-threshold"></property>
+                        <child>
+                          <object class="GtkLabel" id="bitLbl">
+                            <property name="wrap">true</property>
+                            <property name="wrap-mode">word</property>
+                            <style>
+                              <class name="bitLbl"/>
+                            </style>
+                            <property name="label">0 bits</property>
+                            <property name="xalign">0</property>
+                            <property name="margin-bottom">10</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                     <child>
@@ -69,6 +77,7 @@
                             <style>
                               <class name="bin"/>
                             </style>
+                            <property name="margin-end">10</property>
                             <property name="label">=</property>
                           </object>
                         </child>
@@ -81,7 +90,7 @@
                                 <style>
                                   <class name="bin"/>
                                 </style>
-                                <property name="xalign">0.2</property>
+                                <property name="xalign">0</property>
                                 <property name="label">0</property>
                               </object>
                             </child>
