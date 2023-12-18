@@ -5,7 +5,7 @@
   <template class="BinaryWindow" parent="AdwApplicationWindow">
     <property name="title">Binary</property>
     <property name="default-width">500</property>
-    <property name="default-height">300</property>
+    <property name="default-height">200</property>
     <property name="content">
       <object class="AdwToolbarView">
         <child type="top">
@@ -26,6 +26,8 @@
               <object class="GtkBox" id="mainBox">
                 <property name="margin-start">35</property>
                 <property name="margin-end">35</property>
+                <property name="margin-top">35</property>
+                <property name="margin-bottom">35</property>
                 <property name="orientation">1</property>
                 <property name="valign">3</property>
                 <property name="halign">3</property>
