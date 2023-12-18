@@ -23,7 +23,7 @@
         <property name="content">
           <object class="AdwToastOverlay" id="overlay">
             <child>
-              <object class="GtkBox" id="box">
+              <object class="GtkBox" id="mainBox">
                 <property name="orientation">1</property>
                 <property name="valign">3</property>
                 <property name="halign">3</property>
@@ -37,7 +37,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="box2">
+                  <object class="GtkBox" id="calcBox">
                     <property name="valign">3</property>
                     <property name="halign">3</property>
                     <property name="margin-bottom">10</property>
@@ -51,6 +51,15 @@
                     <child>
                       <object class="GtkLabel" id="outLbl">
                         <property name="label">Output goes here</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child> <!-- Clamp is used here to make sure the label doesn't weirdly move -->
+                  <object class="AdwClamp" id="bitClamp">
+                    <child>
+                      <object class="GtkLabel" id="bitLbl">
+                        <property name="label">0 bits</property>
                       </object>
                     </child>
                   </object>

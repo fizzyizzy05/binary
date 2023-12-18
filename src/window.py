@@ -24,9 +24,10 @@ from gi.repository import Gtk
 class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
-    outLbl = Gtk.Template.Child()
-    overlay = Gtk.Template.Child()
-    entry = Gtk.Template.Child()
+    outLbl = Gtk.Template.Child() # output label
+    bitLbl = Gtk.Template.Child() # bit counter label
+    overlay = Gtk.Template.Child() # toast overlay
+    entry = Gtk.Template.Child() # user input
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -35,14 +36,16 @@ class BinaryWindow(Adw.ApplicationWindow):
     def bin2dec(self, *args):
         inStr = self.entry.get_text()
 
+        # If the user inputs a binary value
         if inStr != "":
             ans = 0
             mult = 1
 
-            # Work out how long the binary
+            # Work out how many bits the binary input is, and work out the largest bits value
             for count in range(len(inStr) - 1):
                 mult = mult * 2
 
+            # Check each bit in the input
             for char in inStr:
                 if char == '1':
                     ans += mult
@@ -57,12 +60,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                         timeout=1.5,
                     )
                     self.overlay.add_toast(wrongToast)
-
                     return
 
+                # Decrease the value of the bits until you arrive at 1 (or the end bit)
                 mult = mult / 2
 
             self.outLbl.set_text(f"= {int(ans)}")
+            self.bitLbl.set_text(f"{len(inStr)} bits")
         else:
             # Return the label to it's original content
             self.outLbl.set_text("Output goes here")
+            self.bitLbl.set_text("0 bits")
