@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Binary
+Exec=binary
+Icon=io.github.fizzyizzy05.binary
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
