@@ -19,6 +19,7 @@
 
 from gi.repository import Adw
 from gi.repository import Gtk
+from gi.repository import Gdk
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
@@ -30,6 +31,9 @@ class BinaryWindow(Adw.ApplicationWindow):
     entry = Gtk.Template.Child() # user input
 
     def __init__(self, **kwargs):
+        self.css_provider = Gtk.CssProvider()
+        self.css_provider.load_from_resource('/io/github/fizzyizzy05/binary/window.css')
+        Gtk.StyleContext.add_provider_for_display(Gdk.Display.get_default(), self.css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
@@ -48,8 +52,8 @@ class BinaryWindow(Adw.ApplicationWindow):
 
             # Check each bit in the input
             for char in inStr:
-                bits.append(int(mult))
                 if char == '1':
+                    bits.append(int(mult))
                     ans += mult
                 elif char != '1' and char != '0':
                     # Change the contents of entry to not contain the invalid character
@@ -67,10 +71,10 @@ class BinaryWindow(Adw.ApplicationWindow):
                 # Decrease the value of the bits until you arrive at 1 (or the end bit)
                 mult = mult / 2
 
-            # Remove brackets and spaces from the array string
+            # Remove brackets from the array string
             bitStr = str(bits).strip('[')
             bitStr = bitStr.strip(']')
-            bitStr = bitStr.strip(' ')
+            bitStr = bitStr.strip('  ')
             # Set the output label and bit counter label
             self.outLbl.set_text(f"{int(ans)}")
             self.bitLbl.set_text(f"{bitStr} ({len(inStr)} bits)")

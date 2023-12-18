@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/io/github/fizzyizzy05/binary">
     <file preprocess="xml-stripblanks">window.ui</file>
+    <file>window.css</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
   </gresource>
 </gresources>

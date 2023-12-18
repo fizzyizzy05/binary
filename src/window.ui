@@ -44,6 +44,9 @@
                     <property name="margin-bottom">10</property>
                     <child>
                       <object class="GtkLabel" id="bitLbl">
+                        <style>
+                          <class name="bitLbl"/>
+                        </style>
                         <property name="label">0 bits</property>
                         <property name="xalign">0</property>
                         <property name="margin-bottom">10</property>
@@ -53,6 +56,9 @@
                       <object class="GtkBox" id="inBox">
                         <child>
                           <object class="GtkEntry" id="entry">
+                            <style>
+                              <class name="bin"/>
+                            </style>
                             <property name="placeholder-text">Binary input</property>
                             <property name="margin-end">10</property>
                             <signal name="changed" handler="bin2dec" swapped="no" />
@@ -60,6 +66,9 @@
                         </child>
                         <child>
                           <object class="GtkLabel" id="eqlLbl">
+                            <style>
+                              <class name="bin"/>
+                            </style>
                             <property name="label">=</property>
                           </object>
                         </child>
@@ -69,7 +78,10 @@
                             <property name="tightening-threshold">200</property>
                             <child>
                               <object class="GtkLabel" id="outLbl">
-                                <property name="xalign">0.1</property>
+                                <style>
+                                  <class name="bin"/>
+                                </style>
+                                <property name="xalign">0.2</property>
                                 <property name="label">0</property>
                               </object>
                             </child>
