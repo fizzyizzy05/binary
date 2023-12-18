@@ -45,7 +45,7 @@
                       <object class="GtkEntry" id="entry">
                         <property name="placeholder-text">Binary input</property>
                         <property name="margin-end">10</property>
-                        <signal name="changed" handler="calc" swapped="no" />
+                        <signal name="changed" handler="bin2dec" swapped="no" />
                       </object>
                     </child>
                     <child>

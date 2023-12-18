@@ -32,7 +32,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
-    def calc(self, *args):
+    def bin2dec(self, *args):
         inStr = self.entry.get_text()
 
         if inStr != "":
