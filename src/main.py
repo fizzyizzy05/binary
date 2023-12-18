@@ -53,7 +53,7 @@ class BinaryApplication(Adw.Application):
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Izzy Jackson',
-                                version='0.1.0',
+                                version='0.1.1',
                                 developers=['Izzy Jackson'],
                                 copyright='© 2023 Izzy Jackson')
         about.present()
@@ -82,3 +82,4 @@ def main(version):
     """The application's entry point."""
     app = BinaryApplication()
     return app.run(sys.argv)
+

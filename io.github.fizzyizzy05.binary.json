@@ -30,7 +30,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///var/home/izzy/Projects"
+                    "url" : "https://github.com/fizzyizzy05/binary",
+                    "tag" : "0.1"
                 }
             ]
         }
