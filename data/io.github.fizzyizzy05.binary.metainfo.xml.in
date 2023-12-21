@@ -5,8 +5,17 @@
 	<project_license>GPL-3.0-or-later</project_license>
   <name>Binary</name>
   <summary>Number base converter, written in Python with GTK/Libadwaita</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
 	<description>
 	  <p>A small and simple app used to convert between different number bases. Currently supports conversions between binary and decimal, with planned support for hexadecimal and octal numbers.</p>
 	</description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/fizzyizzy05/binary</url>
+  <url type="bugtracker">https://github.com/fizzyizzy05/binaryissues</url>
   <developer_name>Izzy Jackson</developer_name>
 </component>
