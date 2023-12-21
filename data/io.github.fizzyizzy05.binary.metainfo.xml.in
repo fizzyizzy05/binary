@@ -3,6 +3,8 @@
 	<id>io.github.fizzyizzy05.binary.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+  <name>Binary</name>
+  <summary>Number base converter, written in Python with GTK/Libadwaita</summary>
 	<description>
 	  <p>Base converter app</p>
 	</description>
