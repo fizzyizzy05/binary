@@ -7,6 +7,6 @@
   <developer_name>Izzy Jackson</developer_name>
   <summary>Number base converter, written in Python with GTK/Libadwaita</summary>
 	<description>
-	  <p>Base converter app</p>
+	  <p>A small and simple app used to convert between different number bases. Currently supports conversions between binary and decimal, with planned support for hexadecimal and octal numbers.</p>
 	</description>
 </component>
