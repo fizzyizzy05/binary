@@ -4,6 +4,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
   <name>Binary</name>
+  <developer_name>Izzy Jackson</developer_name>
   <summary>Number base converter, written in Python with GTK/Libadwaita</summary>
 	<description>
 	  <p>Base converter app</p>
