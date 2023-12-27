@@ -41,6 +41,13 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.outDropdown.set_selected(1) # Set the output to decimal by default
 
     @Gtk.Template.Callback()
+    def swap(self, *kwargs):
+        a = self.inDropdown.get_selected()
+        b = self.outDropdown.get_selected()
+        self.inDropdown.set_selected(b)
+        self.outDropdown.set_selected(a)
+
+    @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             self.bin2dec()
@@ -53,6 +60,10 @@ class BinaryWindow(Adw.ApplicationWindow):
                 timeout=1.5,
             )
             self.overlay.add_toast(sameToast)
+
+    @Gtk.Template.Callback()
+    def updateLbl(self, *kwargs):
+        print("hello")
 
     def bin2dec(self, *kwargs):
         inStr = self.entry.get_text()

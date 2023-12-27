@@ -5,7 +5,7 @@
   <template class="BinaryWindow" parent="AdwApplicationWindow">
     <property name="title">Binary</property>
     <property name="width-request">300</property>
-    <property name="default-width">400</property>
+    <property name="default-width">500</property>
     <property name="default-height">200</property>
     <property name="content">
       <object class="AdwToolbarView">
@@ -14,16 +14,22 @@
             <child>
               <object class="GtkDropDown" id="inDropdown">
                 <property name="model">typeList</property>
+                <signal name="activate" handler="updateLbl" />
               </object>
             </child>
             <child>
-              <object class="GtkLabel">
-                <property name="label">to</property>
+              <object class="GtkButton" id="swapBtn">
+                <style>
+                  <class name="flat"/>
+                </style>
+                <property name="icon-name">horizontal-arrows</property>
+                <signal name="clicked" handler="swap" />
               </object>
             </child>
             <child>
               <object class="GtkDropDown" id="outDropdown">
                 <property name="model">typeList</property>
+                <signal name="activate" handler="updateLbl" />
               </object>
             </child>
             <child type="end">
