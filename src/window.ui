@@ -54,15 +54,6 @@
                 <property name="valign">3</property>
                 <property name="halign">3</property>
                 <child>
-                  <object class="GtkLabel" id="label">
-                    <property name="label">Binary calculator</property>
-                    <property name="margin-bottom">10</property>
-                    <style>
-                      <class name="title-1"/>
-                    </style>
-                  </object>
-                </child>
-                <child>
                   <object class="GtkBox" id="calcBox">
                     <property name="valign">3</property>
                     <property name="halign">3</property>
@@ -101,7 +92,7 @@
                                     <style>
                                       <class name="bin"/>
                                     </style>
-                                    <property name="placeholder-text">Binary input</property>
+                                    <property name="placeholder-text">Input</property>
                                     <property name="margin-end">10</property>
                                     <signal name="changed" handler="inputHandler" swapped="no" />
                                   </object>

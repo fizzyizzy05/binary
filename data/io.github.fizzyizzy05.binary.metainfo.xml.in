@@ -13,6 +13,13 @@
       <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
     </screenshot>
   </screenshots>
+  <releases>
+    <release version="0.1.1">
+      <description>
+        <p>First proper release of Binary. Has basic support for converting between binary and hexadecmial values.</p>
+      </description>
+    </release>
+  </releases>
   <url type="homepage">https://github.com/fizzyizzy05/binary</url>
   <url type="bugtracker">https://github.com/fizzyizzy05/binaryissues</url>
   <developer_name>Izzy Jackson</developer_name>

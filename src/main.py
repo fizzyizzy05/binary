@@ -53,7 +53,7 @@ class BinaryApplication(Adw.Application):
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Izzy Jackson',
-                                version='0.1.1',
+                                version='0.1.2',
                                 developers=['Izzy Jackson'],
                                 copyright='© 2023 Izzy Jackson')
         about.present()
