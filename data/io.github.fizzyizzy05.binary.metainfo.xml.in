@@ -14,7 +14,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.1.2">
+    <release version="0.1.2" date="2024-01-06">
       <description>
         <ul>
           <li>Version bump</li>
@@ -30,6 +30,7 @@
     </release>
   </releases>
   <url type="homepage">https://github.com/fizzyizzy05/binary</url>
-  <url type="bugtracker">https://github.com/fizzyizzy05/binaryissues</url>
+  <url type="bugtracker">https://github.com/fizzyizzy05/binary/issues</url>
   <developer_name>Izzy Jackson</developer_name>
+  <content_rating type="oars-1.1" />
 </component>
