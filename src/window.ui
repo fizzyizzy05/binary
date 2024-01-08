@@ -92,7 +92,7 @@
                                     <style>
                                       <class name="bin"/>
                                     </style>
-                                    <property name="placeholder-text">Input</property>
+                                    <property name="placeholder-text" translatable="yes">Input</property>
                                     <property name="margin-end">10</property>
                                     <signal name="changed" handler="inputHandler" swapped="no" />
                                   </object>
@@ -132,8 +132,8 @@
   </template>
   <object class="GtkStringList" id="typeList">
   <items>
-    <item>Bin</item>
-    <item>Dec</item>
+    <item translatable="yes">Bin</item>
+    <item translatable="yes">Dec</item>
   </items>
   </object>
   <menu id="primary_menu">
