@@ -83,10 +83,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 if char == '1':
                     ans += mult
                 elif char != '1' and char != '0':
-                    # Change the contents of entry to not contain the invalid character
-                    newStr = inStr.replace(char, "")
-                    self.entry.set_text(newStr)
-
                     # Toast to tell the user binary only accepts 0 or 1 digits
                     wrongToast = Adw.Toast(
                         title="Binary only accepts the digits 0 and 1",
