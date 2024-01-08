@@ -56,7 +56,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell they are converting between the same number format
             sameToast = Adw.Toast(
-                title="Converting to the same number format",
+                title="Input and output bases are the same",
                 timeout=1.5,
             )
             self.overlay.add_toast(sameToast)
