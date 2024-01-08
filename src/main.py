@@ -53,9 +53,12 @@ class BinaryApplication(Adw.Application):
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Izzy Jackson',
-                                version='0.1.2',
+                                version='0.1.3',
                                 developers=['Izzy Jackson'],
-                                copyright='© 2023 Izzy Jackson')
+                                website="https://github.com/fizzyizzy05/binary/",
+                                issue_url="https://github.com/fizzyizzy05/binary/issues/new",
+                                license_type=Gtk.License.GPL_3_0,
+                                copyright='© 2023 Izzy Jackson.')
         about.present()
 
     def on_preferences_action(self, widget, _):
@@ -82,4 +85,5 @@ def main(version):
     """The application's entry point."""
     app = BinaryApplication()
     return app.run(sys.argv)
+
 
