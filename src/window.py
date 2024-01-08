@@ -61,10 +61,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             )
             self.overlay.add_toast(sameToast)
 
-    @Gtk.Template.Callback()
-    def updateLbl(self, *kwargs):
-        print("hello")
-
     def bin2dec(self, *kwargs):
         inStr = self.entry.get_text()
 

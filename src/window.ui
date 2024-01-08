@@ -14,7 +14,6 @@
             <child>
               <object class="GtkDropDown" id="inDropdown">
                 <property name="model">typeList</property>
-                <signal name="activate" handler="updateLbl" />
               </object>
             </child>
             <child>
@@ -29,7 +28,6 @@
             <child>
               <object class="GtkDropDown" id="outDropdown">
                 <property name="model">typeList</property>
-                <signal name="activate" handler="updateLbl" />
               </object>
             </child>
             <child type="end">
@@ -153,4 +151,5 @@
     </section>
   </menu>
 </interface>
+
 
