@@ -10,7 +10,7 @@
 	</description>
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
+      <image xml:lang="de">https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
       <caption>Light mode Binary Window with no input</caption>
     </screenshot>
   </screenshots>
