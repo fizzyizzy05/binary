@@ -11,7 +11,7 @@
   <screenshots>
     <screenshot type="default">
       <image xml:lang="de">https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
-      <caption>Light mode Binary Window with no input</caption>
+      <caption>Light mode Binary window with no input</caption>
     </screenshot>
   </screenshots>
   <releases>
