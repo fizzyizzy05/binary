@@ -46,6 +46,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         b = self.outDropdown.get_selected()
         self.inDropdown.set_selected(b)
         self.outDropdown.set_selected(a)
+        self.entry.set_text(self.outLbl.get_text())
 
     @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
