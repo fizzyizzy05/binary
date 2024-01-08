@@ -54,7 +54,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
             self.dec2bin()
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
-            # Toast to tell they are converting between the same number format
+            # Toast to tell the user they are converting between the same number format
             sameToast = Adw.Toast(
                 title="Input and output bases are the same",
                 timeout=1.5,
