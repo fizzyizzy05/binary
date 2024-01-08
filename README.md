@@ -11,9 +11,9 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita.
 - Performs calculations as the user types 
 - Bit counter
 - Bidirectional conversion
-- Icon (thinking of a terminal with 1s and 0s)
 
 ### TODO/WIP
+- Updated, better looking icon
 - Hexadecmial conversion
 - Octal conversion
 - Calculation history
