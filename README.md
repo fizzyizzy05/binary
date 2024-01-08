@@ -3,7 +3,7 @@
 ![Image of Binary](img/binary-screenshot.png)
 [![https://dl.flathub.org/assets/badges/flathub-badge-en.png](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.fizzyizzy05.binary)
 
-Binary calculator app, written in Python and designed with GTK and Libadwaita. ***Very*** early in development with a lot of features planned and missing right now.
+Binary calculator app, written in Python and designed with GTK and Libadwaita. 
 
 ## Features
 ### Current features:
@@ -16,7 +16,8 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita. *
 ### TODO/WIP
 - Flatpak release
 - Hexadecmial conversion
-- History
+- Octal conversion
+- Calculation history
   
 ## Testing/building
 Binary was created with [GNOME Builder](https://apps.gnome.org/en-GB/Builder/). The preferred way of building Binary is to clone this repository into Builder, and use that.
