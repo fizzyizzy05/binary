@@ -14,6 +14,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.3" date="2024-01-08">
+      <description>
+        <ul>
+          <li>When entering an invalid digit, it no longer removes it to prevent GTK Warnings. This functionality will likely be revisited down the line</li>
+          <li>Removed preferences button as it was empty and did nothing</li>
+          <li>The bit counter doesn't start with "0 bits" anymore, and should have consistent functionality.</li>
+          <li>Added links to the project in the about window</li>
+          <li>The "Legal" section in the about window now states the GPL v3 license of the app</li>
+          <li>Code cleanup</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.2" date="2024-01-06">
       <description>
         <ul>
