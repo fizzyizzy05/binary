@@ -19,3 +19,6 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita. *
   
 ## Testing/building
 Binary was created with [GNOME Builder](https://apps.gnome.org/en-GB/Builder/). The preferred way of building Binary is to clone this repository into Builder, and use that.
+
+## Code of Conduct
+Binary is designed for GNOME, and built with GNOME technologies. As such, it follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
