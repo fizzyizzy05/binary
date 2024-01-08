@@ -129,10 +129,10 @@
     </property>
   </template>
   <object class="GtkStringList" id="typeList">
-  <items>
-    <item translatable="yes">Bin</item>
-    <item translatable="yes">Dec</item>
-  </items>
+    <items>
+      <item translatable="yes">Bin</item>
+      <item translatable="yes">Dec</item>
+    </items>
   </object>
   <menu id="primary_menu">
     <section>
