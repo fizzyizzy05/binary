@@ -41,12 +41,18 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.outDropdown.set_selected(1) # Set the output to decimal by default
 
     @Gtk.Template.Callback()
+    def checkTypes(self, *kwargs):
+        print("hello")
+
+    @Gtk.Template.Callback()
     def swap(self, *kwargs):
         a = self.inDropdown.get_selected()
         b = self.outDropdown.get_selected()
         self.inDropdown.set_selected(b)
         self.outDropdown.set_selected(a)
-        self.entry.set_text(self.outLbl.get_text())
+
+        if self.entry.get_text() != "":
+            self.entry.set_text(self.outLbl.get_text())
 
     @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
