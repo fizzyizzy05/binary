@@ -18,7 +18,6 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita.
 - Octal conversion
 - Calculation history
 - Clear entry box when changing bases
-- Change input and output when swapping values using the swap button
   
 ## Testing/building
 Binary was created with [GNOME Builder](https://apps.gnome.org/en-GB/Builder/). The preferred way of building Binary is to clone this repository into Builder, and use that.
