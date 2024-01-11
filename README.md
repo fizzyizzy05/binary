@@ -1,10 +1,12 @@
 # Binary
 
 ![Image of Binary](img/binary-screenshot.png)
+
 Binary calculator app, written in Python and designed with GTK and Libadwaita. 
 
 ## Installing
 [![https://dl.flathub.org/assets/badges/flathub-badge-en.png](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.fizzyizzy05.binary)
+
 Binary is officially available as a flatpak on Flathub. 
 
 ## Roadmap
