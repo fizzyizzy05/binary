@@ -10,7 +10,6 @@ Binary calculator app, written in Python and designed with GTK and Libadwaita.
 Binary is officially available as a flatpak on Flathub. 
 
 ## Roadmap
-
 ### TODO/WIP
 - Updated, better looking icon
 - Hexadecmial conversion
@@ -25,7 +24,11 @@ Binary is officially available as a flatpak on Flathub.
 - Bidirectional conversion
   
 ## Testing/building
-Binary was created with [GNOME Builder](https://apps.gnome.org/en-GB/Builder/). The preferred way of building Binary is to clone this repository into Builder, and use that.
+### Using GNOME Builder:
+1. Install GNOME Builder from Flathub
+2. Clone this repository
+```https://github.com/fizzyizzy05/binary.git```
+3. Open this project in GNOME Builder and work on it from there.
 
 ## Code of Conduct
 Binary is designed for GNOME, and built with GNOME technologies. As such, it follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
