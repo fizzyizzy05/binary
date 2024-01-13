@@ -58,7 +58,7 @@ class BinaryApplication(Adw.Application):
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
-                                copyright='© 2023 Izzy Jackson.')
+                                copyright='© 2024 Izzy Jackson.')
         about.present()
 
     def on_preferences_action(self, widget, _):
