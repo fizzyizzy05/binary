@@ -1,4 +1,4 @@
-# Library for working out binary and decimal values. Using the same file for both.
+# Library for working out binary and decimal values. Using the same file for
 def hello():
     print("Hello World")
 
@@ -21,20 +21,31 @@ def bin2dec(input):
     return int(ans)
 
 def dec2bin(input):
-    q = int(input) * 2 # Quotient
-    r = 0 # Remainder
-    result = ""
-    ansBits = []
+    decimal = True
 
-    while q > 0:
-        r = q % 2
-        q = q // 2
-        ansBits.append(str(r))
+    # Make sure the input is a number
+    for char in input:
+        if char.isdecimal() == False:
+            decimal = False
+            break
 
-    for x in range (len(ansBits) - 1, 0, - 1):
-        result = result + ansBits[x]
+    if decimal == False:
+        return "char"
+    else:
+        q = int(input) * 2 # Quotient
+        r = 0 # Remainder
+        result = ""
+        ansBits = []
 
-    return result
+        while q > 0:
+            r = q % 2
+            q = q // 2
+            ansBits.append(str(r))
+
+        for x in range (len(ansBits) - 1, 0, - 1):
+            result = result + ansBits[x]
+
+        return result
 
 def bitCount(input):
     bits = []

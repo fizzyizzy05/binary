@@ -55,20 +55,23 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
+        # 0 = Binary
+        # 1 = Decimal
+
+        # Binary to Decimal
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
 
             if inStr != "":
                 ans = bin2dec(inStr)
                 bits = bitCount(inStr)
-
                 if ans == "char":
                     # Toast to tell the user binary only accepts 0 or 1 digits
-                    wrongToast = Adw.Toast(
+                    binCharToast = Adw.Toast(
                         title="Binary only accepts the digits 0 and 1",
                         timeout=1.5,
                     )
-                    self.overlay.add_toast(wrongToast)
+                    self.overlay.add_toast(binCharToast)
                     return
                 else:
                     # Set the output label and bit counter label
@@ -77,15 +80,23 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 self.blank()
 
+        # Decimal to Binary
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text()
-
             if inStr != "":
                 ans = dec2bin(inStr)
-                bits = bitCount(ans)
-                self.bitLbl.set_text(f"Bits: {bits} ({len(ans)} bits)")
-                self.outLbl.set_text(ans)
-
+                if ans == "char":
+                   # Toast to tell the user decimal only numeric values
+                    decCharToast = Adw.Toast(
+                        title="Decimal only accepts number values",
+                        timeout=1.5,
+                    )
+                    self.overlay.add_toast(decCharToast)
+                    return
+                else:
+                    bits = bitCount(ans)
+                    self.bitLbl.set_text(f"Bits: {bits} ({len(ans)} bits)")
+                    self.outLbl.set_text(ans)
             else:
                 self.blank()
 
