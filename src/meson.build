@@ -30,6 +30,7 @@ binary_sources = [
   '__init__.py',
   'main.py',
   'window.py',
+  'bindec.py',
 ]
 
 install_data(binary_sources, install_dir: moduledir)
