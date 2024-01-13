@@ -1,3 +1,4 @@
+# Library for working out binary and decimal values. Using the same file for both.
 def hello():
     print("Hello World")
 
