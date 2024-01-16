@@ -112,7 +112,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.bitLbl.set_visible(False)
                     self.outLbl.set_text(ans)
             else:
-                self.bitLbl.set_visible(True)
                 self.blank()
         # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
@@ -125,5 +124,6 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
+        self.bitLbl.set_visible(True)
         self.outLbl.set_text("0")
         self.bitLbl.set_text("Bits: none")
