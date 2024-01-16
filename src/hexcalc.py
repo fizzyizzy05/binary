@@ -54,7 +54,7 @@ def hex2dec(input):
     if hexadecimal == False:
         return "char"
     else:
-        input = str(input)
+        input = str(input).upper()
         result = 0
         ansBits = []
         power = int(len(input) - 1)
