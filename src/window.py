@@ -112,9 +112,10 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.overlay.add_toast(decCharToast)
                     return
                 else:
-                    self.bitLbl.visible
+                    self.bitLbl.set_visible(False)
                     self.outLbl.set_text(ans)
             else:
+                self.bitLbl.set_visible(True)
                 self.blank()
         # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
