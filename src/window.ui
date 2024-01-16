@@ -132,6 +132,7 @@
     <items>
       <item translatable="yes">Bin</item>
       <item translatable="yes">Dec</item>
+      <item translatable="yes">Hex</item>
     </items>
   </object>
   <menu id="primary_menu">

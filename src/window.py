@@ -24,6 +24,7 @@ import math
 
 # Scripts used to calculate numbers
 from .bindec import *
+from .hexcalc import *
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
@@ -57,11 +58,10 @@ class BinaryWindow(Adw.ApplicationWindow):
     def inputHandler(self, *kwargs):
         # 0 = Binary
         # 1 = Decimal
-
+        # 2 = Hexadecimal
         # Binary to Decimal
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
-
             if inStr != "":
                 ans = bin2dec(inStr)
                 bits = bitCount(inStr)
@@ -79,7 +79,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.bitLbl.set_text(f"Bits: {bits} ({len(inStr)} bits)")
             else:
                 self.blank()
-
         # Decimal to Binary
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text()
@@ -99,7 +98,25 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.outLbl.set_text(ans)
             else:
                 self.blank()
-
+        # Decimal to Hexadecimal
+        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = dec2hex(inStr)
+                if ans == "char":
+                   # Toast to tell the user decimal only numeric values
+                    decCharToast = Adw.Toast(
+                        title="Decimal only accepts number values",
+                        timeout=1.5,
+                    )
+                    self.overlay.add_toast(decCharToast)
+                    return
+                else:
+                    self.bitLbl.visible
+                    self.outLbl.set_text(ans)
+            else:
+                self.blank()
+        # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format
             sameToast = Adw.Toast(
