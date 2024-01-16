@@ -139,3 +139,17 @@ def hex2bin(input):
                 result += "1111"
 
     return str(result).lstrip('0')
+
+def bin2hex(input):
+    binary = True
+
+    for char in str(input):
+        if char != '1' and char != '0':
+            binary = False
+            break
+
+    if binary == False:
+        return "char"
+    else:
+        ans = hex(int(input, 2))
+        return str(ans).lstrip("0x").upper()
