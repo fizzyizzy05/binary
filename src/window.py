@@ -130,6 +130,20 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.outLbl.set_text(ans)
             else:
                 self.blank()
+        # Hexadecimal to Binary
+        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = hex2bin(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.hexCharToast)
+                    return
+                else:
+                    bits = bitCount(ans)
+                    self.bitLbl.set_text(f"Bits: {bits} ({len(ans)} bits)")
+                    self.outLbl.set_text(ans)
+            else:
+                self.blank()
         # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format

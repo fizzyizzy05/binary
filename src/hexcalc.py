@@ -88,3 +88,54 @@ def hex2dec(input):
             result += x
             
         return str(int(result))
+
+def hex2bin(input):
+    hexadecimal = True
+    result = ""
+
+    # Make sure the input is a valid hexadecimal digit
+    for char in str(input):
+        try:
+            int(char, 16)
+        except:
+            hexadecimal = False
+            break
+
+    if hexadecimal == False:
+        return "char"
+    else:
+        for char in str(input):
+            if char == '0':
+                result += "0000"
+            elif char == '1':
+                result += "0001"
+            elif char == '2':
+                result += "0010"
+            elif char == '3':
+                result += "0011"
+            elif char == '4':
+                result += "0100"
+            elif char == '5':
+                result += "0101"
+            elif char == '6':
+                result += "0110"
+            elif char == '7':
+                result += "0111"
+            elif char == '8':
+                result += "1000"
+            elif char == '9':
+                result += "1001"
+            elif char == 'A':
+                result += "1010"
+            elif char == 'B':
+                result += "1011"
+            elif char == 'C':
+                result += "1100"
+            elif char == 'D':
+                result += "1101"
+            elif char == 'E':
+                result += "1110"
+            elif char == 'F':
+                result += "1111"
+
+    return str(result).lstrip('0')
