@@ -44,6 +44,18 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
 
+    # Toast to tell the user decimal only numeric values
+    decCharToast = Adw.Toast(
+        title="Decimal only accepts number values",
+        timeout=1.5,
+    )
+
+    # Toast to tell the user binary only accepts 0 or 1 digits
+    binCharToast = Adw.Toast(
+        title="Binary only accepts the digits 0 and 1",
+        timeout=1.5,
+    )
+
     @Gtk.Template.Callback()
     def swap(self, *kwargs):
         a = self.inDropdown.get_selected()
@@ -66,12 +78,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin2dec(inStr)
                 bits = bitCount(inStr)
                 if ans == "char":
-                    # Toast to tell the user binary only accepts 0 or 1 digits
-                    binCharToast = Adw.Toast(
-                        title="Binary only accepts the digits 0 and 1",
-                        timeout=1.5,
-                    )
-                    self.overlay.add_toast(binCharToast)
+                    self.overlay.add_toast(self.binCharToast)
                     return
                 else:
                     # Set the output label and bit counter label
@@ -85,12 +92,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if inStr != "":
                 ans = dec2bin(inStr)
                 if ans == "char":
-                   # Toast to tell the user decimal only numeric values
-                    decCharToast = Adw.Toast(
-                        title="Decimal only accepts number values",
-                        timeout=1.5,
-                    )
-                    self.overlay.add_toast(decCharToast)
+                    self.overlay.add_toast(self.decCharToast)
                     return
                 else:
                     bits = bitCount(ans)
@@ -104,12 +106,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if inStr != "":
                 ans = dec2hex(inStr)
                 if ans == "char":
-                   # Toast to tell the user decimal only numeric values
-                    decCharToast = Adw.Toast(
-                        title="Decimal only accepts number values",
-                        timeout=1.5,
-                    )
-                    self.overlay.add_toast(decCharToast)
+                    self.overlay.add_toast(self.decCharToast)
                     return
                 else:
                     self.bitLbl.set_visible(False)
