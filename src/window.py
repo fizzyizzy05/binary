@@ -49,10 +49,14 @@ class BinaryWindow(Adw.ApplicationWindow):
         title="Decimal only accepts number values",
         timeout=1.5,
     )
-
     # Toast to tell the user binary only accepts 0 or 1 digits
     binCharToast = Adw.Toast(
         title="Binary only accepts the digits 0 and 1",
+        timeout=1.5,
+    )
+    # Toast to tell the user binary only accepts 0 or 1 digits
+    hexCharToast = Adw.Toast(
+        title="Hexadecimal only accepts the digits 0-9 and A-F",
         timeout=1.5,
     )
 
@@ -107,6 +111,19 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = dec2hex(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
+                    return
+                else:
+                    self.bitLbl.set_visible(False)
+                    self.outLbl.set_text(ans)
+            else:
+                self.blank()
+        # Hexadecimal to Decimal
+        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = hex2dec(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.hexCharToast)
                     return
                 else:
                     self.bitLbl.set_visible(False)
