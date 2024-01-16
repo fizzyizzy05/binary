@@ -31,6 +31,7 @@ binary_sources = [
   'main.py',
   'window.py',
   'bindec.py',
+  'hexcalc.py',
 ]
 
 install_data(binary_sources, install_dir: moduledir)
