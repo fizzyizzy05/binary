@@ -80,12 +80,12 @@ class BinaryWindow(Adw.ApplicationWindow):
             inStr = self.entry.get_text()
             if inStr != "":
                 ans = bin2dec(inStr)
-                bits = bitCount(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
                     return
                 else:
                     # Set the output label and bit counter label
+                    bits = bitCount(inStr)
                     self.outLbl.set_text(f"{ans}")
                     self.bitLbl.set_text(f"Bits: {bits} ({len(inStr)} bits)")
             else:
