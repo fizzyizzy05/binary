@@ -97,6 +97,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = dec2bin(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(ans)
@@ -111,6 +112,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = dec2hex(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     self.bitLbl.set_visible(False)
@@ -124,6 +126,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = hex2dec(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     self.bitLbl.set_visible(False)
@@ -137,6 +140,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = hex2bin(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(ans)
@@ -151,6 +155,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin2hex(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(inStr)
