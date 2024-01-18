@@ -38,9 +38,6 @@ class BinaryWindow(Adw.ApplicationWindow):
     outDropdown = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
-        self.css_provider = Gtk.CssProvider()
-        self.css_provider.load_from_resource('/io/github/fizzyizzy05/binary/window.css')
-        Gtk.StyleContext.add_provider_for_display(Gdk.Display.get_default(), self.css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
 
