@@ -15,7 +15,7 @@ Binary is officially available as a flatpak on Flathub.
 - Bit counter for binary values
 
 ## Translations
-Binary uses [Weblate](https://hosted.weblate.org/projects/binary/binary-app/) for translations. Note that we're currently still in the trial period for Weblate.
+Binary uses [Weblate](https://hosted.weblate.org/projects/binary/binary-app/) for translations. Note that we're currently still in the trial period for Weblate, and this is subject to change.
 
 For automatically creating a .pot file everytime a new string is added, use update_translations.sh. This script was adapted from a from [Letterpress](https://gitlab.gnome.org/World/Letterpress/-/tree/main) by Gregor Niehl.
   
