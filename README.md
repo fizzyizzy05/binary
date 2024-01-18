@@ -17,7 +17,7 @@ Binary is officially available as a flatpak on Flathub.
 ## Translations
 Binary uses [Weblate](https://hosted.weblate.org/projects/binary/binary-app/) for translations. Note that we're currently still in the trial period for Weblate, and this is subject to change.
 
-For automatically creating a .pot file everytime a new string is added, use update_translations.sh. This script was adapted from a from [Letterpress](https://gitlab.gnome.org/World/Letterpress/-/tree/main) by Gregor Niehl.
+For automatically creating a .pot file everytime a new string is added, use update_translations.sh. This script was adapted from from [Letterpress](https://gitlab.gnome.org/World/Letterpress/-/tree/main) by Gregor Niehl, who in term adapted it from TheEvilSkeleton.
   
 ## Testing/building
 GNOME Builder is the recommended way to build and test this app.
