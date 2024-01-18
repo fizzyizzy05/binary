@@ -41,20 +41,22 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
 
+    toastTimeout = 1
+
     # Toast to tell the user decimal only numeric values
     decCharToast = Adw.Toast(
         title="Decimal only accepts the digits 0-9",
-        timeout=1.5,
+        timeout=toastTimeout,
     )
     # Toast to tell the user binary only accepts 0 or 1 digits
     binCharToast = Adw.Toast(
         title="Binary only accepts the digits 0 and 1",
-        timeout=1.5,
+        timeout=toastTimeout,
     )
     # Toast to tell the user binary only accepts 0 or 1 digits
     hexCharToast = Adw.Toast(
         title="Hexadecimal only accepts the digits 0-9 and A-F",
-        timeout=1.5,
+        timeout=toastTimeout,
     )
 
     @Gtk.Template.Callback()
