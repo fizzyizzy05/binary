@@ -15,7 +15,6 @@ Binary is officially available as a flatpak on Flathub.
 - Hexadecmial conversion
 - Octal conversion
 - Calculation history
-- Cleanly clear entry box when changing bases
 
 ### Current features:
 - Binary to decimal conversion
