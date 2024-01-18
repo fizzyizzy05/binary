@@ -13,6 +13,11 @@ Binary is officially available as a flatpak on Flathub.
 - Supports binary and decimal as input and output bases
     - Hexadecimal will be added with 0.2
 - Bit counter for binary values
+
+## Translations
+Binary uses [Weblate](https://hosted.weblate.org/projects/binary/binary-app/) for translations. Note that we're currently still in the trial period for Weblate.
+
+For automatically creating a .pot file everytime a new string is added, use update_translations.sh. This script was adapted from a from [Letterpress](https://gitlab.gnome.org/World/Letterpress/-/tree/main) by Gregor Niehl.
   
 ## Testing/building
 GNOME Builder is the recommended way to build and test this app.
