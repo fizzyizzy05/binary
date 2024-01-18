@@ -17,12 +17,13 @@
   <releases>
     <release version="0.2" date="2024-01-09">
       <p>
-        Binary 0.2 is the latest update to the base converter app. This update introduces Hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.
+        Binary 0.2 is the latest update to the base converter app. This update introduces Hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more polished and refined.
       </p>
       <p>
-        Additionally, the following fixes have been made:
+        Additionally, the following fixes and improvements have been made:
       </p>
       <ul>
+        <li>The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.</li>
         <li>Decimal input now has data validation, and will display a toast when using an invalid digit.</li>
         <li>Wrong digit toasts will no longer duplicate, and will simply stay up when an invalid base is used.</li>
       </ul>
