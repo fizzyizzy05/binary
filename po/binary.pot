@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the binary package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-17 01:42+0000\n"
+"POT-Creation-Date: 2024-01-18 14:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,55 +37,55 @@ msgstr ""
 msgid "Binary window converting 12 to 1100"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:33
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:34
 msgid ""
 "When entering an invalid digit, it no longer removes it to prevent GTK "
 "Warnings. This functionality will likely be revisited down the line"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:34
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:35
 msgid "Removed preferences button as it was empty and did nothing"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:35
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:36
 msgid ""
 "The bit counter doesn't start with \"0 bits\" anymore, and should have "
 "consistent functionality."
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:36
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:37
 msgid "Added links to the project in the about window"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:37
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:38
 msgid ""
 "The \"Legal\" section in the about window now states the GPL v3 license of "
 "the app"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:38
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:39
 msgid "Code cleanup"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:45
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:46
 msgid "Version bump"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:46
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:47
 msgid "Swap button for base switcher"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:47
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:48
 msgid "Removed the binary calculator label"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:53
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:54
 msgid ""
 "First proper release of Binary. Has basic support for converting between "
 "binary and hexadecmial values."
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:59
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:60
 msgid "Izzy Jackson"
 msgstr ""
 
