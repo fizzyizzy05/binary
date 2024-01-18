@@ -2,27 +2,20 @@
 
 ![Image of Binary](img/binary-screenshot.png)
 
-Binary calculator app, written in Python and designed with GTK and Libadwaita. 
-
+Binary is a simple app for GNOME to easily convert between different number bases. 
 ## Installing
 [![https://dl.flathub.org/assets/badges/flathub-badge-en.png](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.fizzyizzy05.binary)
 
 Binary is officially available as a flatpak on Flathub. 
 
-## Roadmap
-### TODO/WIP
-- Updated, better looking icon
-- Hexadecmial conversion
-- Octal conversion
-- Calculation history
-
-### Current features:
-- Binary to decimal conversion
-- Performs calculations as the user types 
-- Bit counter
-- Bidirectional conversion
+## Features
+- Calculations occur as you type
+- Supports binary and decimal as input and output bases
+    - Hexadecimal will be added with 0.2
+- Bit counter for binary values
   
 ## Testing/building
+GNOME Builder is the recommended way to build and test this app.
 ### Using GNOME Builder:
 1. Install GNOME Builder from Flathub
 2. Clone this repository
