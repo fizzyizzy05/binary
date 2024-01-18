@@ -1,5 +1,5 @@
-@define-color accent_color #1b8553;
-@define-color accent_bg_color #2ec27e;
+@define-color accent_color @green_4;
+@define-color accent_bg_color @green_3;
 
 .bin {
   font-family: monospace;
