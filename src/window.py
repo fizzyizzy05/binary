@@ -81,6 +81,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin2dec(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     # Set the output label and bit counter label
@@ -171,3 +172,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.bitLbl.set_visible(True)
         self.outLbl.set_text("0")
         self.bitLbl.set_text("Bits: none")
+
+    def cleanEntry(self, *kwargs):
+        inStr = self.entry.get_text()
+        inStr = inStr[:-1]
+        self.entry.set_text(inStr)
