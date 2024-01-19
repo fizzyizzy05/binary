@@ -184,3 +184,4 @@ class BinaryWindow(Adw.ApplicationWindow):
         inStr = self.entry.get_text()
         inStr = inStr[:-1]
         self.entry.set_text(inStr)
+        self.entry.set_position(len(inStr))
