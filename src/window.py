@@ -58,6 +58,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         title="Hexadecimal only accepts the digits 0-9 and A-F",
         timeout=toastTimeout,
     )
+    # Toast to tell the user input and output bases are the same
+    sameToast = Adw.Toast(
+        title="Input and output bases are the same",
+        timeout=1.5,
+    )
 
     @Gtk.Template.Callback()
     def swap(self, *kwargs):
@@ -160,11 +165,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format
-            sameToast = Adw.Toast(
-                title="Input and output bases are the same",
-                timeout=1.5,
-            )
-            self.overlay.add_toast(sameToast)
+            self.overlay.add_toast(self.sameToast)
+            return
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
