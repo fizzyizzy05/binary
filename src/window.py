@@ -185,5 +185,5 @@ class BinaryWindow(Adw.ApplicationWindow):
     def cleanEntry(self, *kwargs):
         inStr = self.entry.get_text()
         inStr = inStr[:-1]
-        self.entry.set_text(inStr)
+        self.entry.get_buffer().set_text(inStr, len(inStr))
         self.entry.set_position(len(inStr))
