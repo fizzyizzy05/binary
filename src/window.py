@@ -172,6 +172,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format
             self.overlay.add_toast(self.sameToast)
+            self.cleanEntry()
+            self.blank()
             return
 
     def blank(self, *kwargs):
