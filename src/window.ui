@@ -90,6 +90,7 @@
                                     <style>
                                       <class name="bin"/>
                                     </style>
+                                    <property name="enable-undo">false</property>
                                     <property name="placeholder-text" translatable="yes">Input</property>
                                     <property name="margin-end">10</property>
                                     <signal name="changed" handler="inputHandler" swapped="no" />
