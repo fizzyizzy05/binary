@@ -86,6 +86,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin2dec(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     # Set the output label and bit counter label
@@ -101,6 +102,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = dec2bin(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(ans)
@@ -115,6 +117,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = dec2hex(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     self.bitLbl.set_visible(False)
@@ -128,6 +131,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = hex2dec(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     self.bitLbl.set_visible(False)
@@ -141,6 +145,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = hex2bin(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(ans)
@@ -155,6 +160,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin2hex(inStr)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
                     return
                 else:
                     bits = bitCount(inStr)
@@ -166,6 +172,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format
             self.overlay.add_toast(self.sameToast)
+            self.entry.get_buffer().set_text("", -1)
+            self.blank()
             return
 
     def blank(self, *kwargs):
@@ -173,3 +181,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.bitLbl.set_visible(True)
         self.outLbl.set_text("0")
         self.bitLbl.set_text("Bits: none")
+
+    def cleanEntry(self, *kwargs):
+        inStr = self.entry.get_text()
+        self.entry.get_buffer().delete_text((len(inStr) - 1), -1)
