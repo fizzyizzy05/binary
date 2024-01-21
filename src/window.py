@@ -184,6 +184,4 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     def cleanEntry(self, *kwargs):
         inStr = self.entry.get_text()
-        inStr = inStr[:-1]
-        self.entry.get_buffer().set_text(inStr, len(inStr))
-        self.entry.set_position(len(inStr))
+        self.entry.get_buffer().delete_text((len(inStr) - 1), -1)
