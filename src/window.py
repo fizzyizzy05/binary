@@ -37,9 +37,12 @@ class BinaryWindow(Adw.ApplicationWindow):
     inDropdown = Gtk.Template.Child()
     outDropdown = Gtk.Template.Child()
 
+    bitsTxt = "bits" # String for the word Bits, makes translation easier.
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
+        self.blank()
 
     toastTimeout = 1
 
@@ -92,7 +95,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     # Set the output label and bit counter label
                     bits = bitCount(inStr)
                     self.outLbl.set_text(f"{ans}")
-                    self.bitLbl.set_text(f"Bits: {bits} ({len(inStr)} bits)")
+                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
             else:
                 self.blank()
         # Decimal to Binary
@@ -105,8 +108,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleanEntry()
                     return
                 else:
-                    bits = bitCount(ans)
-                    self.bitLbl.set_text(f"Bits: {bits} ({len(ans)} bits)")
+                    self.updateBits(bits=bitCount(ans), count=len(ans))
                     self.outLbl.set_text(ans)
             else:
                 self.blank()
@@ -148,8 +150,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleanEntry()
                     return
                 else:
-                    bits = bitCount(ans)
-                    self.bitLbl.set_text(f"Bits: {bits} ({len(ans)} bits)")
+                    self.updateBits(bits=bitCount(ans), count=len(ans))
                     self.outLbl.set_text(ans)
             else:
                 self.blank()
@@ -163,8 +164,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleanEntry()
                     return
                 else:
-                    bits = bitCount(inStr)
-                    self.bitLbl.set_text(f"Bits: {bits} ({len(inStr)} bits)")
+                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
                     self.outLbl.set_text(ans)
             else:
                 self.blank()
@@ -180,8 +180,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
         self.bitLbl.set_visible(True)
         self.outLbl.set_text("0")
-        self.bitLbl.set_text("Bits: none")
+        self.bitLbl.set_text(f"0 {self.bitsTxt}")
 
     def cleanEntry(self, *kwargs):
         inStr = self.entry.get_text()
         self.entry.get_buffer().delete_text((len(inStr) - 1), -1)
+
+    def updateBits(self, *kwargs, bits, count):
+        self.bitLbl.set_text(f"{count} {self.bitsTxt}: {bits}")
