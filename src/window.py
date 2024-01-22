@@ -37,7 +37,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     inDropdown = Gtk.Template.Child()
     outDropdown = Gtk.Template.Child()
 
-    bitsTxt = "bits" # String for the word Bits, makes translation easier.
+    bitsTxt = _("bits") # String for the word Bits, makes translation easier.
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
