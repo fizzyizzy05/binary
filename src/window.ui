@@ -22,6 +22,7 @@
                   <class name="flat"/>
                 </style>
                 <property name="icon-name">horizontal-arrows</property>
+                <property name="tooltip-text">Swap input and output bases</property>
                 <signal name="clicked" handler="swap" />
               </object>
             </child>
