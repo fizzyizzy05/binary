@@ -57,7 +57,7 @@
                     <property name="margin-bottom">10</property>
                     <child>
                       <object class="AdwClamp">
-                        <property name="maximum-size">500</property>
+                        <property name="maximum-size">800</property>
                         <property name="tightening-threshold">1000</property>
                         <child>
                           <object class="GtkLabel" id="bitLbl">
@@ -75,13 +75,13 @@
                     </child>
                     <child>
                       <object class="AdwClamp" id="inClamp">
-                        <property name="maximum-size">500</property>
+                        <property name="maximum-size">800</property>
                         <property name="tightening-threshold">1000</property>
                         <child>
                           <object class="GtkBox" id="inBox">
                             <child>
                               <object class="AdwClamp" id="etrClamp">
-                                <property name="maximum-size">500</property>
+                                <property name="maximum-size">800</property>
                                 <property name="tightening-threshold">1000</property>
                                 <child>
                                   <object class="GtkEntry" id="entry">
