@@ -110,6 +110,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.updateBits(bits=bitCount(ans), count=len(ans))
                     self.outLbl.set_text(ans)
+                    self.isZero()
             else:
                 self.blank()
         # Decimal to Hexadecimal
@@ -124,6 +125,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.bitLbl.set_visible(False)
                     self.outLbl.set_text(ans)
+                    self.isZero()
             else:
                 self.blank()
         # Hexadecimal to Decimal
@@ -138,6 +140,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.bitLbl.set_visible(False)
                     self.outLbl.set_text(ans)
+                    self.isZero()
             else:
                 self.blank()
         # Hexadecimal to Binary
@@ -152,6 +155,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.updateBits(bits=bitCount(ans), count=len(ans))
                     self.outLbl.set_text(ans)
+                    self.isZero()
             else:
                 self.blank()
         # Binary to Hexadecimal
@@ -175,6 +179,14 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.entry.get_buffer().set_text("", -1)
             self.blank()
             return
+
+    def isZero(self, *kwargs):
+        inStr = self.entry.get_text();
+        for char in inStr:
+            if char != '0':
+                return
+        self.outLbl.set_text("0")
+        self.blank()
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
