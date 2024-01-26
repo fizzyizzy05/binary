@@ -96,6 +96,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     bits = bitCount(inStr)
                     self.outLbl.set_text(f"{ans}")
                     self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    self.isZero()
             else:
                 self.blank()
         # Decimal to Binary
@@ -170,6 +171,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.updateBits(bits=bitCount(inStr), count=len(inStr))
                     self.outLbl.set_text(ans)
+                    self.isZero()
             else:
                 self.blank()
         # Same number bases
@@ -187,6 +189,9 @@ class BinaryWindow(Adw.ApplicationWindow):
                 return
         self.outLbl.set_text("0")
         self.blank()
+
+        if self.inDropdown.get_selected() != 0 and self.outDropdown.get_selected() != 0:
+            self.bitLbl.set_visible(False)
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
