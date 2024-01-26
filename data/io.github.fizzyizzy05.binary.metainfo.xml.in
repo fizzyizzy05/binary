@@ -6,7 +6,7 @@
   <name>Binary</name>
   <summary>Number base converter</summary>
 	<description>
-	  <p>A small and simple app used to convert between different number bases. Currently supports conversions between binary and decimal, with planned support for hexadecimal and octal numbers.</p>
+	  <p>A small and simple app used to convert between different hexadecimal and binary numbers</p>
 	</description>
   <screenshots>
     <screenshot type="default">
@@ -20,7 +20,7 @@
         Binary 0.2 is the latest update to the base converter app. This update introduces Hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more fun and distinctive. And invalid digits are now removed from the input box again, making the app smoother and easier to use.
       </p>
       <p>
-        Additionally, the following fixes and improvements have been made:
+        Additionally, the following smaller fixes and improvements have been made:
       </p>
       <ul>
         <li>The removal of invalid digits in the input box is back.</li>
