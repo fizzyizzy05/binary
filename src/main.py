@@ -47,6 +47,20 @@ class BinaryApplication(Adw.Application):
             win = BinaryWindow(application=self)
         win.present()
 
+    release_notes = """<p>
+        Binary 0.2 is the latest update to the base converter app. This update introduces Hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more fun and distinctive. And invalid digits are now removed from the input box again, making the app smoother and easier to use.
+      </p>
+      <p>
+        Additionally, the following smaller fixes and improvements have been made:
+      </p>
+      <ul>
+        <li>The removal of invalid digits in the input box is back.</li>
+        <li>The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.</li>
+        <li>Decimal input now has data validation, and will display a toast when using an invalid digit.</li>
+        <li>Wrong digit toasts will no longer duplicate, and will simply stay up when an invalid base is used.</li>
+        <li>The bit counter has been slightly refreshed to be easier to understand, and is now translatable.</li>
+      </ul>"""
+
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
@@ -58,6 +72,8 @@ class BinaryApplication(Adw.Application):
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
+                                release_notes_version='0.2',
+                                release_notes=self.release_notes,
                                 copyright='© 2023-2024 Izzy Jackson.')
         about.present()
 
