@@ -54,7 +54,6 @@ class BinaryApplication(Adw.Application):
         Additionally, the following smaller fixes and improvements have been made:
       </p>
       <ul>
-        <li>The removal of invalid digits in the input box is back.</li>
         <li>The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.</li>
         <li>Decimal input now has data validation, and will display a toast when using an invalid digit.</li>
         <li>Wrong digit toasts will no longer duplicate, and will simply stay up when an invalid base is used.</li>
