@@ -71,7 +71,7 @@ class BinaryApplication(Adw.Application):
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
-                                release_notes_version='0.2',
+                                release_notes_version='0.2.x',
                                 release_notes=self.release_notes,
                                 copyright='© 2023-2024 Izzy Jackson.')
         about.present()
