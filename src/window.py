@@ -130,7 +130,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.blank()
         # Hexadecimal to Decimal
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
-            inStr = self.entry.get_text()
+            inStr = self.entry.get_text().upper()
             if inStr != "":
                 ans = hex2dec(inStr)
                 if ans == "char":
@@ -145,7 +145,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.blank()
         # Hexadecimal to Binary
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
-            inStr = self.entry.get_text()
+            inStr = self.entry.get_text().upper()
             if inStr != "":
                 ans = hex2bin(inStr)
                 if ans == "char":
