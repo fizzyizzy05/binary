@@ -10,8 +10,8 @@ Binary is officially available as a flatpak on Flathub.
 
 ## Features
 - Calculations occur as you type
-- Supports binary and decimal as input and output bases
-    - Hexadecimal will be added with 0.2
+- Convert between binary, decimal and hexadecimal values
+- The input box removes invalid digits when they're entered
 - Bit counter for binary values
 
 ## Translations
