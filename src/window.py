@@ -43,11 +43,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
         self.blank()
-        self.outDropdown.connect('notify', self.inputHandler)
-        self.inDropdown.connect('notify', self.inputHandler)
 
     toastTimeout = 1
-    skipHandler = False
 
     # Toast to tell the user decimal only numeric values
     decCharToast = Adw.Toast(
@@ -72,124 +69,118 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def swap(self, *kwargs):
-        self.skipHandler = True # Allow the swap button to bypass the inputHandler (for now).
-        # Get the values of the base selection and input/output
         a = self.inDropdown.get_selected()
         b = self.outDropdown.get_selected()
-        inVal = self.entry.get_text()
-        outVal = self.outLbl.get_text()
-
-        # Set the values of the base selection and input/output
         self.inDropdown.set_selected(b)
         self.outDropdown.set_selected(a)
-        self.entry.set_text(outVal)
-        self.outLbl.set_text(inVal)
-        self.skipHandler = False # Re-enable the inputHandler for general usage.
+
+        if self.entry.get_text() != "":
+            self.entry.set_text(self.outLbl.get_text())
 
     @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
-        if self.skipHandler == False:
-            # 0 = Binary
-            # 1 = Decimal
-            # 2 = Hexadecimal
-            # Binary to Decimal
-            if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
-                inStr = self.entry.get_text()
-                if inStr != "":
-                    ans = bin2dec(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.binCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        # Set the output label and bit counter label
-                        bits = bitCount(inStr)
-                        self.outLbl.set_text(f"{ans}")
-                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
-                        self.isZero()
+        # 0 = Binary
+        # 1 = Decimal
+        # 2 = Hexadecimal
+        # Binary to Decimal
+        if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = bin2dec(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
+                    return
                 else:
-                    self.blank()
-            # Decimal to Binary
-            elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
-                inStr = self.entry.get_text()
-                if inStr != "":
-                    ans = dec2bin(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.decCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        self.updateBits(bits=bitCount(ans), count=len(ans))
-                        self.outLbl.set_text(ans)
-                        self.isZero()
-                else:
-                    self.blank()
-            # Decimal to Hexadecimal
-            elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
-                inStr = self.entry.get_text()
-                if inStr != "":
-                    ans = dec2hex(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.decCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        self.bitLbl.set_visible(False)
-                        self.outLbl.set_text(ans)
-                        self.isZero()
-                else:
-                    self.blank()
-            # Hexadecimal to Decimal
-            elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
-                inStr = self.entry.get_text().upper()
-                if inStr != "":
-                    ans = hex2dec(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.hexCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        self.bitLbl.set_visible(False)
-                        self.outLbl.set_text(ans)
-                        self.isZero()
-                else:
-                    self.blank()
-            # Hexadecimal to Binary
-            elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
-                inStr = self.entry.get_text().upper()
-                if inStr != "":
-                    ans = hex2bin(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.hexCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        self.updateBits(bits=bitCount(ans), count=len(ans))
-                        self.outLbl.set_text(ans)
-                        self.isZero()
-                else:
-                    self.blank()
-            # Binary to Hexadecimal
-            elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
-                inStr = self.entry.get_text()
-                if inStr != "":
-                    ans = bin2hex(inStr)
-                    if ans == "char":
-                        self.overlay.add_toast(self.binCharToast)
-                        self.cleanEntry()
-                        return
-                    else:
-                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
-                        self.outLbl.set_text(ans)
-                        self.isZero()
-                else:
-                    self.blank()
-            # Same number bases
-            elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
-                # Toast to tell the user they are converting between the same number format
-                self.overlay.add_toast(self.sameToast)
+                    # Set the output label and bit counter label
+                    bits = bitCount(inStr)
+                    self.outLbl.set_text(f"{ans}")
+                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    self.isZero()
+            else:
                 self.blank()
-                return
+        # Decimal to Binary
+        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = dec2bin(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
+                    return
+                else:
+                    self.updateBits(bits=bitCount(ans), count=len(ans))
+                    self.outLbl.set_text(ans)
+                    self.isZero()
+            else:
+                self.blank()
+        # Decimal to Hexadecimal
+        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = dec2hex(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
+                    return
+                else:
+                    self.bitLbl.set_visible(False)
+                    self.outLbl.set_text(ans)
+                    self.isZero()
+            else:
+                self.blank()
+        # Hexadecimal to Decimal
+        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
+            inStr = self.entry.get_text().upper()
+            if inStr != "":
+                ans = hex2dec(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
+                    return
+                else:
+                    self.bitLbl.set_visible(False)
+                    self.outLbl.set_text(ans)
+                    self.isZero()
+            else:
+                self.blank()
+        # Hexadecimal to Binary
+        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
+            inStr = self.entry.get_text().upper()
+            if inStr != "":
+                ans = hex2bin(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
+                    return
+                else:
+                    self.updateBits(bits=bitCount(ans), count=len(ans))
+                    self.outLbl.set_text(ans)
+                    self.isZero()
+            else:
+                self.blank()
+        # Binary to Hexadecimal
+        elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                ans = bin2hex(inStr)
+                if ans == "char":
+                    self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
+                    return
+                else:
+                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    self.outLbl.set_text(ans)
+                    self.isZero()
+            else:
+                self.blank()
+        # Same number bases
+        elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
+            # Toast to tell the user they are converting between the same number format
+            self.overlay.add_toast(self.sameToast)
+            self.entry.get_buffer().set_text("", -1)
+            self.blank()
+            return
 
     def isZero(self, *kwargs):
         inStr = self.entry.get_text();
