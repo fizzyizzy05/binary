@@ -43,6 +43,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
         self.blank()
+        self.outDropdown.connect("notify", self.inputHandler)
 
     toastTimeout = 1
 
@@ -181,6 +182,30 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.entry.get_buffer().set_text("", -1)
             self.blank()
             return
+
+    def inBaseChanged(self, *kwargs):
+        inBase = self.inDropdown.get_selected()
+        outBase = self.outDropdown.get_selected()
+        out = self.outLbl.get_text()
+        print(out)
+
+        if inBase == outBase:
+            # Toast to tell the user they are converting between the same number format
+            self.overlay.add_toast(self.sameToast)
+            self.entry.get_buffer().set_text("", -1)
+            self.blank()
+        elif inBase == 0 and outBase == 1:
+            self.entry.set_text(bin2dec(out))
+        elif inBase == 0 and outBase == 2:
+            self.entry.set_text(bin2hex(out))
+        elif inBase == 1 and outBase == 2:
+            self.entry.set_text(dec2hex(out))
+        elif inBase == 1 and outBase == 0:
+            self.entry.set_text(dec2bin(out))
+        elif inBase == 2 and outBase == 1:
+            self.entry.set_text(hex2dec(out))
+        elif inBase == 2 and outBase == 0:
+            self.entry.set_text(dec2bin(out))
 
     def isZero(self, *kwargs):
         inStr = self.entry.get_text();
