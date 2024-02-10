@@ -3,5 +3,33 @@
   <requires lib="gtk" version="4.0"/>
   <requires lib="Adw" version="1.0"/>
   <template class="PrefsWindow" parent="AdwPreferencesWindow">
+    <property name="title" translatable="yes">Preferences</property>
+    <property name="default-width">400</property>
+    <property name="default-height">600</property>
+    <property name="height-request">200</property>
+    <child>
+      <object class="AdwPreferencesPage" id="preferences">
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Appearance</property>
+            <child>
+              <object class="AdwComboRow" id="themeSelect">
+                <property name="title">Colour scheme</property>
+                <property name="model">
+                  <object class="GtkStringList">
+                    <items>
+                      <item translatable="yes">Follow System</item>
+                      <item translatable="yes">Light Theme</item>
+                      <item translatable="yes">Dark Theme</item>
+                    </items>
+                  </object>
+                </property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
   </template>
 </interface>
+

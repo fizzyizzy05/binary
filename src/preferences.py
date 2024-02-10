@@ -20,11 +20,32 @@
 from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import Gdk
+from gi.repository import Gio
 import math
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/preferences.ui')
 class PrefsWindow(Adw.PreferencesWindow):
     __gtype_name__ = 'PrefsWindow'
+    themeSelect = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.themeSelect.connect("notify", self.changeTheme)
+        self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
+        # Set the colour scheme so it isn't over-ridden when preferences are open
+        self.themeSelect.set_selected(self.settings.get_int("preferred-theme"))
+
+    def changeTheme(self, *kwargs):
+        theme = self.themeSelect.get_selected()
+        if theme == 0:
+            Adw.StyleManager.get_default().set_color_scheme(0)
+            self.settings.set_int("preferred-theme", 0)
+        elif theme == 1:
+            Adw.StyleManager.get_default().set_color_scheme(1)
+            self.settings.set_int("preferred-theme", 1)
+        elif theme == 2:
+            Adw.StyleManager.get_default().set_color_scheme(4)
+            self.settings.set_int("preferred-theme", 4)
+
+    def hello(self, *kwargs):
+        print("hello")

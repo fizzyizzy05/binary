@@ -36,6 +36,8 @@ class BinaryApplication(Adw.Application):
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action)
+        self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
+        Adw.StyleManager.get_default().set_color_scheme(self.settings.get_int("preferred-theme"))
 
     def do_activate(self):
         """Called when the application is activated.
