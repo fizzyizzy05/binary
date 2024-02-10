@@ -14,7 +14,7 @@
             <property name="title">Appearance</property>
             <child>
               <object class="AdwComboRow" id="themeSelect">
-                <property name="title">Colour scheme</property>
+                <property name="title" translatable="yes">Colour scheme</property>
                 <property name="model">
                   <object class="GtkStringList">
                     <items>
