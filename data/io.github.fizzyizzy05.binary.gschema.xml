@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="binary">
 	<schema id="io.github.fizzyizzy05.binary" path="/io/github/fizzyizzy05/binary/">
+	  <key name="preferred-theme" type="i">
+      <default>0</default>
+	  </key>
 	</schema>
 </schemalist>
