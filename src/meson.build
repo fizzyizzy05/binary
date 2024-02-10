@@ -29,6 +29,7 @@ configure_file(
 binary_sources = [
   '__init__.py',
   'main.py',
+  'preferences.py',
   'window.py',
   'bindec.py',
   'hexcalc.py',
