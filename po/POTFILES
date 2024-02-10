@@ -4,3 +4,5 @@ data/io.github.fizzyizzy05.binary.gschema.xml
 src/main.py
 src/window.py
 src/window.ui
+src/preferences.ui
+src/preferences.ui

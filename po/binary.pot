@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-10 15:58+0000\n"
+"POT-Creation-Date: 2024-02-10 16:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,4 +161,24 @@ msgstr ""
 
 #: src/window.ui:149
 msgid "_About Binary"
+msgstr ""
+
+#: src/preferences.ui:6
+msgid "Preferences"
+msgstr ""
+
+#: src/preferences.ui:17
+msgid "Colour scheme"
+msgstr ""
+
+#: src/preferences.ui:21
+msgid "Follow System"
+msgstr ""
+
+#: src/preferences.ui:22
+msgid "Light Theme"
+msgstr ""
+
+#: src/preferences.ui:23
+msgid "Dark Theme"
 msgstr ""
