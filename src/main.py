@@ -81,7 +81,6 @@ class BinaryApplication(Adw.Application):
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""
-        print('app.preferences action activated')
         prefsWindow = PrefsWindow()
         prefsWindow.set_transient_for(self.props.active_window)
         prefsWindow.present()
