@@ -22,18 +22,19 @@ from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Gio
 import math
+from .window import BinaryWindow
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/preferences.ui')
 class PrefsWindow(Adw.PreferencesWindow):
     __gtype_name__ = 'PrefsWindow'
     themeSelect = Gtk.Template.Child()
+    groupDigits = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.themeSelect.connect("notify", self.changeTheme)
+        self.groupDigits.connect("notify", self.changeGroupDigits)
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
-        # Set the colour scheme so it isn't over-ridden when preferences are open
-        self.themeSelect.set_selected(self.settings.get_int("preferred-theme"))
 
     def changeTheme(self, *kwargs):
         theme = self.themeSelect.get_selected()
@@ -46,6 +47,13 @@ class PrefsWindow(Adw.PreferencesWindow):
         elif theme == 2:
             Adw.StyleManager.get_default().set_color_scheme(4)
             self.settings.set_int("preferred-theme", 4)
+
+    def changeGroupDigits(self, *kwargs):
+        enabled = self.groupDigits.get_active()
+        if enabled == True:
+            self.settings.set_int("group-digits", 1)
+        else:
+            self.settings.set_int("group-digits", 0)
 
     def hello(self, *kwargs):
         print("hello")
