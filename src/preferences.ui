@@ -5,7 +5,7 @@
   <template class="PrefsWindow" parent="AdwPreferencesWindow">
     <property name="title" translatable="yes">Preferences</property>
     <property name="default-width">400</property>
-    <property name="default-height">400</property>
+    <property name="default-height">306</property>
     <property name="height-request">200</property>
     <child>
       <object class="AdwPreferencesPage" id="preferences">
