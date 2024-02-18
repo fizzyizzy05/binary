@@ -36,12 +36,17 @@ class PrefsWindow(Adw.PreferencesWindow):
         self.groupDigits.connect("notify", self.changeGroupDigits)
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
 
-        # Change the selected theme so it isn't overridden when preferences is opened
-        preferredTheme = self.settings.get_int("preferred-theme")
-        if preferredTheme == 4:
+        # Change the selected theme dropdown so it isn't overridden when preferences is opened
+        if self.settings.get_int("preferred-theme") == 4:
             self.themeSelect.set_selected(2)
         else:
-            self.themeSelect.set_selected(preferredTheme)
+            self.themeSelect.set_selected(self.settings.get_int("preferred-theme"))
+
+        # Change the grouped digits switch so it isn't overridden when preferences is opened
+        if self.settings.get_int("group-digits") == 0:
+            self.groupDigits.set_active(False)
+        else:
+            self.groupDigits.set_active(True)
 
     def changeTheme(self, *kwargs):
         theme = self.themeSelect.get_selected()
