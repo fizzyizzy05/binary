@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 21:33+0000\n"
+"POT-Creation-Date: 2024-02-24 04:04+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,11 @@ msgstr ""
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.github.fizzyizzy05.binary.desktop.in:10
+msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
@@ -36,99 +41,49 @@ msgstr ""
 msgid "Binary window converting 12 to 1100"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:20
-msgid ""
-"Binary 0.2 is the latest update to the base converter app. This update "
-"introduces hexadecimal (or base 16) as a number base, allowing for "
-"conversions to and from hexadecimal numbers. The app also now has a green "
-"accent colour, making it feel more fun and distinctive. And invalid digits "
-"are now removed from the input box, making the app smoother and easier to "
-"use."
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:23
-msgid ""
-"Additionally, the following bug fixes and smaller improvements have been "
-"made:"
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:27
-msgid ""
-"The output is now selectable, allowing for copy and paste instead of needing "
-"to manually type out the result."
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:28
-msgid ""
-"Decimal input now has data validation, and will display a toast when using "
-"an invalid digit."
+#: src/gtk/help-overlay.ui:26
+msgctxt "shortcut window"
+msgid "Preferences"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:29
-msgid ""
-"Wrong digit toasts will no longer duplicate, and will simply stay up when an "
-"invalid base is used."
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:30
-msgid ""
-"The bit counter has been updated to be cleaner and easier to understand."
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:37
-msgid ""
-"When entering an invalid digit, it no longer removes it to prevent GTK "
-"Warnings. This functionality will likely be revisited down the line"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:38
-msgid "Removed preferences button as it was empty and did nothing"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:39
-msgid ""
-"The bit counter doesn't start with \"0 bits\" anymore, and should have "
-"consistent functionality."
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:40
-msgid "Added links to the project in the about window"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:41
-msgid ""
-"The \"Legal\" section in the about window now states the GPL v3 license of "
-"the app"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:42
-msgid "Code cleanup"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:49
-msgid "Version bump"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:50
-msgid "Swap button for base switcher"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:51
-msgid "Removed the binary calculator label"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:57
-msgid ""
-"First proper release of Binary. Has basic support for converting between "
-"binary and hexadecmial values."
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:63
-msgid "Izzy Jackson"
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/main.py:80
+msgid "translator-credits"
 msgstr ""
 
 #: src/window.py:40
 msgid "bits"
+msgstr ""
+
+#: src/window.py:51
+msgid "Decimal only accepts the digits 0-9"
+msgstr ""
+
+#: src/window.py:56
+msgid "Binary only accepts the digits 0 and 1"
+msgstr ""
+
+#: src/window.py:61
+msgid "Hexadecimal only accepts the digits 0-9 and A-F"
+msgstr ""
+
+#: src/window.py:66
+msgid "Input and output bases are the same"
 msgstr ""
 
 #: src/window.ui:35
