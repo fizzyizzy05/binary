@@ -16,7 +16,7 @@
   </screenshots>
   <releases>
     <release version="0.2" date="2024-01-26">
-      <description>
+      <description translatable="no">
         <p>
           Binary 0.2 is the latest update to the base converter app. This update introduces hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more fun and distinctive. And invalid digits are now removed from the input box, making the app smoother and easier to use.
         </p>
@@ -32,7 +32,7 @@
       </description>
     </release>
     <release version="0.1.3" date="2024-01-08">
-      <description>
+      <description translatable="no">
         <ul>
           <li>When entering an invalid digit, it no longer removes it to prevent GTK Warnings. This functionality will likely be revisited down the line</li>
           <li>Removed preferences button as it was empty and did nothing</li>
@@ -44,7 +44,7 @@
       </description>
     </release>
     <release version="0.1.2" date="2024-01-06">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Version bump</li>
           <li>Swap button for base switcher</li>
@@ -53,7 +53,7 @@
       </description>
     </release>
     <release version="0.1.1" date="2023-12-18">
-      <description>
+      <description translatable="no">
         <p>First proper release of Binary. Has basic support for converting between binary and hexadecmial values.</p>
       </description>
     </release>
