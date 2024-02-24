@@ -10,7 +10,7 @@
 	</description>
   <screenshots>
     <screenshot type="default">
-      <image xml:lang="en">https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
       <caption>Binary window converting 12 to 1100</caption>
     </screenshot>
   </screenshots>
@@ -60,6 +60,12 @@
   </releases>
   <url type="homepage">https://github.com/fizzyizzy05/binary</url>
   <url type="bugtracker">https://github.com/fizzyizzy05/binary/issues</url>
-  <developer_name>Izzy Jackson</developer_name>
+  <url type="vcs-browser">https://github.com/fizzyizzy05/binary</url>
+  <url type="translate">https://github.com/fizzyizzy05/binary/tree/main/po</url>
+  <launchable type="desktop-id">io.github.fizzyizzy05.binary.desktop</launchable>
+  <translation type="gettext">binary</translation>
+  <developer id="io.github.fizzyizzy05">
+    <name translatable="no">Izzy Jackson</name>
+  </developer>
   <content_rating type="oars-1.1" />
 </component>
