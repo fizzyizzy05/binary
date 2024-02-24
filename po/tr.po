@@ -1,0 +1,150 @@
+# Turkish translation for io.github.fizzyizzy05.binary.
+# Copyright (C) 2024 io.github.fizzyizzy05.binary's COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.fizzyizzy05.binary package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.github.fizzyizzy05.binary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-24 04:04+0300\n"
+"PO-Revision-Date: 2024-02-24 04:06+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <takim@gnome.org.tr>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:3
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
+msgid "Binary"
+msgstr "Binary"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.github.fizzyizzy05.binary.desktop.in:10
+msgid "binary;decimal;hexadecimal;base;convert;"
+msgstr "ikili;ondalık;onaltılık;on altılık;taban;temel;sayı tabanı;dönüştür;"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Number base converter"
+msgstr "Sayı tabanı dönüştürücü"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
+msgid ""
+"A small and simple app used to convert between different hexadecimal and "
+"binary numbers"
+msgstr ""
+"Onaltılık ve ikili sayılar arasında dönüşüm için küçük ve basit bir uygulama"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:14
+msgid "Binary window converting 12 to 1100"
+msgstr "12'yi 1100'e dönüştüren Binary penceresi"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Genel"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Kısayolları Göster"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Çık"
+
+#: src/gtk/help-overlay.ui:26
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Tercihler"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/main.py:80
+msgid "translator-credits"
+msgstr "Sabri Ünal <libreajans@gmail.com>"
+
+#: src/window.py:40
+msgid "bits"
+msgstr "bit"
+
+#: src/window.py:51
+msgid "Decimal only accepts the digits 0-9"
+msgstr "Ondalık yalnızca 0-9 rakamlarını kabul eder"
+
+#: src/window.py:56
+msgid "Binary only accepts the digits 0 and 1"
+msgstr "İkili yalnızca 0 ve 1 rakamlarını kabul eder"
+
+#: src/window.py:61
+msgid "Hexadecimal only accepts the digits 0-9 and A-F"
+msgstr "Onaltılık yalnızca 0-9 ve A-F rakamlarını kabul eder"
+
+#: src/window.py:66
+msgid "Input and output bases are the same"
+msgstr "Girdi ve çıktı tabanları aynı"
+
+#: src/window.ui:35
+msgid "Menu"
+msgstr "Menü"
+
+#: src/window.ui:92
+msgid "Input"
+msgstr "Girdi"
+
+#: src/window.ui:133
+msgid "Bin"
+msgstr "İkili"
+
+#: src/window.ui:134
+msgid "Dec"
+msgstr "Ondalık"
+
+#: src/window.ui:135
+msgid "Hex"
+msgstr "Onaltılık"
+
+#: src/window.ui:141
+msgid "_Preferences"
+msgstr "_Tercihler"
+
+#: src/window.ui:145
+msgid "_Keyboard Shortcuts"
+msgstr "_Klavye Kısayolları"
+
+#: src/window.ui:149
+msgid "_About Binary"
+msgstr "Binary _Hakkında"
+
+#: src/preferences.ui:6
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/preferences.ui:17
+msgid "Colour scheme"
+msgstr "Renk şeması"
+
+#: src/preferences.ui:21
+msgid "Follow System"
+msgstr "Sistemi İzle"
+
+#: src/preferences.ui:22
+msgid "Light Theme"
+msgstr "Açık Tema"
+
+#: src/preferences.ui:23
+msgid "Dark Theme"
+msgstr "Koyu Tema"
+
+#: src/preferences.ui:33
+msgid "Output"
+msgstr "Çıktı"
+
+#: src/preferences.ui:36
+msgid "Group binary digits by 4"
+msgstr "İkili rakamları dörtlü grupla"
