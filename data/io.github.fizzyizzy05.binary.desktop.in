@@ -4,5 +4,7 @@ Exec=binary
 Icon=io.github.fizzyizzy05.binary
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GTK;Utility;
+# Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords=binary;decimal;hexadecimal;base;convert;
 StartupNotify=true

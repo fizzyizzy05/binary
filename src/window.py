@@ -48,22 +48,22 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     # Toast to tell the user decimal only numeric values
     decCharToast = Adw.Toast(
-        title="Decimal only accepts the digits 0-9",
+        title=_("Decimal only accepts the digits 0-9"),
         timeout=toastTimeout,
     )
     # Toast to tell the user binary only accepts 0 or 1 digits
     binCharToast = Adw.Toast(
-        title="Binary only accepts the digits 0 and 1",
+        title=_("Binary only accepts the digits 0 and 1"),
         timeout=toastTimeout,
     )
     # Toast to tell the user binary only accepts 0 or 1 digits
     hexCharToast = Adw.Toast(
-        title="Hexadecimal only accepts the digits 0-9 and A-F",
+        title=_("Hexadecimal only accepts the digits 0-9 and A-F"),
         timeout=toastTimeout,
     )
     # Toast to tell the user input and output bases are the same
     sameToast = Adw.Toast(
-        title="Input and output bases are the same",
+        title=_("Input and output bases are the same"),
         timeout=1.5,
     )
 
