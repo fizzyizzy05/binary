@@ -77,7 +77,7 @@ class BinaryApplication(Adw.Application):
                                 release_notes_version='0.2.x',
                                 release_notes=self.release_notes,
                                 # Translators: Replace "translator-credits" with your names, one name per line
-                                translator_credits = _("Sabri Ünal"),
+                                translator_credits = _("translator-credits"),
                                 copyright='© 2023-2024 Izzy Jackson.')
         about.present()
 
