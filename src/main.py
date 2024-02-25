@@ -63,7 +63,7 @@ class BinaryApplication(Adw.Application):
         <li>The bit counter has been updated to be cleaner and easier to understand.</li>
       </ul>"""
 
-    def on_about_action(self, widget, _):
+    def on_about_action(self, *args):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='Binary',
@@ -76,6 +76,8 @@ class BinaryApplication(Adw.Application):
                                 license_type=Gtk.License.GPL_3_0,
                                 release_notes_version='0.2.x',
                                 release_notes=self.release_notes,
+                                # Translators: Replace "translator-credits" with your names, one name per line
+                                translator_credits = _("translator-credits"),
                                 copyright='© 2023-2024 Izzy Jackson.')
         about.present()
 
