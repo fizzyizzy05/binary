@@ -8,6 +8,10 @@
 	<description>
 	  <p>A small and simple app used to convert between different hexadecimal and binary numbers</p>
 	</description>
+  <branding>
+    <color type="primary" scheme_preference="light">#8ff0a4</color>
+    <color type="primary" scheme_preference="dark">#155a3a</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
