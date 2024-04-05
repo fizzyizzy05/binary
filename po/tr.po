@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 04:04+0300\n"
+"POT-Creation-Date: 2024-04-06 00:31+0100\n"
 "PO-Revision-Date: 2024-02-24 04:06+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -40,9 +40,96 @@ msgid ""
 msgstr ""
 "Onaltılık ve ikili sayılar arasında dönüşüm için küçük ve basit bir uygulama"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:14
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 12 to 1100"
 msgstr "12'yi 1100'e dönüştüren Binary penceresi"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:24
+msgid ""
+"Binary 0.2 is the latest update to the base converter app. This update "
+"introduces hexadecimal (or base 16) as a number base, allowing for "
+"conversions to and from hexadecimal numbers. The app also now has a green "
+"accent colour, making it feel more fun and distinctive. And invalid digits "
+"are now removed from the input box, making the app smoother and easier to "
+"use."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:27
+msgid ""
+"Additionally, the following bug fixes and smaller improvements have been "
+"made:"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:31
+msgid ""
+"The output is now selectable, allowing for copy and paste instead of needing "
+"to manually type out the result."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:32
+msgid ""
+"Decimal input now has data validation, and will display a toast when using "
+"an invalid digit."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:33
+msgid ""
+"Wrong digit toasts will no longer duplicate, and will simply stay up when an "
+"invalid base is used."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:34
+msgid ""
+"The bit counter has been updated to be cleaner and easier to understand."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:41
+msgid ""
+"When entering an invalid digit, it no longer removes it to prevent GTK "
+"Warnings. This functionality will likely be revisited down the line"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:42
+msgid "Removed preferences button as it was empty and did nothing"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:43
+msgid ""
+"The bit counter doesn't start with \"0 bits\" anymore, and should have "
+"consistent functionality."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:44
+msgid "Added links to the project in the about window"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:45
+msgid ""
+"The \"Legal\" section in the about window now states the GPL v3 license of "
+"the app"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:46
+msgid "Code cleanup"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:53
+msgid "Version bump"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:54
+msgid "Swap button for base switcher"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:55
+msgid "Removed the binary calculator label"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:61
+msgid ""
+"First proper release of Binary. Has basic support for converting between "
+"binary and hexadecmial values."
+msgstr ""
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
