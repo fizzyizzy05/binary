@@ -68,9 +68,9 @@ class BinaryApplication(Adw.Application):
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
-                                developer_name='Izzy Jackson',
+                                developer_name='Isabelle Jackson',
                                 version='0.2',
-                                developers=['Izzy Jackson'],
+                                developers=['Isabelle Jackson'],
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
@@ -78,7 +78,7 @@ class BinaryApplication(Adw.Application):
                                 release_notes=self.release_notes,
                                 # Translators: Replace "translator-credits" with your names, one name per line
                                 translator_credits = _("translator-credits"),
-                                copyright='© 2023-2024 Izzy Jackson.')
+                                copyright='© 2023-2024 Isabelle Jackson.')
         about.present()
 
     def on_preferences_action(self, widget, _):
