@@ -32,7 +32,7 @@
               <object class="GtkMenuButton">
                 <property name="primary">True</property>
                 <property name="icon-name">open-menu-symbolic</property>
-                <property name="tooltip-text" translatable="yes">Menu</property>
+                <property name="tooltip-text" translatable="yes">Main Menu</property>
                 <property name="menu-model">primary_menu</property>
               </object>
             </child>
@@ -89,9 +89,12 @@
                                       <class name="bin"/>
                                     </style>
                                     <property name="enable-undo">false</property>
-                                    <property name="placeholder-text" translatable="yes">Input</property>
+                                    <property name="placeholder-text" translatable="yes">Enter numbers…</property>
                                     <property name="margin-end">10</property>
                                     <signal name="changed" handler="inputHandler" swapped="no" />
+                                    <accessibility>
+                                      <property name="label" translatable="yes">Enter numbers…</property>
+                                    </accessibility>
                                   </object>
                                 </child>
                               </object>
