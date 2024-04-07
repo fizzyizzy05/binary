@@ -19,6 +19,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.2.1" date="2024-04-07">
+      <description translate="no">
+        <p>Binary 0.2.1 is a small update to the base converter app, with the following improvements</p>
+        <ul>
+          <li>Dark/light mode switch in a new preferences window</li>
+          <li>Turkish translations</li>
+          <li>Accessibility improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2" date="2024-01-26">
       <description translate="no">
         <p>
