@@ -69,7 +69,7 @@
   <launchable type="desktop-id">io.github.fizzyizzy05.binary.desktop</launchable>
   <translation type="gettext">binary</translation>
   <developer id="io.github.fizzyizzy05">
-    <name translate="no">Isabelle Jackson</name>
+    <name translate="no">Izzy Jackson</name>
   </developer>
   <content_rating type="oars-1.1" />
 </component>
