@@ -28,17 +28,6 @@
             </child>
           </object>
         </child>
-        <child>
-          <object class="AdwPreferencesGroup">
-            <property name="title" translatable="yes">Output</property>
-            <child>
-              <object class="AdwSwitchRow" id="groupDigits">
-                <property name="title" translatable="yes">Group binary digits by 4</property>
-                <property name="subtitle" translatable="yes"></property>
-              </object>
-            </child>
-          </object>
-        </child>
       </object>
     </child>
   </template>

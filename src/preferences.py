@@ -28,12 +28,10 @@ from .window import BinaryWindow
 class PrefsWindow(Adw.PreferencesWindow):
     __gtype_name__ = 'PrefsWindow'
     themeSelect = Gtk.Template.Child()
-    groupDigits = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.themeSelect.connect("notify", self.changeTheme)
-        self.groupDigits.connect("notify", self.changeGroupDigits)
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
 
         # Change the selected theme dropdown so it isn't overridden when preferences is opened
@@ -41,12 +39,6 @@ class PrefsWindow(Adw.PreferencesWindow):
             self.themeSelect.set_selected(2)
         else:
             self.themeSelect.set_selected(self.settings.get_int("preferred-theme"))
-
-        # Change the grouped digits switch so it isn't overridden when preferences is opened
-        if self.settings.get_int("group-digits") == 0:
-            self.groupDigits.set_active(False)
-        else:
-            self.groupDigits.set_active(True)
 
     def changeTheme(self, *kwargs):
         theme = self.themeSelect.get_selected()
@@ -59,13 +51,6 @@ class PrefsWindow(Adw.PreferencesWindow):
         elif theme == 2:
             Adw.StyleManager.get_default().set_color_scheme(4)
             self.settings.set_int("preferred-theme", 4)
-
-    def changeGroupDigits(self, *kwargs):
-        enabled = self.groupDigits.get_active()
-        if enabled == True:
-            self.settings.set_int("group-digits", 1)
-        else:
-            self.settings.set_int("group-digits", 0)
 
     def hello(self, *kwargs):
         print("hello")
