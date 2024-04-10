@@ -8,3 +8,7 @@
 .bitLbl {
   font-size: 0.9em;
 }
+
+.flat-dropdown button:not(:checked):not(:hover) {
+  background: transparent;
+}

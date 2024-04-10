@@ -17,6 +17,9 @@
                 <child>
                   <object class="GtkDropDown" id="inDropdown">
                     <property name="model">typeList</property>
+                    <style>
+                      <class name="flat-dropdown" />
+                    </style>
                   </object>
                 </child>
                 <child>
@@ -29,6 +32,9 @@
                 <child>
                   <object class="GtkDropDown" id="outDropdown">
                     <property name="model">typeList</property>
+                    <style>
+                      <class name="flat-dropdown" />
+                    </style>
                   </object>
                 </child>
               </object>
