@@ -11,21 +11,26 @@
       <object class="AdwToolbarView">
         <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
-            <child>
-              <object class="GtkDropDown" id="inDropdown">
-                <property name="model">typeList</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkButton" id="swapBtn">
-                <property name="icon-name">horizontal-arrows</property>
-                <property name="tooltip-text">Swap input and output bases</property>
-                <signal name="clicked" handler="swap" />
-              </object>
-            </child>
-            <child>
-              <object class="GtkDropDown" id="outDropdown">
-                <property name="model">typeList</property>
+            <child type="title">
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkDropDown" id="inDropdown">
+                    <property name="model">typeList</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="swapBtn">
+                    <property name="icon-name">horizontal-arrows</property>
+                    <property name="tooltip-text">Swap input and output bases</property>
+                    <signal name="clicked" handler="swap" />
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkDropDown" id="outDropdown">
+                    <property name="model">typeList</property>
+                  </object>
+                </child>
               </object>
             </child>
             <child type="end">
