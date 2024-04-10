@@ -11,4 +11,5 @@
 
 .flat-dropdown button:not(:checked):not(:hover) {
   background: transparent;
+  box-shadow: none;
 }
