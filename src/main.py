@@ -17,6 +17,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+# TODO: Update flatpak manifest in Flathub
 import sys
 import gi
 
