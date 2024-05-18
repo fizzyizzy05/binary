@@ -8,33 +8,40 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-07 22:41+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-05-19 17:01+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/binary/"
+"binary-app/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
-msgstr ""
+msgstr "Binääri"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
+"binary;decimal;hexadecimal;base;convert;binaari;binääri;heksadesimaali;kantal"
+"uku;muunna;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Number base converter"
-msgstr ""
+msgstr "Lukujärjestelmien muunnin"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Pieni ja yksinkertainen sovellus, jonka avulla voit muuntaa heksadesimaali- "
+"ja binäärilukujen välillä"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 12 to 1100"
@@ -148,55 +155,55 @@ msgstr ""
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Yleiset"
 
 #: src/gtk/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Näytä pikanäppäimet"
 
 #: src/gtk/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Lopeta"
 
 #: src/gtk/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Preferences"
-msgstr ""
+msgstr "Asetukset"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:80
 msgid "translator-credits"
-msgstr ""
+msgstr "Jiri Grönroos"
 
 #: src/window.py:40
 msgid "bits"
-msgstr ""
+msgstr "bittiä"
 
 #: src/window.py:51
 msgid "Decimal only accepts the digits 0-9"
-msgstr ""
+msgstr "Desimaali hyväksyy vain luvut 0-9"
 
 #: src/window.py:56
 msgid "Binary only accepts the digits 0 and 1"
-msgstr ""
+msgstr "Binääri hyväksyy vain luvut 0 ja 1"
 
 #: src/window.py:61
 msgid "Hexadecimal only accepts the digits 0-9 and A-F"
-msgstr ""
+msgstr "Heksadesimaali hyväksyy vain luvut 0-9 ja A-F"
 
 #: src/window.py:66
 msgid "Input and output bases are the same"
-msgstr ""
+msgstr "Syöte- ja tulostekannat ovat samoja"
 
 #: src/window.ui:35
 msgid "Main Menu"
-msgstr ""
+msgstr "Päävalikko"
 
 #: src/window.ui:92 src/window.ui:96
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Kirjoita numerot…"
 
 #: src/window.ui:136
 msgid "Bin"
@@ -212,32 +219,32 @@ msgstr ""
 
 #: src/window.ui:144
 msgid "_Preferences"
-msgstr ""
+msgstr "_Asetukset"
 
 #: src/window.ui:148
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Pikanäppäimet"
 
 #: src/window.ui:152
 msgid "_About Binary"
-msgstr ""
+msgstr "_Tietoja - Binääri"
 
 #: src/preferences.ui:6
 msgid "Preferences"
-msgstr ""
+msgstr "Asetukset"
 
 #: src/preferences.ui:17
 msgid "Colour scheme"
-msgstr ""
+msgstr "Väriteema"
 
 #: src/preferences.ui:21
 msgid "Follow System"
-msgstr ""
+msgstr "Seuraa järjestelmää"
 
 #: src/preferences.ui:22
 msgid "Light Theme"
-msgstr ""
+msgstr "Vaalea teema"
 
 #: src/preferences.ui:23
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tumma teema"
