@@ -118,7 +118,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = dec2hex(inStr)
+                ans = hex(int(inStr)).lstrip("0x").upper()
                 if ans == "char":
                     self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
@@ -163,7 +163,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = bin2hex(inStr)
+                ans = hex(int(inStr, 2)).strip("0x").upper()
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
