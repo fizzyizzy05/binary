@@ -94,7 +94,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     # Set the output label and bit counter label
                     bits = bitCount(inStr)
-                    self.outLbl.set_text(f"{ans}")
+                    self.outLbl.set_text(str(int(inStr, 2)))
                     self.updateBits(bits=bitCount(inStr), count=len(inStr))
                     self.isZero()
             else:
@@ -140,7 +140,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 else:
                     self.bitLbl.set_visible(False)
-                    self.outLbl.set_text(ans)
+                    self.outLbl.set_text(str(int(inStr, 16)))
                     self.isZero()
             else:
                 self.blank()
