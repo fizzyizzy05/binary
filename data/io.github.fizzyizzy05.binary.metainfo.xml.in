@@ -19,6 +19,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.3" date="2024-06-29">
+      <!-- placeholder date and version number until final release-->
+      <description translate="no">
+        <p>Binary 0.3 is a new release to the base converter app, with these improvements. Binary now has a cleaner, less visually heavy design for the base selectors.</p>
+        <p>Additional improvements include:</p>
+        <ul>
+          <li>Additional translations for German and Finnish</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.1" date="2024-04-07">
       <description translate="no">
         <p>Binary 0.2.1 is a small update to the base converter app, with the following improvements</p>
