@@ -147,6 +147,7 @@
       <item translatable="yes">Bin</item>
       <item translatable="yes">Dec</item>
       <item translatable="yes">Hex</item>
+      <item translatable="yes">Oct</item>
     </items>
   </object>
   <menu id="primary_menu">
