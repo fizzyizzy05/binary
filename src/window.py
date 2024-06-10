@@ -82,6 +82,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         # 0 = Binary
         # 1 = Decimal
         # 2 = Hexadecimal
+        # 3 = Octal
         # Binary to Decimal
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
