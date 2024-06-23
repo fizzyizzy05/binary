@@ -92,7 +92,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = bin2dec(inStr)
+                ans = int(inStr, 2)
                 if ans == "char":
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
@@ -109,15 +109,16 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = dec2bin(inStr)
-                if ans == "char":
-                    self.overlay.add_toast(self.decCharToast)
+                try:
+                    int(char, 2)
+                except:
+                    self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    self.updateBits(bits=bitCount(ans), count=len(ans))
-                    self.outLbl.set_text(ans)
-                    self.isZero()
+                ans = bin(int(inStr)).lstrip("0b")
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+                self.outLbl.set_text(ans)
+                self.isZero()
             else:
                 self.blank()
         # Decimal to Hexadecimal
@@ -139,7 +140,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text().upper()
             if inStr != "":
-                ans = hex2dec(inStr)
+                ans = int(inStr, 16)
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
@@ -154,7 +155,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text().upper()
             if inStr != "":
-                ans = hex2bin(inStr)
+                ans = bin(int(inStr, 16)).lstrip("0b")
                 if ans == "char":
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
