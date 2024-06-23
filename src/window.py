@@ -111,7 +111,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
-                    int(char, 2)
+                    int(inStr, 10)
                 except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
