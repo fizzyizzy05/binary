@@ -201,13 +201,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
-                for char in str(inStr):
-                    try:
-                        int(char, 2)
-                    except:
-                        self.overlay.add_toast(self.binCharToast)
-                        self.cleanEntry()
-                        return
+                try:
+                    int(inStr, 2)
+                except:
+                    self.overlay.add_toast(self.binCharToast)
+                    self.cleanEntry()
+                    return
                 ans = oct(int(inStr, 2)).lstrip("0o")
                 self.outLbl.set_text(ans)
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
@@ -217,13 +216,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
             if inStr != "":
-                for char in str(inStr):
-                    try:
-                        int(char, 8)
-                    except:
-                        self.overlay.add_toast(self.octCharToast)
-                        self.cleanEntry()
-                        return
+                try:
+                    int(inStr, 8)
+                except:
+                    self.overlay.add_toast(self.octCharToast)
+                    self.cleanEntry()
+                    return
                 ans = int(inStr, 8)
                 self.outLbl.set_text(str(ans))
                 self.bitLbl.set_visible(False)
@@ -233,13 +231,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
-                for char in str(inStr):
-                    try:
-                        int(char, 10)
-                    except:
-                        self.overlay.add_toast(self.decCharToast)
-                        self.cleanEntry()
-                        return
+                try:
+                    int(inStr, 10)
+                except:
+                    self.overlay.add_toast(self.decCharToast)
+                    self.cleanEntry()
+                    return
                 ans = oct(int(inStr)).lstrip("0o")
                 self.outLbl.set_text(str(ans))
                 self.bitLbl.set_visible(False)
@@ -249,13 +246,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
-                for char in str(inStr):
-                    try:
-                        int(char, 8)
-                    except:
-                        self.overlay.add_toast(self.hexCharToast)
-                        self.cleanEntry()
-                        return
+                try:
+                    int(inStr, 8)
+                except:
+                    self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
+                    return
                 ans = hex(int(inStr, 8)).lstrip("0x").upper()
                 self.outLbl.set_text(ans)
                 self.bitLbl.set_visible(False)
@@ -265,13 +261,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
-                for char in str(inStr):
-                    try:
-                        int(char, 16)
-                    except:
-                        self.overlay.add_toast(self.hexCharToast)
-                        self.cleanEntry()
-                        return
+                try:
+                    int(inStr, 16)
+                except:
+                    self.overlay.add_toast(self.hexCharToast)
+                    self.cleanEntry()
+                    return
                 ans = oct(int(inStr, 16)).lstrip("0o")
                 self.outLbl.set_text(str(ans))
                 self.bitLbl.set_visible(False)
