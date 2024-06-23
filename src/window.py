@@ -61,6 +61,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         title=_("Hexadecimal only accepts the digits 0-9 and A-F"),
         timeout=toastTimeout,
     )
+    # Toast to tell the user octal only accepts digits 0-7
+    octCharToast = Adw.Toast(
+        title=_("Octal only accepts the digits 0-7"),
+        timeout=toastTimeout,
+    )
     # Toast to tell the user input and output bases are the same
     sameToast = Adw.Toast(
         title=_("Input and output bases are the same"),
@@ -173,6 +178,102 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.updateBits(bits=bitCount(inStr), count=len(inStr))
                     self.outLbl.set_text(ans)
                     self.isZero()
+            else:
+                self.blank()
+        # Oct to Bin
+        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 0:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 8)
+                    except:
+                        self.overlay.add_toast(self.octCharToast)
+                        self.cleanEntry()
+                        return
+                ans = bin(int(inStr, 8)).lstrip("0b")
+                self.outLbl.set_text(ans)
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+            else:
+                self.blank()
+        # Bin to Oct
+        elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 2)
+                    except:
+                        self.overlay.add_toast(self.binCharToast)
+                        self.cleanEntry()
+                        return
+                ans = oct(int(inStr, 2)).lstrip("0o")
+                self.outLbl.set_text(ans)
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+            else:
+                self.blank()
+        # Oct to Dec
+        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 8)
+                    except:
+                        self.overlay.add_toast(self.octCharToast)
+                        self.cleanEntry()
+                        return
+                ans = int(inStr, 8)
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
+            else:
+                self.blank()
+        # Dec to Oct
+        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 10)
+                    except:
+                        self.overlay.add_toast(self.decCharToast)
+                        self.cleanEntry()
+                        return
+                ans = oct(int(inStr)).lstrip("0o")
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
+            else:
+                self.blank()
+        # Oct to Hex
+        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 8)
+                    except:
+                        self.overlay.add_toast(self.hexCharToast)
+                        self.cleanEntry()
+                        return
+                ans = hex(int(inStr, 8)).lstrip("0x").upper()
+                self.outLbl.set_text(ans)
+                self.bitLbl.set_visible(False)
+            else:
+                self.blank()
+        # Hex to Oct
+        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
+            inStr = self.entry.get_text()
+            if inStr != "":
+                for char in str(inStr):
+                    try:
+                        int(char, 16)
+                    except:
+                        self.overlay.add_toast(self.hexCharToast)
+                        self.cleanEntry()
+                        return
+                ans = oct(int(inStr, 16)).lstrip("0o")
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
             else:
                 self.blank()
         # Same number bases
