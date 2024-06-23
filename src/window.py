@@ -92,17 +92,18 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = int(inStr, 2)
-                if ans == "char":
+                try:
+                    int(inStr, 2)
+                except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    # Set the output label and bit counter label
-                    bits = bitCount(inStr)
-                    self.outLbl.set_text(str(int(inStr, 2)))
-                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
-                    self.isZero()
+                ans = int(inStr, 2)
+                # Set the output label and bit counter label
+                bits = bitCount(inStr)
+                self.outLbl.set_text(str(int(inStr, 2)))
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.isZero()
             else:
                 self.blank()
         # Decimal to Binary
@@ -125,60 +126,63 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = hex(int(inStr)).lstrip("0x").upper()
-                if ans == "char":
+                try:
+                    int(inStr)
+                except:
                     self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    self.bitLbl.set_visible(False)
-                    self.outLbl.set_text(ans)
-                    self.isZero()
+                ans = hex(int(inStr)).lstrip("0x").upper()
+                self.outLbl.set_text(ans)
+                self.isZero()
             else:
                 self.blank()
         # Hexadecimal to Decimal
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text().upper()
             if inStr != "":
-                ans = int(inStr, 16)
-                if ans == "char":
+                try:
+                    int(inStr, 16)
+                except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    self.bitLbl.set_visible(False)
-                    self.outLbl.set_text(str(int(inStr, 16)))
-                    self.isZero()
+                ans = int(inStr, 16)
+                self.bitLbl.set_visible(False)
+                self.outLbl.set_text(str(int(inStr, 16)))
+                self.isZero()
             else:
                 self.blank()
         # Hexadecimal to Binary
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text().upper()
             if inStr != "":
-                ans = bin(int(inStr, 16)).lstrip("0b")
-                if ans == "char":
+                try:
+                    int(inStr, 16)
+                except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    self.updateBits(bits=bitCount(ans), count=len(ans))
-                    self.outLbl.set_text(ans)
-                    self.isZero()
+                ans = bin(int(inStr, 16)).lstrip("0b")
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+                self.outLbl.set_text(ans)
+                self.isZero()
             else:
                 self.blank()
         # Binary to Hexadecimal
         elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
-                ans = hex(int(inStr, 2)).strip("0x").upper()
-                if ans == "char":
+                try:
+                    int
+                except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
-                else:
-                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
-                    self.outLbl.set_text(ans)
-                    self.isZero()
+                ans = hex(int(inStr, 2)).strip("0x").upper()
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.outLbl.set_text(ans)
+                self.isZero()
             else:
                 self.blank()
         # Oct to Bin
