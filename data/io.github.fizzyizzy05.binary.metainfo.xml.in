@@ -20,7 +20,6 @@
   </screenshots>
   <releases>
     <release version="0.3" date="2024-06-23">
-      <!-- placeholder date and version number until final release-->
       <description translate="no">
         <p>Binary 0.3 is a new release with the following improvements:</p>
         <ul>
