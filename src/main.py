@@ -51,18 +51,19 @@ class BinaryApplication(Adw.Application):
             win = BinaryWindow(application=self)
         win.present()
 
-    release_notes = """<p>
-        Binary 0.2 is the latest update to the base converter app. This update introduces hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more fun and distinctive. And invalid digits are now removed from the input box, making the app smoother and easier to use.
-      </p>
-      <p>
-        Additionally, the following bug fixes and smaller improvements have been made:
-      </p>
-      <ul>
-        <li>The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.</li>
-        <li>Decimal input now has data validation, and will display a toast when using an invalid digit.</li>
-        <li>Wrong digit toasts will no longer duplicate, and will simply stay up when an invalid base is used.</li>
-        <li>The bit counter has been updated to be cleaner and easier to understand.</li>
-      </ul>"""
+    release_notes = """
+        <p>Binary 0.3 is a new release with the following improvements:</p>
+        <ul>
+          <li>A new cleaner design for the base selectors for the headers.</li>
+          <li>Added support for converting numbers between octal and other bases.</li>
+          <li>Reworked number conversions to be more reliable and quicker.</li>
+        </ul>
+        <p>Added translations for the following locales:</p>
+        <ul>
+          <li>German (Konstantin Tutsch)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+        </ul>
+    """
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
@@ -75,7 +76,7 @@ class BinaryApplication(Adw.Application):
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
-                                release_notes_version='0.2.x',
+                                release_notes_version='0.3.x',
                                 release_notes=self.release_notes,
                                 # Translators: Replace "translator-credits" with your names, one name per line
                                 translator_credits = _("translator-credits"),
