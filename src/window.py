@@ -133,6 +133,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleanEntry()
                     return
                 ans = hex(int(inStr)).lstrip("0x").upper()
+                self.bitLbl.set_visible(False)
                 self.outLbl.set_text(ans)
                 self.isZero()
             else:
