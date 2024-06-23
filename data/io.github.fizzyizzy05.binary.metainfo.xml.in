@@ -26,6 +26,7 @@
         <ul>
           <li>A new cleaner design for the base selectors for the headers.</li>
           <li>Added support for converting numbers between octal and other bases.</li>
+          <li>Reworked number conversions to be more reliable and quicker.</li>
         </ul>
         <p>Added translations for the following locales:</p>
         <ul>
