@@ -19,13 +19,18 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.3" date="2024-06-29">
+    <release version="0.3" date="2024-06-23">
       <!-- placeholder date and version number until final release-->
       <description translate="no">
-        <p>Binary 0.3 is a new release to the base converter app, with these improvements. Binary now has a cleaner, less visually heavy design for the base selectors.</p>
-        <p>Additional improvements include:</p>
+        <p>Binary 0.3 is a new release with the following improvements:</p>
         <ul>
-          <li>Additional translations for German and Finnish</li>
+          <li>A new cleaner design for the base selectors for the headers.</li>
+          <li>Added support for converting numbers between octal and other bases.</li>
+        </ul>
+        <p>Added translations for the following locales:</p>
+        <ul>
+          <li>German (Konstantin Tutsch)</li>
+          <li>Finnish (Jiri Grönroos)</li>
         </ul>
       </description>
     </release>
