@@ -1,0 +1,42 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+  <name xml:lang="en">Binary</name>
+  <shortdesc xml:lang="en">Convert numbers between different bases with ease</shortdesc>
+  <description>
+    Binary converts numbers between different binary, decimal, hexadecimal and octal values. It will take in input from one number base, give an output and for Binary numbers tell you the bits involved.
+  </description>
+
+  <platform>GTK 4</platform>
+  <platform>Libadwaita</platform>
+
+  <homepage rdf:resource="https://github.org/fizzyizzy05/binary" />
+  <download-page rdf:resource="https://flathub.org/app/io.github.fizzyizzy05.binary/" />
+  <bug-database rdf:resource="https://github.org/fizzyizzy05/binary/issues" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
+  <programming-language>Python</programming-language>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Isabelle Jackson</foaf:name>
+      <foaf:mbox rdf:resource="izzyjackson05@outlook.com" />
+
+      <foaf:Account>
+          <foaf:OnlineAccount>
+            <foaf:accountServiceHomepage rdf:resource="https://gitlab.gnome.org"/>
+            <foaf:accountName>fizzyizzy05</foaf:accountName>
+          </foaf:OnlineAccount>
+      </foaf:Account>
+
+      <foaf:account>
+        <foaf:OnlineAccount>
+          <foaf:accountServiceHomepage rdf:resource="https://github.com"/>
+          <foaf:accountName>fizzyizzy05</foaf:accountName>
+        </foaf:OnlineAccount>
+      </foaf:account>
+
+    </foaf:Person>
+  </maintainer>
+</Project>
