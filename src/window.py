@@ -64,164 +64,167 @@ class BinaryWindow(Adw.ApplicationWindow):
             print("test")
             self.blank()
             self.entry.remove_css_class("error")
-        # Binary to Decimal
-        elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 2)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = int(inStr, 2)
-            # Set the output label and bit counter label
-            bits = bitCount(inStr)
-            self.outLbl.set_text(str(int(inStr, 2)))
-            self.updateBits(bits=bitCount(inStr), count=len(inStr))
-            self.isZero()
-        # Decimal to Binary
-        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 10)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = bin(int(inStr)).lstrip("0b")
-            self.updateBits(bits=bitCount(ans), count=len(ans))
-            self.outLbl.set_text(ans)
-            self.isZero()
-        # Decimal to Hexadecimal
-        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = hex(int(inStr)).lstrip("0x").upper()
-            self.bitLbl.set_visible(False)
-            self.outLbl.set_text(ans)
-            self.isZero()
-        # Hexadecimal to Decimal
-        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
-            inStr = self.entry.get_text().upper()
-            try:
-                int(inStr, 16)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = int(inStr, 16)
-            self.bitLbl.set_visible(False)
-            self.outLbl.set_text(str(int(inStr, 16)))
-            self.isZero()
-        # Hexadecimal to Binary
-        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
-            inStr = self.entry.get_text().upper()
-            try:
-                int(inStr, 16)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = bin(int(inStr, 16)).lstrip("0b")
-            self.updateBits(bits=bitCount(ans), count=len(ans))
-            self.outLbl.set_text(ans)
-            self.isZero()
-        # Binary to Hexadecimal
-        elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 2)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = hex(int(inStr, 2)).strip("0x").upper()
-            self.updateBits(bits=bitCount(inStr), count=len(inStr))
-            self.outLbl.set_text(ans)
-            self.isZero()
-        # Oct to Bin
-        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 0:
-            inStr = self.entry.get_text()
-            for char in str(inStr):
+            self.entry.remove_css_class("mono")
+        else:
+            self.entry.add_css_class("mono")
+            # Binary to Decimal
+            if self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 1:
+                inStr = self.entry.get_text()
                 try:
-                    int(char, 8)
+                    int(inStr, 2)
                     self.entry.remove_css_class("error")
                 except:
                     self.cleanEntry()
                     return
-            ans = bin(int(inStr, 8)).lstrip("0b")
-            self.outLbl.set_text(ans)
-            self.updateBits(bits=bitCount(ans), count=len(ans))
-        # Bin to Oct
-        elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 2)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
+                ans = int(inStr, 2)
+                # Set the output label and bit counter label
+                bits = bitCount(inStr)
+                self.outLbl.set_text(str(int(inStr, 2)))
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.isZero()
+            # Decimal to Binary
+            elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 10)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = bin(int(inStr)).lstrip("0b")
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+                self.outLbl.set_text(ans)
+                self.isZero()
+            # Decimal to Hexadecimal
+            elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = hex(int(inStr)).lstrip("0x").upper()
+                self.bitLbl.set_visible(False)
+                self.outLbl.set_text(ans)
+                self.isZero()
+            # Hexadecimal to Decimal
+            elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
+                inStr = self.entry.get_text().upper()
+                try:
+                    int(inStr, 16)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = int(inStr, 16)
+                self.bitLbl.set_visible(False)
+                self.outLbl.set_text(str(int(inStr, 16)))
+                self.isZero()
+            # Hexadecimal to Binary
+            elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
+                inStr = self.entry.get_text().upper()
+                try:
+                    int(inStr, 16)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = bin(int(inStr, 16)).lstrip("0b")
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+                self.outLbl.set_text(ans)
+                self.isZero()
+            # Binary to Hexadecimal
+            elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 2)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = hex(int(inStr, 2)).strip("0x").upper()
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.outLbl.set_text(ans)
+                self.isZero()
+            # Oct to Bin
+            elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 0:
+                inStr = self.entry.get_text()
+                for char in str(inStr):
+                    try:
+                        int(char, 8)
+                        self.entry.remove_css_class("error")
+                    except:
+                        self.cleanEntry()
+                        return
+                ans = bin(int(inStr, 8)).lstrip("0b")
+                self.outLbl.set_text(ans)
+                self.updateBits(bits=bitCount(ans), count=len(ans))
+            # Bin to Oct
+            elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 2)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = oct(int(inStr, 2)).lstrip("0o")
+                self.outLbl.set_text(ans)
+                self.updateBits(bits=bitCount(inStr), count=len(inStr))
+            # Oct to Dec
+            elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 8)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = int(inStr, 8)
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
+            # Dec to Oct
+            elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 10)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = oct(int(inStr)).lstrip("0o")
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
+            # Oct to Hex
+            elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 8)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = hex(int(inStr, 8)).lstrip("0x").upper()
+                self.outLbl.set_text(ans)
+                self.bitLbl.set_visible(False)
+            # Hex to Oct
+            elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
+                inStr = self.entry.get_text()
+                try:
+                    int(inStr, 16)
+                    self.entry.remove_css_class("error")
+                except:
+                    self.cleanEntry()
+                    return
+                ans = oct(int(inStr, 16)).lstrip("0o")
+                self.outLbl.set_text(str(ans))
+                self.bitLbl.set_visible(False)
+            # Same number bases
+            elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
+                # Set the output label to be the same as the input
+                self.outLbl.set_text(self.entry.get_text())
                 return
-            ans = oct(int(inStr, 2)).lstrip("0o")
-            self.outLbl.set_text(ans)
-            self.updateBits(bits=bitCount(inStr), count=len(inStr))
-        # Oct to Dec
-        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 8)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = int(inStr, 8)
-            self.outLbl.set_text(str(ans))
-            self.bitLbl.set_visible(False)
-        # Dec to Oct
-        elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 10)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = oct(int(inStr)).lstrip("0o")
-            self.outLbl.set_text(str(ans))
-            self.bitLbl.set_visible(False)
-        # Oct to Hex
-        elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 8)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = hex(int(inStr, 8)).lstrip("0x").upper()
-            self.outLbl.set_text(ans)
-            self.bitLbl.set_visible(False)
-        # Hex to Oct
-        elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
-            inStr = self.entry.get_text()
-            try:
-                int(inStr, 16)
-                self.entry.remove_css_class("error")
-            except:
-                self.cleanEntry()
-                return
-            ans = oct(int(inStr, 16)).lstrip("0o")
-            self.outLbl.set_text(str(ans))
-            self.bitLbl.set_visible(False)
-        # Same number bases
-        elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
-            # Set the output label to be the same as the input
-            self.outLbl.set_text(self.entry.get_text())
-            return
 
     def isZero(self, *kwargs):
         inStr = self.entry.get_text();

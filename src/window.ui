@@ -98,9 +98,6 @@
                                 <property name="tightening-threshold">1000</property>
                                 <child>
                                   <object class="GtkEntry" id="entry">
-                                    <style>
-                                      <class name="mono"/>
-                                    </style>
                                     <property name="placeholder-text" translatable="yes">Enter numbers…</property>
                                     <property name="margin-end">10</property>
                                     <signal name="changed" handler="inputHandler" swapped="no" />
