@@ -8,83 +8,95 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-24 18:34+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-06-25 20:09+0000\n"
+"Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/binary/"
+"binary-app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.6-rc\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
-msgstr ""
+msgstr "Binary"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
+msgstr "двоичная;десятичная;шестнадцатеричная;база;конвертировать;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Number base converter"
-msgstr ""
+msgstr "Преобразователь чисел"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Небольшое и простое приложение для преобразования различных "
+"шестнадцатеричных и двоичных чисел"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 37 to 1F"
-msgstr ""
+msgstr "Окно приложения, преобразующее 37 в 1F"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:24
 msgid "Binary 0.3 is a new release with the following improvements:"
-msgstr ""
+msgstr "Binary 0.3 - это новый выпуск со следующими улучшениями:"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "A new cleaner design for the base selectors for the headers."
-msgstr ""
+msgstr "Новый более чистый дизайн базовых селекторов для заголовков."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:27
 msgid "Added support for converting numbers between octal and other bases."
 msgstr ""
+"Добавлена поддержка преобразования чисел между восьмеричной и другими "
+"системами."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:28
 msgid "Reworked number conversions to be more reliable and quicker."
 msgstr ""
+"Переработано преобразование чисел, чтобы сделать его более надежным и "
+"быстрым."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:30
 msgid "Added translations for the following locales:"
-msgstr ""
+msgstr "Добавлены переводы на следующие языки:"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:32
 msgid "German (Konstantin Tutsch)"
-msgstr ""
+msgstr "Немецкий (Konstantin Tutsch)"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:33
 msgid "Finnish (Jiri Grönroos)"
-msgstr ""
+msgstr "Финский (Jiri Grönroos)"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:39
 msgid ""
 "Binary 0.2.1 is a small update to the base converter app, with the following "
 "improvements"
 msgstr ""
+"Binary 0.2.1 - это небольшое обновление базового приложения-конвертера, "
+"содержащее следующие улучшения"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:41
 msgid "Dark/light mode switch in a new preferences window"
-msgstr ""
+msgstr "Переключение темного/светлого стиля в новом окне настроек"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:42
 msgid "Turkish translations"
-msgstr ""
+msgstr "Турецкий перевод"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:43
 msgid "Accessibility improvements"
-msgstr ""
+msgstr "Улучшения доступности"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:49
 msgid ""
@@ -95,107 +107,130 @@ msgid ""
 "are now removed from the input box, making the app smoother and easier to "
 "use."
 msgstr ""
+"Binary 0.2 - это последнее обновление приложения для преобразования чисел. В "
+"этом обновлении в качестве основы для чисел введена шестнадцатеричная "
+"система (или основание 16), что позволяет конвертировать в шестнадцатеричные "
+"числа и обратно. Кроме того, приложение теперь имеет зеленый акцентный цвет, "
+"что делает его более забавным и заметным. А недействительные цифры теперь "
+"удаляются из поля ввода, что делает приложение более плавным и простым в "
+"использовании."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:52
 msgid ""
 "Additionally, the following bug fixes and smaller improvements have been "
 "made:"
 msgstr ""
+"Кроме того, были исправлены следующие ошибки и внесены небольшие улучшения:"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:56
 msgid ""
 "The output is now selectable, allowing for copy and paste instead of needing "
 "to manually type out the result."
 msgstr ""
+"Вывод теперь можно выделять, что позволяет копировать и вставлять результат "
+"вместо того, чтобы набирать его вручную."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:57
 msgid ""
 "Decimal input now has data validation, and will display a toast when using "
 "an invalid digit."
 msgstr ""
+"Десятичный ввод теперь имеет проверку данных и отображает тост при "
+"использовании недопустимой цифры."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:58
 msgid ""
 "Wrong digit toasts will no longer duplicate, and will simply stay up when an "
 "invalid base is used."
 msgstr ""
+"Тосты с неправильными цифрами больше не будут дублироваться, а просто "
+"останутся на месте, если используется недействительное основание."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:59
 msgid ""
 "The bit counter has been updated to be cleaner and easier to understand."
-msgstr ""
+msgstr "Счетчик битов был обновлен, чтобы стать чище и понятнее."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:66
 msgid ""
 "When entering an invalid digit, it no longer removes it to prevent GTK "
 "Warnings. This functionality will likely be revisited down the line"
 msgstr ""
+"При вводе недопустимой цифры она больше не удаляется, чтобы предотвратить "
+"появление предупреждений GTK. Эта функциональность, вероятно, будет "
+"пересмотрена в будущем"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:67
 msgid "Removed preferences button as it was empty and did nothing"
-msgstr ""
+msgstr "Удалена кнопка настроек, поскольку она была пустой и ничего не делала"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:68
 msgid ""
 "The bit counter doesn't start with \"0 bits\" anymore, and should have "
 "consistent functionality."
 msgstr ""
+"Счетчик битов больше не начинается с \"0 бит\" и должен иметь согласованную "
+"функциональность."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:69
 msgid "Added links to the project in the about window"
-msgstr ""
+msgstr "Добавлены ссылки на проект в окне \"О программе\""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:70
 msgid ""
 "The \"Legal\" section in the about window now states the GPL v3 license of "
 "the app"
 msgstr ""
+"В разделе \"Правовая информация\" в окне \"О программе\" теперь указана "
+"лицензия GPL v3 на приложение"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:71
 msgid "Code cleanup"
-msgstr ""
+msgstr "Чистка кода"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:78
 msgid "Version bump"
-msgstr ""
+msgstr "Работа с версиями"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:79
 msgid "Swap button for base switcher"
-msgstr ""
+msgstr "Кнопка смены для переключателя основания"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:80
 msgid "Removed the binary calculator label"
-msgstr ""
+msgstr "Удалена метка двоичного калькулятора"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:86
 msgid ""
 "First proper release of Binary. Has basic support for converting between "
 "binary and hexadecmial values."
 msgstr ""
+"Первый полноценный релиз Binary. Имеет базовую поддержку конвертации между "
+"двоичными и шестнадцатеричными значениями."
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:99
 msgid "Isabelle Jackson"
-msgstr ""
+msgstr "Изабелль Джексон"
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Общие"
 
 #: src/gtk/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Показать горячие клавиши"
 
 #: src/gtk/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Завершить"
 
 #: src/gtk/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Preferences"
-msgstr ""
+msgstr "Настройки"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:82
@@ -204,88 +239,90 @@ msgstr ""
 
 #: src/window.py:40
 msgid "bits"
-msgstr ""
+msgstr "бит"
 
 #: src/window.py:51
 msgid "Decimal only accepts the digits 0-9"
-msgstr ""
+msgstr "В десятичной системе счисления принимаются только цифры от 0 до 9"
 
 #: src/window.py:56
 msgid "Binary only accepts the digits 0 and 1"
-msgstr ""
+msgstr "В двоичной системе принимаются только цифры 0 и 1"
 
 #: src/window.py:61
 msgid "Hexadecimal only accepts the digits 0-9 and A-F"
 msgstr ""
+"В шестнадцатеричной системе счисления принимаются только цифры от 0 до 9 и A "
+"по F"
 
 #: src/window.py:66
 msgid "Octal only accepts the digits 0-7"
-msgstr ""
+msgstr "В восьмеричной системе счисления принимаются только цифры от 0 до 7"
 
 #: src/window.py:71
 msgid "Input and output bases are the same"
-msgstr ""
+msgstr "Входные и выходные основания одинаковы"
 
 #: src/window.ui:20
 msgid "Input Base"
-msgstr ""
+msgstr "Входное основание"
 
 #: src/window.ui:36
 msgid "Output Base"
-msgstr ""
+msgstr "Выходное основание"
 
 #: src/window.ui:48
 msgid "Main Menu"
-msgstr ""
+msgstr "Главное меню"
 
 #: src/window.ui:105 src/window.ui:109
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Введите числа…"
 
 #: src/window.ui:149
 msgid "Bin"
-msgstr ""
+msgstr "Двч"
 
 #: src/window.ui:150
 msgid "Dec"
-msgstr ""
+msgstr "Дес"
 
 #: src/window.ui:151
 msgid "Hex"
-msgstr ""
+msgstr "Шес"
 
 #: src/window.ui:152
 msgid "Oct"
-msgstr ""
+msgstr "Вос"
 
 #: src/window.ui:158
 msgid "_Preferences"
-msgstr ""
+msgstr "_Настройки"
 
 #: src/window.ui:162
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Горячие клавиши"
 
 #: src/window.ui:166
 msgid "_About Binary"
-msgstr ""
+msgstr "_О программе Binary"
 
 #: src/preferences.ui:6
 msgid "Preferences"
-msgstr ""
+msgstr "Настройки"
 
 #: src/preferences.ui:17
 msgid "Colour scheme"
-msgstr ""
+msgstr "Цветовая схема"
 
 #: src/preferences.ui:21
 msgid "Follow System"
-msgstr ""
+msgstr "Как в системе"
 
 #: src/preferences.ui:22
 msgid "Light Theme"
-msgstr ""
+msgstr "Светлая"
 
 #: src/preferences.ui:23
 msgid "Dark Theme"
-msgstr ""
+msgstr "Тёмная"
