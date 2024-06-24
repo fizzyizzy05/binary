@@ -61,7 +61,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         # 3 = Octal
         # No input
         if self.entry.get_text() == "":
-            print("test")
             self.blank()
             self.entry.remove_css_class("error")
             self.entry.remove_css_class("mono")
