@@ -71,7 +71,7 @@ class BinaryApplication(Adw.Application):
                                 application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Isabelle Jackson',
-                                version='0.2.1',
+                                version='0.4',
                                 developers=['Isabelle Jackson'],
                                 website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
