@@ -1,7 +1,7 @@
 @define-color accent_color @green_4;
 @define-color accent_bg_color @green_3;
 
-.bin {
+.mono {
   font-family: monospace;
 }
 
