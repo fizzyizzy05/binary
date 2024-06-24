@@ -31,7 +31,7 @@ binary_sources = [
   'main.py',
   'preferences.py',
   'window.py',
-  'bindec.py',
+  'bitCount.py',
 ]
 
 install_data(binary_sources, install_dir: moduledir)
