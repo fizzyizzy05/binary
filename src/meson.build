@@ -2,19 +2,8 @@ pkgdatadir = get_option('prefix') / get_option('datadir') / meson.project_name()
 moduledir = pkgdatadir / 'binary'
 gnome = import('gnome')
 
-blueprints = custom_target('blueprints',
-  input: files(
-    'gtk/help-overlay.blp',
-    'window.blp',
-  ),
-  output: '.',
-  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
-)
-
-
 gnome.compile_resources('binary',
   'binary.gresource.xml',
-  dependencies: blueprints,
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,

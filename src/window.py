@@ -38,16 +38,9 @@ class BinaryWindow(Adw.ApplicationWindow):
     outDropdown = Gtk.Template.Child()
 
     bitsTxt = _("bits") # String for the word Bits, makes translation easier.
-    bases = Gtk.StringList.new(None)
-    bases.append(_("Binary"))
-    bases.append(_("Decimal"))
-    bases.append(_("Hexadecimal"))
-    bases.append(_("Octal"))
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.inDropdown.set_model(self.bases)
-        self.outDropdown.set_model(self.bases)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
         self.blank()
 

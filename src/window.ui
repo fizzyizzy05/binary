@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <template class="BinaryWindow" parent="AdwApplicationWindow">
+    <property name="title">Binary</property>
+    <property name="width-request">300</property>
+    <property name="default-width">500</property>
+    <property name="default-height">200</property>
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar" id="header_bar">
+            <child type="title">
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkDropDown" id="inDropdown">
+                    <property name="model">typeList</property>
+                    <property name="tooltip-text" translatable="yes">Input Base</property>
+                    <style>
+                      <class name="flat-dropdown" />
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="swapBtn">
+                    <property name="icon-name">horizontal-arrows</property>
+                    <property name="tooltip-text">Swap input and output bases</property>
+                    <signal name="clicked" handler="swap" />
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkDropDown" id="outDropdown">
+                    <property name="model">typeList</property>
+                    <property name="tooltip-text" translatable="yes">Output Base</property>
+                    <style>
+                      <class name="flat-dropdown" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="primary">True</property>
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Main Menu</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <property name="content">
+          <object class="AdwToastOverlay" id="overlay">
+            <child>
+              <object class="GtkBox" id="mainBox">
+                <property name="margin-start">35</property>
+                <property name="margin-end">35</property>
+                <property name="margin-top">35</property>
+                <property name="margin-bottom">35</property>
+                <property name="orientation">1</property>
+                <property name="valign">3</property>
+                <property name="halign">3</property>
+                <child>
+                  <object class="GtkBox" id="calcBox">
+                    <property name="valign">3</property>
+                    <property name="halign">3</property>
+                    <property name="orientation">1</property>
+                    <property name="margin-bottom">10</property>
+                    <child>
+                      <object class="AdwClamp">
+                        <property name="maximum-size">800</property>
+                        <property name="tightening-threshold">1000</property>
+                        <child>
+                          <object class="GtkLabel" id="bitLbl">
+                            <property name="wrap">true</property>
+                            <property name="wrap-mode">word</property>
+                            <style>
+                              <class name="bitLbl"/>
+                            </style>
+                            <property name="label">Bits: none</property>
+                            <property name="xalign">0</property>
+                            <property name="margin-bottom">10</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwClamp" id="inClamp">
+                        <property name="maximum-size">800</property>
+                        <property name="tightening-threshold">1000</property>
+                        <child>
+                          <object class="GtkBox" id="inBox">
+                            <child>
+                              <object class="AdwClamp" id="etrClamp">
+                                <property name="maximum-size">800</property>
+                                <property name="tightening-threshold">1000</property>
+                                <child>
+                                  <object class="GtkEntry" id="entry">
+                                    <style>
+                                      <class name="bin"/>
+                                    </style>
+                                    <property name="enable-undo">false</property>
+                                    <property name="placeholder-text" translatable="yes">Enter numbers…</property>
+                                    <property name="margin-end">10</property>
+                                    <signal name="changed" handler="inputHandler" swapped="no" />
+                                    <accessibility>
+                                      <property name="label" translatable="yes">Enter numbers…</property>
+                                    </accessibility>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="eqlLbl">
+                                <style>
+                                  <class name="bin"/>
+                                </style>
+                                <property name="margin-end">10</property>
+                                <property name="label">=</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="outLbl">
+                                <style>
+                                  <class name="bin"/>
+                                </style>
+                                <property name="selectable">true</property>
+                                <property name="xalign">0</property>
+                                <property name="label">0</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </property>
+  </template>
+  <object class="GtkStringList" id="typeList">
+    <items>
+      <item translatable="yes">Bin</item>
+      <item translatable="yes">Dec</item>
+      <item translatable="yes">Hex</item>
+      <item translatable="yes">Oct</item>
+    </items>
+  </object>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Binary</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>
+
+
