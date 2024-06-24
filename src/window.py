@@ -94,6 +94,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if inStr != "":
                 try:
                     int(inStr, 2)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
@@ -106,12 +107,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Decimal to Binary
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 10)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
@@ -122,12 +125,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Decimal to Hexadecimal
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
@@ -138,12 +143,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Hexadecimal to Decimal
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text().upper()
             if inStr != "":
                 try:
                     int(inStr, 16)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
@@ -154,12 +161,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Hexadecimal to Binary
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text().upper()
             if inStr != "":
                 try:
                     int(inStr, 16)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
@@ -170,12 +179,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Binary to Hexadecimal
         elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
@@ -186,6 +197,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.isZero()
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Oct to Bin
         elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 0:
             inStr = self.entry.get_text()
@@ -193,6 +205,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 for char in str(inStr):
                     try:
                         int(char, 8)
+                        self.entry.remove_css_class("error")
                     except:
                         self.overlay.add_toast(self.octCharToast)
                         self.cleanEntry()
@@ -202,12 +215,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.updateBits(bits=bitCount(ans), count=len(ans))
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Bin to Oct
         elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 2)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
@@ -217,12 +232,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Oct to Dec
         elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 8)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.octCharToast)
                     self.cleanEntry()
@@ -232,12 +249,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.bitLbl.set_visible(False)
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Dec to Oct
         elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 10)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
@@ -247,12 +266,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.bitLbl.set_visible(False)
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Oct to Hex
         elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 8)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
@@ -262,12 +283,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.bitLbl.set_visible(False)
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Hex to Oct
         elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
                     int(inStr, 16)
+                    self.entry.remove_css_class("error")
                 except:
                     self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
@@ -277,6 +300,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.bitLbl.set_visible(False)
             else:
                 self.blank()
+                self.entry.remove_css_class("error")
         # Same number bases
         elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
             # Toast to tell the user they are converting between the same number format
@@ -290,6 +314,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         for char in inStr:
             if char != '0':
                 return
+        self.entry.remove_css_class("error")
         self.outLbl.set_text("0")
         self.blank()
 
@@ -303,8 +328,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.bitLbl.set_text(f"0 {self.bitsTxt}")
 
     def cleanEntry(self, *kwargs):
-        inStr = self.entry.get_text()
-        self.entry.get_buffer().delete_text((len(inStr) - 1), -1)
+        self.entry.add_css_class("error")
 
     def updateBits(self, *kwargs, bits, count):
         self.bitLbl.set_text(f"{count} {self.bitsTxt}: {bits}")
