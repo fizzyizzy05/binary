@@ -24,7 +24,6 @@ import math
 
 # Scripts used to calculate numbers
 from .bindec import *
-from .hexcalc import *
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
