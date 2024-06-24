@@ -44,28 +44,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.outDropdown.set_selected(1) # Set the output to decimal by default
         self.blank()
 
-    toastTimeout = 1
-
-    # Toast to tell the user decimal only numeric values
-    decCharToast = Adw.Toast(
-        title=_("Decimal only accepts the digits 0-9"),
-        timeout=toastTimeout,
-    )
-    # Toast to tell the user binary only accepts 0 or 1 digits
-    binCharToast = Adw.Toast(
-        title=_("Binary only accepts the digits 0 and 1"),
-        timeout=toastTimeout,
-    )
-    # Toast to tell the user binary only accepts 0 or 1 digits
-    hexCharToast = Adw.Toast(
-        title=_("Hexadecimal only accepts the digits 0-9 and A-F"),
-        timeout=toastTimeout,
-    )
-    # Toast to tell the user octal only accepts digits 0-7
-    octCharToast = Adw.Toast(
-        title=_("Octal only accepts the digits 0-7"),
-        timeout=toastTimeout,
-    )
     # Toast to tell the user input and output bases are the same
     sameToast = Adw.Toast(
         title=_("Input and output bases are the same"),
@@ -96,7 +74,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 2)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
                 ans = int(inStr, 2)
@@ -116,7 +93,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 10)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
                 ans = bin(int(inStr)).lstrip("0b")
@@ -134,7 +110,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
                     return
                 ans = hex(int(inStr)).lstrip("0x").upper()
@@ -152,7 +127,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 16)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
                 ans = int(inStr, 16)
@@ -170,7 +144,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 16)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
                 ans = bin(int(inStr, 16)).lstrip("0b")
@@ -185,10 +158,9 @@ class BinaryWindow(Adw.ApplicationWindow):
             inStr = self.entry.get_text()
             if inStr != "":
                 try:
-                    int
+                    int(inStr, 2)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
                 ans = hex(int(inStr, 2)).strip("0x").upper()
@@ -207,7 +179,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                         int(char, 8)
                         self.entry.remove_css_class("error")
                     except:
-                        self.overlay.add_toast(self.octCharToast)
                         self.cleanEntry()
                         return
                 ans = bin(int(inStr, 8)).lstrip("0b")
@@ -224,7 +195,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 2)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.binCharToast)
                     self.cleanEntry()
                     return
                 ans = oct(int(inStr, 2)).lstrip("0o")
@@ -241,7 +211,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 8)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.octCharToast)
                     self.cleanEntry()
                     return
                 ans = int(inStr, 8)
@@ -258,7 +227,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 10)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.decCharToast)
                     self.cleanEntry()
                     return
                 ans = oct(int(inStr)).lstrip("0o")
