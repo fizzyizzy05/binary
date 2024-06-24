@@ -32,7 +32,6 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     outLbl = Gtk.Template.Child() # output label
     bitLbl = Gtk.Template.Child() # bit counter label
-    overlay = Gtk.Template.Child() # toast overlay
     entry = Gtk.Template.Child() # user input
     inDropdown = Gtk.Template.Child()
     outDropdown = Gtk.Template.Child()
@@ -43,12 +42,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
         self.blank()
-
-    # Toast to tell the user input and output bases are the same
-    sameToast = Adw.Toast(
-        title=_("Input and output bases are the same"),
-        timeout=1.5,
-    )
 
     @Gtk.Template.Callback()
     def swap(self, *kwargs):
@@ -243,7 +236,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 8)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
                 ans = hex(int(inStr, 8)).lstrip("0x").upper()
@@ -260,7 +252,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     int(inStr, 16)
                     self.entry.remove_css_class("error")
                 except:
-                    self.overlay.add_toast(self.hexCharToast)
                     self.cleanEntry()
                     return
                 ans = oct(int(inStr, 16)).lstrip("0o")
