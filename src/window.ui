@@ -52,7 +52,7 @@
           </object>
         </child>
         <property name="content">
-          <object class="AdwToastOverlay" id="overlay">
+          <object class="GtkWindowHandle">
             <child>
               <object class="GtkBox" id="mainBox">
                 <property name="margin-start">35</property>
