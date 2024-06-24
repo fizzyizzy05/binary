@@ -9,25 +9,6 @@
     <property name="height-request">200</property>
     <child>
       <object class="AdwPreferencesPage" id="preferences">
-        <child>
-          <object class="AdwPreferencesGroup">
-            <property name="title">Appearance</property>
-            <child>
-              <object class="AdwComboRow" id="themeSelect">
-                <property name="title" translatable="yes">Colour scheme</property>
-                <property name="model">
-                  <object class="GtkStringList">
-                    <items>
-                      <item translatable="yes">Follow System</item>
-                      <item translatable="yes">Light Theme</item>
-                      <item translatable="yes">Dark Theme</item>
-                    </items>
-                  </object>
-                </property>
-              </object>
-            </child>
-          </object>
-        </child>
       </object>
     </child>
   </template>

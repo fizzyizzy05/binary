@@ -27,7 +27,6 @@ from .window import BinaryWindow
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/preferences.ui')
 class PrefsWindow(Adw.PreferencesWindow):
     __gtype_name__ = 'PrefsWindow'
-    themeSelect = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
