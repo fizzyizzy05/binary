@@ -146,10 +146,10 @@
   </template>
   <object class="GtkStringList" id="typeList">
     <items>
-      <item translatable="yes">Bin</item>
-      <item translatable="yes">Dec</item>
-      <item translatable="yes">Hex</item>
-      <item translatable="yes">Oct</item>
+      <item translatable="yes">Binary</item>
+      <item translatable="yes">Decimal</item>
+      <item translatable="yes">Hexadecimal</item>
+      <item translatable="yes">Octal</item>
     </items>
   </object>
   <menu id="primary_menu">
