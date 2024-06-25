@@ -95,6 +95,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 bits = bitCount(inStr)
                 self.outLbl.set_text(str(int(inStr, 2)))
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.bitLbl.set_visible(True)
                 self.isZero()
             # Decimal to Binary
             elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 0:
@@ -108,6 +109,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin(int(inStr)).lstrip("0b")
                 self.updateBits(bits=bitCount(ans), count=len(ans))
                 self.outLbl.set_text(ans)
+                self.bitLbl.set_visible(True)
                 self.isZero()
             # Decimal to Hexadecimal
             elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 2:
@@ -147,6 +149,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin(int(inStr, 16)).lstrip("0b")
                 self.updateBits(bits=bitCount(ans), count=len(ans))
                 self.outLbl.set_text(ans)
+                self.bitLbl.set_visible(True)
                 self.isZero()
             # Binary to Hexadecimal
             elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 2:
@@ -160,6 +163,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = hex(int(inStr, 2)).strip("0x").upper()
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
                 self.outLbl.set_text(ans)
+                self.bitLbl.set_visible(True)
                 self.isZero()
             # Oct to Bin
             elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 0:
@@ -174,6 +178,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = bin(int(inStr, 8)).lstrip("0b")
                 self.outLbl.set_text(ans)
                 self.updateBits(bits=bitCount(ans), count=len(ans))
+                self.bitLbl.set_visible(True)
             # Bin to Oct
             elif self.inDropdown.get_selected() == 0 and self.outDropdown.get_selected() == 3:
                 inStr = self.entry.get_text()
@@ -186,6 +191,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = oct(int(inStr, 2)).lstrip("0o")
                 self.outLbl.set_text(ans)
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                self.bitLbl.set_visible(True)
             # Oct to Dec
             elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 1:
                 inStr = self.entry.get_text()
