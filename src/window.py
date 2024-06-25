@@ -245,9 +245,14 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.bitLbl.set_visible(False)
             # Same number bases
             elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
+                inStr = self.entry.get_text()
                 # Set the output label to be the same as the input
                 self.outLbl.set_text(self.entry.get_text())
-                return
+                if self.inDropdown.get_selected() == 0:
+                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    self.bitLbl.set_visible(True)
+                else:
+                    self.bitLbl.set_visible(False)
 
     def isZero(self, *kwargs):
         inStr = self.entry.get_text();
