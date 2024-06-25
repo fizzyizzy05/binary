@@ -43,15 +43,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.blank()
 
     @Gtk.Template.Callback()
-    def changeOutput(self, *kwargs):
-        try:
-            if self.entry.get_text() != "":
-                self.inputHandler()
-        except:
-            return
-
-    @Gtk.Template.Callback()
-    def changeInput(self, *kwargs):
+    def changeBase(self, *kwargs):
         try:
             if self.entry.get_text() != "":
                 self.inputHandler()
