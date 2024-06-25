@@ -43,6 +43,14 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.blank()
 
     @Gtk.Template.Callback()
+    def changeOutput(self, *kwargs):
+        try:
+            if self.entry.get_text() != "":
+                self.inputHandler()
+        except:
+            return
+
+    @Gtk.Template.Callback()
     def swap(self, *kwargs):
         a = self.inDropdown.get_selected()
         b = self.outDropdown.get_selected()
