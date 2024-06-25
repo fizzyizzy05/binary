@@ -21,7 +21,7 @@
                     <style>
                       <class name="flat-dropdown" />
                     </style>
-                    <signal name="notify" handler="changeBase" />
+                    <signal name="notify" handler="changeInput" />
                   </object>
                 </child>
                 <child>
@@ -38,7 +38,7 @@
                     <style>
                       <class name="flat-dropdown" />
                     </style>
-                    <signal name="notify" handler="changeBase" />
+                    <signal name="notify" handler="changeOutput" />
                   </object>
                 </child>
               </object>
