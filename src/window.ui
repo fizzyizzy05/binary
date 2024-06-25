@@ -21,6 +21,7 @@
                     <style>
                       <class name="flat-dropdown" />
                     </style>
+                    <signal name="notify" handler="changeInput" />
                   </object>
                 </child>
                 <child>
