@@ -47,6 +47,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             if self.entry.get_text() != "":
                 self.inputHandler()
+
+                if self.inDropdown.get_selected() == 0 or self.outDropdown.get_selected() == 0:
+                    self.bitLbl.set_visible(True)
+                else:
+                    self.bitLbl.set_visible(False)
         except:
             return
 
