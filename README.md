@@ -1,5 +1,10 @@
 # Binary
 
+<a href="https://hosted.weblate.org/engage/binary/">
+<img src="https://hosted.weblate.org/widget/binary/binary-app/svg-badge.svg" alt="Translation status" />
+</a>
+[![CI](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml/badge.svg)](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml)
+
 ![Image of Binary](img/binary-screenshot.png)
 
 Binary is a simple app for GNOME to easily convert between different number bases. 
@@ -29,3 +34,4 @@ GNOME Builder is the recommended way to build and test this app.
 
 ## Code of Conduct
 Binary is designed for GNOME, and built with GNOME technologies. As such, it follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
+
