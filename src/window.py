@@ -88,8 +88,12 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.entry.remove_css_class("mono")
             if self.inDropdown.get_selected() == 0:
                 self.bits.set_text(_("Enter a number to see its bits"))
+                self.bitLbl.set_visible(True)
             elif self.outDropdown.get_selected() == 0:
                 self.bits.set_text(_("Enter a number to see the output's bits"))
+                self.bitLbl.set_visible(True)
+            else:
+                self.bitLbl.set_visible(False)
         else:
             self.entry.add_css_class("mono")
             # Binary to Decimal
