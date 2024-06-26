@@ -271,7 +271,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     try:
                         int(inStr, 10)
                         self.entry.remove_css_class("error")
-                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
                     except:
                         self.entry.add_css_class("error")
                 elif self.inDropdown.get_selected() == 2:
