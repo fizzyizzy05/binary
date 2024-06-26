@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-24 18:34+0100\n"
+"POT-Creation-Date: 2024-06-26 22:48+0100\n"
 "PO-Revision-Date: 2024-05-19 17:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.6-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
 msgid "Binary"
 msgstr "Binääri"
 
@@ -199,82 +199,56 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: src/gtk/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Preferences"
-msgstr "Asetukset"
-
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:82
+#: src/main.py:81
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/window.py:40
+#: src/window.py:39
 msgid "bits"
 msgstr "bittiä"
 
-#: src/window.py:51
-msgid "Decimal only accepts the digits 0-9"
-msgstr "Desimaali hyväksyy vain luvut 0-9"
+#: src/window.py:55 src/window.py:90
+msgid "Enter a number to see its bits"
+msgstr ""
 
-#: src/window.py:56
-msgid "Binary only accepts the digits 0 and 1"
-msgstr "Binääri hyväksyy vain luvut 0 ja 1"
-
-#: src/window.py:61
-msgid "Hexadecimal only accepts the digits 0-9 and A-F"
-msgstr "Heksadesimaali hyväksyy vain luvut 0-9 ja A-F"
-
-#: src/window.py:66
-#, fuzzy
-msgid "Octal only accepts the digits 0-7"
-msgstr "Desimaali hyväksyy vain luvut 0-9"
-
-#: src/window.py:71
-msgid "Input and output bases are the same"
-msgstr "Syöte- ja tulostekannat ovat samoja"
+#: src/window.py:59 src/window.py:93
+msgid "Enter a number to see the output's bits"
+msgstr ""
 
 #: src/window.ui:20
 msgid "Input Base"
 msgstr ""
 
-#: src/window.ui:36
+#: src/window.ui:37
 msgid "Output Base"
 msgstr ""
 
-#: src/window.ui:48
+#: src/window.ui:50
 msgid "Main Menu"
 msgstr "Päävalikko"
 
-#: src/window.ui:105 src/window.ui:109
+#: src/window.ui:103 src/window.ui:107
 msgid "Enter numbers…"
 msgstr "Kirjoita numerot…"
 
+#: src/window.ui:148
+msgid "Decimal"
+msgstr ""
+
 #: src/window.ui:149
-msgid "Bin"
+msgid "Hexadecimal"
 msgstr ""
 
 #: src/window.ui:150
-msgid "Dec"
+msgid "Octal"
 msgstr ""
 
-#: src/window.ui:151
-msgid "Hex"
-msgstr ""
-
-#: src/window.ui:152
-msgid "Oct"
-msgstr ""
-
-#: src/window.ui:158
-msgid "_Preferences"
-msgstr "_Asetukset"
-
-#: src/window.ui:162
+#: src/window.ui:176
 msgid "_Keyboard Shortcuts"
 msgstr "_Pikanäppäimet"
 
-#: src/window.ui:166
+#: src/window.ui:180
 msgid "_About Binary"
 msgstr "_Tietoja - Binääri"
 
@@ -282,18 +256,37 @@ msgstr "_Tietoja - Binääri"
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: src/preferences.ui:17
-msgid "Colour scheme"
-msgstr "Väriteema"
+#~ msgctxt "shortcut window"
+#~ msgid "Preferences"
+#~ msgstr "Asetukset"
 
-#: src/preferences.ui:21
-msgid "Follow System"
-msgstr "Seuraa järjestelmää"
+#~ msgid "Decimal only accepts the digits 0-9"
+#~ msgstr "Desimaali hyväksyy vain luvut 0-9"
 
-#: src/preferences.ui:22
-msgid "Light Theme"
-msgstr "Vaalea teema"
+#~ msgid "Binary only accepts the digits 0 and 1"
+#~ msgstr "Binääri hyväksyy vain luvut 0 ja 1"
 
-#: src/preferences.ui:23
-msgid "Dark Theme"
-msgstr "Tumma teema"
+#~ msgid "Hexadecimal only accepts the digits 0-9 and A-F"
+#~ msgstr "Heksadesimaali hyväksyy vain luvut 0-9 ja A-F"
+
+#, fuzzy
+#~ msgid "Octal only accepts the digits 0-7"
+#~ msgstr "Desimaali hyväksyy vain luvut 0-9"
+
+#~ msgid "Input and output bases are the same"
+#~ msgstr "Syöte- ja tulostekannat ovat samoja"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Asetukset"
+
+#~ msgid "Colour scheme"
+#~ msgstr "Väriteema"
+
+#~ msgid "Follow System"
+#~ msgstr "Seuraa järjestelmää"
+
+#~ msgid "Light Theme"
+#~ msgstr "Vaalea teema"
+
+#~ msgid "Dark Theme"
+#~ msgstr "Tumma teema"
