@@ -259,10 +259,35 @@ class BinaryWindow(Adw.ApplicationWindow):
                 # Set the output label to be the same as the input
                 self.outLbl.set_text(self.entry.get_text())
                 if self.inDropdown.get_selected() == 0:
-                    self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    try:
+                        int(inStr, 2)
+                        self.entry.remove_css_class("error")
+                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    except:
+                        self.entry.add_css_class("error")
                     self.bitLbl.set_visible(True)
-                else:
+                elif self.inDropdown.get_selected() == 1:
                     self.bitLbl.set_visible(False)
+                    try:
+                        int(inStr, 10)
+                        self.entry.remove_css_class("error")
+                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                    except:
+                        self.entry.add_css_class("error")
+                elif self.inDropdown.get_selected() == 2:
+                    self.bitLbl.set_visible(False)
+                    try:
+                        int(inStr, 16)
+                        self.entry.remove_css_class("error")
+                    except:
+                        self.entry.add_css_class("error")
+                elif self.inDropdown.get_selected() == 3:
+                    self.bitLbl.set_visible(False)
+                    try:
+                        int(inStr, 8)
+                        self.entry.remove_css_class("error")
+                    except:
+                        self.entry.add_css_class("error")
 
     def isZero(self, *kwargs):
         inStr = self.entry.get_text();
