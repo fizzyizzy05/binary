@@ -61,8 +61,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         outVal = self.outLbl.get_text()
         inBase = self.inDropdown.get_selected()
         outBase = self.outDropdown.get_selected()
-        self.inDropdown.set_selected(inBase)
-        self.outDropdown.set_selected(outBase)
+        self.inDropdown.set_selected(outBase)
+        self.outDropdown.set_selected(inBase)
 
         if self.entry.get_text() != "":
             self.entry.set_text(outVal)
