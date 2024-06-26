@@ -162,7 +162,7 @@
               <object class="GtkLabel" id="bits">
                 <property name="wrap">true</property>
                 <property name="wrap-mode">word</property>
-                <property name="label">hello!</property>
+                <property name="label"></property>
               </object>
             </child>
           </object>
