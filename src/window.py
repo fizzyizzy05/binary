@@ -41,6 +41,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.outDropdown.set_selected(1) # Set the output to decimal by default
+        self.entry.grab_focus()
         self.blank()
 
     @Gtk.Template.Callback()
