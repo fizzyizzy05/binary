@@ -1,0 +1,161 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $BinaryWindow: Adw.ApplicationWindow {
+  title: 'Binary';
+  width-request: 300;
+  default-width: 500;
+  default-height: 200;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {
+      [title]
+      Box {
+        spacing: 6;
+
+        DropDown inDropdown {
+          tooltip-text: _('Input Base');
+
+          styles [
+            "flat-dropdown",
+          ]
+
+          notify => $changeBases();
+        }
+
+        Button swapBtn {
+          icon-name: 'horizontal-arrows';
+          tooltip-text: 'Swap input and output bases';
+          clicked => $swap();
+        }
+
+        DropDown outDropdown {
+          tooltip-text: _('Output Base');
+
+          styles [
+            "flat-dropdown",
+          ]
+
+          notify => $changeBases();
+        }
+      }
+
+      [end]
+      MenuButton {
+        primary: true;
+        icon-name: 'open-menu-symbolic';
+        tooltip-text: _('Main Menu');
+        menu-model: primary_menu;
+      }
+    }
+
+    content: WindowHandle {
+      Box mainBox {
+        margin-start: 35;
+        margin-end: 35;
+        margin-top: 20;
+        margin-bottom: 35;
+        orientation: vertical;
+        valign: center;
+        halign: center;
+
+        Box calcBox {
+          valign: center;
+          halign: center;
+          orientation: vertical;
+          margin-bottom: 10;
+
+          Adw.Clamp {
+            maximum-size: 800;
+            tightening-threshold: 1000;
+
+            MenuButton bitLbl {
+              hexpand: false;
+              halign: start;
+              margin-bottom: 2;
+              popover: bitPopover;
+
+              styles [
+                "bitLbl",
+                "flat",
+              ]
+            }
+          }
+
+          Adw.Clamp inClamp {
+            maximum-size: 800;
+            tightening-threshold: 1000;
+
+            Box inBox {
+              Adw.Clamp etrClamp {
+                maximum-size: 800;
+                tightening-threshold: 1000;
+
+                Entry entry {
+                  placeholder-text: _('Enter numbers…');
+                  margin-end: 10;
+                  changed => $inputHandler();
+
+                  accessibility {
+                    label: _('Enter numbers…');
+                  }
+                }
+              }
+
+              Label eqlLbl {
+                styles [
+                  "mono",
+                ]
+
+                margin-end: 10;
+                label: '=';
+              }
+
+              Label outLbl {
+                styles [
+                  "mono",
+                ]
+
+                selectable: true;
+                xalign: 0;
+                label: '0';
+              }
+            }
+          }
+        }
+      }
+    };
+  };
+}
+
+Popover bitPopover {
+  has-arrow: true;
+
+  Box {
+    Adw.Clamp {
+      maximum-size: 300;
+      tightening-threshold: 1000;
+
+      Label bits {
+        wrap: true;
+        wrap-mode: word;
+        label: '';
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _('_Keyboard Shortcuts');
+      action: 'win.show-help-overlay';
+    }
+
+    item {
+      label: _('_About Binary');
+      action: 'app.about';
+    }
+  }
+}

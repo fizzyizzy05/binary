@@ -1,0 +1,11 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $PrefsWindow: Adw.PreferencesWindow {
+  title: _('Preferences');
+  default-width: 400;
+  default-height: 306;
+  height-request: 200;
+
+  Adw.PreferencesPage preferences {}
+}

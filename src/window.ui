@@ -16,7 +16,6 @@
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkDropDown" id="inDropdown">
-                    <property name="model">typeList</property>
                     <property name="tooltip-text" translatable="yes">Input Base</property>
                     <style>
                       <class name="flat-dropdown" />
@@ -33,7 +32,6 @@
                 </child>
                 <child>
                   <object class="GtkDropDown" id="outDropdown">
-                    <property name="model">typeList</property>
                     <property name="tooltip-text" translatable="yes">Output Base</property>
                     <style>
                       <class name="flat-dropdown" />
@@ -142,14 +140,6 @@
       </object>
     </property>
   </template>
-  <object class="GtkStringList" id="typeList">
-    <items>
-      <item translatable="yes">Binary</item>
-      <item translatable="yes">Decimal</item>
-      <item translatable="yes">Hexadecimal</item>
-      <item translatable="yes">Octal</item>
-    </items>
-  </object>
   <object class="GtkPopover" id="bitPopover">
     <property name="has-arrow">true</property>
     <child>
