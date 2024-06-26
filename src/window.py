@@ -46,26 +46,24 @@ class BinaryWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def changeOutput(self, *kwargs):
         try:
-            if self.entry.get_text() != "":
-                self.inputHandler()
+            self.inputHandler()
 
-                if self.inDropdown.get_selected() == 0 or self.outDropdown.get_selected() == 0:
-                    self.bitLbl.set_visible(True)
-                else:
-                    self.bitLbl.set_visible(False)
+            if self.inDropdown.get_selected() == 0 or self.outDropdown.get_selected() == 0:
+                self.bitLbl.set_visible(True)
+            else:
+                self.bitLbl.set_visible(False)
         except:
             return
 
     @Gtk.Template.Callback()
     def changeInput(self, *kwargs):
         try:
-            if self.entry.get_text() != "":
-                self.inputHandler()
+            self.inputHandler()
 
-                if self.inDropdown.get_selected() == 0 or self.outDropdown.get_selected() == 0:
-                    self.bitLbl.set_visible(True)
-                else:
-                    self.bitLbl.set_visible(False)
+            if self.inDropdown.get_selected() == 0 or self.outDropdown.get_selected() == 0:
+                self.bitLbl.set_visible(True)
+            else:
+                self.bitLbl.set_visible(False)
         except:
             return
 
