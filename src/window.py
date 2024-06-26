@@ -30,6 +30,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
     outLbl = Gtk.Template.Child() # output label
+    bits = Gtk.Template.Child() # individual bits in dropdown
     bitLbl = Gtk.Template.Child() # bit counter label
     entry = Gtk.Template.Child() # user input
     inDropdown = Gtk.Template.Child()
@@ -303,11 +304,12 @@ class BinaryWindow(Adw.ApplicationWindow):
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
         self.bitLbl.set_visible(True)
-        self.outLbl.set_text("0")
-        self.bitLbl.set_text(f"0 {self.bitsTxt}")
+        self.outLbl.set_label("0")
+        self.bitLbl.set_label(f"0 {self.bitsTxt}")
 
     def cleanEntry(self, *kwargs):
         self.entry.add_css_class("error")
 
     def updateBits(self, *kwargs, bits, count):
-        self.bitLbl.set_text(f"{count} {self.bitsTxt}: {bits}")
+        self.bitLbl.set_label(f"{count} {self.bitsTxt}")
+        self.bits.set_label(f"{bits}")
