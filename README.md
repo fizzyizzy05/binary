@@ -1,8 +1,6 @@
 # Binary
 
-<a href="https://hosted.weblate.org/engage/binary/">
-<img src="https://hosted.weblate.org/widget/binary/binary-app/svg-badge.svg" alt="Translation status" />
-</a>
+[![Translation status](https://hosted.weblate.org/widget/binary/binary-app/svg-badge.svg)](https://hosted.weblate.org/engage/binary/)
 [![CI](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml/badge.svg)](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml)
 
 ![Image of Binary](img/binary-screenshot.png)
