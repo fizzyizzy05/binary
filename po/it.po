@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-29 15:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -241,6 +241,11 @@ msgstr ""
 msgid "Input Base"
 msgstr ""
 
+#: src/window.ui:30
+#, fuzzy
+msgid "Swap input and output bases"
+msgstr "Le basi di input e output sono le stesse"
+
 #: src/window.ui:37
 msgid "Output Base"
 msgstr ""
@@ -292,9 +297,6 @@ msgstr "Preferenze"
 
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Octal accetta solo le cifre 0-7"
-
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Le basi di input e output sono le stesse"
 
 #~ msgid "Bin"
 #~ msgstr "Bin"

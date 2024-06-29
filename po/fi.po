@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-29 15:40+0100\n"
 "PO-Revision-Date: 2024-05-19 17:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -220,6 +220,11 @@ msgstr ""
 msgid "Input Base"
 msgstr ""
 
+#: src/window.ui:30
+#, fuzzy
+msgid "Swap input and output bases"
+msgstr "Syöte- ja tulostekannat ovat samoja"
+
 #: src/window.ui:37
 msgid "Output Base"
 msgstr ""
@@ -272,9 +277,6 @@ msgstr "Asetukset"
 #, fuzzy
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Desimaali hyväksyy vain luvut 0-9"
-
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Syöte- ja tulostekannat ovat samoja"
 
 #~ msgid "_Preferences"
 #~ msgstr "_Asetukset"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-29 15:40+0100\n"
 "PO-Revision-Date: 2024-02-24 04:06+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -219,6 +219,11 @@ msgstr ""
 msgid "Input Base"
 msgstr "Girdi"
 
+#: src/window.ui:30
+#, fuzzy
+msgid "Swap input and output bases"
+msgstr "Girdi ve çıktı tabanları aynı"
+
 #: src/window.ui:37
 #, fuzzy
 msgid "Output Base"
@@ -273,9 +278,6 @@ msgstr "Tercihler"
 #, fuzzy
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Ondalık yalnızca 0-9 rakamlarını kabul eder"
-
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Girdi ve çıktı tabanları aynı"
 
 #~ msgid "Bin"
 #~ msgstr "İkili"

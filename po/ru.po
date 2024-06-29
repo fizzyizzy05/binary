@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-29 15:40+0100\n"
 "PO-Revision-Date: 2024-06-25 20:09+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
@@ -248,6 +248,11 @@ msgstr ""
 msgid "Input Base"
 msgstr "Входное основание"
 
+#: src/window.ui:30
+#, fuzzy
+msgid "Swap input and output bases"
+msgstr "Входные и выходные основания одинаковы"
+
 #: src/window.ui:37
 msgid "Output Base"
 msgstr "Выходное основание"
@@ -301,9 +306,6 @@ msgstr "Настройки"
 
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "В восьмеричной системе счисления принимаются только цифры от 0 до 7"
-
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Входные и выходные основания одинаковы"
 
 #~ msgid "Bin"
 #~ msgstr "Двч"
