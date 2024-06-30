@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 17:33+0100\n"
+"POT-Creation-Date: 2024-06-30 17:36+0100\n"
 "PO-Revision-Date: 2024-02-24 04:06+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -203,6 +203,10 @@ msgstr ""
 #, fuzzy
 msgid "Input Base"
 msgstr "Girdi"
+
+#: src/window.blp:29
+msgid "Swap input and output bases"
+msgstr ""
 
 #: src/window.blp:34
 #, fuzzy

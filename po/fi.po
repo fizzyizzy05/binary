@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 17:33+0100\n"
+"POT-Creation-Date: 2024-06-30 17:36+0100\n"
 "PO-Revision-Date: 2024-05-19 17:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -203,6 +203,10 @@ msgstr ""
 
 #: src/window.blp:18
 msgid "Input Base"
+msgstr ""
+
+#: src/window.blp:29
+msgid "Swap input and output bases"
 msgstr ""
 
 #: src/window.blp:34
