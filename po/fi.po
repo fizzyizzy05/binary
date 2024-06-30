@@ -258,9 +258,6 @@ msgstr "Asetukset"
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Desimaali hyväksyy vain luvut 0-9"
 
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Syöte- ja tulostekannat ovat samoja"
-
 #~ msgid "_Preferences"
 #~ msgstr "_Asetukset"
 

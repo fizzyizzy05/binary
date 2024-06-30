@@ -287,9 +287,6 @@ msgstr "Настройки"
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "В восьмеричной системе счисления принимаются только цифры от 0 до 7"
 
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Входные и выходные основания одинаковы"
-
 #~ msgid "Bin"
 #~ msgstr "Двч"
 

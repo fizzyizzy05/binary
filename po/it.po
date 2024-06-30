@@ -278,9 +278,6 @@ msgstr "Preferenze"
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Octal accetta solo le cifre 0-7"
 
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Le basi di input e output sono le stesse"
-
 #~ msgid "Bin"
 #~ msgstr "Bin"
 

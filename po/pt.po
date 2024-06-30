@@ -19,7 +19,7 @@ msgstr ""
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
-msgstr ""
+msgstr "Binário"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10

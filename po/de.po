@@ -281,9 +281,6 @@ msgstr "Einstellungen"
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Dezimalzahlen enthalten nur die Zeichen 0-9"
 
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Die Basen der Ein- und Ausgabe sind identisch"
-
 #~ msgid "Bin"
 #~ msgstr "Bin"
 

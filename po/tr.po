@@ -259,9 +259,6 @@ msgstr "Tercihler"
 #~ msgid "Octal only accepts the digits 0-7"
 #~ msgstr "Ondalık yalnızca 0-9 rakamlarını kabul eder"
 
-#~ msgid "Input and output bases are the same"
-#~ msgstr "Girdi ve çıktı tabanları aynı"
-
 #~ msgid "Bin"
 #~ msgstr "İkili"
 
