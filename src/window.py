@@ -29,10 +29,10 @@ from .bitCount import *
 class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
-    outLbl = Gtk.Template.Child() # output label
     bits = Gtk.Template.Child() # individual bits in dropdown
     in_bit_label = Gtk.Template.Child() # bit counter label
     input_entry = Gtk.Template.Child() # user input
+    output_entry = Gtk.Template.Child() # output label
     inDropdown = Gtk.Template.Child()
     outDropdown = Gtk.Template.Child()
 
@@ -73,7 +73,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def swap(self, *kwargs):
         inVal = self.input_entry.get_text()
-        outVal = self.outLbl.get_text()
+        outVal = self.output_entry.get_text()
         inBase = self.inDropdown.get_selected()
         outBase = self.outDropdown.get_selected()
         self.inDropdown.set_selected(outBase)
@@ -81,7 +81,7 @@ class BinaryWindow(Adw.ApplicationWindow):
 
         if self.input_entry.get_text() != "":
             self.input_entry.set_text(outVal)
-            self.outLbl.set_text(inVal)
+            self.output_entry.set_text(inVal)
 
     @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
@@ -116,7 +116,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = int(inStr, 2)
                 # Set the output label and bit counter label
                 bits = bitCount(inStr)
-                self.outLbl.set_text(str(int(inStr, 2)))
+                self.output_entry.set_text(str(int(inStr, 2)))
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
                 self.in_bit_label.set_visible(True)
                 self.isZero()
@@ -131,7 +131,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 ans = bin(int(inStr)).lstrip("0b")
                 self.updateBits(bits=bitCount(ans), count=len(ans))
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.in_bit_label.set_visible(True)
                 self.isZero()
             # Decimal to Hexadecimal
@@ -145,7 +145,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 ans = hex(int(inStr)).lstrip("0x").upper()
                 self.in_bit_label.set_visible(False)
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.isZero()
             # Hexadecimal to Decimal
             elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 1:
@@ -158,7 +158,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 ans = int(inStr, 16)
                 self.in_bit_label.set_visible(False)
-                self.outLbl.set_text(str(int(inStr, 16)))
+                self.output_entry.set_text(str(int(inStr, 16)))
                 self.isZero()
             # Hexadecimal to Binary
             elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 0:
@@ -171,7 +171,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 ans = bin(int(inStr, 16)).lstrip("0b")
                 self.updateBits(bits=bitCount(ans), count=len(ans))
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.in_bit_label.set_visible(True)
                 self.isZero()
             # Binary to Hexadecimal
@@ -185,7 +185,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return
                 ans = hex(int(inStr, 2)).strip("0x").upper()
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.in_bit_label.set_visible(True)
                 self.isZero()
             # Oct to Bin
@@ -199,7 +199,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                         self.cleaninput_entry()
                         return
                 ans = bin(int(inStr, 8)).lstrip("0b")
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.updateBits(bits=bitCount(ans), count=len(ans))
                 self.in_bit_label.set_visible(True)
             # Bin to Oct
@@ -212,7 +212,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleaninput_entry()
                     return
                 ans = oct(int(inStr, 2)).lstrip("0o")
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.updateBits(bits=bitCount(inStr), count=len(inStr))
                 self.in_bit_label.set_visible(True)
             # Oct to Dec
@@ -225,7 +225,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleaninput_entry()
                     return
                 ans = int(inStr, 8)
-                self.outLbl.set_text(str(ans))
+                self.output_entry.set_text(str(ans))
                 self.in_bit_label.set_visible(False)
             # Dec to Oct
             elif self.inDropdown.get_selected() == 1 and self.outDropdown.get_selected() == 3:
@@ -237,7 +237,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleaninput_entry()
                     return
                 ans = oct(int(inStr)).lstrip("0o")
-                self.outLbl.set_text(str(ans))
+                self.output_entry.set_text(str(ans))
                 self.in_bit_label.set_visible(False)
             # Oct to Hex
             elif self.inDropdown.get_selected() == 3 and self.outDropdown.get_selected() == 2:
@@ -249,7 +249,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleaninput_entry()
                     return
                 ans = hex(int(inStr, 8)).lstrip("0x").upper()
-                self.outLbl.set_text(ans)
+                self.output_entry.set_text(ans)
                 self.in_bit_label.set_visible(False)
             # Hex to Oct
             elif self.inDropdown.get_selected() == 2 and self.outDropdown.get_selected() == 3:
@@ -261,13 +261,13 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.cleaninput_entry()
                     return
                 ans = oct(int(inStr, 16)).lstrip("0o")
-                self.outLbl.set_text(str(ans))
+                self.output_entry.set_text(str(ans))
                 self.in_bit_label.set_visible(False)
             # Same number bases
             elif self.inDropdown.get_selected() == self.outDropdown.get_selected():
                 inStr = self.input_entry.get_text()
                 # Set the output label to be the same as the input
-                self.outLbl.set_text(self.input_entry.get_text())
+                self.output_entry.set_text(self.input_entry.get_text())
                 if self.inDropdown.get_selected() == 0:
                     try:
                         int(inStr, 2)
@@ -304,7 +304,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if char != '0':
                 return
         self.input_entry.remove_css_class("error")
-        self.outLbl.set_text("0")
+        self.output_entry.set_text("0")
         self.blank()
 
         if self.inDropdown.get_selected() != 0 and self.outDropdown.get_selected() != 0:
@@ -313,7 +313,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
         self.in_bit_label.set_visible(True)
-        self.outLbl.set_label("0")
+        self.output_entry.set_text("0")
         self.in_bit_label.set_label(f"0 {self.bitsTxt}")
 
     def cleaninput_entry(self, *kwargs):

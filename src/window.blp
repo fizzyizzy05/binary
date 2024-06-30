@@ -83,14 +83,12 @@ template $BinaryWindow: Adw.ApplicationWindow {
             notify => $changeBases();
           }
 
-          Label outLbl {
-            styles [
-              "mono",
-            ]
+          Entry output_entry {
+            placeholder-text: _("Enter numbers…");
 
-            selectable: true;
-            xalign: 0;
-            label: "0";
+            accessibility {
+              label: _("Enter numbers…");
+            }
           }
 
         }
