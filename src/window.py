@@ -59,7 +59,10 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             self.inputHandler()
 
-            if self.in_dropdown.get_selected() == 0:
+            if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
+                self.in_bit_label.set_visible(True)
+                self.out_bit_label.set_visible(True)
+            elif self.in_dropdown.get_selected() == 0:
                 self.in_bit_label.set_visible(True)
                 self.out_bit_label.set_visible(False)
             elif self.out_dropdown.get_selected() == 0:
