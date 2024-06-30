@@ -36,26 +36,29 @@ template $BinaryWindow: Adw.ApplicationWindow {
           valign: center;
           spacing: 6;
 
-          MenuButton in_bit_label {
-            hexpand: false;
-            halign: start;
-            margin-bottom: 2;
-            popover: bitPopover;
+          CenterBox {
+            [start]
+            DropDown in_dropdown {
+              tooltip-text: _("Input Base");
 
-            styles [
-              "bitLbl",
-              "flat",
-            ]
-          }
+              styles [
+                "flat-dropdown",
+              ]
 
-          DropDown in_dropdown {
-            tooltip-text: _("Input Base");
+              notify => $changeBases();
+            }
 
-            styles [
-              "flat-dropdown",
-            ]
+            [end]
+            MenuButton in_bit_label {
+              hexpand: false;
+              halign: start;
+              popover: in_bit_popover;
 
-            notify => $changeBases();
+              styles [
+                "bitLbl",
+                "flat",
+              ]
+            }
           }
 
           Entry input_entry {
@@ -73,14 +76,29 @@ template $BinaryWindow: Adw.ApplicationWindow {
             clicked => $swap();
           }
 
-          DropDown out_dropdown {
-            tooltip-text: _("Output Base");
+          CenterBox {
+            [start]
+            DropDown out_dropdown {
+              tooltip-text: _("Output Base");
 
-            styles [
-              "flat-dropdown",
-            ]
+              styles [
+                "flat-dropdown",
+              ]
 
-            notify => $changeBases();
+              notify => $changeBases();
+            }
+
+            [end]
+            MenuButton out_bit_label {
+              hexpand: false;
+              halign: start;
+              popover: out_bit_popover;
+
+              styles [
+                "bitLbl",
+                "flat",
+              ]
+            }
           }
 
           Entry output_entry {
@@ -97,7 +115,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
   };
 }
 
-Popover bitPopover {
+Popover in_bit_popover {
   has-arrow: true;
 
   Box {
@@ -105,7 +123,24 @@ Popover bitPopover {
       maximum-size: 300;
       tightening-threshold: 1000;
 
-      Label bits {
+      Label input_bits {
+        wrap: true;
+        wrap-mode: word;
+        label: "";
+      }
+    }
+  }
+}
+
+Popover out_bit_popover {
+  has-arrow: true;
+
+  Box {
+    Adw.Clamp {
+      maximum-size: 300;
+      tightening-threshold: 1000;
+
+      Label output_bits {
         wrap: true;
         wrap-mode: word;
         label: "";

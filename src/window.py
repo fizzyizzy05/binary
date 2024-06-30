@@ -29,7 +29,7 @@ from .bitCount import *
 class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
-    bits = Gtk.Template.Child() # individual bits in dropdown
+    output_bits = Gtk.Template.Child() # individual bits in dropdown
     in_bit_label = Gtk.Template.Child() # bit counter label
     input_entry = Gtk.Template.Child() # user input
     output_entry = Gtk.Template.Child() # output label
@@ -60,11 +60,11 @@ class BinaryWindow(Adw.ApplicationWindow):
             if self.in_dropdown.get_selected() == 0:
                 self.in_bit_label.set_visible(True)
                 self.in_bit_label.set_halign(1)
-                self.bits.set_text(_("Enter a number to see its bits"))
+                self.output_bits.set_text(_("Enter a number to see its bits"))
             elif self.out_dropdown.get_selected() == 0:
                 self.in_bit_label.set_visible(True)
                 self.in_bit_label.set_halign(2)
-                self.bits.set_text(_("Enter a number to see the output's bits"))
+                self.output_bits.set_text(_("Enter a number to see the output's bits"))
             else:
                 self.in_bit_label.set_visible(False)
         except:
@@ -95,10 +95,10 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.input_entry.remove_css_class("error")
             self.input_entry.remove_css_class("mono")
             if self.in_dropdown.get_selected() == 0:
-                self.bits.set_text(_("Enter a number to see its bits"))
+                self.output_bits.set_text(_("Enter a number to see its bits"))
                 self.in_bit_label.set_visible(True)
             elif self.out_dropdown.get_selected() == 0:
-                self.bits.set_text(_("Enter a number to see the output's bits"))
+                self.output_bits.set_text(_("Enter a number to see the output's bits"))
                 self.in_bit_label.set_visible(True)
             else:
                 self.in_bit_label.set_visible(False)
@@ -321,4 +321,4 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     def updateBits(self, *kwargs, bits, count):
         self.in_bit_label.set_label(f"{count} {self.bitsTxt}")
-        self.bits.set_label(f"{bits}")
+        self.output_bits.set_label(f"{bits}")
