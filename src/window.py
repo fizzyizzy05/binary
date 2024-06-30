@@ -55,9 +55,9 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.blank()
 
     @Gtk.Template.Callback()
-    def changeBases(self, *kwargs):
+    def change_bases(self, *kwargs):
         try:
-            self.inputHandler()
+            self.input_handler()
 
             if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
                 self.in_bit_label.set_visible(True)
@@ -75,7 +75,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             return
 
     @Gtk.Template.Callback()
-    def inputHandler(self, *kwargs):
+    def input_handler(self, *kwargs):
         # 0 = Binary
         # 1 = Decimal
         # 2 = Hexadecimal

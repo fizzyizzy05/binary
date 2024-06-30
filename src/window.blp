@@ -45,7 +45,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
                 "flat-dropdown",
               ]
 
-              notify => $changeBases();
+              notify => $change_bases();
             }
 
             [end]
@@ -63,7 +63,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
 
           Entry input_entry {
             placeholder-text: _("Enter numbers…");
-            changed => $inputHandler();
+            changed => $input_handler();
 
             accessibility {
               label: _("Enter numbers…");
@@ -86,7 +86,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
                 "flat-dropdown",
               ]
 
-              notify => $changeBases();
+              notify => $change_bases();
             }
 
             [end]
