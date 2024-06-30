@@ -304,7 +304,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if char != '0':
                 return
         self.input_entry.remove_css_class("error")
-        self.output_entry.set_text("0")
+        self.output_entry.set_text("")
         self.blank()
 
         if self.inDropdown.get_selected() != 0 and self.outDropdown.get_selected() != 0:
@@ -313,7 +313,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
         self.in_bit_label.set_visible(True)
-        self.output_entry.set_text("0")
+        self.output_entry.set_text("")
         self.in_bit_label.set_label(f"0 {self.bitsTxt}")
 
     def cleaninput_entry(self, *kwargs):
