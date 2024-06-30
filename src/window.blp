@@ -70,10 +70,11 @@ template $BinaryWindow: Adw.ApplicationWindow {
             }
           }
 
-          Button swapBtn {
-            icon-name: "horizontal-arrows";
-            tooltip-text: _("Swap input and output bases");
-            clicked => $swap();
+          Image {
+            icon-size: normal;
+            icon-name: "vertical-arrows-symbolic";
+            margin-top: 8;
+            margin-bottom: 8;
           }
 
           CenterBox {

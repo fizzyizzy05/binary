@@ -75,19 +75,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             return
 
     @Gtk.Template.Callback()
-    def swap(self, *kwargs):
-        inVal = self.input_entry.get_text()
-        outVal = self.output_entry.get_text()
-        inBase = self.in_dropdown.get_selected()
-        outBase = self.out_dropdown.get_selected()
-        self.in_dropdown.set_selected(outBase)
-        self.out_dropdown.set_selected(inBase)
-
-        if self.input_entry.get_text() != "":
-            self.input_entry.set_text(outVal)
-            self.output_entry.set_text(inVal)
-
-    @Gtk.Template.Callback()
     def inputHandler(self, *kwargs):
         # 0 = Binary
         # 1 = Decimal
