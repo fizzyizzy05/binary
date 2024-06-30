@@ -58,7 +58,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
             notify => $changeBases();
           }
 
-          Entry entry {
+          Entry input_entry {
             placeholder-text: _("Enter numbers…");
             changed => $inputHandler();
 
