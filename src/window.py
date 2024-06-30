@@ -95,6 +95,8 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.blank()
             self.input_entry.remove_css_class("error")
             self.input_entry.remove_css_class("mono")
+            self.output_entry.remove_css_class("error")
+            self.output_entry.remove_css_class("mono")
             empty_counter_text = _("Enter a number to see its bits")
             self.input_bits.set_text(empty_counter_text)
             self.output_bits.set_text(empty_counter_text)
@@ -106,6 +108,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 2)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -121,6 +124,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 10)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -134,6 +138,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -146,6 +151,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 16)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -158,6 +164,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 16)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -171,6 +178,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 2)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -185,6 +193,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     try:
                         int(char, 8)
                         self.input_entry.remove_css_class("error")
+                        self.output_entry.add_css_class("mono")
                     except:
                         self.cleaninput_entry()
                         return
@@ -198,6 +207,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 2)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -211,6 +221,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 8)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -223,6 +234,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 10)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -235,6 +247,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 8)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -247,6 +260,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(inStr, 16)
                     self.input_entry.remove_css_class("error")
+                    self.output_entry.add_css_class("mono")
                 except:
                     self.cleaninput_entry()
                     return
@@ -258,6 +272,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 inStr = self.input_entry.get_text()
                 # Set the output label to be the same as the input
                 self.output_entry.set_text(self.input_entry.get_text())
+                self.output_entry.add_css_class("mono")
                 if self.in_dropdown.get_selected() == 0:
                     try:
                         int(inStr, 2)
