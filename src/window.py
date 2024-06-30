@@ -277,31 +277,40 @@ class BinaryWindow(Adw.ApplicationWindow):
                     try:
                         int(inStr, 2)
                         self.input_entry.remove_css_class("error")
-                        self.updateBits(bits=bitCount(inStr), count=len(inStr))
+                        self.output_entry.remove_css_class("error")
+                        self.update_input_bits(bits=bitCount(inStr), count=len(inStr))
+                        self.update_output_bits(bits=bitCount(inStr), count=len(inStr))
                     except:
                         self.input_entry.add_css_class("error")
+                        self.output_entry.add_css_class("error")
                     self.in_bit_label.set_visible(True)
                 elif self.in_dropdown.get_selected() == 1:
                     self.in_bit_label.set_visible(False)
                     try:
                         int(inStr, 10)
                         self.input_entry.remove_css_class("error")
+                        self.output_entry.remove_css_class("error")
                     except:
                         self.input_entry.add_css_class("error")
+                        self.output_entry.add_css_class("error")
                 elif self.in_dropdown.get_selected() == 2:
                     self.in_bit_label.set_visible(False)
                     try:
                         int(inStr, 16)
                         self.input_entry.remove_css_class("error")
+                        self.output_entry.remove_css_class("error")
                     except:
                         self.input_entry.add_css_class("error")
+                        self.output_entry.add_css_class("error")
                 elif self.in_dropdown.get_selected() == 3:
                     self.in_bit_label.set_visible(False)
                     try:
                         int(inStr, 8)
                         self.input_entry.remove_css_class("error")
+                        self.output_entry.remove_css_class("error")
                     except:
                         self.input_entry.add_css_class("error")
+                        self.output_entry.add_css_class("error")
 
     def isZero(self, *kwargs):
         inStr = self.input_entry.get_text();
@@ -309,7 +318,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if char != '0':
                 return
         self.input_entry.remove_css_class("error")
-        self.output_entry.set_text("")
+        self.output_entry.remove_css_class("error")
         self.blank()
 
         if self.in_dropdown.get_selected() != 0 and self.out_dropdown.get_selected() != 0:
