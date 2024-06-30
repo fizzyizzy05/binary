@@ -51,24 +51,20 @@ template $BinaryWindow: Adw.ApplicationWindow {
     }
 
     content: WindowHandle {
-      Box mainBox {
-        margin-start: 35;
-        margin-end: 35;
-        margin-top: 20;
-        margin-bottom: 35;
-        orientation: vertical;
-        valign: center;
-        halign: center;
-
-        Box calcBox {
+        Adw.Clamp {
+          maximum-size: 800;
+          tightening-threshold: 1000;
+          margin-start: 35;
+          margin-end: 35;
+          margin-top: 20;
+          margin-bottom: 35;
+          orientation: vertical;
           valign: center;
           halign: center;
-          orientation: vertical;
-          margin-bottom: 10;
 
-          Adw.Clamp {
-            maximum-size: 800;
-            tightening-threshold: 1000;
+          Box {
+            hexpand: true;
+            orientation: vertical;
 
             MenuButton bitLbl {
               hexpand: false;
@@ -81,46 +77,40 @@ template $BinaryWindow: Adw.ApplicationWindow {
                 "flat",
               ]
             }
-          }
-
-          Adw.Clamp inClamp {
-            maximum-size: 800;
-            tightening-threshold: 1000;
 
             Box inBox {
-              Adw.Clamp etrClamp {
-                maximum-size: 800;
-                tightening-threshold: 1000;
+            Adw.Clamp etrClamp {
+              maximum-size: 800;
+              tightening-threshold: 1000;
 
-                Entry entry {
-                  placeholder-text: _("Enter numbers…");
-                  margin-end: 10;
-                  changed => $inputHandler();
+              Entry entry {
+                placeholder-text: _("Enter numbers…");
+                margin-end: 10;
+                changed => $inputHandler();
 
-                  accessibility {
-                    label: _("Enter numbers…");
-                  }
+                accessibility {
+                  label: _("Enter numbers…");
                 }
               }
+            }
 
-              Label eqlLbl {
-                styles [
-                  "mono",
-                ]
+            Label eqlLbl {
+              styles [
+                "mono",
+              ]
 
-                margin-end: 10;
-                label: "=";
-              }
+              margin-end: 10;
+              label: "=";
+            }
 
-              Label outLbl {
-                styles [
-                  "mono",
-                ]
+            Label outLbl {
+              styles [
+                "mono",
+              ]
 
-                selectable: true;
-                xalign: 0;
-                label: "0";
-              }
+              selectable: true;
+              xalign: 0;
+              label: "0";
             }
           }
         }
