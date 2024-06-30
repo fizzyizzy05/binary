@@ -54,17 +54,15 @@ template $BinaryWindow: Adw.ApplicationWindow {
         Adw.Clamp {
           maximum-size: 800;
           tightening-threshold: 1000;
-          margin-start: 35;
-          margin-end: 35;
-          margin-top: 20;
-          margin-bottom: 35;
-          orientation: vertical;
-          valign: center;
-          halign: center;
 
           Box {
             hexpand: true;
             orientation: vertical;
+            margin-start: 35;
+            margin-end: 35;
+            margin-top: 20;
+            margin-bottom: 35;
+            valign: center;
 
             MenuButton bitLbl {
               hexpand: false;
