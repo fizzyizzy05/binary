@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-30 17:02+0100\n"
 "PO-Revision-Date: 2024-05-19 17:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.6-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
 msgstr "Binääri"
 
@@ -184,21 +184,6 @@ msgstr ""
 msgid "Isabelle Jackson"
 msgstr ""
 
-#: src/gtk/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Yleiset"
-
-#: src/gtk/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Näytä pikanäppäimet"
-
-#: src/gtk/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Lopeta"
-
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:81
 msgid "translator-credits"
@@ -208,53 +193,40 @@ msgstr "Jiri Grönroos"
 msgid "bits"
 msgstr "bittiä"
 
-#: src/window.py:55 src/window.py:90
+#: src/window.py:63 src/window.py:98
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:59 src/window.py:93
+#: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
-#: src/window.ui:20
-msgid "Input Base"
-msgstr ""
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Yleiset"
 
-#: src/window.ui:37
-msgid "Output Base"
-msgstr ""
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Näytä pikanäppäimet"
 
-#: src/window.ui:50
-msgid "Main Menu"
-msgstr "Päävalikko"
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Lopeta"
 
-#: src/window.ui:103 src/window.ui:107
-msgid "Enter numbers…"
-msgstr "Kirjoita numerot…"
+#~ msgid "Main Menu"
+#~ msgstr "Päävalikko"
 
-#: src/window.ui:148
-msgid "Decimal"
-msgstr ""
+#~ msgid "Enter numbers…"
+#~ msgstr "Kirjoita numerot…"
 
-#: src/window.ui:149
-msgid "Hexadecimal"
-msgstr ""
+#~ msgid "_Keyboard Shortcuts"
+#~ msgstr "_Pikanäppäimet"
 
-#: src/window.ui:150
-msgid "Octal"
-msgstr ""
+#~ msgid "_About Binary"
+#~ msgstr "_Tietoja - Binääri"
 
-#: src/window.ui:176
-msgid "_Keyboard Shortcuts"
-msgstr "_Pikanäppäimet"
-
-#: src/window.ui:180
-msgid "_About Binary"
-msgstr "_Tietoja - Binääri"
-
-#: src/preferences.ui:6
-msgid "Preferences"
-msgstr "Asetukset"
+#~ msgid "Preferences"
+#~ msgstr "Asetukset"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

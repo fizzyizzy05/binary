@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-30 17:02+0100\n"
 "PO-Revision-Date: 2024-02-24 04:06+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
 msgstr "Binary"
 
@@ -182,21 +182,6 @@ msgstr ""
 msgid "Isabelle Jackson"
 msgstr ""
 
-#: src/gtk/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Genel"
-
-#: src/gtk/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Kısayolları Göster"
-
-#: src/gtk/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Çık"
-
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:81
 msgid "translator-credits"
@@ -206,56 +191,46 @@ msgstr "Sabri Ünal <libreajans@gmail.com>"
 msgid "bits"
 msgstr "bit"
 
-#: src/window.py:55 src/window.py:90
+#: src/window.py:63 src/window.py:98
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:59 src/window.py:93
+#: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
-#: src/window.ui:20
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Genel"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Kısayolları Göster"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Çık"
+
 #, fuzzy
-msgid "Input Base"
-msgstr "Girdi"
+#~ msgid "Input Base"
+#~ msgstr "Girdi"
 
-#: src/window.ui:37
 #, fuzzy
-msgid "Output Base"
-msgstr "Çıktı"
+#~ msgid "Output Base"
+#~ msgstr "Çıktı"
 
-#: src/window.ui:50
 #, fuzzy
-msgid "Main Menu"
-msgstr "Menü"
+#~ msgid "Main Menu"
+#~ msgstr "Menü"
 
-#: src/window.ui:103 src/window.ui:107
-msgid "Enter numbers…"
-msgstr ""
+#~ msgid "_Keyboard Shortcuts"
+#~ msgstr "_Klavye Kısayolları"
 
-#: src/window.ui:148
-msgid "Decimal"
-msgstr ""
+#~ msgid "_About Binary"
+#~ msgstr "Binary _Hakkında"
 
-#: src/window.ui:149
-msgid "Hexadecimal"
-msgstr ""
-
-#: src/window.ui:150
-msgid "Octal"
-msgstr ""
-
-#: src/window.ui:176
-msgid "_Keyboard Shortcuts"
-msgstr "_Klavye Kısayolları"
-
-#: src/window.ui:180
-msgid "_About Binary"
-msgstr "Binary _Hakkında"
-
-#: src/preferences.ui:6
-msgid "Preferences"
-msgstr "Tercihler"
+#~ msgid "Preferences"
+#~ msgstr "Tercihler"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

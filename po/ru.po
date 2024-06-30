@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 22:48+0100\n"
+"POT-Creation-Date: 2024-06-30 17:02+0100\n"
 "PO-Revision-Date: 2024-06-25 20:09+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 5.6-rc\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
 msgstr "Binary"
 
@@ -212,21 +212,6 @@ msgstr ""
 msgid "Isabelle Jackson"
 msgstr "Изабелль Джексон"
 
-#: src/gtk/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Общие"
-
-#: src/gtk/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Показать горячие клавиши"
-
-#: src/gtk/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Завершить"
-
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:81
 msgid "translator-credits"
@@ -236,53 +221,46 @@ msgstr ""
 msgid "bits"
 msgstr "бит"
 
-#: src/window.py:55 src/window.py:90
+#: src/window.py:63 src/window.py:98
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:59 src/window.py:93
+#: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
-#: src/window.ui:20
-msgid "Input Base"
-msgstr "Входное основание"
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Общие"
 
-#: src/window.ui:37
-msgid "Output Base"
-msgstr "Выходное основание"
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Показать горячие клавиши"
 
-#: src/window.ui:50
-msgid "Main Menu"
-msgstr "Главное меню"
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Завершить"
 
-#: src/window.ui:103 src/window.ui:107
-msgid "Enter numbers…"
-msgstr "Введите числа…"
+#~ msgid "Input Base"
+#~ msgstr "Входное основание"
 
-#: src/window.ui:148
-msgid "Decimal"
-msgstr ""
+#~ msgid "Output Base"
+#~ msgstr "Выходное основание"
 
-#: src/window.ui:149
-msgid "Hexadecimal"
-msgstr ""
+#~ msgid "Main Menu"
+#~ msgstr "Главное меню"
 
-#: src/window.ui:150
-msgid "Octal"
-msgstr ""
+#~ msgid "Enter numbers…"
+#~ msgstr "Введите числа…"
 
-#: src/window.ui:176
-msgid "_Keyboard Shortcuts"
-msgstr "_Горячие клавиши"
+#~ msgid "_Keyboard Shortcuts"
+#~ msgstr "_Горячие клавиши"
 
-#: src/window.ui:180
-msgid "_About Binary"
-msgstr "_О программе Binary"
+#~ msgid "_About Binary"
+#~ msgstr "_О программе Binary"
 
-#: src/preferences.ui:6
-msgid "Preferences"
-msgstr "Настройки"
+#~ msgid "Preferences"
+#~ msgstr "Настройки"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"
