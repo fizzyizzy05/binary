@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 17:02+0100\n"
+"POT-Creation-Date: 2024-06-30 17:14+0100\n"
 "PO-Revision-Date: 2024-02-24 04:06+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -199,6 +199,37 @@ msgstr ""
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
+#: src/window.blp:18
+#, fuzzy
+msgid "Input Base"
+msgstr "Girdi"
+
+#: src/window.blp:34
+#, fuzzy
+msgid "Output Base"
+msgstr "Çıktı"
+
+#: src/window.blp:48
+#, fuzzy
+msgid "Main Menu"
+msgstr "Menü"
+
+#: src/window.blp:96 src/window.blp:101
+msgid "Enter numbers…"
+msgstr ""
+
+#: src/window.blp:152
+msgid "_Keyboard Shortcuts"
+msgstr "_Klavye Kısayolları"
+
+#: src/window.blp:157
+msgid "_About Binary"
+msgstr "Binary _Hakkında"
+
+#: src/preferences.blp:5
+msgid "Preferences"
+msgstr "Tercihler"
+
 #~ msgctxt "shortcut window"
 #~ msgid "General"
 #~ msgstr "Genel"
@@ -210,27 +241,6 @@ msgstr ""
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
 #~ msgstr "Çık"
-
-#, fuzzy
-#~ msgid "Input Base"
-#~ msgstr "Girdi"
-
-#, fuzzy
-#~ msgid "Output Base"
-#~ msgstr "Çıktı"
-
-#, fuzzy
-#~ msgid "Main Menu"
-#~ msgstr "Menü"
-
-#~ msgid "_Keyboard Shortcuts"
-#~ msgstr "_Klavye Kısayolları"
-
-#~ msgid "_About Binary"
-#~ msgstr "Binary _Hakkında"
-
-#~ msgid "Preferences"
-#~ msgstr "Tercihler"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

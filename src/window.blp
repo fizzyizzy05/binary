@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $BinaryWindow: Adw.ApplicationWindow {
-  title: 'Binary';
+  title: "Binary";
   width-request: 300;
   default-width: 500;
   default-height: 200;
@@ -15,7 +15,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
         spacing: 6;
 
         DropDown inDropdown {
-          tooltip-text: _('Input Base');
+          tooltip-text: _("Input Base");
 
           styles [
             "flat-dropdown",
@@ -25,13 +25,13 @@ template $BinaryWindow: Adw.ApplicationWindow {
         }
 
         Button swapBtn {
-          icon-name: 'horizontal-arrows';
-          tooltip-text: 'Swap input and output bases';
+          icon-name: "horizontal-arrows";
+          tooltip-text: "Swap input and output bases";
           clicked => $swap();
         }
 
         DropDown outDropdown {
-          tooltip-text: _('Output Base');
+          tooltip-text: _("Output Base");
 
           styles [
             "flat-dropdown",
@@ -44,8 +44,8 @@ template $BinaryWindow: Adw.ApplicationWindow {
       [end]
       MenuButton {
         primary: true;
-        icon-name: 'open-menu-symbolic';
-        tooltip-text: _('Main Menu');
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Main Menu");
         menu-model: primary_menu;
       }
     }
@@ -93,12 +93,12 @@ template $BinaryWindow: Adw.ApplicationWindow {
                 tightening-threshold: 1000;
 
                 Entry entry {
-                  placeholder-text: _('Enter numbers…');
+                  placeholder-text: _("Enter numbers…");
                   margin-end: 10;
                   changed => $inputHandler();
 
                   accessibility {
-                    label: _('Enter numbers…');
+                    label: _("Enter numbers…");
                   }
                 }
               }
@@ -109,7 +109,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
                 ]
 
                 margin-end: 10;
-                label: '=';
+                label: "=";
               }
 
               Label outLbl {
@@ -119,7 +119,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
 
                 selectable: true;
                 xalign: 0;
-                label: '0';
+                label: "0";
               }
             }
           }
@@ -140,7 +140,7 @@ Popover bitPopover {
       Label bits {
         wrap: true;
         wrap-mode: word;
-        label: '';
+        label: "";
       }
     }
   }
@@ -149,13 +149,13 @@ Popover bitPopover {
 menu primary_menu {
   section {
     item {
-      label: _('_Keyboard Shortcuts');
-      action: 'win.show-help-overlay';
+      label: _("_Keyboard Shortcuts");
+      action: "win.show-help-overlay";
     }
 
     item {
-      label: _('_About Binary');
-      action: 'app.about';
+      label: _("_About Binary");
+      action: "app.about";
     }
   }
 }

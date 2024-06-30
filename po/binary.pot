@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 17:02+0100\n"
+"POT-Creation-Date: 2024-06-30 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,4 +193,32 @@ msgstr ""
 
 #: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
+msgstr ""
+
+#: src/window.blp:18
+msgid "Input Base"
+msgstr ""
+
+#: src/window.blp:34
+msgid "Output Base"
+msgstr ""
+
+#: src/window.blp:48
+msgid "Main Menu"
+msgstr ""
+
+#: src/window.blp:96 src/window.blp:101
+msgid "Enter numbers…"
+msgstr ""
+
+#: src/window.blp:152
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: src/window.blp:157
+msgid "_About Binary"
+msgstr ""
+
+#: src/preferences.blp:5
+msgid "Preferences"
 msgstr ""

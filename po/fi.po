@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 17:02+0100\n"
+"POT-Creation-Date: 2024-06-30 17:14+0100\n"
 "PO-Revision-Date: 2024-05-19 17:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -201,6 +201,34 @@ msgstr ""
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
+#: src/window.blp:18
+msgid "Input Base"
+msgstr ""
+
+#: src/window.blp:34
+msgid "Output Base"
+msgstr ""
+
+#: src/window.blp:48
+msgid "Main Menu"
+msgstr "Päävalikko"
+
+#: src/window.blp:96 src/window.blp:101
+msgid "Enter numbers…"
+msgstr "Kirjoita numerot…"
+
+#: src/window.blp:152
+msgid "_Keyboard Shortcuts"
+msgstr "_Pikanäppäimet"
+
+#: src/window.blp:157
+msgid "_About Binary"
+msgstr "_Tietoja - Binääri"
+
+#: src/preferences.blp:5
+msgid "Preferences"
+msgstr "Asetukset"
+
 #~ msgctxt "shortcut window"
 #~ msgid "General"
 #~ msgstr "Yleiset"
@@ -212,21 +240,6 @@ msgstr ""
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
 #~ msgstr "Lopeta"
-
-#~ msgid "Main Menu"
-#~ msgstr "Päävalikko"
-
-#~ msgid "Enter numbers…"
-#~ msgstr "Kirjoita numerot…"
-
-#~ msgid "_Keyboard Shortcuts"
-#~ msgstr "_Pikanäppäimet"
-
-#~ msgid "_About Binary"
-#~ msgstr "_Tietoja - Binääri"
-
-#~ msgid "Preferences"
-#~ msgstr "Asetukset"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"
