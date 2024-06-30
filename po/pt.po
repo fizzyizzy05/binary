@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-29 15:40+0100\n"
+"POT-Creation-Date: 2024-06-30 17:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
 msgstr "Binário"
 
@@ -177,21 +177,6 @@ msgstr ""
 msgid "Isabelle Jackson"
 msgstr ""
 
-#: src/gtk/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr ""
-
-#: src/gtk/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr ""
-
-#: src/gtk/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr ""
-
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:81
 msgid "translator-credits"
@@ -201,54 +186,38 @@ msgstr ""
 msgid "bits"
 msgstr ""
 
-#: src/window.py:55 src/window.py:90
+#: src/window.py:63 src/window.py:98
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:59 src/window.py:93
+#: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
-#: src/window.ui:20
+#: src/window.blp:18
 msgid "Input Base"
 msgstr ""
 
-#: src/window.ui:30
-msgid "Swap input and output bases"
-msgstr ""
-
-#: src/window.ui:37
+#: src/window.blp:34
 msgid "Output Base"
 msgstr ""
 
-#: src/window.ui:50
+#: src/window.blp:48
 msgid "Main Menu"
 msgstr ""
 
-#: src/window.ui:103 src/window.ui:107
+#: src/window.blp:96 src/window.blp:101
 msgid "Enter numbers…"
 msgstr ""
 
-#: src/window.ui:148
-msgid "Decimal"
-msgstr ""
-
-#: src/window.ui:149
-msgid "Hexadecimal"
-msgstr ""
-
-#: src/window.ui:150
-msgid "Octal"
-msgstr ""
-
-#: src/window.ui:176
+#: src/window.blp:152
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.ui:180
+#: src/window.blp:157
 msgid "_About Binary"
 msgstr ""
 
-#: src/preferences.ui:6
+#: src/preferences.blp:5
 msgid "Preferences"
 msgstr ""

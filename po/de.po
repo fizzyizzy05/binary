@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-29 15:40+0100\n"
+"POT-Creation-Date: 2024-06-30 17:33+0100\n"
 "PO-Revision-Date: 2024-04-14 13:01+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.ui:147
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
 msgid "Binary"
 msgstr "Binary"
 
@@ -207,21 +207,6 @@ msgstr ""
 msgid "Isabelle Jackson"
 msgstr ""
 
-#: src/gtk/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Allgemein"
-
-#: src/gtk/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Tastenkürzel anzeigen"
-
-#: src/gtk/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Schließen"
-
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:81
 msgid "translator-credits"
@@ -231,58 +216,53 @@ msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 msgid "bits"
 msgstr "Bits"
 
-#: src/window.py:55 src/window.py:90
+#: src/window.py:63 src/window.py:98
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:59 src/window.py:93
+#: src/window.py:67 src/window.py:101
 msgid "Enter a number to see the output's bits"
 msgstr ""
 
-#: src/window.ui:20
+#: src/window.blp:18
 msgid "Input Base"
 msgstr ""
 
-#: src/window.ui:30
-#, fuzzy
-msgid "Swap input and output bases"
-msgstr "Die Basen der Ein- und Ausgabe sind identisch"
-
-#: src/window.ui:37
+#: src/window.blp:34
 msgid "Output Base"
 msgstr ""
 
-#: src/window.ui:50
+#: src/window.blp:48
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: src/window.ui:103 src/window.ui:107
+#: src/window.blp:96 src/window.blp:101
 msgid "Enter numbers…"
 msgstr "Zahl eingeben…"
 
-#: src/window.ui:148
-msgid "Decimal"
-msgstr ""
-
-#: src/window.ui:149
-msgid "Hexadecimal"
-msgstr ""
-
-#: src/window.ui:150
-msgid "Octal"
-msgstr ""
-
-#: src/window.ui:176
+#: src/window.blp:152
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastenkürzel"
 
-#: src/window.ui:180
+#: src/window.blp:157
 msgid "_About Binary"
 msgstr "_Über Binary"
 
-#: src/preferences.ui:6
+#: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Einstellungen"
+
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Tastenkürzel anzeigen"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Schließen"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

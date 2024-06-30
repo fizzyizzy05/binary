@@ -1,8 +1,8 @@
 data/io.github.fizzyizzy05.binary.desktop.in
 data/io.github.fizzyizzy05.binary.metainfo.xml.in
 data/io.github.fizzyizzy05.binary.gschema.xml
-src/gtk/help-overlay.ui
+src/gtk/help-overlay.blp
 src/main.py
 src/window.py
-src/window.ui
-src/preferences.ui
+src/window.blp
+src/preferences.blp
