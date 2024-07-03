@@ -66,8 +66,7 @@ class BinaryApplication(Adw.Application):
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
-        about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='Binary',
+        about = Adw.AboutDialog(application_name='Binary',
                                 application_icon='io.github.fizzyizzy05.binary',
                                 developer_name='Isabelle Jackson',
                                 version='0.4',
@@ -81,7 +80,7 @@ class BinaryApplication(Adw.Application):
                                 # Translators: Replace "translator-credits" with your names, one name per line
                                 translator_credits = _("translator-credits"),
                                 copyright='© 2023-2024 Isabelle Jackson.')
-        about.present()
+        about.present(self.props.active_window)
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""
