@@ -72,7 +72,6 @@ class BinaryApplication(Adw.Application):
                                 developer_name='Isabelle Jackson',
                                 version='0.4',
                                 developers=['Isabelle Jackson'],
-                                website="https://github.com/fizzyizzy05/binary/",
                                 issue_url="https://github.com/fizzyizzy05/binary/issues/new",
                                 license_type=Gtk.License.GPL_3_0,
                                 release_notes_version='0.3.x',
