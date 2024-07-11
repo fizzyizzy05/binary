@@ -137,13 +137,13 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = int(input, 2)
             # Set the output label and bit counter label
             bits = bitCount(input)
             self.update_input_bits(bits=bitCount(input), count=len(input))
-            self.isZero()
+            self.is_zero()
             return str(int(input, 2))
         # Decimal to Binary
         elif in_base == 1 and out_base == 0:
@@ -152,11 +152,11 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = bin(int(input)).lstrip("0b")
             self.update_output_bits(bits=bitCount(ans), count=len(ans))
-            self.isZero()
+            self.is_zero()
             return ans
         # Decimal to Hexadecimal
         elif in_base == 1 and out_base == 2:
@@ -166,10 +166,10 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = hex(int(inStr)).lstrip("0x").upper()
-            self.isZero()
+            self.is_zero()
             return ans
         # Hexadecimal to Decimal
         elif in_base == 2 and out_base == 1:
@@ -178,10 +178,10 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = str(int(input, 16))
-            self.isZero()
+            self.is_zero()
             return ans
         # Hexadecimal to Binary
         elif in_base == 2 and out_base == 0:
@@ -190,11 +190,11 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = bin(int(input, 16)).lstrip("0b")
             self.update_output_bits(bits=bitCount(ans), count=len(ans))
-            self.isZero()
+            self.is_zero()
             return ans
         # Binary to Hexadecimal
         elif in_base == 0 and out_base == 2:
@@ -203,11 +203,11 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = hex(int(input, 2)).strip("0x").upper()
             self.update_input_bits(bits=bitCount(input), count=len(input))
-            self.isZero()
+            self.is_zero()
             return ans
         # Oct to Bin
         elif in_base == 3 and out_base == 0:
@@ -217,7 +217,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.remove_css_class("error")
                     self.output_entry.add_css_class("mono")
                 except:
-                    self.cleaninput_entry()
+                    self.clean_input_entry()
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
             self.update_output_bits(bits=bitCount(ans), count=len(ans))
@@ -230,7 +230,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input, 2)).lstrip("0o"))
             self.update_input_bits(bits=bitCount(input), count=len(input))
@@ -243,7 +243,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = str(int(input, 8))
             self.in_bit_label.set_visible(False)
@@ -255,7 +255,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input)).lstrip("0o"))
             self.in_bit_label.set_visible(False)
@@ -267,7 +267,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return
             ans = hex(int(input, 8)).lstrip("0x").upper()
             self.in_bit_label.set_visible(False)
@@ -279,7 +279,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.remove_css_class("error")
                 self.output_entry.add_css_class("mono")
             except:
-                self.cleaninput_entry()
+                self.clean_input_entry()
                 return "char"
             ans = oct(int(input, 16)).lstrip("0o")
             self.in_bit_label.set_visible(False)
@@ -328,7 +328,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.output_entry.add_css_class("error")
             return input
 
-    def isZero(self, *kwargs):
+    def is_zero(self, *kwargs):
         inStr = self.input_entry.get_text();
         for char in inStr:
             if char != '0':
@@ -348,7 +348,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.in_bit_label.set_label(f"0 {self.bitsTxt}")
         self.out_bit_label.set_label(f"0 {self.bitsTxt}")
 
-    def cleaninput_entry(self, *kwargs):
+    def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
 
     def update_input_bits(self, *kwargs, bits, count):
