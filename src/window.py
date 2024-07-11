@@ -60,7 +60,6 @@ class BinaryWindow(Adw.ApplicationWindow):
     def change_bases(self, *kwargs):
         try:
             self.input_handler()
-
             if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
                 self.in_bit_label.set_visible(True)
                 self.out_bit_label.set_visible(True)

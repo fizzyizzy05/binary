@@ -66,20 +66,14 @@ class BinaryApplication(Adw.Application):
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
-        about = Adw.AboutDialog(application_name='Binary',
-                                application_icon='io.github.fizzyizzy05.binary',
-                                developer_name='Isabelle Jackson',
-                                version='0.4',
-                                developers=['Isabelle Jackson'],
-                                designers=['Gregor Niehl'],
-                                issue_url="https://github.com/fizzyizzy05/binary/issues/",
-                                license_type=Gtk.License.GPL_3_0,
-                                release_notes_version='0.3.x',
-                                release_notes=self.release_notes,
-                                # Translators: Replace "translator-credits" with your names, one name per line
-                                translator_credits = _("translator-credits"),
-                                copyright='© 2023-2024 Isabelle Jackson.')
-        about.present(self.props.active_window)
+        about = Adw.AboutWindow.new_from_appdata("io/github/fizzyizzy05/binary/metainfo.xml", "0.4")
+        about.set_developers(["Isabelle Jackson https://fizzyizzy05.codeberg.page"])
+        about.set_designers=(["Gregor Niehl https://gitlab.gnome.org/gregorni"])
+        # Translators: Replace "translator-credits" with your names, one name per line
+        about.set_translator_credits(_("translator-credits"))
+        about.set_copyright("© 2023-2024 Isabelle Jackson.")
+        about.set_transient_for(self.props.active_window)
+        about.present()
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""
