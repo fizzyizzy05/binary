@@ -30,10 +30,10 @@
           <li>Changing the bases will update the calculated values</li>
         </ul>
         <p>Added the following translations:</p>
-        <li>
+        <ul>
           <li>Italian (Albano Battistella)</li>
           <li>Russian (Fedorov Alexei)</li>
-        </li>
+        </ul>
       </description>
     </release>
     <release version="0.3" date="2024-06-23">
