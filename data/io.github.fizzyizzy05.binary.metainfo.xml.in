@@ -19,17 +19,25 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.3.1" date="2024-07-11">
+      <description translate="no">
+        <p>Binary 0.3.1 is a new small release with a few improvements:</p>
+        <ul>
+          <li>Base selectors use the full base name, rather than the short name</li>
+          <li>Bit counter is now a dropdown, with individual bits hidden by default so it's more out of the way.</li>
+          <li>Placeholder text no longer uses a monospace font</li>
+          <li>Invalid input isn't removed, instead the entry will turn red</li>
+          <li>Changing the bases will update the calculated values</li>
+        </ul>
+        <p>Added the following translations:</p>
+        <li>
+          <li>Italian (Albano Battistella)</li>
+          <li>Russian (Fedorov Alexei)</li>
+        </li>
+      </description>
+    </release>
     <release version="0.3" date="2024-06-23">
       <description translate="no">
-        <release version="0.3.1" date="2024-07-12">
-          <description translate="no">
-            <p>Binary 0.3.1 is a new small release with a few improvements:</p>
-            <ul>
-              <li>Placeholder text no longer uses a monospace font</li>
-
-            </ul>
-          </description>
-        </release>
         <p>Binary 0.3 is a new release with the following improvements:</p>
         <ul>
           <li>A new cleaner design for the base selectors for the headers.</li>
