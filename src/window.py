@@ -38,7 +38,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     in_dropdown = Gtk.Template.Child()
     out_dropdown = Gtk.Template.Child()
 
-    bitsTxt = _("bits") # String for the word Bits, makes translation easier.
+    bits_text = _("bits") # String for the word Bits, makes translation easier.
 
     bases = Gtk.StringList.new(None)
     bases.append("Binary")
@@ -311,8 +311,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.in_bit_label.set_visible(True)
         self.output_entry.set_text("")
         self.input_entry.set_text("")
-        self.in_bit_label.set_label(f"0 {self.bitsTxt}")
-        self.out_bit_label.set_label(f"0 {self.bitsTxt}")
+        self.in_bit_label.set_label(f"0 {self.bits_text}")
+        self.out_bit_label.set_label(f"0 {self.bits_text}")
         bit_counter_text = _("Enter a number to see its bits")
         self.input_bits.set_text(bit_counter_text)
         self.output_bits.set_text(bit_counter_text)
@@ -321,11 +321,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.input_entry.add_css_class("error")
 
     def update_input_bits(self, *kwargs, bits, count):
-        self.in_bit_label.set_label(f"{count} {self.bitsTxt}")
+        self.in_bit_label.set_label(f"{count} {self.bits_text}")
         self.input_bits.set_label(f"{bits}")
 
     def update_output_bits(self, *kwargs, bits, count):
-        self.out_bit_label.set_label(f"{count} {self.bitsTxt}")
+        self.out_bit_label.set_label(f"{count} {self.bits_text}")
         self.output_bits.set_label(f"{bits}")
 
     def toggle_mono(self, *kwargs):
