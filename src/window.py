@@ -84,15 +84,11 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans != "char":
                 self.output_entry.set_text(ans)
+                self.toggle_mono()
+            else:
+                self.input_entry.add_css_class("error")
         else:
             self.blank()
-            self.input_entry.remove_css_class("error")
-            self.input_entry.remove_css_class("mono")
-            self.output_entry.remove_css_class("error")
-            self.output_entry.remove_css_class("mono")
-            empty_counter_text = _("Enter a number to see its bits")
-            self.input_bits.set_text(empty_counter_text)
-            self.output_bits.set_text(empty_counter_text)
         self.editable = True
 
     @Gtk.Template.Callback()
@@ -100,16 +96,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.editable == True:
             in_str = self.output_entry.get_text()
             print(in_str)
-            if in_str == "":
-                self.blank()
-                self.input_entry.remove_css_class("error")
-                self.input_entry.remove_css_class("mono")
-                self.output_entry.remove_css_class("error")
-                self.output_entry.remove_css_class("mono")
-                empty_counter_text = _("Enter a number to see its bits")
-                self.input_bits.set_text(empty_counter_text)
-                self.output_bits.set_text(empty_counter_text)
-            else:
+            if in_str != "":
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
                 ans = self.get_answer(input=in_str, in_base=in_base, out_base=out_base)
@@ -117,7 +104,12 @@ class BinaryWindow(Adw.ApplicationWindow):
                 if ans != "char":
                     self.input_entry.set_text(ans)
                     self.output_entry.set_position(len(ans))
-
+                else:
+                    self.output_entry.add_css_class("error")
+                    self.input_entry.remove_css_class("error")
+                self.toggle_mono()
+            else:
+                self.blank()
             self.editable = True
 
     def get_answer(self, *kwargs, input, in_base, out_base):
@@ -126,16 +118,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         # 2 = Hexadecimal
         # 3 = Octal
         # No input
-        self.input_entry.add_css_class("mono")
-
         print (f"input: {in_base}")
         print (f"output: {out_base}")
         # Binary to Decimal
         if in_base == 0 and out_base == 1:
             try:
                 int(input, 2)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -149,8 +137,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 1 and out_base == 0:
             try:
                 int(input, 10)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -163,8 +149,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             inStr = self.input_entry.get_text()
             try:
                 int(inStr)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -175,8 +159,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 2 and out_base == 1:
             try:
                 int(input, 16)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -187,8 +169,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 2 and out_base == 0:
             try:
                 int(input, 16)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -200,8 +180,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 0 and out_base == 2:
             try:
                 int(input, 2)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -214,8 +192,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             for char in str(input):
                 try:
                     int(char, 8)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.add_css_class("mono")
                 except:
                     self.clean_input_entry()
                     return "char"
@@ -227,8 +203,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 0 and out_base == 3:
             try:
                 int(input, 2)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -240,8 +214,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 3 and out_base == 1:
             try:
                 int(input, 8)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -252,8 +224,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 1 and out_base == 3:
             try:
                 int(input, 10)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -264,8 +234,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 3 and out_base == 2:
             try:
                 int(input, 8)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return
@@ -276,8 +244,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         elif in_base == 2 and out_base == 3:
             try:
                 int(input, 16)
-                self.input_entry.remove_css_class("error")
-                self.output_entry.add_css_class("mono")
             except:
                 self.clean_input_entry()
                 return "char"
@@ -347,6 +313,9 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.input_entry.set_text("")
         self.in_bit_label.set_label(f"0 {self.bitsTxt}")
         self.out_bit_label.set_label(f"0 {self.bitsTxt}")
+        bit_counter_text = _("Enter a number to see its bits")
+        self.input_bits.set_text(bit_counter_text)
+        self.output_bits.set_text(bit_counter_text)
 
     def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
@@ -358,3 +327,14 @@ class BinaryWindow(Adw.ApplicationWindow):
     def update_output_bits(self, *kwargs, bits, count):
         self.out_bit_label.set_label(f"{count} {self.bitsTxt}")
         self.output_bits.set_label(f"{bits}")
+
+    def toggle_mono(self, *kwargs):
+        if self.input_entry.get_text() != "":
+            self.input_entry.add_css_class("mono")
+        else:
+            self.input_entry.remove_css_class("mono")
+
+        if self.output_entry.get_text() != "":
+            self.output_entry.add_css_class("mono")
+        else:
+            self.output_entry.remove_css_class("mono")
