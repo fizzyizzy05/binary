@@ -59,11 +59,9 @@ class BinaryWindow(Adw.ApplicationWindow):
 
             if self.inDropdown.get_selected() == 0:
                 self.bitLbl.set_visible(True)
-                self.bitLbl.set_halign(1)
                 self.bits.set_text(_("Enter a number to see its bits"))
             elif self.outDropdown.get_selected() == 0:
                 self.bitLbl.set_visible(True)
-                self.bitLbl.set_halign(2)
                 self.bits.set_text(_("Enter a number to see the output's bits"))
             else:
                 self.bitLbl.set_visible(False)
