@@ -79,11 +79,11 @@ class BinaryWindow(Adw.ApplicationWindow):
     def input_handler(self, *kwargs):
         self.editable = False;
         in_str = self.input_entry.get_text()
+        self.toggle_mono()
         if in_str != "":
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans != "char":
                 self.output_entry.set_text(ans)
-                self.toggle_mono()
             else:
                 self.input_entry.add_css_class("error")
         else:
@@ -95,6 +95,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.editable == True:
             in_str = self.output_entry.get_text()
             print(in_str)
+            self.toggle_mono()
             if in_str != "":
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
@@ -106,7 +107,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 else:
                     self.output_entry.add_css_class("error")
                     self.input_entry.remove_css_class("error")
-                self.toggle_mono()
             else:
                 self.blank()
             self.editable = True
