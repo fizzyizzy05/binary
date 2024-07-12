@@ -33,5 +33,5 @@ GNOME Builder is the recommended way to build and test this app.
 3. Open this project in GNOME Builder and work on it from there.
 
 ## Code of Conduct
-Binary is designed for GNOME, and built with GNOME technologies. As such, it follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
+Binary follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
 
