@@ -19,18 +19,8 @@ Binary is officially available as a flatpak on Flathub.
 - The input box removes invalid digits when they're entered
 - Bit counter for binary values
 
-## Translations
-Binary uses [Weblate](https://hosted.weblate.org/projects/binary/binary-app/) for translations.
-
-For automatically creating a .pot file everytime a new string is added, use update_translations.sh. This script was adapted from [Letterpress](https://gitlab.gnome.org/World/Letterpress/-/tree/main) by Gregor Niehl, who in turn adapted it from TheEvilSkeleton.
-  
-## Testing/building
-GNOME Builder is the recommended way to build and test this app.
-### Using GNOME Builder:
-1. Install GNOME Builder from Flathub
-2. Clone this repository
-```https://github.com/fizzyizzy05/binary.git```
-3. Open this project in GNOME Builder and work on it from there.
+## Contributing
+You can use ["https://hosted.weblate.org/engage/binary/](Weblate) for translations and [GNOME Builder from Flathub](https://flathub.org/apps/org.gnome.Builder) for development. More info in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Code of Conduct
 Binary follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct)
