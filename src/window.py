@@ -195,7 +195,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
             self.update_output_bits(bits=bitCount(ans), count=len(ans))
-            self.in_bit_label.set_visible(True)
             return ans
         # Bin to Oct
         elif in_base == 0 and out_base == 3:
@@ -206,7 +205,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 return "char"
             ans = str(oct(int(input, 2)).lstrip("0o"))
             self.update_input_bits(bits=bitCount(input), count=len(input))
-            self.in_bit_label.set_visible(True)
             return ans
         # Oct to Dec
         elif in_base == 3 and out_base == 1:
@@ -216,7 +214,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = str(int(input, 8))
-            self.in_bit_label.set_visible(False)
             return ans
         # Dec to Oct
         elif in_base == 1 and out_base == 3:
@@ -226,7 +223,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input)).lstrip("0o"))
-            self.in_bit_label.set_visible(False)
             return ans
         # Oct to Hex
         elif in_base == 3 and out_base == 2:
@@ -236,7 +232,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return
             ans = hex(int(input, 8)).lstrip("0x").upper()
-            self.in_bit_label.set_visible(False)
             return ans
         # Hex to Oct
         elif in_base == 2 and out_base == 3:
@@ -246,7 +241,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = oct(int(input, 16)).lstrip("0o")
-            self.in_bit_label.set_visible(False)
             return ans
         # Same number bases
         elif in_base == out_base:
@@ -262,9 +256,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 except:
                     self.input_entry.add_css_class("error")
                     self.output_entry.add_css_class("error")
-                self.in_bit_label.set_visible(True)
             elif self.in_dropdown.get_selected() == 1:
-                self.in_bit_label.set_visible(False)
                 try:
                     int(input, 10)
                     self.input_entry.remove_css_class("error")
@@ -273,7 +265,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.add_css_class("error")
                     self.output_entry.add_css_class("error")
             elif self.in_dropdown.get_selected() == 2:
-                self.in_bit_label.set_visible(False)
                 try:
                     int(input, 16)
                     self.input_entry.remove_css_class("error")
@@ -282,7 +273,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.add_css_class("error")
                     self.output_entry.add_css_class("error")
             elif self.in_dropdown.get_selected() == 3:
-                self.in_bit_label.set_visible(False)
                 try:
                     int(input, 8)
                     self.input_entry.remove_css_class("error")
@@ -301,12 +291,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.output_entry.remove_css_class("error")
         self.blank()
 
-        if self.in_dropdown.get_selected() != 0 and self.out_dropdown.get_selected() != 0:
-            self.in_bit_label.set_visible(False)
-
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
-        self.in_bit_label.set_visible(True)
         self.output_entry.set_text("")
         self.input_entry.set_text("")
         self.in_bit_label.set_label(f"0 {self.bits_text}")
