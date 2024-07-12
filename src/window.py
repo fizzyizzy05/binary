@@ -78,11 +78,15 @@ class BinaryWindow(Adw.ApplicationWindow):
         in_str = self.input_entry.get_text()
         if in_str != "":
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
-            if ans != "char":
+            if ans == "char":
+                self.input_entry.add_css_class("error")
+            elif ans == "char_dual":
+                self.input_entry.add_css_class("error")
+                self.output_entry.add_css_class("error")
+                self.output_entry.set_text(in_str)
+            else:
                 self.output_entry.set_text(ans)
                 self.input_entry.remove_css_class("error")
-            else:
-                self.input_entry.add_css_class("error")
         else:
             self.blank()
         self.toggle_mono()
@@ -96,13 +100,15 @@ class BinaryWindow(Adw.ApplicationWindow):
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
                 ans = self.get_answer(input=in_str, in_base=in_base, out_base=out_base)
-                if ans != "char":
-                    self.input_entry.set_text(ans)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.set_position(len(ans))
-                else:
+                if ans == "char":
                     self.output_entry.add_css_class("error")
-                    self.input_entry.remove_css_class("error")
+                elif ans == "char_dual":
+                    self.input_entry.add_css_class("error")
+                    self.output_entry.add_css_class("error")
+                    self.input_entry.set_text(in_str)
+                else:
+                    self.input_entry.set_text(ans)
+                    self.output_entry.set_position(len(ans))
             else:
                 self.blank()
             self.toggle_mono()
@@ -245,38 +251,27 @@ class BinaryWindow(Adw.ApplicationWindow):
             if in_base == 0:
                 try:
                     int(input, 2)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.remove_css_class("error")
-                    self.update_input_bits(bits=bitCount(input), count=len(input))
-                    self.update_output_bits(bits=bitCount(input), count=len(input))
+                    return input
                 except:
-                    self.input_entry.add_css_class("error")
-                    self.output_entry.add_css_class("error")
+                    return "char_dual"
             elif self.in_dropdown.get_selected() == 1:
                 try:
                     int(input, 10)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.remove_css_class("error")
+                    return input
                 except:
-                    self.input_entry.add_css_class("error")
-                    self.output_entry.add_css_class("error")
+                    return "char_dual"
             elif self.in_dropdown.get_selected() == 2:
                 try:
                     int(input, 16)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.remove_css_class("error")
+                    return input
                 except:
-                    self.input_entry.add_css_class("error")
-                    self.output_entry.add_css_class("error")
+                    return "char_dual"
             elif self.in_dropdown.get_selected() == 3:
                 try:
                     int(input, 8)
-                    self.input_entry.remove_css_class("error")
-                    self.output_entry.remove_css_class("error")
+                    return input
                 except:
-                    self.input_entry.add_css_class("error")
-                    self.output_entry.add_css_class("error")
-            return input
+                    return "char_dual"
 
     def is_zero(self, *kwargs):
         inStr = self.input_entry.get_text();
