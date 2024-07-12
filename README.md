@@ -7,7 +7,9 @@
 
 Binary is a simple app for GNOME to easily convert between different number bases. 
 ## Installing
-[![https://dl.flathub.org/assets/badges/flathub-badge-en.png](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.fizzyizzy05.binary)
+<a href='https://flathub.org/apps/io.github.fizzyizzy05.binary'>
+    <img width='240' alt='Get it on Flathub' src='https://flathub.org/api/badge?locale=en'/>
+</a>
 
 Binary is officially available as a flatpak on Flathub. 
 
