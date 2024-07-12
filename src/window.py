@@ -76,7 +76,6 @@ class BinaryWindow(Adw.ApplicationWindow):
     def input_handler(self, *kwargs):
         self.editable = False;
         in_str = self.input_entry.get_text()
-        self.toggle_mono()
         if in_str != "":
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans != "char":
@@ -86,6 +85,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.input_entry.add_css_class("error")
         else:
             self.blank()
+        self.toggle_mono()
         self.editable = True
 
     @Gtk.Template.Callback()
@@ -93,7 +93,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.editable == True:
             in_str = self.output_entry.get_text()
             print(in_str)
-            self.toggle_mono()
             if in_str != "":
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
@@ -108,6 +107,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.remove_css_class("error")
             else:
                 self.blank()
+            self.toggle_mono()
             self.editable = True
 
     def get_answer(self, *kwargs, input, in_base, out_base):
