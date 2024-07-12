@@ -50,20 +50,6 @@ class BinaryApplication(Adw.Application):
             win = BinaryWindow(application=self)
         win.present()
 
-    release_notes = """
-        <p>Binary 0.3 is a new release with the following improvements:</p>
-        <ul>
-          <li>A new cleaner design for the base selectors for the headers.</li>
-          <li>Added support for converting numbers between octal and other bases.</li>
-          <li>Reworked number conversions to be more reliable and quicker.</li>
-        </ul>
-        <p>Added translations for the following locales:</p>
-        <ul>
-          <li>German (Konstantin Tutsch)</li>
-          <li>Finnish (Jiri Grönroos)</li>
-        </ul>
-    """
-
     def on_about_action(self, *args):
         """Callback for the app.about action."""
         about = Adw.AboutDialog.new_from_appdata("io/github/fizzyizzy05/binary/metainfo.xml", "0.4")
