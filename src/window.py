@@ -57,21 +57,18 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.blank()
 
     @Gtk.Template.Callback()
-    def change_bases(self, *kwargs):
+    def change_input_base(self, *kwargs):
         try:
             self.input_handler()
-            if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
-                self.in_bit_label.set_visible(True)
-                self.out_bit_label.set_visible(True)
-            elif self.in_dropdown.get_selected() == 0:
-                self.in_bit_label.set_visible(True)
-                self.out_bit_label.set_visible(False)
-            elif self.out_dropdown.get_selected() == 0:
-                self.in_bit_label.set_visible(False)
-                self.out_bit_label.set_visible(True)
-            else:
-                self.in_bit_label.set_visible(False)
-                self.out_bit_label.set_visible(False)
+            self.toggle_bit_counter()
+        except:
+            return
+
+    @Gtk.Template.Callback()
+    def change_output_base(self, *kwargs):
+        try:
+            self.output_handler()
+            self.toggle_bit_counter()
         except:
             return
 
@@ -342,3 +339,17 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.output_entry.add_css_class("mono")
         else:
             self.output_entry.remove_css_class("mono")
+
+    def toggle_bit_counter(self, *kwargs):
+        if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
+            self.in_bit_label.set_visible(True)
+            self.out_bit_label.set_visible(True)
+        elif self.in_dropdown.get_selected() == 0:
+            self.in_bit_label.set_visible(True)
+            self.out_bit_label.set_visible(False)
+        elif self.out_dropdown.get_selected() == 0:
+            self.in_bit_label.set_visible(False)
+            self.out_bit_label.set_visible(True)
+        else:
+            self.in_bit_label.set_visible(False)
+            self.out_bit_label.set_visible(False)
