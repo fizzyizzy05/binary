@@ -108,7 +108,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.set_text(in_str)
                 else:
                     self.input_entry.set_text(ans)
-                    self.output_entry.set_position(len(ans))
+                    self.output_entry.set_position(-1)
             else:
                 self.blank()
             self.toggle_mono()
