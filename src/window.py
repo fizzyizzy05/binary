@@ -316,6 +316,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.input_bits.set_text(bit_counter_text)
         self.output_bits.set_text(bit_counter_text)
         self.toggle_mono()
+        self.input_entry.remove_css_class("error")
+        self.output_entry.remove_css_class("error")
 
     def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
