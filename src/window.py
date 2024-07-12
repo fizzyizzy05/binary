@@ -315,6 +315,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         bit_counter_text = _("Enter a number to see its bits")
         self.input_bits.set_text(bit_counter_text)
         self.output_bits.set_text(bit_counter_text)
+        self.toggle_mono()
 
     def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
