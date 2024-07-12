@@ -19,6 +19,12 @@
     </screenshot>
   </screenshots>
   <releases>
+    <!-- release date to be confirmed, this is a placeholder for now -->
+    <release version="0.4" date="2024-08-29">
+      <description translate="no">
+        <p>Placeholder for changes and improvements since 0.3.1</p>
+      </description>
+    </release>
     <release version="0.3.1" date="2024-07-11">
       <description translate="no">
         <p>Binary 0.3.1 is a new small release with a few improvements:</p>
@@ -107,7 +113,7 @@
   <url type="homepage">https://github.com/fizzyizzy05/binary</url>
   <url type="bugtracker">https://github.com/fizzyizzy05/binary/issues</url>
   <url type="vcs-browser">https://github.com/fizzyizzy05/binary</url>
-  <url type="translate">https://github.com/fizzyizzy05/binary/tree/main/po</url>
+  <url type="translate">https://hosted.weblate.org/engage/binary/</url>
   <launchable type="desktop-id">io.github.fizzyizzy05.binary.desktop</launchable>
   <translation type="gettext">binary</translation>
   <developer id="io.github.fizzyizzy05">
