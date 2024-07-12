@@ -84,6 +84,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans != "char":
                 self.output_entry.set_text(ans)
+                self.input_entry.remove_css_class("error")
             else:
                 self.input_entry.add_css_class("error")
         else:
@@ -103,6 +104,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 print(ans)
                 if ans != "char":
                     self.input_entry.set_text(ans)
+                    self.input_entry.remove_css_class("error")
                     self.output_entry.set_position(len(ans))
                 else:
                     self.output_entry.add_css_class("error")
