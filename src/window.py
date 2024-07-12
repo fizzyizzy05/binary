@@ -92,12 +92,10 @@ class BinaryWindow(Adw.ApplicationWindow):
     def output_handler(self, *kwargs):
         if self.editable == True:
             in_str = self.output_entry.get_text()
-            print(in_str)
             if in_str != "":
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
                 ans = self.get_answer(input=in_str, in_base=in_base, out_base=out_base)
-                print(ans)
                 if ans != "char":
                     self.input_entry.set_text(ans)
                     self.input_entry.remove_css_class("error")
@@ -116,8 +114,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         # 2 = Hexadecimal
         # 3 = Octal
         # No input
-        print (f"input: {in_base}")
-        print (f"output: {out_base}")
         # Binary to Decimal
         if in_base == 0 and out_base == 1:
             try:
