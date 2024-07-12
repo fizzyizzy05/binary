@@ -19,6 +19,12 @@
     </screenshot>
   </screenshots>
   <releases>
+    <!-- release date to be confirmed, this is a placeholder for now -->
+    <release version="0.4" date="2024-08-29">
+      <description translate="no">
+        <p>Placeholder for changes and improvements since 0.3.1</p>
+      </description>
+    </release>
     <release version="0.3.1" date="2024-07-11">
       <description translate="no">
         <p>Binary 0.3.1 is a new small release with a few improvements:</p>
