@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-11 21:57+0100\n"
-"PO-Revision-Date: 2024-05-19 17:01+0000\n"
+"PO-Revision-Date: 2024-07-13 09:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
-"app/fi/>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/binary/"
+"binary-app/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6
@@ -203,23 +203,23 @@ msgstr "bittiä"
 
 #: src/window.py:62 src/window.py:96
 msgid "Enter a number to see its bits"
-msgstr ""
+msgstr "Kirjoita numero nähdäksesi sen bitit"
 
 #: src/window.py:65 src/window.py:99
 msgid "Enter a number to see the output's bits"
-msgstr ""
+msgstr "Kirjoita numero nähdäksesi tulosteen bitit"
 
 #: src/window.blp:18
 msgid "Input Base"
-msgstr ""
+msgstr "Syötekanta"
 
 #: src/window.blp:29
 msgid "Swap input and output bases"
-msgstr ""
+msgstr "Vaihda syöte- ja tulostekantoja"
 
 #: src/window.blp:34
 msgid "Output Base"
-msgstr ""
+msgstr "Tulostekanta"
 
 #: src/window.blp:48
 msgid "Main Menu"
