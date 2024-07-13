@@ -133,15 +133,11 @@ Popover bitPopover {
   has-arrow: true;
 
   Box {
-    Adw.Clamp {
-      maximum-size: 300;
-      tightening-threshold: 1000;
-
-      Label bits {
-        wrap: true;
-        wrap-mode: word;
-        label: "";
-      }
+    Label bits {
+      wrap: true;
+      max-width-chars: 30;
+      wrap-mode: word;
+      label: "";
     }
   }
 }
