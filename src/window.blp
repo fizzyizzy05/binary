@@ -122,15 +122,11 @@ Popover in_bit_popover {
   has-arrow: true;
 
   Box {
-    Adw.Clamp {
-      maximum-size: 300;
-      tightening-threshold: 1000;
-
-      Label input_bits {
-        wrap: true;
-        wrap-mode: word;
-        label: "";
-      }
+    Label input_bits {
+      wrap: true;
+      max-width-chars: 30;
+      wrap-mode: word;
+      label: "";
     }
   }
 }
@@ -139,15 +135,11 @@ Popover out_bit_popover {
   has-arrow: true;
 
   Box {
-    Adw.Clamp {
-      maximum-size: 300;
-      tightening-threshold: 1000;
-
-      Label output_bits {
-        wrap: true;
-        wrap-mode: word;
-        label: "";
-      }
+    Label output_bits {
+      wrap: true;
+      max-width-chars: 30;
+      wrap-mode: word;
+      label: "";
     }
   }
 }
