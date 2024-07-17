@@ -14,7 +14,7 @@ Binary is a simple app that converts numbers between binary, decimal, hexadecima
 Binary is officially available as a Flatpak on Flathub. 
 
 ## Contributing
-You can use ["https://hosted.weblate.org/engage/binary/](Weblate) for translations and [GNOME Builder from Flathub](https://flathub.org/apps/org.gnome.Builder) for development. More info in [CONTRIBUTING.md](CONTRIBUTING.md).
+You can use ["https://hosted.weblate.org/engage/binary/"](Weblate) for translations and [GNOME Builder from Flathub](https://flathub.org/apps/org.gnome.Builder) for development. More info in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Code of Conduct
 Binary follows the [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct). Please abide by it when contributing to Binary, including interacting in project spaces.
