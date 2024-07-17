@@ -22,7 +22,13 @@
     <!-- release date to be confirmed, this is a placeholder for now -->
     <release version="0.4" date="2024-08-29">
       <description translate="no">
-        <p>Placeholder for changes and improvements since 0.3.1</p>
+        <!-- Release notes incomplete. This is a brief collection of improvements and fixes made since 0.3.1, and needs to be properly written before that release. -->
+        <ul>
+          <li>New vertical design. </li>
+          <li>Output is less likely to overflow, taking space from the input</li>
+          <li>The output is now directly mutable, replacing the dedicated swap button</li>
+          <li>Using AdwAboutDialog</li>
+        </ul>
       </description>
     </release>
     <release version="0.3.1" date="2024-07-11">
