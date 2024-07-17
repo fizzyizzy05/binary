@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 18:14+0100\n"
+"POT-Creation-Date: 2024-07-17 15:50+0100\n"
 "PO-Revision-Date: 2024-06-25 20:09+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
@@ -285,11 +285,11 @@ msgstr "Введите числа…"
 msgid "Output Base"
 msgstr "Выходное основание"
 
-#: src/window.blp:158
+#: src/window.blp:150
 msgid "_Keyboard Shortcuts"
 msgstr "_Горячие клавиши"
 
-#: src/window.blp:163
+#: src/window.blp:155
 msgid "_About Binary"
 msgstr "_О программе Binary"
 

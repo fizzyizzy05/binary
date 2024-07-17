@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 18:14+0100\n"
+"POT-Creation-Date: 2024-07-17 15:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -279,11 +279,11 @@ msgstr "Inserisci numeri…"
 msgid "Output Base"
 msgstr ""
 
-#: src/window.blp:158
+#: src/window.blp:150
 msgid "_Keyboard Shortcuts"
 msgstr "_Scorciatoie da tastiera"
 
-#: src/window.blp:163
+#: src/window.blp:155
 msgid "_About Binary"
 msgstr "_Informazioni su Binary"
 
