@@ -52,13 +52,13 @@ class BinaryApplication(Adw.Application):
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
-        about = Adw.AboutWindow.new_from_appdata("io/github/fizzyizzy05/binary/metainfo.xml", "0.4")
+        about = Adw.AboutDialog.new_from_appdata("io/github/fizzyizzy05/binary/metainfo.xml", "0.4")
         about.set_developers(["Isabelle Jackson https://fizzyizzy05.codeberg.page"])
+        about.set_designers(["Gregor Niehl https://gitlab.gnome.org/gregorni"])
         # Translators: Replace "translator-credits" with your names, one name per line
         about.set_translator_credits(_("translator-credits"))
         about.set_copyright("© 2023-2024 Isabelle Jackson.")
-        about.set_transient_for(self.props.active_window)
-        about.present()
+        about.present(self.props.active_window)
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""

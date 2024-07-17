@@ -3,45 +3,17 @@ using Adw 1;
 
 template $BinaryWindow: Adw.ApplicationWindow {
   title: "Binary";
-  width-request: 300;
-  default-width: 500;
-  default-height: 200;
+  width-request: 360;
+  default-width: 360;
+  height-request: 460;
+  default-height: 360;
 
   content: Adw.ToolbarView {
     [top]
     Adw.HeaderBar header_bar {
-      [title]
-      Box {
-        spacing: 6;
+      show-title: false;
 
-        DropDown inDropdown {
-          tooltip-text: _("Input Base");
-
-          styles [
-            "flat-dropdown",
-          ]
-
-          notify => $changeBases();
-        }
-
-        Button swapBtn {
-          icon-name: "horizontal-arrows";
-          tooltip-text: _("Swap input and output bases");
-          clicked => $swap();
-        }
-
-        DropDown outDropdown {
-          tooltip-text: _("Output Base");
-
-          styles [
-            "flat-dropdown",
-          ]
-
-          notify => $changeBases();
-        }
-      }
-
-      [end]
+      [start]
       MenuButton {
         primary: true;
         icon-name: "open-menu-symbolic";
@@ -51,30 +23,37 @@ template $BinaryWindow: Adw.ApplicationWindow {
     }
 
     content: WindowHandle {
-      Box mainBox {
-        margin-start: 35;
-        margin-end: 35;
-        margin-top: 20;
-        margin-bottom: 35;
-        orientation: vertical;
-        valign: center;
-        halign: center;
+      Adw.Clamp {
+        maximum-size: 800;
+        tightening-threshold: 1000;
 
-        Box calcBox {
-          valign: center;
-          halign: center;
+        Box {
+          hexpand: true;
           orientation: vertical;
-          margin-bottom: 10;
+          margin-start: 25;
+          margin-end: 25;
+          margin-top: 25;
+          margin-bottom: 25;
+          valign: center;
+          spacing: 6;
 
-          Adw.Clamp {
-            maximum-size: 800;
-            tightening-threshold: 1000;
+          CenterBox {
+            [start]
+            DropDown in_dropdown {
+              tooltip-text: _("Input Base");
 
-            MenuButton bitLbl {
+              styles [
+                "flat-dropdown",
+              ]
+
+              notify => $change_input_base();
+            }
+
+            [end]
+            MenuButton in_bit_label {
               hexpand: false;
               halign: start;
-              margin-bottom: 2;
-              popover: bitPopover;
+              popover: in_bit_popover;
 
               styles [
                 "bitLbl",
@@ -83,57 +62,80 @@ template $BinaryWindow: Adw.ApplicationWindow {
             }
           }
 
-          Adw.Clamp inClamp {
-            maximum-size: 800;
-            tightening-threshold: 1000;
+          Entry input_entry {
+            placeholder-text: _("Enter numbers…");
+            changed =>  $input_handler();
 
-            Box inBox {
-              Adw.Clamp etrClamp {
-                maximum-size: 800;
-                tightening-threshold: 1000;
-
-                Entry entry {
-                  placeholder-text: _("Enter numbers…");
-                  margin-end: 10;
-                  changed => $inputHandler();
-
-                  accessibility {
-                    label: _("Enter numbers…");
-                  }
-                }
-              }
-
-              Label eqlLbl {
-                styles [
-                  "mono",
-                ]
-
-                margin-end: 10;
-                label: "=";
-              }
-
-              Label outLbl {
-                styles [
-                  "mono",
-                ]
-
-                selectable: true;
-                xalign: 0;
-                label: "0";
-              }
+            accessibility {
+              label: _("Enter numbers…");
             }
           }
+
+          Image {
+            icon-size: normal;
+            icon-name: "vertical-arrows-symbolic";
+            margin-top: 8;
+            margin-bottom: 8;
+          }
+
+          CenterBox {
+            [start]
+            DropDown out_dropdown {
+              tooltip-text: _("Output Base");
+
+              styles [
+                "flat-dropdown",
+              ]
+
+              notify => $change_output_base();
+            }
+
+            [end]
+            MenuButton out_bit_label {
+              hexpand: false;
+              halign: start;
+              popover: out_bit_popover;
+
+              styles [
+                "bitLbl",
+                "flat",
+              ]
+            }
+          }
+
+          Entry output_entry {
+            placeholder-text: _("Enter numbers…");
+            changed =>  $output_handler();
+
+            accessibility {
+              label: _("Enter numbers…");
+            }
+          }
+
         }
       }
     };
   };
 }
 
-Popover bitPopover {
+Popover in_bit_popover {
   has-arrow: true;
 
   Box {
-    Label bits {
+    Label input_bits {
+      wrap: true;
+      max-width-chars: 30;
+      wrap-mode: word;
+      label: "";
+    }
+  }
+}
+
+Popover out_bit_popover {
+  has-arrow: true;
+
+  Box {
+    Label output_bits {
       wrap: true;
       max-width-chars: 30;
       wrap-mode: word;

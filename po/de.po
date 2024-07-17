@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 21:57+0100\n"
+"POT-Creation-Date: 2024-07-13 18:14+0100\n"
 "PO-Revision-Date: 2024-04-14 13:01+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -46,49 +46,83 @@ msgstr ""
 msgid "Binary window converting 37 to 1F"
 msgstr "Binary Fenster konvertiert 12 zu 1100"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:25
+msgid "Placeholder for changes and improvements since 0.3.1"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:30
 #, fuzzy
 msgid "Binary 0.3.1 is a new small release with a few improvements:"
 msgstr ""
 "Binary 0.2.1 enthält ein kleines Update für die Basis Konverter Anwendung "
 "mit folgenden Verbesserungen"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:28
-msgid "Placeholder text no longer uses a monospace font"
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:32
+msgid "Base selectors use the full base name, rather than the short name"
 msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:33
+msgid ""
+"Bit counter is now a dropdown, with individual bits hidden by default so "
+"it's more out of the way."
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:34
+msgid "Placeholder text no longer uses a monospace font"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:35
+msgid "Invalid input isn't removed, instead the entry will turn red"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:36
+msgid "Changing the bases will update the calculated values"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:38
+msgid "Added the following translations:"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:40
+msgid "Italian (Albano Battistella)"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:41
+msgid "Russian (Fedorov Alexei)"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:47
 #, fuzzy
 msgid "Binary 0.3 is a new release with the following improvements:"
 msgstr ""
 "Binary 0.2.1 enthält ein kleines Update für die Basis Konverter Anwendung "
 "mit folgenden Verbesserungen"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:35
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:49
 msgid "A new cleaner design for the base selectors for the headers."
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:36
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:50
 msgid "Added support for converting numbers between octal and other bases."
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:37
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:51
 msgid "Reworked number conversions to be more reliable and quicker."
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:39
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:53
 msgid "Added translations for the following locales:"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:41
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:55
 msgid "German (Konstantin Tutsch)"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:42
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:56
 msgid "Finnish (Jiri Grönroos)"
 msgstr ""
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:48
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:62
 msgid ""
 "Binary 0.2.1 is a small update to the base converter app, with the following "
 "improvements"
@@ -96,19 +130,19 @@ msgstr ""
 "Binary 0.2.1 enthält ein kleines Update für die Basis Konverter Anwendung "
 "mit folgenden Verbesserungen"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:50
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:64
 msgid "Dark/light mode switch in a new preferences window"
 msgstr "Schalter im neuen Einstellungsfenster für Dunkles/Helles Thema"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:51
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:65
 msgid "Turkish translations"
 msgstr "Türkische Übersetzung"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:52
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:66
 msgid "Accessibility improvements"
 msgstr "Verbesserung der Barrierefreiheit"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:58
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:72
 msgid ""
 "Binary 0.2 is the latest update to the base converter app. This update "
 "introduces hexadecimal (or base 16) as a number base, allowing for "
@@ -122,13 +156,13 @@ msgstr ""
 "die App jetzt einen Grünen Farbakzent, welcher die App hervorhebt. Auch "
 "unpassende Zeichen werden nun automatisch aus der Eingabe entfernt."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:61
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:75
 msgid ""
 "Additionally, the following bug fixes and smaller improvements have been "
 "made:"
 msgstr "Zusätzlich gibt es folgende Bugfixes und kleine Verbesserungen:"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:65
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:79
 msgid ""
 "The output is now selectable, allowing for copy and paste instead of needing "
 "to manually type out the result."
@@ -136,7 +170,7 @@ msgstr ""
 "Die Ausgabe ist jetzt auswählbar. Es funktionieren jetzt auch Einfügen und "
 "Kopieren anstatt manuell abtippen zu müssen."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:66
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:80
 msgid ""
 "Decimal input now has data validation, and will display a toast when using "
 "an invalid digit."
@@ -144,7 +178,7 @@ msgstr ""
 "Die Dezimaleingabe hat nun Datenverifizierung und wird einen Toast bei "
 "ungültigen Zeichen anzeigen."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:67
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:81
 msgid ""
 "Wrong digit toasts will no longer duplicate, and will simply stay up when an "
 "invalid base is used."
@@ -152,12 +186,12 @@ msgstr ""
 "Toast für ungültige Zeichen wird nur noch einmal, statt pro falschem "
 "Zeichen, angezeigt."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:68
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:82
 msgid ""
 "The bit counter has been updated to be cleaner and easier to understand."
 msgstr "Der Bit-Zähler wurde für bessere Lesbarkeit angepasst."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:75
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:89
 msgid ""
 "When entering an invalid digit, it no longer removes it to prevent GTK "
 "Warnings. This functionality will likely be revisited down the line"
@@ -166,11 +200,11 @@ msgstr ""
 "verhindern. Diese Funktionalität wird wahrscheinlich später wieder "
 "implementiert werden"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:76
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:90
 msgid "Removed preferences button as it was empty and did nothing"
 msgstr "Einstellungsmenüpunkt entfernt, da es keine Einstellungen gibt"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:77
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:91
 msgid ""
 "The bit counter doesn't start with \"0 bits\" anymore, and should have "
 "consistent functionality."
@@ -178,11 +212,11 @@ msgstr ""
 "Der Bit-Zähler startet nicht mehr mit “0 Bits” und sollte ab jetzt "
 "konsistente Ausgaben liefern."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:78
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:92
 msgid "Added links to the project in the about window"
 msgstr "Links über das Projekt zum “Über Binary”-Dialog hinzugefügt"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:79
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:93
 msgid ""
 "The \"Legal\" section in the about window now states the GPL v3 license of "
 "the app"
@@ -190,23 +224,23 @@ msgstr ""
 "Die “Rechtshinweise”-Sektion im “Über Binary”-Dialog zeigt nun die GPL-3.0 "
 "Lizens der Anwendung an"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:80
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:94
 msgid "Code cleanup"
 msgstr "Quellcode aufgeräumt"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:87
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:101
 msgid "Version bump"
 msgstr "Version erhöht"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:88
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:102
 msgid "Swap button for base switcher"
 msgstr "Knopf zum Wechseln von Ein- und Ausgabe hinzugefügt"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:89
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:103
 msgid "Removed the binary calculator label"
 msgstr "Binärrechner-Label entfernt"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:95
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:109
 msgid ""
 "First proper release of Binary. Has basic support for converting between "
 "binary and hexadecmial values."
@@ -214,52 +248,44 @@ msgstr ""
 "Erster Release von Binary. Grundlegende Unterstützung für die Konvertierung "
 "zwischen Binär- und Hexadezimalzahlen."
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:108
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:122
 msgid "Isabelle Jackson"
 msgstr ""
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:72
+#: src/main.py:59
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
-#: src/window.py:39
+#: src/window.py:41
 msgid "bits"
 msgstr "Bits"
 
-#: src/window.py:62 src/window.py:96
+#: src/window.py:296
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.py:65 src/window.py:99
-msgid "Enter a number to see the output's bits"
-msgstr ""
-
-#: src/window.blp:18
-msgid "Input Base"
-msgstr ""
-
-#: src/window.blp:29
-msgid "Swap input and output bases"
-msgstr ""
-
-#: src/window.blp:34
-msgid "Output Base"
-msgstr ""
-
-#: src/window.blp:48
+#: src/window.blp:20
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: src/window.blp:96 src/window.blp:101
+#: src/window.blp:43
+msgid "Input Base"
+msgstr ""
+
+#: src/window.blp:66 src/window.blp:70 src/window.blp:107 src/window.blp:111
 msgid "Enter numbers…"
 msgstr "Zahl eingeben…"
 
-#: src/window.blp:152
+#: src/window.blp:84
+msgid "Output Base"
+msgstr ""
+
+#: src/window.blp:158
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastenkürzel"
 
-#: src/window.blp:157
+#: src/window.blp:163
 msgid "_About Binary"
 msgstr "_Über Binary"
 
