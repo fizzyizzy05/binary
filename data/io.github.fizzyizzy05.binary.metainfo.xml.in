@@ -20,7 +20,7 @@
   </screenshots>
   <releases>
     <!-- release date to be confirmed, this is a placeholder for now -->
-    <release version="0.4" date="2024-08-29">
+    <release version="4.0" date="2024-08-29">
       <description translate="no">
         <!-- Release notes incomplete. This is a brief collection of improvements and fixes made since 0.3.1, and needs to be properly written before that release. -->
         <ul>
@@ -28,6 +28,7 @@
           <li>Output is less likely to overflow, taking space from the input</li>
           <li>The output is now directly mutable, replacing the dedicated swap button</li>
           <li>Using AdwAboutDialog</li>
+          <li>New version number to better reflect the maturity of Binary</li>
         </ul>
       </description>
     </release>
