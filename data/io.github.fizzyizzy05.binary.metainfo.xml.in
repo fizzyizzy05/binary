@@ -35,7 +35,6 @@
           <li>New vertical design. </li>
           <li>Output is less likely to overflow, taking space from the input</li>
           <li>The output is now directly mutable, replacing the dedicated swap button</li>
-          <li>Using AdwAboutDialog</li>
           <li>New version number to better reflect the maturity of Binary</li>
         </ul>
       </description>
