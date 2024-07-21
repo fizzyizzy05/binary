@@ -31,11 +31,20 @@
     <release version="4.0" date="2024-08-29">
       <description translate="no">
         <!-- Release notes incomplete. This is a brief collection of improvements and fixes made since 0.3.1, and needs to be properly written before that release. -->
+        <p>Binary 4.0 (or 100) is a new release the base converter app. It comes with a new design (Gregor Niehl), that's aligned vertically and comes with multiple improvements compared to before:</p>
         <ul>
-          <li>New vertical design. </li>
           <li>Output is less likely to overflow, taking space from the input</li>
-          <li>The output is now directly mutable, replacing the dedicated swap button</li>
-          <li>New version number to better reflect the maturity of Binary</li>
+          <li>The output is now directly mutable instead of having a dedicated swap button</li>
+        </ul>
+        <p>Additional improvements include:</p>
+        <ul>
+          <li>Input and output bases are now saved between sessions</li>
+          <li>Input bases get a tooltip for invalid input, giving screen reader users more context.</li>
+        </ul>
+        <p>Last but not least, improved translations:</p>
+        <ul>
+          <li>Italian (Albano Battistella)</li>
+          <li>Finnish (Jiri Grönroos)</li>
         </ul>
       </description>
     </release>
