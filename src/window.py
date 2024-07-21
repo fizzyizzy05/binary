@@ -272,6 +272,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if in_base == 0:
                 try:
                     int(input, 2)
+                    self.update_bits(bits=bitCount(input), count=len(input))
                     return input
                 except:
                     return "char_dual"
