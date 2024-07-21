@@ -2,7 +2,9 @@
 ## Development
 Binary is developed using GTK4, Libadwaita and Python3 using PyGObject. I recommend using [GNOME Builder from Flathub](https://flathub.org/apps/org.gnome.Builder) for development, as it automatically manages building Binary, testing it in a Flatpak and contains the runtimes and build dependencies needed.
 
-Every time a new string is added, it's recommended to run update_translations.sh in the Builder runtime terminal. This automatically updates potfiles to accomodate for new strings, as well as for other ones moving on to different lines of code. Credit to Gregor Niehl and TheEvilSkeleton for this script.
+Every time a new string is added, it's recommended to run the update_translations.sh script. This automatically updates potfiles to accomodate for new strings, as well as for other ones moving on to different lines of code. Credit to Gregor Niehl and TheEvilSkeleton for this script.
+
+**Note:** the version in the Builder runtime terminal does not properly detect the translate="no" property, you should use meson on your host system or using a container instead.
 
 ## Translations
 <a href="https://hosted.weblate.org/engage/binary/">
