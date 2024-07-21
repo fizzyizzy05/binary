@@ -85,13 +85,18 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans == "char":
                 self.input_entry.add_css_class("error")
+                self.input_entry.set_tooltip_text("Invalid input")
+                self.output_entry.set_tooltip_text(None)
             elif ans == "char_dual":
                 self.input_entry.add_css_class("error")
+                self.input_entry.set_tooltip_text("Invalid input")
                 self.output_entry.add_css_class("error")
+                self.output_entry.set_tooltip_text("Invalid input")
                 self.output_entry.set_text(in_str)
             else:
                 self.output_entry.set_text(ans)
                 self.input_entry.remove_css_class("error")
+                self.output_entry.set_tooltip_text(None)
         else:
             self.blank()
         self.toggle_mono()
@@ -107,12 +112,19 @@ class BinaryWindow(Adw.ApplicationWindow):
                 ans = self.get_answer(input=in_str, in_base=in_base, out_base=out_base)
                 if ans == "char":
                     self.output_entry.add_css_class("error")
+                    self.input_entry.remove_css_class("error")
+                    self.output_entry.set_tooltip_text("Invalid input")
+                    self.input_entry.set_tooltip_text(None)
                 elif ans == "char_dual":
                     self.input_entry.add_css_class("error")
+                    self.input_entry.set_tooltip_text("Invalid input")
                     self.output_entry.add_css_class("error")
+                    self.output_entry.set_tooltip_text("Invalid input")
                     self.input_entry.set_text(in_str)
                 else:
                     self.input_entry.set_text(ans)
+                    self.output_entry.remove_css_class("error")
+                    self.input_entry.set_tooltip_text(None)
                     self.output_entry.set_position(-1)
             else:
                 self.blank()
