@@ -125,7 +125,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.set_text(ans)
                     self.output_entry.remove_css_class("error")
                     self.input_entry.set_tooltip_text(None)
-                    self.output_entry.set_position(-1)
+                self.output_entry.set_position(-1)
             else:
                 self.blank()
             self.toggle_mono()
