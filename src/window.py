@@ -59,7 +59,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def change_input_base(self, *kwargs):
         try:
-            self.input_handler()
+            self.output_handler()
             self.toggle_bit_counter()
         except:
             return
@@ -67,7 +67,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def change_output_base(self, *kwargs):
         try:
-            self.output_handler()
+            self.input_handler()
             self.toggle_bit_counter()
         except:
             return
