@@ -9,6 +9,6 @@ Every time a new string is added, it's recommended to run update_translations.sh
 <img src="https://hosted.weblate.org/widget/binary/287x66-black.png" alt="Translation status" />
 </a>
 
-Binary uses ["https://hosted.weblate.org/engage/binary/](Weblate) for translations, which provides a graphical UI for translations without needing to manually edit code. If unsure, use that as it's generally easier for everyone. More experienced users who prefer to do so can also manually edit potfiles, but please be mindful of other people's work when doing this.
+Binary uses [Weblate](https://hosted.weblate.org/engage/binary/) for translations, which provides a graphical UI for translations without needing to manually edit code. If unsure, use that as it's generally easier for everyone. More experienced users who prefer to do so can also manually edit potfiles, but please be mindful of other people's work when doing this.
 
 Remember to add your name as a translation to "translator-credits" in main.py for credit!
