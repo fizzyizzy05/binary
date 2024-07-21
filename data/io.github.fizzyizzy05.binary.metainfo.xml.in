@@ -13,9 +13,17 @@
     <color type="primary" scheme_preference="dark">#155a3a</color>
   </branding>
   <screenshots>
-    <screenshot type="default">
-      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-screenshot.png</image>
-      <caption>Binary window converting 37 to 1F</caption>
+    <screenshot type="default" xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-101010-decimal-42.png</image>
+      <caption>Binary window converting 101010 in binary to 42 in decimal</caption>
+    </screenshot>
+    <screenshot xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/decimal-1201-hexadecimal-4b1.png</image>
+      <caption>Binary window converting 1201 in decimal to 4B1 in hexadecimal</caption>
+    </screenshot>
+    <screenshot xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/decimal-1201-hexadecimal-4b1.png</image>
+      <caption>Binary window converting 17 in octal to F in hexadecimal</caption>
     </screenshot>
   </screenshots>
   <releases>
