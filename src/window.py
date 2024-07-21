@@ -152,7 +152,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = int(input, 2)
             # Set the output label and bit counter label
             bits = bitCount(input)
-            self.update_input_bits(bits=bitCount(input), count=len(input))
+            self.update_bits(bits=bitCount(input), count=len(input))
             self.is_zero()
             return str(int(input, 2))
         # Decimal to Binary
@@ -163,7 +163,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = bin(int(input)).lstrip("0b")
-            self.update_output_bits(bits=bitCount(ans), count=len(ans))
+            self.update_bits(bits=bitCount(ans), count=len(ans))
             self.is_zero()
             return ans
         # Decimal to Hexadecimal
@@ -194,7 +194,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = bin(int(input, 16)).lstrip("0b")
-            self.update_output_bits(bits=bitCount(ans), count=len(ans))
+            self.update_bits(bits=bitCount(ans), count=len(ans))
             self.is_zero()
             return ans
         # Binary to Hexadecimal
@@ -205,7 +205,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = hex(int(input, 2)).strip("0x").upper()
-            self.update_input_bits(bits=bitCount(input), count=len(input))
+            self.update_bits(bits=bitCount(input), count=len(input))
             self.is_zero()
             return ans
         # Oct to Bin
@@ -217,7 +217,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.clean_input_entry()
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
-            self.update_output_bits(bits=bitCount(ans), count=len(ans))
+            self.update_bits(bits=bitCount(ans), count=len(ans))
             return ans
         # Bin to Oct
         elif in_base == 0 and out_base == 3:
@@ -227,7 +227,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input, 2)).lstrip("0o"))
-            self.update_input_bits(bits=bitCount(input), count=len(input))
+            self.update_bits(bits=bitCount(input), count=len(input))
             return ans
         # Oct to Dec
         elif in_base == 3 and out_base == 1:
@@ -319,11 +319,9 @@ class BinaryWindow(Adw.ApplicationWindow):
     def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
 
-    def update_input_bits(self, *kwargs, bits, count):
+    def update_bits(self, *kwargs, bits, count):
         self.in_bit_label.set_label(f"{count} {self.bits_text}")
         self.input_bits.set_label(f"{bits}")
-
-    def update_output_bits(self, *kwargs, bits, count):
         self.out_bit_label.set_label(f"{count} {self.bits_text}")
         self.output_bits.set_label(f"{bits}")
 
