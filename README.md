@@ -3,7 +3,7 @@
 [![Translation status](https://hosted.weblate.org/widget/binary/binary-app/svg-badge.svg)](https://hosted.weblate.org/engage/binary/)
 [![CI](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml/badge.svg)](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml)
 
-![Image of Binary](img/binary-screenshot.png)
+![Image of Binary](img/binary-101010-decimal-42.png)
 
 Binary is a simple app that converts numbers between binary, decimal, hexadecimal and octal bases.
 ## Installing
