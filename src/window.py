@@ -39,7 +39,8 @@ class BinaryWindow(Adw.ApplicationWindow):
     in_dropdown = Gtk.Template.Child()
     out_dropdown = Gtk.Template.Child()
 
-    bits_text = _("bits") # String for the word Bits, makes translation easier.
+    # Translators: this string is used to describe how many bits there are.
+    bits_text = _("bits")
 
     bases = Gtk.StringList.new(None)
     bases.append(_("Binary"))
