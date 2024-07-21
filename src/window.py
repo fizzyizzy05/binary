@@ -163,13 +163,12 @@ class BinaryWindow(Adw.ApplicationWindow):
             return ans
         # Decimal to Hexadecimal
         elif in_base == 1 and out_base == 2:
-            inStr = self.input_entry.get_text()
             try:
-                int(inStr)
+                int(input)
             except:
                 self.clean_input_entry()
                 return "char"
-            ans = hex(int(inStr)).lstrip("0x").upper()
+            ans = hex(int(input)).lstrip("0x").upper()
             self.is_zero()
             return ans
         # Hexadecimal to Decimal
