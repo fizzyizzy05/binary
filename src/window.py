@@ -20,6 +20,7 @@
 from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import Gdk
+from gi.repository import Gio
 import math
 
 # Scripts used to calculate numbers
@@ -52,7 +53,11 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.in_dropdown.set_model(self.bases)
         self.out_dropdown.set_model(self.bases)
-        self.out_dropdown.set_selected(1) # Set the output to decimal by default
+        self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
+        self.settings.bind("input-base", self.in_dropdown, "selected",
+                           Gio.SettingsBindFlags.DEFAULT)
+        self.settings.bind("output-base", self.out_dropdown, "selected",
+                           Gio.SettingsBindFlags.DEFAULT)
         self.input_entry.grab_focus()
         self.blank()
 

@@ -4,5 +4,11 @@
 	  <key name="group-digits" type="i">
       <default>0</default>
 	  </key>
+	  <key name="input-base" type="i">
+      <default>0</default>
+	  </key>
+	  <key name="output-base" type="i">
+      <default>1</default>
+	  </key>
 	</schema>
 </schemalist>
