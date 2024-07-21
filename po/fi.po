@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-21 20:07+0100\n"
+"POT-Creation-Date: 2024-07-21 20:18+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.7-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:45
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:46
 msgid "Binary"
 msgstr "Binääri"
 
@@ -60,28 +60,29 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/window.py:42
+#. Translators: this string is used to describe how many bits there are.
+#: src/window.py:43
 msgid "bits"
 msgstr "bittiä"
 
-#: src/window.py:46
+#: src/window.py:47
 msgid "Decimal"
 msgstr ""
 
-#: src/window.py:47
+#: src/window.py:48
 msgid "Hexadecimal"
 msgstr ""
 
-#: src/window.py:48
+#: src/window.py:49
 msgid "Octal"
 msgstr ""
 
-#: src/window.py:93 src/window.py:97 src/window.py:99 src/window.py:121
-#: src/window.py:125 src/window.py:127
+#: src/window.py:94 src/window.py:98 src/window.py:100 src/window.py:122
+#: src/window.py:126 src/window.py:128
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:313
+#: src/window.py:314
 msgid "Enter a number to see its bits"
 msgstr "Kirjoita numero nähdäksesi sen bitit"
 
