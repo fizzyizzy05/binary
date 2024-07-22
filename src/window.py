@@ -254,7 +254,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 int(input, 8)
             except:
                 self.clean_input_entry()
-                return
+                return "char"
             ans = hex(int(input, 8)).lstrip("0x").upper()
             return ans
         # Hex to Oct
