@@ -269,7 +269,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         # Same number bases
         elif in_base == out_base:
             # Set the output label to be the same as the input
-            self.output_entry.add_css_class("mono")
+            self.toggle_mono()
             if in_base == 0:
                 try:
                     int(input, 2)
