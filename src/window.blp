@@ -65,6 +65,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
           Entry input_entry {
             placeholder-text: _("Enter numbers…");
             changed =>  $input_handler();
+            enable-undo: false;
 
             accessibility {
               label: _("Enter numbers…");
@@ -106,6 +107,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
           Entry output_entry {
             placeholder-text: _("Enter numbers…");
             changed =>  $output_handler();
+            enable-undo: false;
 
             accessibility {
               label: _("Enter numbers…");
