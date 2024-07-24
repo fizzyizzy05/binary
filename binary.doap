@@ -4,7 +4,7 @@
          xmlns:gnome="http://api.gnome.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
   <name xml:lang="en">Binary</name>
-  <shortdesc xml:lang="en">Convert numbers between different bases with ease</shortdesc>
+  <shortdesc xml:lang="en">Convert numbers between bases</shortdesc>
   <description>
     Binary converts numbers between different binary, decimal, hexadecimal and octal values. It will take in input from one number base, give an output and for Binary numbers tell you the bits involved.
   </description>
