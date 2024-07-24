@@ -150,7 +150,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 2)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = int(input, 2)
             # Set the output label and bit counter label
@@ -162,7 +161,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 10)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = bin(int(input)).lstrip("0b")
             self.is_zero()
@@ -172,7 +170,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = hex(int(input)).lstrip("0x").upper()
             self.is_zero()
@@ -182,7 +179,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 16)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = str(int(input, 16))
             self.is_zero()
@@ -192,7 +188,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 16)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = bin(int(input, 16)).lstrip("0b")
             self.is_zero()
@@ -202,7 +197,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 2)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = hex(int(input, 2)).strip("0x").upper()
             self.is_zero()
@@ -213,7 +207,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 try:
                     int(char, 8)
                 except:
-                    self.clean_input_entry()
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
             self.update_bits(bits=bit_count(ans), count=len(ans))
@@ -223,7 +216,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 2)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input, 2)).lstrip("0o"))
             return ans
@@ -232,7 +224,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 8)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = str(int(input, 8))
             return ans
@@ -241,7 +232,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 10)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input)).lstrip("0o"))
             return ans
@@ -250,7 +240,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 8)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = hex(int(input, 8)).lstrip("0x").upper()
             return ans
@@ -259,7 +248,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             try:
                 int(input, 16)
             except:
-                self.clean_input_entry()
                 return "char"
             ans = oct(int(input, 16)).lstrip("0o")
             return ans
@@ -313,9 +301,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.toggle_mono()
         self.input_entry.remove_css_class("error")
         self.output_entry.remove_css_class("error")
-
-    def clean_input_entry(self, *kwargs):
-        self.input_entry.add_css_class("error")
 
     def update_bits(self, *kwargs):
         self.in_bit_label.set_label(f"{len(self.input_entry.get_text())} {self.bits_text}")
