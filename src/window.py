@@ -156,7 +156,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = int(input, 2)
             # Set the output label and bit counter label
             bits = bit_count(input)
-            self.is_zero()
             return str(int(input, 2))
         # Decimal to Binary
         elif in_base == 1 and out_base == 0:
@@ -165,7 +164,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             except:
                 return "char"
             ans = bin(int(input)).lstrip("0b")
-            self.is_zero()
             return ans
         # Decimal to Hexadecimal
         elif in_base == 1 and out_base == 2:
@@ -174,7 +172,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             except:
                 return "char"
             ans = hex(int(input)).lstrip("0x").upper()
-            self.is_zero()
             return ans
         # Hexadecimal to Decimal
         elif in_base == 2 and out_base == 1:
@@ -183,7 +180,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             except:
                 return "char"
             ans = str(int(input, 16))
-            self.is_zero()
             return ans
         # Hexadecimal to Binary
         elif in_base == 2 and out_base == 0:
@@ -192,7 +188,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             except:
                 return "char"
             ans = bin(int(input, 16)).lstrip("0b")
-            self.is_zero()
             return ans
         # Binary to Hexadecimal
         elif in_base == 0 and out_base == 2:
@@ -201,7 +196,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             except:
                 return "char"
             ans = hex(int(input, 2)).strip("0x").upper()
-            self.is_zero()
             return ans
         # Oct to Bin
         elif in_base == 3 and out_base == 0:
@@ -280,15 +274,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     return input
                 except:
                     return "char_dual"
-
-    def is_zero(self, *kwargs):
-        inStr = self.input_entry.get_text();
-        for char in inStr:
-            if char != '0':
-                return
-        self.input_entry.remove_css_class("error")
-        self.output_entry.remove_css_class("error")
-        self.blank()
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
