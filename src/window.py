@@ -24,7 +24,7 @@ from gi.repository import Gio
 import math
 
 # Scripts used to calculate numbers
-from .bitCount import *
+from .bit_count import *
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
@@ -154,7 +154,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                 return "char"
             ans = int(input, 2)
             # Set the output label and bit counter label
-            bits = bitCount(input)
+            bits = bit_count(input)
             self.is_zero()
             return str(int(input, 2))
         # Decimal to Binary
@@ -216,7 +216,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.clean_input_entry()
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
-            self.update_bits(bits=bitCount(ans), count=len(ans))
+            self.update_bits(bits=bit_count(ans), count=len(ans))
             return ans
         # Bin to Oct
         elif in_base == 0 and out_base == 3:
@@ -319,9 +319,9 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     def update_bits(self, *kwargs):
         self.in_bit_label.set_label(f"{len(self.input_entry.get_text())} {self.bits_text}")
-        self.input_bits.set_label(f"{bitCount(self.input_entry.get_text())}")
+        self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
         self.out_bit_label.set_label(f"{len(self.output_entry.get_text())} {self.bits_text}")
-        self.output_bits.set_label(f"{bitCount(self.output_entry.get_text())}")
+        self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
 
     def toggle_mono(self, *kwargs):
         if self.input_entry.get_text() != "":

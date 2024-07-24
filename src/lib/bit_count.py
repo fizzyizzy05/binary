@@ -1,5 +1,5 @@
 # Library for working out binary and decimal values. Using the same file for both
-def bitCount(input):
+def bit_count(input):
     bits = []
     mult = 1
 
