@@ -25,6 +25,7 @@ import math
 
 # Scripts used to calculate numbers
 from .bit_count import *
+from .get_answer import *
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
@@ -83,7 +84,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.editable = False;
         in_str = self.input_entry.get_text()
         if in_str != "":
-            ans = self.get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
+            ans = get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
             if ans == "char":
                 self.input_entry.add_css_class("error")
                 self.input_entry.set_tooltip_text(_("Invalid input"))
@@ -117,7 +118,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             if in_str != "":
                 in_base = self.out_dropdown.get_selected()
                 out_base = self.in_dropdown.get_selected()
-                ans = self.get_answer(input=in_str, in_base=in_base, out_base=out_base)
+                ans = get_answer(input=in_str, in_base=in_base, out_base=out_base)
                 if ans == "char":
                     self.output_entry.add_css_class("error")
                     self.input_entry.remove_css_class("error")
@@ -140,140 +141,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.toggle_mono()
             self.update_bits()
             self.editable = True
-
-    def get_answer(self, *kwargs, input, in_base, out_base):
-        # 0 = Binary
-        # 1 = Decimal
-        # 2 = Hexadecimal
-        # 3 = Octal
-        # No input
-        # Binary to Decimal
-        if in_base == 0 and out_base == 1:
-            try:
-                int(input, 2)
-            except:
-                return "char"
-            ans = int(input, 2)
-            # Set the output label and bit counter label
-            bits = bit_count(input)
-            return str(int(input, 2))
-        # Decimal to Binary
-        elif in_base == 1 and out_base == 0:
-            try:
-                int(input, 10)
-            except:
-                return "char"
-            ans = bin(int(input)).lstrip("0b")
-            return ans
-        # Decimal to Hexadecimal
-        elif in_base == 1 and out_base == 2:
-            try:
-                int(input)
-            except:
-                return "char"
-            ans = hex(int(input)).lstrip("0x").upper()
-            return ans
-        # Hexadecimal to Decimal
-        elif in_base == 2 and out_base == 1:
-            try:
-                int(input, 16)
-            except:
-                return "char"
-            ans = str(int(input, 16))
-            return ans
-        # Hexadecimal to Binary
-        elif in_base == 2 and out_base == 0:
-            try:
-                int(input, 16)
-            except:
-                return "char"
-            ans = bin(int(input, 16)).lstrip("0b")
-            return ans
-        # Binary to Hexadecimal
-        elif in_base == 0 and out_base == 2:
-            try:
-                int(input, 2)
-            except:
-                return "char"
-            ans = hex(int(input, 2)).strip("0x").upper()
-            return ans
-        # Oct to Bin
-        elif in_base == 3 and out_base == 0:
-            for char in str(input):
-                try:
-                    int(char, 8)
-                except:
-                    return "char"
-            ans = str(bin(int(input, 8)).lstrip("0b"))
-            return ans
-        # Bin to Oct
-        elif in_base == 0 and out_base == 3:
-            try:
-                int(input, 2)
-            except:
-                return "char"
-            ans = str(oct(int(input, 2)).lstrip("0o"))
-            return ans
-        # Oct to Dec
-        elif in_base == 3 and out_base == 1:
-            try:
-                int(input, 8)
-            except:
-                return "char"
-            ans = str(int(input, 8))
-            return ans
-        # Dec to Oct
-        elif in_base == 1 and out_base == 3:
-            try:
-                int(input, 10)
-            except:
-                return "char"
-            ans = str(oct(int(input)).lstrip("0o"))
-            return ans
-        # Oct to Hex
-        elif in_base == 3 and out_base == 2:
-            try:
-                int(input, 8)
-            except:
-                return "char"
-            ans = hex(int(input, 8)).lstrip("0x").upper()
-            return ans
-        # Hex to Oct
-        elif in_base == 2 and out_base == 3:
-            try:
-                int(input, 16)
-            except:
-                return "char"
-            ans = oct(int(input, 16)).lstrip("0o")
-            return ans
-        # Same number bases
-        elif in_base == out_base:
-            # Set the output label to be the same as the input
-            self.toggle_mono()
-            if in_base == 0:
-                try:
-                    int(input, 2)
-                    return input
-                except:
-                    return "char_dual"
-            elif self.in_dropdown.get_selected() == 1:
-                try:
-                    int(input, 10)
-                    return input
-                except:
-                    return "char_dual"
-            elif self.in_dropdown.get_selected() == 2:
-                try:
-                    int(input, 16)
-                    return input
-                except:
-                    return "char_dual"
-            elif self.in_dropdown.get_selected() == 3:
-                try:
-                    int(input, 8)
-                    return input
-                except:
-                    return "char_dual"
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
