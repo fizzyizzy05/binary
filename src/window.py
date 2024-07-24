@@ -97,6 +97,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 self.output_entry.set_text(ans)
                 self.input_entry.remove_css_class("error")
+                self.output_entry.remove_css_class("error")
                 self.output_entry.set_tooltip_text(None)
                 for char in in_str:
                     if char.islower():
@@ -130,6 +131,7 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.input_entry.set_text(in_str)
                 else:
                     self.input_entry.set_text(ans)
+                    self.input_entry.remove_css_class("error")
                     self.output_entry.remove_css_class("error")
                     self.input_entry.set_tooltip_text(None)
                 self.output_entry.set_position(-1)
