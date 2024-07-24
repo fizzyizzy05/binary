@@ -106,6 +106,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.blank()
         self.toggle_mono()
+        self.update_bits()
         self.editable = True
 
     @Gtk.Template.Callback()
@@ -135,6 +136,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 self.blank()
             self.toggle_mono()
+            self.update_bits()
             self.editable = True
 
     def get_answer(self, *kwargs, input, in_base, out_base):
@@ -153,7 +155,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             ans = int(input, 2)
             # Set the output label and bit counter label
             bits = bitCount(input)
-            self.update_bits(bits=bitCount(input), count=len(input))
             self.is_zero()
             return str(int(input, 2))
         # Decimal to Binary
@@ -164,7 +165,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = bin(int(input)).lstrip("0b")
-            self.update_bits(bits=bitCount(ans), count=len(ans))
             self.is_zero()
             return ans
         # Decimal to Hexadecimal
@@ -195,7 +195,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = bin(int(input, 16)).lstrip("0b")
-            self.update_bits(bits=bitCount(ans), count=len(ans))
             self.is_zero()
             return ans
         # Binary to Hexadecimal
@@ -206,7 +205,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = hex(int(input, 2)).strip("0x").upper()
-            self.update_bits(bits=bitCount(input), count=len(input))
             self.is_zero()
             return ans
         # Oct to Bin
@@ -228,7 +226,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.clean_input_entry()
                 return "char"
             ans = str(oct(int(input, 2)).lstrip("0o"))
-            self.update_bits(bits=bitCount(input), count=len(input))
             return ans
         # Oct to Dec
         elif in_base == 3 and out_base == 1:
@@ -273,7 +270,6 @@ class BinaryWindow(Adw.ApplicationWindow):
             if in_base == 0:
                 try:
                     int(input, 2)
-                    self.update_bits(bits=bitCount(input), count=len(input))
                     return input
                 except:
                     return "char_dual"
@@ -321,11 +317,11 @@ class BinaryWindow(Adw.ApplicationWindow):
     def clean_input_entry(self, *kwargs):
         self.input_entry.add_css_class("error")
 
-    def update_bits(self, *kwargs, bits, count):
-        self.in_bit_label.set_label(f"{count} {self.bits_text}")
-        self.input_bits.set_label(f"{bits}")
-        self.out_bit_label.set_label(f"{count} {self.bits_text}")
-        self.output_bits.set_label(f"{bits}")
+    def update_bits(self, *kwargs):
+        self.in_bit_label.set_label(f"{len(self.input_entry.get_text())} {self.bits_text}")
+        self.input_bits.set_label(f"{bitCount(self.input_entry.get_text())}")
+        self.out_bit_label.set_label(f"{len(self.output_entry.get_text())} {self.bits_text}")
+        self.output_bits.set_label(f"{bitCount(self.output_entry.get_text())}")
 
     def toggle_mono(self, *kwargs):
         if self.input_entry.get_text() != "":
