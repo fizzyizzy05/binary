@@ -211,7 +211,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 except:
                     return "char"
             ans = str(bin(int(input, 8)).lstrip("0b"))
-            self.update_bits(bits=bit_count(ans), count=len(ans))
             return ans
         # Bin to Oct
         elif in_base == 0 and out_base == 3:
