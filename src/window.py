@@ -45,15 +45,15 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     bases = Gtk.StringList.new(None)
     bases.append(_("Binary"))
+    bases.append(_("Octal"))
     bases.append(_("Decimal"))
     bases.append(_("Hexadecimal"))
-    bases.append(_("Octal"))
 
     bases_dict = {
         0:2,
-        1:10,
-        2:16,
-        3:8,
+        1:8,
+        2:10,
+        3:16,
     }
 
     editable = False
