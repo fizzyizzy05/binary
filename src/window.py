@@ -49,6 +49,13 @@ class BinaryWindow(Adw.ApplicationWindow):
     bases.append(_("Hexadecimal"))
     bases.append(_("Octal"))
 
+    bases_dict = {
+        0:2,
+        1:10,
+        2:16,
+        3:8,
+    }
+
     editable = False
 
     def __init__(self, **kwargs):
@@ -84,7 +91,9 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.editable = False;
         in_str = self.input_entry.get_text()
         if in_str != "":
-            ans = get_answer(input=in_str, in_base=self.in_dropdown.get_selected(), out_base=self.out_dropdown.get_selected())
+            in_base = self.bases_dict[self.in_dropdown.get_selected()]
+            out_base = self.bases_dict[self.out_dropdown.get_selected()]
+            ans = get_answer(in_str, in_base, out_base)
             if ans == "char":
                 self.input_entry.add_css_class("error")
                 self.input_entry.set_tooltip_text(_("Invalid input"))
@@ -116,8 +125,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         if self.editable == True:
             in_str = self.output_entry.get_text()
             if in_str != "":
-                in_base = self.out_dropdown.get_selected()
-                out_base = self.in_dropdown.get_selected()
+                in_base = self.bases_dict[self.out_dropdown.get_selected()]
+                out_base = self.bases_dict[self.in_dropdown.get_selected()]
                 ans = get_answer(input=in_str, in_base=in_base, out_base=out_base)
                 if ans == "char":
                     self.output_entry.add_css_class("error")
