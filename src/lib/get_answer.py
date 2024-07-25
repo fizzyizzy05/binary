@@ -25,7 +25,7 @@ def get_answer(input, in_base, out_base):
     # 3 = Octal
     # No input
     # Binary to Decimal
-    if in_base == 0 and out_base == 1:
+    if in_base == 2 and out_base == 10:
         try:
             int(input, 2)
         except:
@@ -33,7 +33,7 @@ def get_answer(input, in_base, out_base):
         ans = int(input, 2)
         return str(int(input, 2))
     # Decimal to Binary
-    elif in_base == 1 and out_base == 0:
+    elif in_base == 10 and out_base == 2:
         try:
             int(input, 10)
         except:
@@ -41,7 +41,7 @@ def get_answer(input, in_base, out_base):
         ans = bin(int(input)).lstrip("0b")
         return ans
     # Decimal to Hexadecimal
-    elif in_base == 1 and out_base == 2:
+    elif in_base == 10 and out_base == 16:
         try:
             int(input)
         except:
@@ -49,7 +49,7 @@ def get_answer(input, in_base, out_base):
         ans = hex(int(input)).lstrip("0x").upper()
         return ans
     # Hexadecimal to Decimal
-    elif in_base == 2 and out_base == 1:
+    elif in_base == 16 and out_base == 10:
         try:
             int(input, 16)
         except:
@@ -57,7 +57,7 @@ def get_answer(input, in_base, out_base):
         ans = str(int(input, 16))
         return ans
     # Hexadecimal to Binary
-    elif in_base == 2 and out_base == 0:
+    elif in_base == 16 and out_base == 2:
         try:
             int(input, 16)
         except:
@@ -65,7 +65,7 @@ def get_answer(input, in_base, out_base):
         ans = bin(int(input, 16)).lstrip("0b")
         return ans
     # Binary to Hexadecimal
-    elif in_base == 0 and out_base == 2:
+    elif in_base == 2 and out_base == 16:
         try:
             int(input, 2)
         except:
@@ -73,7 +73,7 @@ def get_answer(input, in_base, out_base):
         ans = hex(int(input, 2)).strip("0x").upper()
         return ans
     # Oct to Bin
-    elif in_base == 3 and out_base == 0:
+    elif in_base == 8 and out_base == 2:
         for char in str(input):
             try:
                 int(char, 8)
@@ -82,7 +82,7 @@ def get_answer(input, in_base, out_base):
         ans = str(bin(int(input, 8)).lstrip("0b"))
         return ans
     # Bin to Oct
-    elif in_base == 0 and out_base == 3:
+    elif in_base == 2 and out_base == 8:
         try:
             int(input, 2)
         except:
@@ -90,7 +90,7 @@ def get_answer(input, in_base, out_base):
         ans = str(oct(int(input, 2)).lstrip("0o"))
         return ans
     # Oct to Dec
-    elif in_base == 3 and out_base == 1:
+    elif in_base == 8 and out_base == 10:
         try:
             int(input, 8)
         except:
@@ -98,7 +98,7 @@ def get_answer(input, in_base, out_base):
         ans = str(int(input, 8))
         return ans
     # Dec to Oct
-    elif in_base == 1 and out_base == 3:
+    elif in_base == 10 and out_base == 8:
         try:
             int(input, 10)
         except:
@@ -106,7 +106,7 @@ def get_answer(input, in_base, out_base):
         ans = str(oct(int(input)).lstrip("0o"))
         return ans
     # Oct to Hex
-    elif in_base == 3 and out_base == 2:
+    elif in_base == 8 and out_base == 16:
         try:
             int(input, 8)
         except:
@@ -114,7 +114,7 @@ def get_answer(input, in_base, out_base):
         ans = hex(int(input, 8)).lstrip("0x").upper()
         return ans
     # Hex to Oct
-    elif in_base == 2 and out_base == 3:
+    elif in_base == 16 and out_base == 8:
         try:
             int(input, 16)
         except:
@@ -124,25 +124,25 @@ def get_answer(input, in_base, out_base):
     # Same number bases
     elif in_base == out_base:
         # Set the output label to be the same as the input
-        if in_base == 0:
+        if in_base == 2:
             try:
                 int(input, 2)
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 1:
+        elif self.in_dropdown.get_selected() == 10:
             try:
                 int(input, 10)
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 2:
+        elif self.in_dropdown.get_selected() == 16:
             try:
                 int(input, 16)
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 3:
+        elif self.in_dropdown.get_selected() == 8:
             try:
                 int(input, 8)
                 return input
