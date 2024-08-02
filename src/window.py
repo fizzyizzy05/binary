@@ -75,6 +75,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             self.output_handler()
             self.toggle_bit_counter()
+            self.editable = True
         except:
             return
 
@@ -83,6 +84,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             self.input_handler()
             self.toggle_bit_counter()
+            self.editable = True
         except:
             return
 
