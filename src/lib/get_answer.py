@@ -133,19 +133,19 @@ def get_answer(input, in_base, out_base):
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 10:
+        elif in_base == 10:
             try:
                 int(input, 10)
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 16:
+        elif in_base == 16:
             try:
                 int(input, 16)
                 return input
             except:
                 return "char_dual"
-        elif self.in_dropdown.get_selected() == 8:
+        elif in_base == 8:
             try:
                 int(input, 8)
                 return input
