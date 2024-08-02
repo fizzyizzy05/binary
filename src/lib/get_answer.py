@@ -19,6 +19,9 @@
 
 # This script returns the answer of a calculation to the main window.
 def get_answer(input, in_base, out_base):
+    # space characters count as invalid input
+    if (" " in input):
+        return "char"
     # 0 = Binary
     # 1 = Decimal
     # 2 = Hexadecimal
