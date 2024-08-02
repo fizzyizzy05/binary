@@ -90,6 +90,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def input_handler(self, *kwargs):
         self.editable = False;
         in_str = self.input_entry.get_text()
+        ans = ""
         if in_str != "":
             in_base = self.bases_dict[self.in_dropdown.get_selected()]
             out_base = self.bases_dict[self.out_dropdown.get_selected()]
@@ -117,13 +118,15 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.blank()
         self.toggle_mono()
-        self.update_bits()
+        if ans != "char" and ans != "char_dual":
+            self.update_bits()
         self.editable = True
 
     @Gtk.Template.Callback()
     def output_handler(self, *kwargs):
         if self.editable == True:
             in_str = self.output_entry.get_text()
+            ans = ""
             if in_str != "":
                 in_base = self.bases_dict[self.out_dropdown.get_selected()]
                 out_base = self.bases_dict[self.in_dropdown.get_selected()]
@@ -148,7 +151,8 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 self.blank()
             self.toggle_mono()
-            self.update_bits()
+            if ans != "char" and ans != "char_dual":
+                self.update_bits()
             self.editable = True
 
     def blank(self, *kwargs):
