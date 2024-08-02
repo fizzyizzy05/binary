@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-21 20:18+0100\n"
+"POT-Creation-Date: 2024-08-02 14:57+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Michele <silviamichele@proton.me>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.7-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:46
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
 msgid "Binary"
 msgstr "Binário"
 
@@ -52,33 +52,33 @@ msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:59
+#: src/main.py:58
 msgid "translator-credits"
 msgstr ""
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:43
+#: src/window.py:44
 msgid "bits"
 msgstr ""
 
-#: src/window.py:47
-msgid "Decimal"
-msgstr ""
-
 #: src/window.py:48
-msgid "Hexadecimal"
-msgstr ""
-
-#: src/window.py:49
 msgid "Octal"
 msgstr ""
 
-#: src/window.py:94 src/window.py:98 src/window.py:100 src/window.py:122
-#: src/window.py:126 src/window.py:128
+#: src/window.py:49
+msgid "Decimal"
+msgstr ""
+
+#: src/window.py:50
+msgid "Hexadecimal"
+msgstr ""
+
+#: src/window.py:102 src/window.py:106 src/window.py:108 src/window.py:139
+#: src/window.py:143 src/window.py:145
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:314
+#: src/window.py:166
 msgid "Enter a number to see its bits"
 msgstr ""
 
@@ -90,19 +90,19 @@ msgstr ""
 msgid "Input Base"
 msgstr ""
 
-#: src/window.blp:66 src/window.blp:70 src/window.blp:107 src/window.blp:111
+#: src/window.blp:66 src/window.blp:71 src/window.blp:108 src/window.blp:113
 msgid "Enter numbers…"
 msgstr ""
 
-#: src/window.blp:84
+#: src/window.blp:85
 msgid "Output Base"
 msgstr ""
 
-#: src/window.blp:150
+#: src/window.blp:152
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:155
+#: src/window.blp:157
 msgid "_About Binary"
 msgstr ""
 
