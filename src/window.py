@@ -105,7 +105,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                 self.output_entry.set_tooltip_text(_("Invalid input"))
                 self.output_entry.set_text(in_str)
             else:
-                self.update_bits()
                 self.output_entry.set_text(ans)
                 self.input_entry.remove_css_class("error")
                 self.output_entry.remove_css_class("error")
@@ -118,6 +117,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.blank()
         self.toggle_mono()
+        self.update_bits()
         self.editable = True
 
     @Gtk.Template.Callback()
@@ -140,7 +140,6 @@ class BinaryWindow(Adw.ApplicationWindow):
                     self.output_entry.set_tooltip_text(_("Invalid input"))
                     self.input_entry.set_text(in_str)
                 else:
-                    self.update_bits()
                     self.input_entry.set_text(ans)
                     self.input_entry.remove_css_class("error")
                     self.output_entry.remove_css_class("error")
@@ -149,6 +148,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 self.blank()
             self.toggle_mono()
+            self.update_bits()
             self.editable = True
 
     def blank(self, *kwargs):
