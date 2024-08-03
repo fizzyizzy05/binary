@@ -8,101 +8,108 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-02 14:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-08-04 22:09+0000\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
+"he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
 msgid "Binary"
-msgstr ""
+msgstr "בינרי"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
+"בינרי;בינארי;דצימלי;עשרוני;הקסדצימלי;הקסהדצימלי;בסיס;ייצוג;המרה;מספר;מספרים;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "המרת מספרים בין בסיסי מספרים שונים"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
-msgstr ""
+msgstr "יישום קטן ופשוט המשמש להמרה מספרים הקסדצימליים ובינריים"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
+msgstr "חלון בינרי ממיר את המספר 101010 מבסיס בינרי למספר 42 בבסיס עשרוני"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
+msgstr "חלון בינרי ממיר את המספר 1201 מבסיס עשרוני למספר 4B1 בבסיס הקסדצימלי"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
+msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי למספר F בבסיס הקסדצימלי"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
 msgstr ""
+"יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
+"מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:44
 msgid "bits"
-msgstr ""
+msgstr "סיביות"
 
 #: src/window.py:48
 msgid "Octal"
-msgstr ""
+msgstr "אוקטלי"
 
 #: src/window.py:49
 msgid "Decimal"
-msgstr ""
+msgstr "עשרוני"
 
 #: src/window.py:50
 msgid "Hexadecimal"
-msgstr ""
+msgstr "הקסדצימלי"
 
 #: src/window.py:102 src/window.py:106 src/window.py:108 src/window.py:139
 #: src/window.py:143 src/window.py:145
 msgid "Invalid input"
-msgstr ""
+msgstr "קלט לא תקין"
 
 #: src/window.py:166
 msgid "Enter a number to see its bits"
-msgstr ""
+msgstr "יש להזין על מנת לראות את הסיביות"
 
 #: src/window.blp:20
 msgid "Main Menu"
-msgstr ""
+msgstr "תפריט ראשי"
 
 #: src/window.blp:43
 msgid "Input Base"
-msgstr ""
+msgstr "בסיס הקלט"
 
 #: src/window.blp:66 src/window.blp:71 src/window.blp:108 src/window.blp:113
 msgid "Enter numbers…"
-msgstr ""
+msgstr "יש להזין מספר…"
 
 #: src/window.blp:85
 msgid "Output Base"
-msgstr ""
+msgstr "בסיס הפלט"
 
 #: src/window.blp:152
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_צירופי מקשים"
 
 #: src/window.blp:157
 msgid "_About Binary"
-msgstr ""
+msgstr "_על בינרי"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "העדפות"
