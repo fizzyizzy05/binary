@@ -22,132 +22,42 @@ def get_answer(input, in_base, out_base):
     # space characters count as invalid input
     if (" " in input):
         return "char"
-    # 0 = Binary
-    # 1 = Decimal
-    # 2 = Hexadecimal
-    # 3 = Octal
-    # No input
-    # Binary to Decimal
-    if in_base == 2 and out_base == 10:
-        try:
-            int(input, 2)
-        except:
-            return "char"
-        ans = int(input, 2)
-        return str(int(input, 2))
-    # Decimal to Binary
-    elif in_base == 10 and out_base == 2:
-        try:
-            int(input, 10)
-        except:
-            return "char"
-        ans = bin(int(input)).lstrip("0b")
-        return ans
-    # Decimal to Hexadecimal
-    elif in_base == 10 and out_base == 16:
-        try:
-            int(input)
-        except:
-            return "char"
-        ans = hex(int(input)).lstrip("0x").upper()
-        return ans
-    # Hexadecimal to Decimal
-    elif in_base == 16 and out_base == 10:
-        try:
-            int(input, 16)
-        except:
-            return "char"
-        ans = str(int(input, 16))
-        return ans
-    # Hexadecimal to Binary
-    elif in_base == 16 and out_base == 2:
-        try:
-            int(input, 16)
-        except:
-            return "char"
-        ans = bin(int(input, 16)).lstrip("0b")
-        return ans
-    # Binary to Hexadecimal
-    elif in_base == 2 and out_base == 16:
-        try:
-            int(input, 2)
-        except:
-            return "char"
-        ans = hex(int(input, 2)).strip("0x").upper()
-        return ans
-    # Oct to Bin
-    elif in_base == 8 and out_base == 2:
-        for char in str(input):
-            try:
-                int(char, 8)
-            except:
-                return "char"
-        ans = str(bin(int(input, 8)).lstrip("0b"))
-        return ans
-    # Bin to Oct
-    elif in_base == 2 and out_base == 8:
-        try:
-            int(input, 2)
-        except:
-            return "char"
-        ans = str(oct(int(input, 2)).lstrip("0o"))
-        return ans
-    # Oct to Dec
-    elif in_base == 8 and out_base == 10:
-        try:
-            int(input, 8)
-        except:
-            return "char"
-        ans = str(int(input, 8))
-        return ans
-    # Dec to Oct
-    elif in_base == 10 and out_base == 8:
-        try:
-            int(input, 10)
-        except:
-            return "char"
-        ans = str(oct(int(input)).lstrip("0o"))
-        return ans
-    # Oct to Hex
-    elif in_base == 8 and out_base == 16:
-        try:
-            int(input, 8)
-        except:
-            return "char"
-        ans = hex(int(input, 8)).lstrip("0x").upper()
-        return ans
-    # Hex to Oct
-    elif in_base == 16 and out_base == 8:
-        try:
-            int(input, 16)
-        except:
-            return "char"
-        ans = oct(int(input, 16)).lstrip("0o")
-        return ans
+    
     # Same number bases
-    elif in_base == out_base:
+    if in_base == out_base:
         # Set the output label to be the same as the input
-        if in_base == 2:
-            try:
-                int(input, 2)
-                return input
-            except:
-                return "char_dual"
-        elif in_base == 10:
-            try:
-                int(input, 10)
-                return input
-            except:
-                return "char_dual"
-        elif in_base == 16:
-            try:
-                int(input, 16)
-                return input
-            except:
-                return "char_dual"
-        elif in_base == 8:
-            try:
-                int(input, 8)
-                return input
-            except:
-                return "char_dual"
+        try:
+            int(input, in_base)
+            return input
+        except:
+            return "char_dual"
+
+    # Check if the input is valid for in_base, where in_base is between 2 and 36 inclusive.
+    # Bases above 36 are not universally standard, so we assume they are invalid.
+    try:
+        int(input, in_base)
+    except:
+        return "char"
+
+    # Convert the input to base 10
+    input_dec = int(input, in_base)
+    
+    # Convert input_dec to a list of the digits in decimal
+    output_list = []
+
+    if input_dec == 0:
+        return [0]
+
+    while input_dec:
+        output_list += [int(input_dec % out_base)]
+        input_dec //= out_base
+        
+    output_list = output_list[::-1]
+
+    # Convert the decimals in the list greater than 9 to letters
+    # This works upto Z = 35.
+    for i in range(len(output_list)):
+        if output_list[i] > 9:
+            output_list[i] = chr(output_list[i] + 55) # A = 65, and we start from 10.
+
+    return "".join(map(str, output_list))
