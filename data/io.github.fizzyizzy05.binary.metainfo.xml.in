@@ -27,6 +27,19 @@
     </screenshot>
   </screenshots>
   <releases>
+    <!-- placeholder release date and version, tbc. description is completed by release -->
+    <release version="4.1" date="2024-12-31">
+      <description translate="no">
+        <p>Binary 4.1 is a small update to the base converter app.</p>
+        <p>Improved/added translations for:</p>
+        <ul>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Bulgarian (twlvnn kraftwerk)</li>
+        </ul>
+      </description>
+    </release>
     <release version="4.0" date="2024-08-02">
       <description translate="no">
         <p>Binary 4.0 is a new release the base converter app. It comes with a new design (Gregor Niehl), that's aligned vertically and comes with multiple improvements compared to before:</p>
