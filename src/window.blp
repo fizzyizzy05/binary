@@ -39,14 +39,22 @@ template $BinaryWindow: Adw.ApplicationWindow {
 
           CenterBox {
             [start]
-            DropDown in_dropdown {
-              tooltip-text: _("Input Base");
+            Box {
+              DropDown in_dropdown {
+                tooltip-text: _("Input Base");
 
-              styles [
-                "flat-dropdown",
-              ]
+                styles [
+                  "flat-dropdown",
+                ]
 
-              notify => $change_input_base();
+                notify => $change_input_base();
+              }
+
+              SpinButton in_spin {
+                changed =>  $change_input_base();
+                numeric: true;
+                margin-start: 6;
+              }
             }
 
             [end]
@@ -81,14 +89,22 @@ template $BinaryWindow: Adw.ApplicationWindow {
 
           CenterBox {
             [start]
-            DropDown out_dropdown {
-              tooltip-text: _("Output Base");
+            Box {
+              DropDown out_dropdown {
+                tooltip-text: _("Output Base");
 
-              styles [
-                "flat-dropdown",
-              ]
+                styles [
+                  "flat-dropdown",
+                ]
 
-              notify => $change_output_base();
+                notify => $change_output_base();
+              }
+
+              SpinButton out_spin {
+                changed =>  $change_output_base();
+                numeric: true;
+                margin-start: 6;
+              }
             }
 
             [end]

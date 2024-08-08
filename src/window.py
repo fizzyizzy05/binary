@@ -39,6 +39,8 @@ class BinaryWindow(Adw.ApplicationWindow):
     output_entry = Gtk.Template.Child() # output label
     in_dropdown = Gtk.Template.Child()
     out_dropdown = Gtk.Template.Child()
+    in_spin = Gtk.Template.Child()
+    out_spin = Gtk.Template.Child()
 
     # Translators: this string is used to describe how many bits there are.
     bits_text = _("bits")
@@ -48,12 +50,14 @@ class BinaryWindow(Adw.ApplicationWindow):
     bases.append(_("Octal"))
     bases.append(_("Decimal"))
     bases.append(_("Hexadecimal"))
+    bases.append(_("Other"))
 
     bases_dict = {
         0:2,
         1:8,
         2:10,
         3:16,
+        4:-1
     }
 
     editable = False
@@ -62,6 +66,14 @@ class BinaryWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.in_dropdown.set_model(self.bases)
         self.out_dropdown.set_model(self.bases)
+
+        self.in_spin.set_range(2, 36)
+        self.in_spin.set_snap_to_ticks(True)
+        self.in_spin.set_increments(1,2)
+        self.out_spin.set_range(2, 36)
+        self.out_spin.set_snap_to_ticks(True)
+        self.out_spin.set_increments(1,2)
+
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
         self.settings.bind("input-base", self.in_dropdown, "selected",
                            Gio.SettingsBindFlags.DEFAULT)
@@ -75,6 +87,7 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             self.output_handler()
             self.toggle_bit_counter()
+            self.toggle_base_spin()
             self.editable = True
         except:
             return
@@ -84,18 +97,25 @@ class BinaryWindow(Adw.ApplicationWindow):
         try:
             self.input_handler()
             self.toggle_bit_counter()
+            self.toggle_base_spin()
             self.editable = True
         except:
             return
 
     @Gtk.Template.Callback()
     def input_handler(self, *kwargs):
-        self.editable = False;
+        self.editable = False
         in_str = self.input_entry.get_text()
         ans = ""
         if in_str != "":
-            in_base = self.bases_dict[self.in_dropdown.get_selected()]
-            out_base = self.bases_dict[self.out_dropdown.get_selected()]
+            if self.out_dropdown.get_selected() < 4:
+                out_base = self.bases_dict[self.out_dropdown.get_selected()]
+            else:
+                out_base = int(self.out_spin.get_value())
+            if self.in_dropdown.get_selected() < 4:
+                in_base = self.bases_dict[self.in_dropdown.get_selected()]
+            else:
+                in_base = int(self.in_spin.get_value())
             ans = get_answer(in_str, in_base, out_base)
             if ans == "char":
                 self.input_entry.add_css_class("error")
@@ -130,8 +150,14 @@ class BinaryWindow(Adw.ApplicationWindow):
             in_str = self.output_entry.get_text()
             ans = ""
             if in_str != "":
-                in_base = self.bases_dict[self.out_dropdown.get_selected()]
-                out_base = self.bases_dict[self.in_dropdown.get_selected()]
+                if self.out_dropdown.get_selected() < 4:
+                    in_base = self.bases_dict[self.out_dropdown.get_selected()]
+                else:
+                    in_base = int(self.out_spin.get_value())
+                if self.in_dropdown.get_selected() < 4:
+                    out_base = self.bases_dict[self.in_dropdown.get_selected()]
+                else:
+                    out_base = int(self.in_spin.get_value())
                 ans = get_answer(input=in_str, in_base=in_base, out_base=out_base)
                 if ans == "char":
                     self.output_entry.add_css_class("error")
@@ -204,3 +230,14 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.in_bit_label.set_visible(False)
             self.out_bit_label.set_visible(False)
+
+    def toggle_base_spin(self, *kwargs):
+        if self.in_dropdown.get_selected() == 4:
+            self.in_spin.set_visible(True)
+        else:
+            self.in_spin.set_visible(False)
+        if self.out_dropdown.get_selected() == 4:
+            self.out_spin.set_visible(True)
+        else:
+            self.out_spin.set_visible(False)
+
