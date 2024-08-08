@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 14:57+0100\n"
+"POT-Creation-Date: 2024-08-08 12:06+0100\n"
 "PO-Revision-Date: 2024-08-04 22:09+0000\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -20,8 +20,7 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
 msgid "Binary"
 msgstr "בינרי"
 
@@ -30,28 +29,6 @@ msgstr "בינרי"
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
 "בינרי;בינארי;דצימלי;עשרוני;הקסדצימלי;הקסהדצימלי;בסיס;ייצוג;המרה;מספר;מספרים;"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "המרת מספרים בין בסיסי מספרים שונים"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
-msgid ""
-"A small and simple app used to convert between different hexadecimal and "
-"binary numbers"
-msgstr "יישום קטן ופשוט המשמש להמרה מספרים הקסדצימליים ובינריים"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "חלון בינרי ממיר את המספר 101010 מבסיס בינרי למספר 42 בבסיס עשרוני"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "חלון בינרי ממיר את המספר 1201 מבסיס עשרוני למספר 4B1 בבסיס הקסדצימלי"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי למספר F בבסיס הקסדצימלי"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
@@ -82,7 +59,7 @@ msgstr "הקסדצימלי"
 msgid "Invalid input"
 msgstr "קלט לא תקין"
 
-#: src/window.py:166
+#: src/window.py:179
 msgid "Enter a number to see its bits"
 msgstr "יש להזין על מנת לראות את הסיביות"
 
@@ -113,3 +90,21 @@ msgstr "_על בינרי"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "העדפות"
+
+#~ msgid "Convert numbers between bases"
+#~ msgstr "המרת מספרים בין בסיסי מספרים שונים"
+
+#~ msgid ""
+#~ "A small and simple app used to convert between different hexadecimal and "
+#~ "binary numbers"
+#~ msgstr "יישום קטן ופשוט המשמש להמרה מספרים הקסדצימליים ובינריים"
+
+#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
+#~ msgstr "חלון בינרי ממיר את המספר 101010 מבסיס בינרי למספר 42 בבסיס עשרוני"
+
+#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+#~ msgstr ""
+#~ "חלון בינרי ממיר את המספר 1201 מבסיס עשרוני למספר 4B1 בבסיס הקסדצימלי"
+
+#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
+#~ msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי למספר F בבסיס הקסדצימלי"

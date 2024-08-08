@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 14:57+0100\n"
+"POT-Creation-Date: 2024-08-08 12:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
 msgid "Binary"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
-msgid ""
-"A small and simple app used to convert between different hexadecimal and "
-"binary numbers"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
 
 #. Translators: Replace "translator-credits" with your names, one name per line
@@ -76,7 +53,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:166
+#: src/window.py:179
 msgid "Enter a number to see its bits"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 14:57+0100\n"
+"POT-Creation-Date: 2024-08-08 12:06+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
@@ -19,8 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
 msgid "Binary"
 msgstr "Binary"
 
@@ -28,30 +27,6 @@ msgstr "Binary"
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "binario;decimale;esadecimale;base;converti;"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "Convertire i numeri tra basi"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
-msgid ""
-"A small and simple app used to convert between different hexadecimal and "
-"binary numbers"
-msgstr ""
-"Una piccola e semplice app utilizzata per convertire tra diversi numeri "
-"esadecimali e binari"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Finestra binaria che converte 101010 in binario a 42 in decimale"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "Finestra binaria che converte 1201 in decimale a 4B1 in esadecimale"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "Finestra binaria che converte 17 in ottale in F in esadecimale"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
@@ -80,7 +55,7 @@ msgstr "Esadecimale"
 msgid "Invalid input"
 msgstr "Input non valido"
 
-#: src/window.py:166
+#: src/window.py:179
 msgid "Enter a number to see its bits"
 msgstr "Inserisci un numero per visualizzarne i bit"
 
@@ -111,6 +86,25 @@ msgstr "_Informazioni su Binary"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Preferenze"
+
+#~ msgid "Convert numbers between bases"
+#~ msgstr "Convertire i numeri tra basi"
+
+#~ msgid ""
+#~ "A small and simple app used to convert between different hexadecimal and "
+#~ "binary numbers"
+#~ msgstr ""
+#~ "Una piccola e semplice app utilizzata per convertire tra diversi numeri "
+#~ "esadecimali e binari"
+
+#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
+#~ msgstr "Finestra binaria che converte 101010 in binario a 42 in decimale"
+
+#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+#~ msgstr "Finestra binaria che converte 1201 in decimale a 4B1 in esadecimale"
+
+#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
+#~ msgstr "Finestra binaria che converte 17 in ottale in F in esadecimale"
 
 #~ msgid "Additional improvements include:"
 #~ msgstr "Ulteriori miglioramenti includono:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 14:57+0100\n"
+"POT-Creation-Date: 2024-08-08 12:06+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,8 +20,7 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
 msgid "Binary"
 msgstr "Binary"
 
@@ -29,33 +28,6 @@ msgstr "Binary"
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "двоичная;десятичная;шестнадцатеричная;база;конвертировать;"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr ""
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
-msgid ""
-"A small and simple app used to convert between different hexadecimal and "
-"binary numbers"
-msgstr ""
-"Небольшое и простое приложение для преобразования различных "
-"шестнадцатеричных и двоичных чисел"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-#, fuzzy
-msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-#, fuzzy
-msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-#, fuzzy
-msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
@@ -84,7 +56,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:166
+#: src/window.py:179
 msgid "Enter a number to see its bits"
 msgstr ""
 
@@ -115,6 +87,25 @@ msgstr "_О программе Binary"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Настройки"
+
+#~ msgid ""
+#~ "A small and simple app used to convert between different hexadecimal and "
+#~ "binary numbers"
+#~ msgstr ""
+#~ "Небольшое и простое приложение для преобразования различных "
+#~ "шестнадцатеричных и двоичных чисел"
+
+#, fuzzy
+#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
+#~ msgstr "Окно приложения, преобразующее 37 в 1F"
+
+#, fuzzy
+#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+#~ msgstr "Окно приложения, преобразующее 37 в 1F"
+
+#, fuzzy
+#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
+#~ msgstr "Окно приложения, преобразующее 37 в 1F"
 
 #~ msgid "Finnish (Jiri Grönroos)"
 #~ msgstr "Финский (Jiri Grönroos)"

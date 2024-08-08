@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 14:57+0100\n"
+"POT-Creation-Date: 2024-08-08 12:06+0100\n"
 "PO-Revision-Date: 2024-08-05 20:01+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -19,8 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 46.1\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
 msgid "Binary"
 msgstr "Двоично"
 
@@ -28,36 +27,6 @@ msgstr "Двоично"
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "двоична;десетична;шестнайсетична;бройна система;преобразуване;"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "Преобразувайте числа между бази"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
-msgid ""
-"A small and simple app used to convert between different hexadecimal and "
-"binary numbers"
-msgstr ""
-"Малко и просто приложение, което се използва за преобразуване между различни "
-"шестнадесетични и двоични числа"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
-"Прозорец на „Двоично“, където се преобразува 101010 в двоична бройна система "
-"до 42 в десетична"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
-"Прозорец на „Двоично“, където се преобразува 1201 в десетична бройна система "
-"в 4B1 в шестнадесетична"
-
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
-"Прозорец на „Двоично“, където се преобразува 17 в осмична бройна система в F "
-"в шестнадесетична"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
@@ -86,7 +55,7 @@ msgstr "Шестнайсетична"
 msgid "Invalid input"
 msgstr "Неправилни данни"
 
-#: src/window.py:166
+#: src/window.py:179
 msgid "Enter a number to see its bits"
 msgstr "Въведете число, за да видите неговите битове"
 
@@ -117,3 +86,28 @@ msgstr "_Относно „Двоично“"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Настройки"
+
+#~ msgid "Convert numbers between bases"
+#~ msgstr "Преобразувайте числа между бази"
+
+#~ msgid ""
+#~ "A small and simple app used to convert between different hexadecimal and "
+#~ "binary numbers"
+#~ msgstr ""
+#~ "Малко и просто приложение, което се използва за преобразуване между "
+#~ "различни шестнадесетични и двоични числа"
+
+#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
+#~ msgstr ""
+#~ "Прозорец на „Двоично“, където се преобразува 101010 в двоична бройна "
+#~ "система до 42 в десетична"
+
+#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+#~ msgstr ""
+#~ "Прозорец на „Двоично“, където се преобразува 1201 в десетична бройна "
+#~ "система в 4B1 в шестнадесетична"
+
+#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
+#~ msgstr ""
+#~ "Прозорец на „Двоично“, където се преобразува 17 в осмична бройна система "
+#~ "в F в шестнадесетична"
