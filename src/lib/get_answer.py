@@ -46,7 +46,7 @@ def get_answer(input, in_base, out_base):
     output_list = []
 
     if input_dec == 0:
-        return [0]
+        return "0"
 
     while input_dec:
         output_list += [int(input_dec % out_base)]
