@@ -163,18 +163,22 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.input_entry.set_text("")
         self.in_bit_label.set_label(f"0 {self.bits_text}")
         self.out_bit_label.set_label(f"0 {self.bits_text}")
-        bit_counter_text = _("Enter a number to see its bits")
-        self.input_bits.set_text(bit_counter_text)
-        self.output_bits.set_text(bit_counter_text)
+        self.update_bits()
         self.toggle_mono()
         self.input_entry.remove_css_class("error")
         self.output_entry.remove_css_class("error")
 
     def update_bits(self, *kwargs):
-        self.in_bit_label.set_label(f"{len(self.input_entry.get_text())} {self.bits_text}")
-        self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
-        self.out_bit_label.set_label(f"{len(self.output_entry.get_text())} {self.bits_text}")
-        self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
+        count = len(self.input_entry.get_text())
+        if count > 0:
+            self.in_bit_label.set_label(f"{count} {self.bits_text}")
+            self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
+            self.out_bit_label.set_label(f"{count} {self.bits_text}")
+            self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
+        else:
+            bit_counter_text = _("Enter a number to see its bits")
+            self.input_bits.set_text(bit_counter_text)
+            self.output_bits.set_text(bit_counter_text)
 
     def toggle_mono(self, *kwargs):
         if self.input_entry.get_text() != "":
