@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 12:06+0100\n"
+"POT-Creation-Date: 2024-08-12 19:55+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -19,7 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
 msgid "Binary"
 msgstr "Binary"
 
@@ -28,34 +29,65 @@ msgstr "Binary"
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "binär;dezimal;hexadezimal;basis;konvertieren;"
 
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr ""
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
+msgid ""
+"A small and simple app used to convert between different hexadecimal and "
+"binary numbers"
+msgstr ""
+"Eine kleine und simple Anwendung zur Konvertierung zwischen Binären, "
+"Dezimalen und Hexadezimalen Zahlen"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
+#, fuzzy
+msgid "Binary window converting 101010 in binary to 42 in decimal"
+msgstr "Binary Fenster konvertiert 12 zu 1100"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
+#, fuzzy
+msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+msgstr "Binary Fenster konvertiert 12 zu 1100"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
+#, fuzzy
+msgid "Binary window converting 17 in octal to F in hexadecimal"
+msgstr "Binary Fenster konvertiert 12 zu 1100"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:44
+#: src/window.py:46
 msgid "bits"
 msgstr "Bits"
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Octal"
 msgstr ""
 
-#: src/window.py:49
+#: src/window.py:51
 msgid "Decimal"
 msgstr ""
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Hexadecimal"
 msgstr ""
 
-#: src/window.py:102 src/window.py:106 src/window.py:108 src/window.py:139
-#: src/window.py:143 src/window.py:145
+#: src/window.py:53
+msgid "Other"
+msgstr ""
+
+#: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
+#: src/window.py:169 src/window.py:171
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:179
+#: src/window.py:205
 msgid "Enter a number to see its bits"
 msgstr ""
 
@@ -63,48 +95,29 @@ msgstr ""
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: src/window.blp:43
+#: src/window.blp:44
 msgid "Input Base"
 msgstr ""
 
-#: src/window.blp:66 src/window.blp:71 src/window.blp:108 src/window.blp:113
+#: src/window.blp:74 src/window.blp:79 src/window.blp:124 src/window.blp:129
 msgid "Enter numbers…"
 msgstr "Zahl eingeben…"
 
-#: src/window.blp:85
+#: src/window.blp:94
 msgid "Output Base"
 msgstr ""
 
-#: src/window.blp:152
+#: src/window.blp:168
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastenkürzel"
 
-#: src/window.blp:157
+#: src/window.blp:173
 msgid "_About Binary"
 msgstr "_Über Binary"
 
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Einstellungen"
-
-#~ msgid ""
-#~ "A small and simple app used to convert between different hexadecimal and "
-#~ "binary numbers"
-#~ msgstr ""
-#~ "Eine kleine und simple Anwendung zur Konvertierung zwischen Binären, "
-#~ "Dezimalen und Hexadezimalen Zahlen"
-
-#, fuzzy
-#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
-#~ msgstr "Binary Fenster konvertiert 12 zu 1100"
-
-#, fuzzy
-#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-#~ msgstr "Binary Fenster konvertiert 12 zu 1100"
-
-#, fuzzy
-#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
-#~ msgstr "Binary Fenster konvertiert 12 zu 1100"
 
 #, fuzzy
 #~ msgid "Binary 0.3.1 is a new small release with a few improvements:"

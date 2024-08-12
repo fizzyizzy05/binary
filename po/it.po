@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 12:06+0100\n"
+"POT-Creation-Date: 2024-08-12 19:55+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
@@ -19,7 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
 msgid "Binary"
 msgstr "Binary"
 
@@ -28,34 +29,62 @@ msgstr "Binary"
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "binario;decimale;esadecimale;base;converti;"
 
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "Convertire i numeri tra basi"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
+msgid ""
+"A small and simple app used to convert between different hexadecimal and "
+"binary numbers"
+msgstr ""
+"Una piccola e semplice app utilizzata per convertire tra diversi numeri "
+"esadecimali e binari"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
+msgid "Binary window converting 101010 in binary to 42 in decimal"
+msgstr "Finestra binaria che converte 101010 in binario a 42 in decimale"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
+msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+msgstr "Finestra binaria che converte 1201 in decimale a 4B1 in esadecimale"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
+msgid "Binary window converting 17 in octal to F in hexadecimal"
+msgstr "Finestra binaria che converte 17 in ottale in F in esadecimale"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
 msgstr "Albano Battistella"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:44
+#: src/window.py:46
 msgid "bits"
 msgstr "bit"
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Octal"
 msgstr "Ottale"
 
-#: src/window.py:49
+#: src/window.py:51
 msgid "Decimal"
 msgstr "Decimale"
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Hexadecimal"
 msgstr "Esadecimale"
 
-#: src/window.py:102 src/window.py:106 src/window.py:108 src/window.py:139
-#: src/window.py:143 src/window.py:145
+#: src/window.py:53
+msgid "Other"
+msgstr ""
+
+#: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
+#: src/window.py:169 src/window.py:171
 msgid "Invalid input"
 msgstr "Input non valido"
 
-#: src/window.py:179
+#: src/window.py:205
 msgid "Enter a number to see its bits"
 msgstr "Inserisci un numero per visualizzarne i bit"
 
@@ -63,48 +92,29 @@ msgstr "Inserisci un numero per visualizzarne i bit"
 msgid "Main Menu"
 msgstr "Menu principale"
 
-#: src/window.blp:43
+#: src/window.blp:44
 msgid "Input Base"
 msgstr "Base di input"
 
-#: src/window.blp:66 src/window.blp:71 src/window.blp:108 src/window.blp:113
+#: src/window.blp:74 src/window.blp:79 src/window.blp:124 src/window.blp:129
 msgid "Enter numbers…"
 msgstr "Inserisci numeri…"
 
-#: src/window.blp:85
+#: src/window.blp:94
 msgid "Output Base"
 msgstr "Base di output"
 
-#: src/window.blp:152
+#: src/window.blp:168
 msgid "_Keyboard Shortcuts"
 msgstr "_Scorciatoie da tastiera"
 
-#: src/window.blp:157
+#: src/window.blp:173
 msgid "_About Binary"
 msgstr "_Informazioni su Binary"
 
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Preferenze"
-
-#~ msgid "Convert numbers between bases"
-#~ msgstr "Convertire i numeri tra basi"
-
-#~ msgid ""
-#~ "A small and simple app used to convert between different hexadecimal and "
-#~ "binary numbers"
-#~ msgstr ""
-#~ "Una piccola e semplice app utilizzata per convertire tra diversi numeri "
-#~ "esadecimali e binari"
-
-#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
-#~ msgstr "Finestra binaria che converte 101010 in binario a 42 in decimale"
-
-#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-#~ msgstr "Finestra binaria che converte 1201 in decimale a 4B1 in esadecimale"
-
-#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
-#~ msgstr "Finestra binaria che converte 17 in ottale in F in esadecimale"
 
 #~ msgid "Additional improvements include:"
 #~ msgstr "Ulteriori miglioramenti includono:"

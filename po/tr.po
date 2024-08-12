@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 12:06+0100\n"
+"POT-Creation-Date: 2024-08-12 19:55+0100\n"
 "PO-Revision-Date: 2024-08-03 21:05+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/binary/binary-"
@@ -20,7 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3 src/window.py:47
+#: data/io.github.fizzyizzy05.binary.desktop.in:3
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
 msgid "Binary"
 msgstr "Binary"
 
@@ -29,34 +30,64 @@ msgstr "Binary"
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "ikili;ondalık;onaltılık;on altılık;taban;temel;sayı tabanı;dönüştür;"
 
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "Sayıları tabanlar arasında dönüştür"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
+msgid ""
+"A small and simple app used to convert between different hexadecimal and "
+"binary numbers"
+msgstr ""
+"Onaltılık ve ikili sayılar arasında dönüşüm için küçük ve basit bir uygulama"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
+msgid "Binary window converting 101010 in binary to 42 in decimal"
+msgstr ""
+"İkili 101010 değerini ondalık tabanda 42'ye dönüştüren Binary penceresi"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
+msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+msgstr ""
+"Ondalık tabanda 1201'i onaltılık tabanda 4B1'e dönüştüren Binary penceresi"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
+msgid "Binary window converting 17 in octal to F in hexadecimal"
+msgstr ""
+"Sekizlik tabanda 17'yi onaltılık tabanda F'ye dönüştüren Binary penceresi"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:44
+#: src/window.py:46
 msgid "bits"
 msgstr "bit"
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Octal"
 msgstr "Sekizlik"
 
-#: src/window.py:49
+#: src/window.py:51
 msgid "Decimal"
 msgstr "Ondalık"
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Hexadecimal"
 msgstr "Onaltılık"
 
-#: src/window.py:102 src/window.py:106 src/window.py:108 src/window.py:139
-#: src/window.py:143 src/window.py:145
+#: src/window.py:53
+msgid "Other"
+msgstr ""
+
+#: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
+#: src/window.py:169 src/window.py:171
 msgid "Invalid input"
 msgstr "Geçersiz girdi"
 
-#: src/window.py:179
+#: src/window.py:205
 msgid "Enter a number to see its bits"
 msgstr "Bitlerini görmek için bir sayı girin"
 
@@ -64,51 +95,29 @@ msgstr "Bitlerini görmek için bir sayı girin"
 msgid "Main Menu"
 msgstr "Ana Menü"
 
-#: src/window.blp:43
+#: src/window.blp:44
 msgid "Input Base"
 msgstr "Girdi Tabanı"
 
-#: src/window.blp:66 src/window.blp:71 src/window.blp:108 src/window.blp:113
+#: src/window.blp:74 src/window.blp:79 src/window.blp:124 src/window.blp:129
 msgid "Enter numbers…"
 msgstr "Sayı gir…"
 
-#: src/window.blp:85
+#: src/window.blp:94
 msgid "Output Base"
 msgstr "Çıktı Tabanı"
 
-#: src/window.blp:152
+#: src/window.blp:168
 msgid "_Keyboard Shortcuts"
 msgstr "_Klavye Kısayolları"
 
-#: src/window.blp:157
+#: src/window.blp:173
 msgid "_About Binary"
 msgstr "Binary _Hakkında"
 
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Tercihler"
-
-#~ msgid "Convert numbers between bases"
-#~ msgstr "Sayıları tabanlar arasında dönüştür"
-
-#~ msgid ""
-#~ "A small and simple app used to convert between different hexadecimal and "
-#~ "binary numbers"
-#~ msgstr ""
-#~ "Onaltılık ve ikili sayılar arasında dönüşüm için küçük ve basit bir "
-#~ "uygulama"
-
-#~ msgid "Binary window converting 101010 in binary to 42 in decimal"
-#~ msgstr ""
-#~ "İkili 101010 değerini ondalık tabanda 42'ye dönüştüren Binary penceresi"
-
-#~ msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-#~ msgstr ""
-#~ "Ondalık tabanda 1201'i onaltılık tabanda 4B1'e dönüştüren Binary penceresi"
-
-#~ msgid "Binary window converting 17 in octal to F in hexadecimal"
-#~ msgstr ""
-#~ "Sekizlik tabanda 17'yi onaltılık tabanda F'ye dönüştüren Binary penceresi"
 
 #~ msgid "Number base converter"
 #~ msgstr "Sayı tabanı dönüştürücü"
