@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-12 19:55+0100\n"
-"PO-Revision-Date: 2024-08-03 21:05+0000\n"
-"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/binary/binary-"
-"app/tr/>\n"
+"PO-Revision-Date: 2024-08-14 11:09+0000\n"
+"Last-Translator: kilickerem066 <kilickerem066@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/binary/"
+"binary-app/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,7 +80,7 @@ msgstr "Onaltılık"
 
 #: src/window.py:53
 msgid "Other"
-msgstr ""
+msgstr "Diğer"
 
 #: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
 #: src/window.py:169 src/window.py:171
