@@ -195,11 +195,12 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.output_entry.remove_css_class("error")
 
     def update_bits(self, *kwargs):
-        count = len(self.input_entry.get_text())
-        if count > 0:
-            self.in_bit_label.set_label(f"{count} {self.bits_text}")
+        in_count = len(self.input_entry.get_text())
+        out_count = len(self.output_entry.get_text())
+        if in_count > 0 and out_count > 0:
+            self.in_bit_label.set_label(f"{in_count} {self.bits_text}")
             self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
-            self.out_bit_label.set_label(f"{count} {self.bits_text}")
+            self.out_bit_label.set_label(f"{out_count} {self.bits_text}")
             self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
         else:
             bit_counter_text = _("Enter a number to see its bits")
