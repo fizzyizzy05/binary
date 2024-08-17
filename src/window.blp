@@ -7,6 +7,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
   default-width: 360;
   height-request: 294;
   default-height: 294;
+  close-request => on_close();
 
   content: Adw.ToolbarView {
     [top]

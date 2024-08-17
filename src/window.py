@@ -75,10 +75,10 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.out_spin.set_increments(1,2)
 
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
-        self.settings.bind("input-base", self.in_dropdown, "selected",
-                           Gio.SettingsBindFlags.DEFAULT)
-        self.settings.bind("output-base", self.out_dropdown, "selected",
-                           Gio.SettingsBindFlags.DEFAULT)
+        in_base = self.settings.get_int("input-base")
+        out_base = self.settings.get_int("output-base")
+        self.in_dropdown.set_selected(in_base)
+        self.out_dropdown.set_selected(out_base)
         self.input_entry.grab_focus()
         self.blank()
 
@@ -182,6 +182,12 @@ class BinaryWindow(Adw.ApplicationWindow):
             if ans != "char" and ans != "char_dual":
                 self.update_bits()
             self.editable = True
+
+    @Gtk.Template.Callback()
+    def on_close(self, *kwargs):
+        self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
+        self.settings.set_int("input-base", self.in_dropdown.get_selected())
+        self.settings.set_int("output-base", self.out_dropdown.get_selected())
 
     def blank(self, *kwargs):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
