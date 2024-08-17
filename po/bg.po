@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 19:55+0100\n"
+"POT-Creation-Date: 2024-08-17 19:48+0100\n"
 "PO-Revision-Date: 2024-08-05 20:01+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -59,6 +59,22 @@ msgstr ""
 "Прозорец на „Двоично“, където се преобразува 17 в осмична бройна система в F "
 "в шестнадесетична"
 
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "_Клавишни комбинации"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
@@ -90,7 +106,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Неправилни данни"
 
-#: src/window.py:205
+#: src/window.py:206
 msgid "Enter a number to see its bits"
 msgstr "Въведете число, за да видите неговите битове"
 
