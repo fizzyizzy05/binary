@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 19:55+0100\n"
+"POT-Creation-Date: 2024-08-17 19:48+0100\n"
 "PO-Revision-Date: 2024-08-04 22:09+0000\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -53,6 +53,22 @@ msgstr "חלון בינרי ממיר את המספר 1201 מבסיס עשרונ�
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי למספר F בבסיס הקסדצימלי"
 
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "_צירופי מקשים"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
@@ -86,7 +102,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr "קלט לא תקין"
 
-#: src/window.py:205
+#: src/window.py:206
 msgid "Enter a number to see its bits"
 msgstr "יש להזין על מנת לראות את הסיביות"
 

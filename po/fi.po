@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 19:55+0100\n"
+"POT-Creation-Date: 2024-08-17 19:48+0100\n"
 "PO-Revision-Date: 2024-08-04 22:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/binary/binary-"
@@ -55,6 +55,21 @@ msgstr ""
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
 
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Yleiset"
+
+#: src/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Näytä pikanäppäimet"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Lopeta"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
@@ -86,7 +101,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Virheellinen syöte"
 
-#: src/window.py:205
+#: src/window.py:206
 msgid "Enter a number to see its bits"
 msgstr "Kirjoita numero nähdäksesi sen bitit"
 
@@ -126,18 +141,6 @@ msgstr "Asetukset"
 
 #~ msgid "Swap input and output bases"
 #~ msgstr "Vaihda syöte- ja tulostekantoja"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Yleiset"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Show Shortcuts"
-#~ msgstr "Näytä pikanäppäimet"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Lopeta"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

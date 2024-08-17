@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 19:55+0100\n"
+"POT-Creation-Date: 2024-08-17 19:48+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -56,6 +56,21 @@ msgstr "Binary Fenster konvertiert 12 zu 1100"
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "Binary Fenster konvertiert 12 zu 1100"
 
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Allgemein"
+
+#: src/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Tastenkürzel anzeigen"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Schließen"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
@@ -87,7 +102,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:205
+#: src/window.py:206
 msgid "Enter a number to see its bits"
 msgstr ""
 
@@ -240,18 +255,6 @@ msgstr "Einstellungen"
 
 #~ msgid "Number base converter"
 #~ msgstr "Zahlenbasen Konverter"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Allgemein"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Show Shortcuts"
-#~ msgstr "Tastenkürzel anzeigen"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Schließen"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"

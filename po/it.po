@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 19:55+0100\n"
+"POT-Creation-Date: 2024-08-17 19:48+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
@@ -53,6 +53,21 @@ msgstr "Finestra binaria che converte 1201 in decimale a 4B1 in esadecimale"
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "Finestra binaria che converte 17 in ottale in F in esadecimale"
 
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Generale"
+
+#: src/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Mostra scorciatoie"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Esci"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:58
 msgid "translator-credits"
@@ -84,7 +99,7 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Input non valido"
 
-#: src/window.py:205
+#: src/window.py:206
 msgid "Enter a number to see its bits"
 msgstr "Inserisci un numero per visualizzarne i bit"
 
@@ -332,18 +347,6 @@ msgstr "Preferenze"
 
 #~ msgid "Placeholder for changes and improvements since 0.3.1"
 #~ msgstr "Segnaposto per modifiche e miglioramenti dalla versione 0.3.1"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Generale"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Show Shortcuts"
-#~ msgstr "Mostra scorciatoie"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Esci"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Preferences"
