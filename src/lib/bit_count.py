@@ -28,10 +28,12 @@ def bit_count(input):
 
     # For each bit, add a value to the bit counter
     for char in input:
-        bits.append(int(mult))
+        if char == '1':
+            bits.append(int(mult))
         mult = mult / 2
 
-    bitStr = str(bits).strip('[')
-    bitStr = bitStr.strip(']')
+    bit_str = ""
+    for x in bits:
+        bit_str += f"{x} + "
 
-    return bitStr
+    return bit_str[:-2] + f"= {int(input)}"
