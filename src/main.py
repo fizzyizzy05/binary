@@ -37,6 +37,7 @@ class BinaryApplication(Adw.Application):
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action, None)
         self.create_action('close-window', self.on_close_window_action, ['<primary>w'])
+        self.create_action('new-window', self.on_new_window_action, ['<primary>n'])
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
 
     def do_activate(self):
@@ -45,10 +46,15 @@ class BinaryApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
+        self.new_window()
+
+    def new_window(self):
         win = self.props.active_window
-        if not win:
-            win = BinaryWindow(application=self)
+        win = BinaryWindow(application=self)
         win.present()
+
+    def on_new_window_action(self, *args):
+        self.new_window()
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""

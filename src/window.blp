@@ -7,6 +7,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
   default-width: 360;
   height-request: 294;
   default-height: 294;
+  close-request => on_close();
 
   content: Adw.ToolbarView {
     [top]
@@ -163,6 +164,12 @@ Popover out_bit_popover {
 }
 
 menu primary_menu {
+  section {
+    item {
+      label: _("New Window");
+      action: "app.new-window";
+    }
+  }
   section {
     item {
       label: _("_Keyboard Shortcuts");
