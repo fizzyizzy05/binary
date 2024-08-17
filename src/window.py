@@ -67,6 +67,14 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.in_dropdown.set_model(self.bases)
         self.out_dropdown.set_model(self.bases)
 
+        close_action = Gio.SimpleAction(
+            name="close",
+        )
+        close_action.connect(
+            "activate",
+            self.close_window,
+        )
+
         self.in_spin.set_range(2, 36)
         self.in_spin.set_snap_to_ticks(True)
         self.in_spin.set_increments(1,2)
@@ -242,3 +250,5 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.out_spin.set_visible(False)
 
+    def close_window(self, *kwargs):
+        self.close()
