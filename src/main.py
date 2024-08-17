@@ -37,6 +37,7 @@ class BinaryApplication(Adw.Application):
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action, None)
         self.create_action('new-window', self.on_new_window_action, ['<primary>n'])
+        self.create_action('close-window', self.on_close_window_action, ['<primary>w'])
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
 
     def do_activate(self):
@@ -71,6 +72,9 @@ class BinaryApplication(Adw.Application):
         prefsWindow = PrefsWindow()
         prefsWindow.set_transient_for(self.props.active_window)
         prefsWindow.present()
+
+    def on_close_window_action(self, *args):
+        self.props.active_window.close()
 
     def create_action(self, name, callback, shortcuts=None):
         """Add an application action.
