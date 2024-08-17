@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 19:48+0100\n"
+"POT-Creation-Date: 2024-08-17 20:46+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -63,16 +63,26 @@ msgstr "Allgemein"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
+msgid "New Window"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Tastenkürzel anzeigen"
 
-#: src/gtk/help-overlay.blp:19
+#: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Schließen"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:58
+#: src/main.py:65
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
@@ -102,31 +112,35 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:206
+#: src/window.py:212
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.blp:20
+#: src/window.blp:21
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: src/window.blp:44
+#: src/window.blp:45
 msgid "Input Base"
 msgstr ""
 
-#: src/window.blp:74 src/window.blp:79 src/window.blp:124 src/window.blp:129
+#: src/window.blp:75 src/window.blp:80 src/window.blp:125 src/window.blp:130
 msgid "Enter numbers…"
 msgstr "Zahl eingeben…"
 
-#: src/window.blp:94
+#: src/window.blp:95
 msgid "Output Base"
 msgstr ""
 
-#: src/window.blp:168
+#: src/window.blp:169
+msgid "New Window"
+msgstr ""
+
+#: src/window.blp:175
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastenkürzel"
 
-#: src/window.blp:173
+#: src/window.blp:180
 msgid "_About Binary"
 msgstr "_Über Binary"
 

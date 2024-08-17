@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 19:48+0100\n"
+"POT-Creation-Date: 2024-08-17 20:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,16 +56,26 @@ msgstr ""
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
-msgid "Show Shortcuts"
+msgid "New Window"
 msgstr ""
 
 #: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:58
+#: src/main.py:65
 msgid "translator-credits"
 msgstr ""
 
@@ -95,31 +105,35 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: src/window.py:206
+#: src/window.py:212
 msgid "Enter a number to see its bits"
 msgstr ""
 
-#: src/window.blp:20
+#: src/window.blp:21
 msgid "Main Menu"
 msgstr ""
 
-#: src/window.blp:44
+#: src/window.blp:45
 msgid "Input Base"
 msgstr ""
 
-#: src/window.blp:74 src/window.blp:79 src/window.blp:124 src/window.blp:129
+#: src/window.blp:75 src/window.blp:80 src/window.blp:125 src/window.blp:130
 msgid "Enter numbers…"
 msgstr ""
 
-#: src/window.blp:94
+#: src/window.blp:95
 msgid "Output Base"
 msgstr ""
 
-#: src/window.blp:168
+#: src/window.blp:169
+msgid "New Window"
+msgstr ""
+
+#: src/window.blp:175
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:173
+#: src/window.blp:180
 msgid "_About Binary"
 msgstr ""
 
