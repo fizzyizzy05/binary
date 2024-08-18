@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 20:46+0100\n"
+"POT-Creation-Date: 2024-08-18 15:16+0100\n"
 "PO-Revision-Date: 2024-08-05 20:01+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -116,10 +116,6 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Неправилни данни"
 
-#: src/window.py:212
-msgid "Enter a number to see its bits"
-msgstr "Въведете число, за да видите неговите битове"
-
 #: src/window.blp:21
 msgid "Main Menu"
 msgstr "Основно меню"
@@ -151,3 +147,6 @@ msgstr "_Относно „Двоично“"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Настройки"
+
+#~ msgid "Enter a number to see its bits"
+#~ msgstr "Въведете число, за да видите неговите битове"

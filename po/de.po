@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 20:46+0100\n"
+"POT-Creation-Date: 2024-08-18 15:16+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -110,10 +110,6 @@ msgstr ""
 #: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
 #: src/window.py:169 src/window.py:171
 msgid "Invalid input"
-msgstr ""
-
-#: src/window.py:212
-msgid "Enter a number to see its bits"
 msgstr ""
 
 #: src/window.blp:21

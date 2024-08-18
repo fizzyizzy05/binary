@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 20:46+0100\n"
+"POT-Creation-Date: 2024-08-18 15:16+0100\n"
 "PO-Revision-Date: 2024-08-14 11:09+0000\n"
 "Last-Translator: kilickerem066 <kilickerem066@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/binary/binary-"
@@ -112,10 +112,6 @@ msgstr "Diğer"
 msgid "Invalid input"
 msgstr "Geçersiz girdi"
 
-#: src/window.py:212
-msgid "Enter a number to see its bits"
-msgstr "Bitlerini görmek için bir sayı girin"
-
 #: src/window.blp:21
 msgid "Main Menu"
 msgstr "Ana Menü"
@@ -147,6 +143,9 @@ msgstr "Binary _Hakkında"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Tercihler"
+
+#~ msgid "Enter a number to see its bits"
+#~ msgstr "Bitlerini görmek için bir sayı girin"
 
 #~ msgid "Number base converter"
 #~ msgstr "Sayı tabanı dönüştürücü"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 20:46+0100\n"
+"POT-Creation-Date: 2024-08-18 15:16+0100\n"
 "PO-Revision-Date: 2024-07-21 19:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
@@ -109,10 +109,6 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Input non valido"
 
-#: src/window.py:212
-msgid "Enter a number to see its bits"
-msgstr "Inserisci un numero per visualizzarne i bit"
-
 #: src/window.blp:21
 msgid "Main Menu"
 msgstr "Menu principale"
@@ -144,6 +140,9 @@ msgstr "_Informazioni su Binary"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "Preferenze"
+
+#~ msgid "Enter a number to see its bits"
+#~ msgstr "Inserisci un numero per visualizzarne i bit"
 
 #~ msgid "Additional improvements include:"
 #~ msgstr "Ulteriori miglioramenti includono:"

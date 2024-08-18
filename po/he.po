@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-17 20:46+0100\n"
+"POT-Creation-Date: 2024-08-18 15:16+0100\n"
 "PO-Revision-Date: 2024-08-04 22:09+0000\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -112,10 +112,6 @@ msgstr ""
 msgid "Invalid input"
 msgstr "קלט לא תקין"
 
-#: src/window.py:212
-msgid "Enter a number to see its bits"
-msgstr "יש להזין על מנת לראות את הסיביות"
-
 #: src/window.blp:21
 msgid "Main Menu"
 msgstr "תפריט ראשי"
@@ -147,3 +143,6 @@ msgstr "_על בינרי"
 #: src/preferences.blp:5
 msgid "Preferences"
 msgstr "העדפות"
+
+#~ msgid "Enter a number to see its bits"
+#~ msgstr "יש להזין על מנת לראות את הסיביות"
