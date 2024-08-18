@@ -36,4 +36,10 @@ def bit_count(input):
     for x in bits:
         bit_str += f"{x} + "
 
-    return bit_str[:-2] + f"= {int(input)}"
+    # use a try catch loop to check that the input is actually binary
+    try:
+        bit_str = bit_str[:-2] + f"= {int(input)}"
+    except:
+        pass
+
+    return bit_str
