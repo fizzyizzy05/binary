@@ -64,12 +64,12 @@ msgstr "Genel"
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Yeni Pencere"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Pencereyi Kapat"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
@@ -130,7 +130,7 @@ msgstr "Çıktı Tabanı"
 
 #: src/window.blp:169
 msgid "New Window"
-msgstr ""
+msgstr "Yeni Pencere"
 
 #: src/window.blp:175
 msgid "_Keyboard Shortcuts"
@@ -144,8 +144,9 @@ msgstr "Binary _Hakkında"
 msgid "Preferences"
 msgstr "Tercihler"
 
-#~ msgid "Enter a number to see its bits"
-#~ msgstr "Bitlerini görmek için bir sayı girin"
+#: src/window.py:212
+msgid "Enter a number to see its bits"
+msgstr "Bitlerini görmek için bir sayı girin"
 
 #~ msgid "Number base converter"
 #~ msgstr "Sayı tabanı dönüştürücü"
