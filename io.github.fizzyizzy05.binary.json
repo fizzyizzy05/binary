@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.fizzyizzy05.binary",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "binary",
     "finish-args" : [
