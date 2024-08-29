@@ -81,11 +81,26 @@ template $BinaryWindow: Adw.ApplicationWindow {
             }
           }
 
-          Image {
-            icon-size: normal;
-            icon-name: "vertical-arrows-symbolic";
+          Box {
             margin-top: 18;
             margin-bottom: 12;
+            valign: center;
+            halign: center;
+            hexpand: true;
+            spacing: 9;
+
+            Image {
+              icon-size: normal;
+              icon-name: "vertical-arrows-symbolic";
+            }
+
+            Label {
+              label: _("Just start typing");
+            }
+
+            styles [
+              "typing-label"
+            ]
           }
 
           CenterBox {
