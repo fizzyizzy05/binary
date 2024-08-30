@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-18 15:16+0100\n"
-"PO-Revision-Date: 2024-07-21 19:00+0000\n"
+"PO-Revision-Date: 2024-08-31 17:09+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
-"app/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/binary/"
+"binary-app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
@@ -28,11 +28,11 @@ msgstr "Binary"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr "двоичная;десятичная;шестнадцатеричная;база;конвертировать;"
+msgstr "двоичная;десятичная;шестнадцатеричная;база;конвертировать;числа;число;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Преобразование чисел между основаниями"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -43,19 +43,18 @@ msgstr ""
 "шестнадцатеричных и двоичных чисел"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-#, fuzzy
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
+msgstr "Окно Binary. Преобразование 101010 в двоичном формате в 42 в десятичном"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-#, fuzzy
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
+msgstr ""
+"Окно Binary. Преобразование 1201 в десятичной системе в 4B1 в "
+"шестнадцатеричной"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-#, fuzzy
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "Окно приложения, преобразующее 37 в 1F"
+msgstr "Преобразование 17 в восьмеричной системе в F в шестнадцатеричной"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -65,12 +64,12 @@ msgstr "Общие"
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Новое окно"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Закрыть окно"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
@@ -94,24 +93,24 @@ msgstr "бит"
 
 #: src/window.py:50
 msgid "Octal"
-msgstr ""
+msgstr "Восьмеричное"
 
 #: src/window.py:51
 msgid "Decimal"
-msgstr ""
+msgstr "Десятичное"
 
 #: src/window.py:52
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Шестнадцатеричное"
 
 #: src/window.py:53
 msgid "Other"
-msgstr ""
+msgstr "Другое"
 
 #: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
 #: src/window.py:169 src/window.py:171
 msgid "Invalid input"
-msgstr ""
+msgstr "Неверный ввод"
 
 #: src/window.blp:21
 msgid "Main Menu"
@@ -131,7 +130,7 @@ msgstr "Выходное основание"
 
 #: src/window.blp:169
 msgid "New Window"
-msgstr ""
+msgstr "Новое окно"
 
 #: src/window.blp:175
 msgid "_Keyboard Shortcuts"
