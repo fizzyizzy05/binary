@@ -72,7 +72,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
           }
 
           Entry input_entry {
-            placeholder-text: _("Enter numbers…");
+            placeholder-text: _("Enter numbers");
             changed =>  $input_handler();
             enable-undo: false;
 
@@ -133,7 +133,7 @@ template $BinaryWindow: Adw.ApplicationWindow {
           }
 
           Entry output_entry {
-            placeholder-text: _("Enter numbers…");
+            placeholder-text: _("Enter numbers");
             changed =>  $output_handler();
             enable-undo: false;
 
