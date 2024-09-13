@@ -27,10 +27,9 @@
     </screenshot>
   </screenshots>
   <releases>
-    <!-- placeholder release date and version, tbc. description is completed by release -->
-    <release version="4.1" date="2024-12-31">
+    <release version="5.0" date="2024-09-13">
       <description translate="no">
-        <p>Binary 4.1 is a small update to the base converter app.</p>
+        <p>Binary 5.0 is a new update to the base converter app.</p>
         <p>Improved/added translations for:</p>
         <ul>
           <li>Hebrew (Yosef Or Boczko)</li>
