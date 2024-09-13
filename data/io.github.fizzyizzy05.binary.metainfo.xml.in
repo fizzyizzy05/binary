@@ -30,12 +30,19 @@
     <release version="5.0" date="2024-09-13">
       <description translate="no">
         <p>Binary 5.0 is a new update to the base converter app.</p>
+        <p>Added new features:</p>
+        <ul>
+          <li>Support for multiple windows</li>
+          <li>Added an option for any other base in addition to the preset binary, octal, decimal, and hexadecimal bases.</li>
+        </ul>
         <p>Improved/added translations for:</p>
         <ul>
           <li>Hebrew (Yosef Or Boczko)</li>
           <li>Finnish (Jiri Grönroos)</li>
-          <li>Turkish (Sabri Ünal)</li>
+          <li>Turkish (Sabri Ünal, kilickerem066)</li>
           <li>Bulgarian (twlvnn kraftwerk)</li>
+          <li>Russian (Fedorov Alexei)</li>
+          <li>Italian (Albano Battistella)</li>
         </ul>
       </description>
     </release>
