@@ -33,7 +33,7 @@
         <p>Added new features:</p>
         <ul>
           <li>Support for multiple windows</li>
-          <li>Added an option for any other base in addition to the preset binary, octal, decimal, and hexadecimal bases.</li>
+          <li>Added an option for any other base in addition to the preset binary, octal, decimal, and hexadecimal bases. (Satvik Patwardhan)</li>
         </ul>
         <p>Improved/added translations for:</p>
         <ul>
