@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-18 15:16+0100\n"
+"POT-Creation-Date: 2024-09-13 11:39+0100\n"
 "PO-Revision-Date: 2024-08-04 22:09+0000\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -120,23 +120,28 @@ msgstr "תפריט ראשי"
 msgid "Input Base"
 msgstr "בסיס הקלט"
 
-#: src/window.blp:75 src/window.blp:80 src/window.blp:125 src/window.blp:130
+#: src/window.blp:75 src/window.blp:136
+#, fuzzy
+msgid "Enter numbers"
+msgstr "יש להזין מספר…"
+
+#: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
 msgstr "יש להזין מספר…"
 
-#: src/window.blp:95
+#: src/window.blp:106
 msgid "Output Base"
 msgstr "בסיס הפלט"
 
-#: src/window.blp:169
+#: src/window.blp:180
 msgid "New Window"
 msgstr ""
 
-#: src/window.blp:175
+#: src/window.blp:186
 msgid "_Keyboard Shortcuts"
 msgstr "_צירופי מקשים"
 
-#: src/window.blp:180
+#: src/window.blp:191
 msgid "_About Binary"
 msgstr "_על בינרי"
 

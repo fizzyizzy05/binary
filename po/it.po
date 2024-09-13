@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-18 15:16+0100\n"
+"POT-Creation-Date: 2024-09-13 11:39+0100\n"
 "PO-Revision-Date: 2024-08-28 14:09+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/binary/"
-"binary-app/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
+"app/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,23 +117,28 @@ msgstr "Menu principale"
 msgid "Input Base"
 msgstr "Base di input"
 
-#: src/window.blp:75 src/window.blp:80 src/window.blp:125 src/window.blp:130
+#: src/window.blp:75 src/window.blp:136
+#, fuzzy
+msgid "Enter numbers"
+msgstr "Inserisci numeri…"
+
+#: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
 msgstr "Inserisci numeri…"
 
-#: src/window.blp:95
+#: src/window.blp:106
 msgid "Output Base"
 msgstr "Base di output"
 
-#: src/window.blp:169
+#: src/window.blp:180
 msgid "New Window"
 msgstr "Nuova finestra"
 
-#: src/window.blp:175
+#: src/window.blp:186
 msgid "_Keyboard Shortcuts"
 msgstr "_Scorciatoie da tastiera"
 
-#: src/window.blp:180
+#: src/window.blp:191
 msgid "_About Binary"
 msgstr "_Informazioni su Binary"
 
