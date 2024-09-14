@@ -8,134 +8,139 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-13 11:39+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-09-15 23:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"binary/binary-app/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
 msgid "Binary"
-msgstr ""
+msgstr "Binário"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
+msgstr "binário;converter;conversão;binary;decimal;hexadecimal;base;convert;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Converta números entre bases"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Um aplicativo pequeno e simples usado para converter entre diferentes "
+"números hexadecimais e binários"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
+msgstr "Janela do Binário convertendo 101010 em binário para 42 em decimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
+msgstr "Janela do Binário convertendo 1201 em decimal para 4B1 em hexadecimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
+msgstr "Janela do Binário convertendo 17 em octal para F em hexadecimal"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Nova janela"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Fecha a janela"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Mostra os atalhos"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Sai"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "Rafael Fontenelle <rafaelff@gnome.org>"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:46
 msgid "bits"
-msgstr ""
+msgstr "bits"
 
 #: src/window.py:50
 msgid "Octal"
-msgstr ""
+msgstr "Octal"
 
 #: src/window.py:51
 msgid "Decimal"
-msgstr ""
+msgstr "Decimal"
 
 #: src/window.py:52
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimal"
 
 #: src/window.py:53
 msgid "Other"
-msgstr ""
+msgstr "Outro"
 
 #: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
 #: src/window.py:169 src/window.py:171
 msgid "Invalid input"
-msgstr ""
+msgstr "Entrada inválida"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Base da entrada"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Inserir números"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Inserir números…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Base da saída"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Nova janela"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos de _teclado"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_Sobre Binário"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Preferências"
