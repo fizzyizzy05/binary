@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: io.github.fizzyizzy05.binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-13 11:39+0100\n"
-"PO-Revision-Date: 2024-08-14 11:09+0000\n"
-"Last-Translator: kilickerem066 <kilickerem066@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/binary/binary-"
-"app/tr/>\n"
+"PO-Revision-Date: 2024-09-14 22:23+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/binary/"
+"binary-app/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
@@ -121,9 +121,8 @@ msgid "Input Base"
 msgstr "Girdi Tabanı"
 
 #: src/window.blp:75 src/window.blp:136
-#, fuzzy
 msgid "Enter numbers"
-msgstr "Sayı gir…"
+msgstr "Sayı gir"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
