@@ -2,6 +2,7 @@
 
 [![Translation status](https://hosted.weblate.org/widget/binary/binary-app/svg-badge.svg)](https://hosted.weblate.org/engage/binary/)
 [![CI](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml/badge.svg)](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml)
+[![Proudly part of GNOME Circle](https://circle.gnome.org/assets/button/badge.svg)](https://circle.gnome.org)
 
 ![Image of Binary](img/binary-101010-decimal-42.png)
 
