@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-13 11:39+0100\n"
-"PO-Revision-Date: 2024-08-04 22:09+0000\n"
+"PO-Revision-Date: 2024-09-17 06:09+0000\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
 "he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
@@ -56,28 +56,27 @@ msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "חלון חדש"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "סגירת חלון"
 
 #: src/gtk/help-overlay.blp:24
-#, fuzzy
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "_צירופי מקשים"
+msgstr "הצגת צירופי מקשים"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "יציאה"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
@@ -105,7 +104,7 @@ msgstr "הקסדצימלי"
 
 #: src/window.py:53
 msgid "Other"
-msgstr ""
+msgstr "אחר"
 
 #: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
 #: src/window.py:169 src/window.py:171
@@ -121,9 +120,8 @@ msgid "Input Base"
 msgstr "בסיס הקלט"
 
 #: src/window.blp:75 src/window.blp:136
-#, fuzzy
 msgid "Enter numbers"
-msgstr "יש להזין מספר…"
+msgstr "יש להזין מספרים"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
@@ -135,7 +133,7 @@ msgstr "בסיס הפלט"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "חלון חדש"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
