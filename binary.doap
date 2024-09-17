@@ -12,7 +12,7 @@
   <platform>GTK 4</platform>
   <platform>Libadwaita</platform>
 
-  <homepage rdf:resource="https://github.org/fizzyizzy05/binary" />
+  <homepage rdf:resource="https://apps.gnome.org/Binary/" />
   <download-page rdf:resource="https://flathub.org/app/io.github.fizzyizzy05.binary/" />
   <bug-database rdf:resource="https://github.org/fizzyizzy05/binary/issues" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
