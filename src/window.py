@@ -22,6 +22,7 @@ from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Gio
 import math
+from gettext import ngettext
 
 # Scripts used to calculate numbers
 from .bit_count import *
@@ -193,8 +194,6 @@ class BinaryWindow(Adw.ApplicationWindow):
         # Return the label to it's original content. Using a function for this ensures it's always the same value, and makes it more consistent.
         self.output_entry.set_text("")
         self.input_entry.set_text("")
-        self.in_bit_label.set_label(f"0 {self.bits_text}")
-        self.out_bit_label.set_label(f"0 {self.bits_text}")
         self.update_bits()
         self.toggle_mono()
         self.input_entry.remove_css_class("error")
@@ -203,16 +202,36 @@ class BinaryWindow(Adw.ApplicationWindow):
     def update_bits(self, *kwargs):
         in_count = len(self.input_entry.get_text())
         out_count = len(self.output_entry.get_text())
-        if in_count > 0 and out_count > 0:
-            self.in_bit_label.set_sensitive(True)
-            self.in_bit_label.set_label(f"{in_count} {self.bits_text}")
-            self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
-            self.out_bit_label.set_sensitive(True)
-            self.out_bit_label.set_label(f"{out_count} {self.bits_text}")
-            self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
-        else:
+
+        # Translators: plural count for the input bits
+        in_bits_text = ngettext(
+            "%(in_count)d bit",
+            "%(in_count)d bits",
+            in_count
+        ) % {
+            "in_count": in_count,
+        }
+
+        # Translators: plural count for the output bits
+        out_bits_text = ngettext(
+            "%(out_count)d bit",
+            "%(out_count)d bits",
+            out_count
+        ) % {
+            "out_count": in_count,
+        }
+
+        self.in_bit_label.set_label(in_bits_text)
+        self.input_bits.set_label(f"{bit_count(self.input_entry.get_text())}")
+        self.out_bit_label.set_label(out_bits_text)
+        self.output_bits.set_label(f"{bit_count(self.output_entry.get_text())}")
+
+        if in_count == 0 and out_count == 0:
             self.in_bit_label.set_sensitive(False)
             self.out_bit_label.set_sensitive(False)
+        else:
+            self.in_bit_label.set_sensitive(True)
+            self.out_bit_label.set_sensitive(True)
 
     def toggle_mono(self, *kwargs):
         if self.input_entry.get_text() != "":
@@ -248,4 +267,5 @@ class BinaryWindow(Adw.ApplicationWindow):
             self.out_spin.set_visible(True)
         else:
             self.out_spin.set_visible(False)
+
 

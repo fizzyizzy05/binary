@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-13 11:39+0100\n"
+"POT-Creation-Date: 2024-09-17 13:18+0100\n"
 "PO-Revision-Date: 2024-09-17 06:09+0000\n"
 "Last-Translator: Brage Fuglseth <brage.fuglseth@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/binary/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:49
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
 msgid "Binary"
 msgstr "Binary"
 
@@ -84,30 +84,44 @@ msgid "translator-credits"
 msgstr "Brage Fuglseth https://bragefuglseth.dev"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:46
+#: src/window.py:47
 msgid "bits"
 msgstr "bit"
 
-#: src/window.py:50
+#: src/window.py:51
 msgid "Octal"
 msgstr "Oktal"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Decimal"
 msgstr "Desimal"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Hexadecimal"
 msgstr "Heksadesimal"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Other"
 msgstr "Annet"
 
-#: src/window.py:122 src/window.py:126 src/window.py:128 src/window.py:165
-#: src/window.py:169 src/window.py:171
+#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
+#: src/window.py:170 src/window.py:172
 msgid "Invalid input"
 msgstr "Ugyldig verdi"
+
+#: src/window.py:208
+#, python-format
+msgid "%(in_count)d bit"
+msgid_plural "%(in_count)d bits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window.py:217
+#, python-format
+msgid "%(out_count)d bit"
+msgid_plural "%(out_count)d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/window.blp:21
 msgid "Main Menu"
