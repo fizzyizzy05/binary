@@ -27,6 +27,7 @@
           <foaf:OnlineAccount>
             <foaf:accountServiceHomepage rdf:resource="https://gitlab.gnome.org"/>
             <foaf:accountName>fizzyizzy05</foaf:accountName>
+            <gnome:userid>fizzyizzy05</gnome:userid>
           </foaf:OnlineAccount>
       </foaf:Account>
 
