@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-17 13:18+0100\n"
-"PO-Revision-Date: 2024-08-28 14:09+0000\n"
+"PO-Revision-Date: 2024-09-18 20:40+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/binary/binary-"
-"app/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/binary/"
+"binary-app/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.1-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -132,9 +132,8 @@ msgid "Input Base"
 msgstr "Base di input"
 
 #: src/window.blp:75 src/window.blp:136
-#, fuzzy
 msgid "Enter numbers"
-msgstr "Inserisci numeri…"
+msgstr "Inserisci numeri"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
