@@ -32,7 +32,15 @@
         <p>Binary 5.1 is a small update including small tweaks and polishing touches:</p>
         <p>Notable changes:</p>
         <ul>
-          <li>Bit counter is now translatable</li>
+          <li>Bit counter now differentiates between a singular and a plural number of bits.</li>
+          <li>Binary now uses an adaptive about dialog</li>
+        </ul>
+        <p>Updated/added translations:</p>
+        <ul>
+          <li>Turkish (Oğuz Ersen)</li>
+          <li>Portuguese (Brazil) (Rafael Fontenelle)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Norwegian Bokmål (Brage Fuglseth)</li>
         </ul>
       </description>
     </release>
