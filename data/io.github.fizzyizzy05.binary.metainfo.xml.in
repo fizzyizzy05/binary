@@ -27,6 +27,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.1" date="2024-09-20">
+      <description translate="no">
+        <p>Binary 5.1 is a small update including small tweaks and polishing touches:</p>
+        <p>Notable changes:</p>
+        <ul>
+          <li>Bit counter is now translatable</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.0" date="2024-09-13">
       <description translate="no">
         <p>Binary 5.0 is a new update to the base converter app.</p>

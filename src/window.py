@@ -218,7 +218,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             "%(out_count)d bits",
             out_count
         ) % {
-            "out_count": in_count,
+            "out_count": out_count,
         }
 
         self.in_bit_label.set_label(in_bits_text)
