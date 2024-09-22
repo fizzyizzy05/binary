@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-17 13:18+0100\n"
-"PO-Revision-Date: 2024-09-18 20:40+0000\n"
+"PO-Revision-Date: 2024-09-23 15:16+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/binary/"
 "binary-app/it/>\n"
@@ -113,15 +113,15 @@ msgstr "Input non valido"
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d bit"
+msgstr[1] "%(in_count)d bits"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d bit"
+msgstr[1] "%(out_count)d bits"
 
 #: src/window.blp:21
 msgid "Main Menu"
