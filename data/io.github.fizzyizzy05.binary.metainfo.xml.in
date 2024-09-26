@@ -27,7 +27,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="5.1" date="2024-09-20">
+    <release version="5.1" date="2024-09-26">
       <description translate="no">
         <p>Binary 5.1 is a small update including small tweaks and polishing touches:</p>
         <p>Notable changes:</p>
@@ -41,6 +41,7 @@
           <li>Portuguese (Brazil) (Rafael Fontenelle)</li>
           <li>Hebrew (Yosef Or Boczko)</li>
           <li>Norwegian Bokmål (Brage Fuglseth)</li>
+          <li>Russian (Fedorov Alexei)</li>
         </ul>
       </description>
     </release>
