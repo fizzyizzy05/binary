@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-26 15:06+0100\n"
-"PO-Revision-Date: 2024-07-21 19:00+0000\n"
-"Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
+"PO-Revision-Date: 2024-09-30 09:56+0000\n"
+"Last-Translator: Albert Krenz <albert.krenz+gitlab@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
 "de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -31,7 +31,7 @@ msgstr "binär;dezimal;hexadezimal;basis;konvertieren;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Zahlen zwischen unterschiedlichen Basen konvertieren"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -42,19 +42,16 @@ msgstr ""
 "Dezimalen und Hexadezimalen Zahlen"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
-#, fuzzy
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Binary Fenster konvertiert 12 zu 1100"
+msgstr "Konvertieren von 101010 in Binär nach 42 in Dezimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
-#, fuzzy
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "Binary Fenster konvertiert 12 zu 1100"
+msgstr "Konvertieren von 1201 in Dezimal nach 4B1 in Hexadezimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
-#, fuzzy
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "Binary Fenster konvertiert 12 zu 1100"
+msgstr "Konvertieren von 17 in Oktal nach F in hexadezimal"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -64,12 +61,12 @@ msgstr "Allgemein"
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Neues Fenster"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Fenster schließen"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
@@ -93,38 +90,38 @@ msgstr "Bits"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "Oktal"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Dezimal"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadezimal"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "Weitere"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Ungültige Eingabe"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bit"
+msgstr[1] "Bits"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bit"
+msgstr[1] "Bits"
 
 #: src/window.blp:21
 msgid "Main Menu"
@@ -132,12 +129,11 @@ msgstr "Hauptmenü"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Basis Eingabe"
 
 #: src/window.blp:75 src/window.blp:136
-#, fuzzy
 msgid "Enter numbers"
-msgstr "Zahl eingeben…"
+msgstr "Zahl eingeben"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
@@ -145,11 +141,11 @@ msgstr "Zahl eingeben…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Basis Ausgabe"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Neues Fenster"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
