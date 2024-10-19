@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-26 15:06+0100\n"
-"PO-Revision-Date: 2024-09-30 09:56+0000\n"
-"Last-Translator: Albert Krenz <albert.krenz+gitlab@mailbox.org>\n"
+"PO-Revision-Date: 2024-10-20 21:23+0000\n"
+"Last-Translator: Whoever4976 <wolffjonas47@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/binary/binary-app/"
 "de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -113,15 +113,15 @@ msgstr "Ungültige Eingabe"
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] "Bit"
-msgstr[1] "Bits"
+msgstr[0] "%(in_count)d Bit"
+msgstr[1] "%(in_count)d Bits"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] "Bit"
-msgstr[1] "Bits"
+msgstr[0] "%(out_count)d Bit"
+msgstr[1] "%(out_count)d Bits"
 
 #: src/window.blp:21
 msgid "Main Menu"
