@@ -39,6 +39,7 @@ class BinaryApplication(Adw.Application):
         self.create_action('close-window', self.on_close_window_action, ['<primary>w'])
         self.create_action('new-window', self.on_new_window_action, ['<primary>n'])
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
+        Gtk.Window.set_default_icon_name('io.github.fizzyizzy05.binary')
 
     def do_activate(self):
         """Called when the application is activated.
