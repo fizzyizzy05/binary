@@ -22,7 +22,7 @@ from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Gio
 import math
-from gettext import ngettext
+from gettext import ngettext, dgettext
 
 # Scripts used to calculate numbers
 from .bit_count import *
@@ -47,7 +47,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     bits_text = _("bits")
 
     bases = Gtk.StringList.new(None)
-    bases.append(_("Binary"))
+    bases.append(dgettext("Number base", "Binary"))
     bases.append(_("Octal"))
     bases.append(_("Decimal"))
     bases.append(_("Hexadecimal"))
