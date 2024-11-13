@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2024-07-21 19:00+0000\n"
-"Last-Translator: Michele <silviamichele@proton.me>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/binary-"
-"app/pt/>\n"
+"PO-Revision-Date: 2024-11-14 21:00+0000\n"
+"Last-Translator: Cleverson Cândido <optimuspraimu@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/"
+"binary-app/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -31,50 +31,53 @@ msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Converter números entre bases"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Um aplicativo pequeno e simples usado para converter entre diferentes "
+"números hexadecimais e binários"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
+msgstr "Janela binária convertendo 101010 em binário para 42 em decimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
+msgstr "Janela binária convertendo 1201 em decimal para 4B1 em hexadecimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
+msgstr "Janela binária convertendo 17 em octal para F em hexadecimal"
 
 #: src/gtk/help-overlay.blp:11
+#, fuzzy
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Nova janela"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Fechar janela"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Mostrar atalhos"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Desistir"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
