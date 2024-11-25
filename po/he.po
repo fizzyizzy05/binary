@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2024-09-17 06:09+0000\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
+"PO-Revision-Date: 2024-11-26 13:00+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
 "he/>\n"
 "Language: he\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -115,19 +115,19 @@ msgstr "קלט לא תקין"
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "סיבית"
+msgstr[1] "שתי סיביות"
+msgstr[2] "%(in_count)d סיביות"
+msgstr[3] "%(in_count)d סיביות"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "סיבית"
+msgstr[1] "שתי סיביות"
+msgstr[2] "%(out_count)d סיביות"
+msgstr[3] "%(out_count)d סיביות"
 
 #: src/window.blp:21
 msgid "Main Menu"
