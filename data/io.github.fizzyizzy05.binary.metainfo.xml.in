@@ -27,6 +27,25 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.2" date="2025-12-14">
+      <description>
+        <p>Binary 5.2 is a small update mainly focusing on updated translations</p>
+        <ul>
+          <li>The main window should now more reliably uses the Binary icon on non-GNOME desktops (Balló György)</li>
+        </ul>
+        <p>Updated/added translations</p>
+        <ul>
+          <li>Turkish (Oğuz Ersen)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>German (Albert Krenz and Whoever4976)</li>
+          <li>Japanese (Himmel)</li>
+          <li>French (Matthias Cabillot)</li>
+          <li>Portuguese (Cleverson Cândido)</li>
+          <li>Hebrew (Yaron Shahrabani)</li>
+          <li>Tamil (TamilNeram)</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.1" date="2024-09-26">
       <description translate="no">
         <p>Binary 5.1 is a small update including small tweaks and polishing touches:</p>
