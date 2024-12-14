@@ -4,7 +4,11 @@
 [![CI](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml/badge.svg)](https://github.com/fizzyizzy05/binary/actions/workflows/ci.yml)
 [![Proudly part of GNOME Circle](https://circle.gnome.org/assets/button/badge.svg)](https://circle.gnome.org)
 
-![Image of Binary](img/binary-101010-decimal-42.png)
+<picture>
+    <source srcset="img/binary-101010-decimal-42.png" media="(prefers-color-scheme: light)"/>
+    <img width='480' src="img/binary-101010-decimal-42-dark.png" alt="A screenshot of the Binary app converting 1010101010 in Binary to 682 in Decimal.">
+</picture>
+
 
 Binary is a simple app that converts numbers between binary, decimal, hexadecimal and octal bases.
 ## Installing
