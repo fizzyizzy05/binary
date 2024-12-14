@@ -5,7 +5,7 @@
 [![Proudly part of GNOME Circle](https://circle.gnome.org/assets/button/badge.svg)](https://circle.gnome.org)
 
 <picture>
-    <source srcset="img/binary-101010-decimal-42.png" media="(prefers-color-scheme: light)"/>
+    <source srcset="img/binary-101010-decimal-42.png" media="(prefers-color-scheme: light)" style="width: 964px;"/>
     <img src="img/binary-101010-decimal-42-dark.png" alt="A screenshot of the Binary app converting 101010 in Binary to 42 in Decimal." style="width: 60%;">
 </picture>
 
