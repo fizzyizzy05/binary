@@ -36,7 +36,8 @@ class BinaryApplication(Adw.Application):
         print(APP_ID)
         print(PROFILE)
         super().__init__(application_id=APP_ID,
-                         flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
+                         flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
+                         resource_base_path="/io/github/fizzyizzy05/binary")
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action, None)
