@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>io.github.fizzyizzy05.binary.desktop</id>
+	<id>@app_id@.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
   <name>Binary</name>
@@ -193,7 +193,7 @@
   <url type="bugtracker">https://github.com/fizzyizzy05/binary/issues</url>
   <url type="vcs-browser">https://github.com/fizzyizzy05/binary</url>
   <url type="translate">https://hosted.weblate.org/engage/binary/</url>
-  <launchable type="desktop-id">io.github.fizzyizzy05.binary.desktop</launchable>
+  <launchable type="desktop-id">@app_id@.desktop</launchable>
   <requires>
     <display_length compare="ge">360</display_length>
   </requires>
