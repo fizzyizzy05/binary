@@ -1,6 +1,13 @@
+conf = configuration_data()
+conf.set('app_id', app_id)
+
 desktop_file = i18n.merge_file(
-        input: 'io.github.fizzyizzy05.binary.desktop.in',
-       output: 'io.github.fizzyizzy05.binary.desktop',
+        input: configure_file(
+                  input: 'io.github.fizzyizzy05.binary.desktop.in.in',
+                 output: 'io.github.fizzyizzy05.binary.desktop.in',
+          configuration: conf
+        ),
+       output: app_id + '.desktop',
          type: 'desktop',
        po_dir: '../po',
       install: true,
@@ -13,8 +20,12 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'io.github.fizzyizzy05.binary.metainfo.xml.in',
-       output: 'io.github.fizzyizzy05.binary.metainfo.xml',
+        input: configure_file(
+                  input: 'io.github.fizzyizzy05.binary.metainfo.xml.in.in',
+                 output: 'io.github.fizzyizzy05.binary.metainfo.xml.in',
+          configuration: conf
+        ),
+       output: app_id + '.metainfo.xml',
        po_dir: '../po',
       install: true,
   install_dir: get_option('datadir') / 'metainfo'
