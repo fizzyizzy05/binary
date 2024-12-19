@@ -15,5 +15,5 @@ jobs:
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: palette.flatpak
-        manifest-path: io.github.fizzyizzy05.binary.json
+        manifest-path: io.github.fizzyizzy05.binary.Devel.json
         cache-key: flatpak-builder-${{ github.sha }}
