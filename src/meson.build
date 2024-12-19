@@ -14,7 +14,13 @@ blueprints = custom_target('blueprints',
 
 
 gnome.compile_resources('binary',
-  'binary.gresource.xml',
+  configure_file(
+            input: 'binary.gresource.xml.in',
+           output: 'binary.gresource.xml',
+    configuration: conf,
+          install: true,
+      install_dir: moduledir
+  ),
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
