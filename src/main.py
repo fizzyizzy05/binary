@@ -27,11 +27,15 @@ from gi.repository import Gtk, Gio, Adw
 from .window import BinaryWindow
 from .preferences import PrefsWindow
 
+from .profile import APP_ID, PROFILE
+
 class BinaryApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.github.fizzyizzy05.binary',
+        print(APP_ID)
+        print(PROFILE)
+        super().__init__(application_id=APP_ID,
                          flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
