@@ -1,5 +1,5 @@
 {
-    "app-id" : "io.github.fizzyizzy05.binary",
+    "app-id" : "io.github.fizzyizzy05.binary.Devel",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
@@ -49,6 +49,7 @@
                 }
             ],
             "config-opts" : [
+            	"-Dprofile=development",
                 "--libdir=lib"
             ]
         }
