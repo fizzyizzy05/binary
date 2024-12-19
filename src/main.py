@@ -56,6 +56,10 @@ class BinaryApplication(Adw.Application):
     def new_window(self):
         win = self.props.active_window
         win = BinaryWindow(application=self)
+
+        if PROFILE == "development":
+            win.add_css_class("devel")
+
         win.present()
 
     def on_new_window_action(self, *args):
