@@ -49,6 +49,9 @@ def get_answer(input, in_base, out_base):
     if (" " in input):
         return "char"
 
+    if '+' in input:
+        split_input('')
+
     for x in split_input:
         # Check if the input is valid for in_base, where in_base is between 2 and 36 inclusive.
         # Bases above 36 are not universally standard, so we assume they are invalid.
@@ -68,7 +71,7 @@ def get_answer(input, in_base, out_base):
 
     if len(split_input) == 1:
         return calc_numerator(split_input[0], in_base, out_base)
-    if len(split_input) == 2:
+    if len(split_input) == 2 and split_input[1] == 0:
         # TODO: add separate calculations
         return f"{calc_numerator(split_input[0], in_base, out_base)}.0"
     else:
