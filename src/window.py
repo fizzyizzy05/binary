@@ -27,6 +27,7 @@ from gettext import ngettext, dgettext
 # Scripts used to calculate numbers
 from .bit_count import *
 from .get_answer import *
+from .twos_compliment import *
 
 @Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
 class BinaryWindow(Adw.ApplicationWindow):
@@ -119,7 +120,12 @@ class BinaryWindow(Adw.ApplicationWindow):
                 in_base = self.bases_dict[self.in_dropdown.get_selected()]
             else:
                 in_base = int(self.in_spin.get_value())
-            ans = get_answer(in_str, in_base, out_base)
+
+            if self.in_twos_compliment.get_active() or self.out_twos_compliment.get_active():
+                ans = twos_compliment(in_str, in_base, self.in_twos_compliment.get_active(), out_base, self.out_twos_compliment.get_active())
+            else:
+                ans = get_answer(in_str, in_base, out_base)
+
             if ans == "char":
                 self.input_entry.add_css_class("error")
                 self.input_entry.set_tooltip_text(_("Invalid input"))
