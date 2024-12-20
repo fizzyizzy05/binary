@@ -42,6 +42,8 @@ class BinaryWindow(Adw.ApplicationWindow):
     out_dropdown = Gtk.Template.Child()
     in_spin = Gtk.Template.Child()
     out_spin = Gtk.Template.Child()
+    in_twos_compliment = Gtk.Template.Child()
+    out_twos_compliment = Gtk.Template.Child()
 
     # Translators: this string is used to describe how many bits there are.
     bits_text = _("bits")
