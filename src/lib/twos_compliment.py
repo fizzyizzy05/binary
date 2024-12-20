@@ -25,14 +25,24 @@ def twos_compliment(input, in_base, in_2c, out_base, out_2c):
     if in_2c == False and out_2c == True:
         i = get_answer(input, in_base, 2)
         print(i)
-        ans = "1"
-        for d in i:
-            if d == '0':
-                ans += "1"
-            else:
-                ans += "0"
 
+        if input[0] == '-':
+            i = f"1{i}"
+        else:
+            i = f"0{i}"
+
+        ans = flip_bits(i)
         print(ans)
 
         ans = bin(int(ans, 2) + 1)
         return ans.removeprefix("0b")
+
+def flip_bits(input):
+    a = ""
+    for d in input:
+        if d == '0':
+            a += "1"
+        else:
+            a += "0"
+
+    return a
