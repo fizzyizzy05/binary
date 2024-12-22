@@ -36,6 +36,17 @@ def twos_compliment(input, in_base, in_2c, out_base, out_2c):
 
         ans = bin(int(ans, 2) + 1)
         return ans.removeprefix("0b")
+    else:
+        i = bin(int(input, 2) - 1)
+        i = i.removeprefix("0b")
+        while len(i) < len(input):
+            i = f"0{i}"
+        print(i)
+
+        ans = flip_bits(i)
+
+        print(ans)
+        return get_answer(ans, 2, out_base)
 
 def flip_bits(input):
     a = ""
