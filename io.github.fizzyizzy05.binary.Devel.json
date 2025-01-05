@@ -43,9 +43,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/fizzyizzy05/binary",
-                    "branch" : "main"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ],
             "config-opts" : [
