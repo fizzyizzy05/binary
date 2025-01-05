@@ -121,7 +121,7 @@ class BinaryWindow(Adw.ApplicationWindow):
             else:
                 in_base = int(self.in_spin.get_value())
 
-            if self.in_twos_compliment.get_active() or self.out_twos_compliment.get_active():
+            if (self.in_twos_compliment.get_active() and self.in_dropdown.get_selected == 1) or (self.out_twos_compliment.get_active() and self.out_dropdown.get_selected == 1):
                 ans = twos_compliment(in_str, in_base, self.in_twos_compliment.get_active(), out_base, self.out_twos_compliment.get_active())
             else:
                 ans = get_answer(in_str, in_base, out_base)
