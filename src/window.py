@@ -45,6 +45,8 @@ class BinaryWindow(Adw.ApplicationWindow):
     out_spin = Gtk.Template.Child()
     in_twos_compliment = Gtk.Template.Child()
     out_twos_compliment = Gtk.Template.Child()
+    in_binary_tools = Gtk.Template.Child()
+    out_binary_tools = Gtk.Template.Child()
 
     # Translators: this string is used to describe how many bits there are.
     bits_text = _("bits")
@@ -90,7 +92,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def change_input_base(self, *kwargs):
         try:
             self.output_handler()
-            self.toggle_bit_counter()
+            self.toggle_binary_tools()
             self.toggle_base_spin()
             self.editable = True
         except:
@@ -100,7 +102,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     def change_output_base(self, *kwargs):
         try:
             self.input_handler()
-            self.toggle_bit_counter()
+            self.toggle_binary_tools()
             self.toggle_base_spin()
             self.editable = True
         except:
@@ -252,19 +254,19 @@ class BinaryWindow(Adw.ApplicationWindow):
         else:
             self.output_entry.remove_css_class("mono")
 
-    def toggle_bit_counter(self, *kwargs):
+    def toggle_binary_tools(self, *kwargs):
         if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
-            self.in_bit_label.set_visible(True)
-            self.out_bit_label.set_visible(True)
+            self.in_binary_tools.set_visible(True)
+            self.out_binary_tools.set_visible(True)
         elif self.in_dropdown.get_selected() == 0:
-            self.in_bit_label.set_visible(True)
-            self.out_bit_label.set_visible(False)
+            self.in_binary_tools.set_visible(True)
+            self.out_binary_tools.set_visible(False)
         elif self.out_dropdown.get_selected() == 0:
-            self.in_bit_label.set_visible(False)
-            self.out_bit_label.set_visible(True)
+            self.in_binary_tools.set_visible(False)
+            self.out_binary_tools.set_visible(True)
         else:
-            self.in_bit_label.set_visible(False)
-            self.out_bit_label.set_visible(False)
+            self.in_binary_tools.set_visible(False)
+            self.out_binary_tools.set_visible(False)
 
     def toggle_base_spin(self, *kwargs):
         if self.in_dropdown.get_selected() == 4:
