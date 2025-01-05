@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>@app_id@</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0-or-later</project_license>
+  <name>Binary</name>
+  <summary>Convert numbers between bases</summary>
+	<description>
+	  <p>A small and simple app used to convert between different hexadecimal and binary numbers</p>
+	</description>
+  <branding>
+    <color type="primary" scheme_preference="light">#8ff0a4</color>
+    <color type="primary" scheme_preference="dark">#155a3a</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default" xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/binary-101010-decimal-42.png</image>
+      <caption>Binary window converting 101010 in binary to 42 in decimal</caption>
+    </screenshot>
+    <screenshot xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/decimal-1201-hexadecimal-4b1.png</image>
+      <caption>Binary window converting 1201 in decimal to 4B1 in hexadecimal</caption>
+    </screenshot>
+    <screenshot xml:lang="en">
+      <image>https://github.com/fizzyizzy05/binary/raw/main/img/octal-17-hexadecimal-f.png</image>
+      <caption>Binary window converting 17 in octal to F in hexadecimal</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="5.2" date="2024-12-14">
+      <description>
+        <p>Binary 5.2 is a small update mainly focusing on updated translations</p>
+        <ul>
+          <li>The main window should now more reliably uses the Binary icon on non-GNOME desktops (Balló György)</li>
+        </ul>
+        <p>Updated/added translations</p>
+        <ul>
+          <li>Turkish (Oğuz Ersen)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>German (Albert Krenz and Whoever4976)</li>
+          <li>Japanese (Himmel)</li>
+          <li>French (Matthias Cabillot)</li>
+          <li>Portuguese (Cleverson Cândido)</li>
+          <li>Hebrew (Yaron Shahrabani)</li>
+          <li>Tamil (TamilNeram)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.1" date="2024-09-26">
+      <description translate="no">
+        <p>Binary 5.1 is a small update including small tweaks and polishing touches:</p>
+        <p>Notable changes:</p>
+        <ul>
+          <li>Bit counter now differentiates between a singular and a plural number of bits.</li>
+          <li>Binary now uses an adaptive about dialog</li>
+        </ul>
+        <p>Updated/added translations:</p>
+        <ul>
+          <li>Turkish (Oğuz Ersen)</li>
+          <li>Portuguese (Brazil) (Rafael Fontenelle)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Norwegian Bokmål (Brage Fuglseth)</li>
+          <li>Russian (Fedorov Alexei)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.0" date="2024-09-13">
+      <description translate="no">
+        <p>Binary 5.0 is a new update to the base converter app.</p>
+        <p>Added new features:</p>
+        <ul>
+          <li>Support for multiple windows</li>
+          <li>Added an option for any other base in addition to the preset binary, octal, decimal, and hexadecimal bases. (Satvik Patwardhan)</li>
+        </ul>
+        <p>Improved/added translations for:</p>
+        <ul>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>Turkish (Sabri Ünal, kilickerem066)</li>
+          <li>Bulgarian (twlvnn kraftwerk)</li>
+          <li>Russian (Fedorov Alexei)</li>
+          <li>Italian (Albano Battistella)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0" date="2024-08-02">
+      <description translate="no">
+        <p>Binary 4.0 is a new release the base converter app. It comes with a new design (Gregor Niehl), that's aligned vertically and comes with multiple improvements compared to before:</p>
+        <ul>
+          <li>Output is less likely to overflow, taking space from the input</li>
+          <li>The output is now directly mutable instead of having a dedicated swap button</li>
+          <li>Binary is a bit better suited to mobile devices compared to before.</li>
+        </ul>
+        <p>Additional improvements include:</p>
+        <ul>
+          <li>Input and output bases are now saved between sessions</li>
+          <li>Input bases get a tooltip for invalid input, giving screen reader users more context to if they've entered a digit wrong.</li>
+          <li>The base list has been re-ordered in order of base size. Octal is now between Binary and Decimal</li>
+        </ul>
+        <p>Last but not least, improved translations:</p>
+        <ul>
+          <li>Italian (Albano Battistella)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2024-07-11">
+      <description translate="no">
+        <p>Binary 0.3.1 is a new small release with a few improvements:</p>
+        <ul>
+          <li>Base selectors use the full base name, rather than the short name</li>
+          <li>Bit counter is now a dropdown, with individual bits hidden by default so it's more out of the way.</li>
+          <li>Placeholder text no longer uses a monospace font</li>
+          <li>Invalid input isn't removed, instead the entry will turn red</li>
+          <li>Changing the bases will update the calculated values</li>
+        </ul>
+        <p>Added the following translations:</p>
+        <ul>
+          <li>Italian (Albano Battistella)</li>
+          <li>Russian (Fedorov Alexei)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3" date="2024-06-23">
+      <description translate="no">
+        <p>Binary 0.3 is a new release with the following improvements:</p>
+        <ul>
+          <li>A new cleaner design for the base selectors for the headers.</li>
+          <li>Added support for converting numbers between octal and other bases.</li>
+          <li>Reworked number conversions to be more reliable and quicker.</li>
+        </ul>
+        <p>Added translations for the following locales:</p>
+        <ul>
+          <li>German (Konstantin Tutsch)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.1" date="2024-04-07">
+      <description translate="no">
+        <p>Binary 0.2.1 is a small update to the base converter app, with the following improvements</p>
+        <ul>
+          <li>Dark/light mode switch in a new preferences window</li>
+          <li>Turkish translations</li>
+          <li>Accessibility improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2" date="2024-01-26">
+      <description translate="no">
+        <p>
+          Binary 0.2 is the latest update to the base converter app. This update introduces hexadecimal (or base 16) as a number base, allowing for conversions to and from hexadecimal numbers. The app also now has a green accent colour, making it feel more fun and distinctive. And invalid digits are now removed from the input box, making the app smoother and easier to use.
+        </p>
+        <p>
+          Additionally, the following bug fixes and smaller improvements have been made:
+        </p>
+        <ul>
+          <li>The output is now selectable, allowing for copy and paste instead of needing to manually type out the result.</li>
+          <li>Decimal input now has data validation, and will display a toast when using an invalid digit.</li>
+          <li>Wrong digit toasts will no longer duplicate, and will simply stay up when an invalid base is used.</li>
+          <li>The bit counter has been updated to be cleaner and easier to understand.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.3" date="2024-01-08">
+      <description translate="no">
+        <ul>
+          <li>When entering an invalid digit, it no longer removes it to prevent GTK Warnings. This functionality will likely be revisited down the line</li>
+          <li>Removed preferences button as it was empty and did nothing</li>
+          <li>The bit counter doesn't start with "0 bits" anymore, and should have consistent functionality.</li>
+          <li>Added links to the project in the about window</li>
+          <li>The "Legal" section in the about window now states the GPL v3 license of the app</li>
+          <li>Code cleanup</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.2" date="2024-01-06">
+      <description translate="no">
+        <ul>
+          <li>Version bump</li>
+          <li>Swap button for base switcher</li>
+          <li>Removed the binary calculator label</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.1" date="2023-12-18">
+      <description translate="no">
+        <p>First proper release of Binary. Has basic support for converting between binary and hexadecmial values.</p>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://apps.gnome.org/Binary/</url>
+  <url type="bugtracker">https://github.com/fizzyizzy05/binary/issues</url>
+  <url type="vcs-browser">https://github.com/fizzyizzy05/binary</url>
+  <url type="translate">https://hosted.weblate.org/engage/binary/</url>
+  <launchable type="desktop-id">@app_id@.desktop</launchable>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <translation type="gettext">binary</translation>
+  <developer id="io.github.fizzyizzy05">
+    <name translate="no">Isabelle Jackson</name>
+  </developer>
+  <content_rating type="oars-1.1" />
+</component>

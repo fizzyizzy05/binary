@@ -27,12 +27,17 @@ from gi.repository import Gtk, Gio, Adw
 from .window import BinaryWindow
 from .preferences import PrefsWindow
 
+from .profile import APP_ID, PROFILE
+
 class BinaryApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.github.fizzyizzy05.binary',
-                         flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
+        print(APP_ID)
+        print(PROFILE)
+        super().__init__(application_id=APP_ID,
+                         flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
+                         resource_base_path="/io/github/fizzyizzy05/binary")
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action, None)
@@ -52,6 +57,10 @@ class BinaryApplication(Adw.Application):
     def new_window(self):
         win = self.props.active_window
         win = BinaryWindow(application=self)
+
+        if PROFILE == "development":
+            win.add_css_class("devel")
+
         win.present()
 
     def on_new_window_action(self, *args):

@@ -14,7 +14,13 @@ blueprints = custom_target('blueprints',
 
 
 gnome.compile_resources('binary',
-  'binary.gresource.xml',
+  configure_file(
+            input: 'binary.gresource.xml.in',
+           output: 'binary.gresource.xml',
+    configuration: conf,
+          install: true,
+      install_dir: moduledir
+  ),
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -28,6 +34,8 @@ conf.set('PYTHON', python.find_installation('python3').full_path())
 conf.set('VERSION', meson.project_version())
 conf.set('localedir', get_option('prefix') / get_option('localedir'))
 conf.set('pkgdatadir', pkgdatadir)
+conf.set('app_id', app_id)
+conf.set('profile', get_option('profile'))
 
 configure_file(
   input: 'binary.in',
@@ -35,6 +43,14 @@ configure_file(
   configuration: conf,
   install: true,
   install_dir: get_option('bindir'),
+)
+
+configure_file(
+  input: 'profile.py.in',
+  output: 'profile.py',
+  configuration: conf,
+  install: true,
+  install_dir: moduledir
 )
 
 binary_sources = [
