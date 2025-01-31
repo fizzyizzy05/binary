@@ -22,6 +22,7 @@ from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Gio
 import math
+import re
 from gettext import ngettext, dgettext
 
 # Scripts used to calculate numbers
@@ -200,8 +201,8 @@ class BinaryWindow(Adw.ApplicationWindow):
         self.output_entry.remove_css_class("error")
 
     def update_bits(self, *kwargs):
-        in_count = len(self.input_entry.get_text())
-        out_count = len(self.output_entry.get_text())
+        in_count = len(re.sub("[^0-9]", "", self.input_entry.get_text()))
+        out_count = len(re.sub("[^0-9]", "", self.output_entry.get_text()))
 
         # Translators: plural count for the input bits
         in_bits_text = ngettext(
