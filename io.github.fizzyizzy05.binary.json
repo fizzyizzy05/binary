@@ -1,5 +1,5 @@
 {
-    "app-id" : "io.github.fizzyizzy05.binary",
+    "id" : "io.github.fizzyizzy05.binary",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
