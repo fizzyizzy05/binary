@@ -62,16 +62,15 @@ def get_answer(input, in_base, out_base):
         try:
             int(x, in_base)
         except:
-            return "char"
+            if in_base == out_base:
+                return "char_dual"
+            else:
+                return "char"
 
     # Same number bases
     if in_base == out_base:
         # Set the output label to be the same as the input
-        try:
-            int(x, in_base)
-            return input
-        except:
-            return "char_dual"
+        return input
 
     if len(split_input) == 1:
         return calc_numerator(split_input[0], in_base, out_base)
