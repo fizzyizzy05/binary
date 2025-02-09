@@ -6,7 +6,7 @@
 
 <picture>
     <source srcset="img/binary-101010-decimal-42.png" media="(prefers-color-scheme: light)"/>
-    <img width='480' src="img/binary-101010-decimal-42-dark.png" alt="A screenshot of the Binary app converting 1010101010 in Binary to 682 in Decimal.">
+    <img src="img/binary-101010-decimal-42-dark.png" alt="A screenshot of the Binary app converting 1010101010 in Binary to 42 in Decimal.">
 </picture>
 
 
