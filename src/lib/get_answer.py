@@ -44,7 +44,6 @@ def calc_numerator(input, in_base, out_base):
 
 def get_answer(input, in_base, out_base):
     split_input = input.split('.')
-    print(len(split_input))
     # space characters count as invalid input
     if (" " in input):
         return "char"
