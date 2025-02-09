@@ -51,6 +51,11 @@ def get_answer(input, in_base, out_base):
     if '+' in input:
         split_input('')
 
+    # TODO: implement proper support for negative and two's compliment values.
+    # For now, we just don't support negative numbers
+    if input[0] == '-':
+        return "char"
+
     for x in split_input:
         # Check if the input is valid for in_base, where in_base is between 2 and 36 inclusive.
         # Bases above 36 are not universally standard, so we assume they are invalid.
