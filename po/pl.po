@@ -8,150 +8,162 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-13 22:02+0000\n"
+"Last-Translator: Stan Ulbrych <stanulbrych@gmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/binary/binary-app/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.10-rc\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
 msgid "Binary"
-msgstr ""
+msgstr "Binary"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
+msgstr "binary;decimal;hexadecimal;base;convert;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Konwersja liczb między podstawami"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Mała i prosta aplikacja służąca do konwersji pomiędzy różnymi liczbami "
+"szesnastkowymi i binarnymi"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
 msgstr ""
+"Okno binarne konwertujące 101010 w formacie binarnym na 42 w formacie "
+"dziesiętnym"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
 msgstr ""
+"Okno binarne konwertujące 1201 w formacie dziesiętnym na 4B1 w formacie "
+"szesnastkowym"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
+"Okno binarne konwertujące 17 w formacie ósemkowym na F w formacie "
+"szesnastkowym"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Główny"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Nowe okno"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Zamknij okno"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Pokaż skróty"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Zrezygnoj"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "Stan Ulbrych <stanulbrych@gmail.com>"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
-msgstr ""
+msgstr "bity"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "ósemkowy"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Dziesiętny"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Szesnastkowy"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "Inny"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Nieprawidłowe dane wejściowe"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d bit"
+msgstr[1] "%(in_count)d bity"
+msgstr[2] "%(in_count)d bity"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d bit"
+msgstr[1] "%(out_count)d bity"
+msgstr[2] "%(out_count)d bity"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu główne"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Baza Wejściowa"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Wprowadź liczby"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Wprowadź liczby…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Baza wyjściowa"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Nowe okno"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Skróty klawiaturowe"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_O Binary"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencje"
