@@ -47,6 +47,7 @@ binary_sources = [
 binary_libs = [
   'lib/bit_count.py',
   'lib/get_answer.py',
+  'lib/twos_compliment.py'
 ]
 
 binary_sources += binary_libs
