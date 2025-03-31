@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-01 07:43+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/binary/"
+"binary-app/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -29,13 +31,15 @@ msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Konverteeri numbreid arvusüsteemi aluste vahel"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Lihtne rakendus, mis võimaldab konverteerida numbreid arvusüsteemi aluste "
+"vahel (kahendsüsteem, kümnendsüsteem, kuueteistkümnendsüsteem, jne)"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
@@ -52,37 +56,37 @@ msgstr ""
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Üldised"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Sulge aken"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Näita kiirklahve"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Välju"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "Priit Jõerüüt 2025"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
-msgstr ""
+msgstr "bitti"
 
 #: src/window.py:51
 msgid "Octal"
