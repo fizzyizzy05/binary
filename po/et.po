@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2025-04-01 07:43+0000\n"
+"PO-Revision-Date: 2025-04-01 18:09+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/binary/"
 "binary-app/et/>\n"
@@ -22,12 +22,14 @@ msgstr ""
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
 msgid "Binary"
-msgstr ""
+msgstr "Binaar"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
+"binary;decimal;hexadecimal;base;convert;konverteerimine;konvertimine;kahendsüsteem;binaarsüsteem;binaarne;kümnendsüsteem;detsimaalsüsteem;detsimaalne;kuueteistkümnendsüsteem;heksadetsimaalsüsteem;seksadetsimaalsüsteem;"
+""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
@@ -44,14 +46,20 @@ msgstr ""
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
 msgstr ""
+"Binaari aken, kus kuvatakse kahendsüsteemis 101010 konverteerimine "
+"kümnendsüsteemis 42-ks"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
 msgstr ""
+"Binaari aken, kus kuvatakse kümnendsüsteemis 1201 konverteerimine "
+"kuueteistkümnendsüsteem 4B1-ks"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
+"Binaari aken, kus kuvatakse kaheksandsüsteem 17 konverteerimine "
+"kuueteistkümnendsüsteem F-ks"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -90,71 +98,71 @@ msgstr "bitti"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "Kaheksandarv"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Kümnendarv"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Kuueteistkümnendarv"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "Muu"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Vigane sisend"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d bitt"
+msgstr[1] "%(in_count)d bitti"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d bitt"
+msgstr[1] "%(out_count)d bitti"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Põhimenüü"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Sisendalus"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Sisesta numbrid"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Sisesta numbrid…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Väljundalus"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Klaviatuuri kiirklahvid"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "R_akenduse teave: Binaar"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Eelistused"
