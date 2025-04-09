@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2024-12-02 10:00+0000\n"
-"Last-Translator: Cleverson Cândido <optimuspraimu@gmail.com>\n"
+"PO-Revision-Date: 2025-04-10 14:57+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/"
 "binary-app/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -54,10 +54,9 @@ msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "Janela binária convertendo 17 em octal para F em hexadecimal"
 
 #: src/gtk/help-overlay.blp:11
-#, fuzzy
 msgctxt "shortcut window"
 msgid "General"
-msgstr "General"
+msgstr "Geral"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
@@ -87,75 +86,75 @@ msgstr ""
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
-msgstr ""
+msgstr "bits"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "Octal"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Decimal"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimal"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "Outro"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Entrada inválida"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d bit"
+msgstr[1] "%(in_count)d bits"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d bit"
+msgstr[1] "%(out_count)d bits"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Base da entrada"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Inserir números"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Inserir números…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Base da saída"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Nova janela"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos de _teclado"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_Sobre Binário"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Preferências"
