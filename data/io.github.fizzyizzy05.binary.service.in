@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=io.github.fizzyizzy05.binary
+Exec=@bindir@/binary --gapplication-service
