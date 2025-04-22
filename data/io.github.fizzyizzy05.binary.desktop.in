@@ -9,3 +9,8 @@ Categories=GTK;Utility;
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=binary;decimal;hexadecimal;base;convert;
 StartupNotify=true
+Actions=new-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=binary --new-window
