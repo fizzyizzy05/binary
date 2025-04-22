@@ -23,7 +23,7 @@ import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
-from gi.repository import Gtk, Gio, Adw
+from gi.repository import Gtk, Gio, Adw, GLib
 from .window import BinaryWindow
 from .preferences import PrefsWindow
 
@@ -41,16 +41,30 @@ class BinaryApplication(Adw.Application):
         self.settings = Gio.Settings(schema_id="io.github.fizzyizzy05.binary")
         Gtk.Window.set_default_icon_name('io.github.fizzyizzy05.binary')
 
+        self.add_main_option("new-window", b"w", GLib.OptionFlags.NONE,
+                             GLib.OptionArg.NONE, "Open a new window", None)
+
     def do_activate(self):
         """Called when the application is activated.
 
         We raise the application's main window, creating it if
         necessary.
         """
-        self.new_window()
+        if self.props.active_window:
+            self.props.active_window.present()
+        else:
+            self.new_window()
+
+    def do_handle_local_options(self, options):
+        if options.contains("new-window"):
+            self.register()
+            if self.get_property("is-remote"):
+                self.activate_action("new-window")
+                return 0
+
+        return -1
 
     def new_window(self):
-        win = self.props.active_window
         win = BinaryWindow(application=self)
         win.present()
 

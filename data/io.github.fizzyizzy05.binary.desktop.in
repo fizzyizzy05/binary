@@ -10,3 +10,8 @@ Categories=GTK;Utility;
 Keywords=binary;decimal;hexadecimal;base;convert;
 DBusActivatable=true
 StartupNotify=true
+Actions=new-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=binary --new-window
