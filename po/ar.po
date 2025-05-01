@@ -8,150 +8,163 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-02 21:55+0000\n"
+"Last-Translator: Ahmed Najmawi <iramosu@protonmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/binary/binary-app/"
+"ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
 msgid "Binary"
-msgstr ""
+msgstr "ثنائي"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
+"ثنائي;عشري;ست عشري;قاعدة;قاعدي;تحويل;binary;decimal;hexadecimal;base;convert;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "حوِّل الأرقام بين القواعد"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"تطبيق صغير وبسيط يستخدم للتحويل بين الأنظمة الست عشرية والثنائية المختلفة"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
+msgstr "نافذة «ثنائي» تحوِّل 101010 من النظام الثنائي إلى 42 في النظام العشري"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
+msgstr "نافذة «ثنائي» تحوِّل 1201 من النظام العشري إلى 4B1 في النظام الست عشري"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
+msgstr "نافذة «ثنائي» تحوِّل 17 من النظام الثماني إلى F في النظام الست عشري"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "عام"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "نافذة جديدة"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "أغلِق النافذة"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "اعرض الاختصارات"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "أنهِ"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "أحمد النجماوي <iramosu@protonmail.com>"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
 msgstr ""
+"تُستخدم في عدّاد البِتَّات لبيان عدد البِتَّات التي يحتويها المُدخل/المُخرج الثنائي"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "ثماني"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "عشري"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "ست عشري"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "أخرى"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "مدخلة غير صالحة"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d بِت"
+msgstr[1] "بِت"
+msgstr[2] "بتَّان"
+msgstr[3] "%(in_count)d بِتَّات"
+msgstr[4] "%(in_count)d بِتًا"
+msgstr[5] "%(in_count)d بِت"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d بِت"
+msgstr[1] "بِت"
+msgstr[2] "بِتَّان"
+msgstr[3] "%(out_count)d بِتَّات"
+msgstr[4] "%(out_count)d بِتًا"
+msgstr[5] "%(out_count)d بِت"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "القائمة الرئيسة"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "قاعدة المدخلات"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "أدخِل الأرقام"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "أدخِل الأرقام…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "قاعدة المخرجات"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "نافذة جديدة"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "ا_ختصارات لوحة المفاتيح"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_عَنْ «ثنائي»"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "التفضيلات"
