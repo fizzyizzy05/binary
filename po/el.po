@@ -8,61 +8,65 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-04 00:37+0000\n"
+"Last-Translator: Erikton Konomi <konoerik@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/binary/binary-app/"
+"el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
 msgid "Binary"
-msgstr ""
+msgstr "Δυαδικό"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
+msgstr "δυαδικό;δεκαδικό;εξαδεκαδικό;βάση;μετατροπή;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr ""
+msgstr "Μετατροπή αριθμών μεταξύ βάσεων"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
 "A small and simple app used to convert between different hexadecimal and "
 "binary numbers"
 msgstr ""
+"Μια μικρή και απλή εφαρμογή για την μετατροπή μεταξύ διαφορετικών "
+"δεκαεξαδικών και δυαδικών αριθμών"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr ""
+msgstr "Δυαδικό παράθυρο μετατρέποντας από 101010 δυαδικό σε 42 δεκαδικό"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr ""
+msgstr "Δυαδικό παράθυρο μετατρέποντας από 1201 δεκαδικό σε 4Β1 δεκαεξαδικό"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr ""
+msgstr "Δυαδικό παράθυρο μετατρέποντας από 17 οκταδικό σε F δεκαεξαδικό"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Γενικά"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Νέο παράθυρο"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Κλείσιμο παραθύρου"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
@@ -72,7 +76,7 @@ msgstr ""
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Έξοδος"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
@@ -82,23 +86,23 @@ msgstr ""
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
-msgstr ""
+msgstr "δυαδικά ψηφία"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "Οκταδικό"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Δεκαδικό"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Δεκαεξαδικό"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "'Αλλα"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
