@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2025-05-04 00:37+0000\n"
+"PO-Revision-Date: 2025-05-04 00:57+0000\n"
 "Last-Translator: Erikton Konomi <konoerik@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/binary/binary-app/"
 "el/>\n"
@@ -27,7 +27,7 @@ msgstr "Δυαδικό"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr "δυαδικό;δεκαδικό;εξαδεκαδικό;βάση;μετατροπή;"
+msgstr "δυαδικό;δεκαδικό;δεκαεξαδικό;βάση;μετατροπή;"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
@@ -71,7 +71,7 @@ msgstr "Κλείσιμο παραθύρου"
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Ένδειξη συντομεύσεων"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
@@ -81,7 +81,7 @@ msgstr "Έξοδος"
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "Πέτρος Κονόμης"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
@@ -102,59 +102,59 @@ msgstr "Δεκαεξαδικό"
 
 #: src/window.py:54
 msgid "Other"
-msgstr "'Αλλα"
+msgstr "'Αλλες βάσεις"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Μη έγκυρη είσοδος"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d δυαδικό ψηφίο"
+msgstr[1] "%(in_count)d δυαδικά ψηφία"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d δυαδικό ψηφίο"
+msgstr[1] "%(out_count)d δυαδικά ψηφία"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Κυρίως μενού"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Βάση εισόδου"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Εισαγωγή αριθμών"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Εισαγωγή αριθμών…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Βάση εξόδου"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Νέο παράθυρο"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Συντομεύσεις πληκτρολογίου"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_Πέρι του Δυαδικού"
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Προτιμήσεις"
