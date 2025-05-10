@@ -27,6 +27,27 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.3" date="2025-05-10">
+      <description>
+        <p>Binary 5.3 is a small update with some small updates and updated translations</p>
+        <ul>
+          <li>Updated to use the GNOME 48 platform.</li>
+          <li>A new option to quickly open a new window (Balló György)</li>
+        </ul>
+        <p>Updated translations:</p>
+        <ul>
+          <li>Greek (Erikton Konomi)</li>
+          <li>Arabic (x9a and Mostafa Zaher)</li>
+          <li>Portuguese (Silvério Santos)</li>
+          <li>Estonian (Priit Jõerüüt)</li>
+          <li>Spanish (Kamui4 and Emilio Sepúlveda M.)</li>
+          <li>Polish (Stan Ulbrych)</li>
+          <li>Russian (gfbdrgng)</li>
+          <li>Chinese (Simplified Han script) (gfbdrgng)</li>
+          <li>Interlingua (Emilio Sepúlveda M.)</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.2" date="2024-12-14">
       <description>
         <p>Binary 5.2 is a small update mainly focusing on updated translations</p>
