@@ -74,7 +74,7 @@ class BinaryApplication(Adw.Application):
     def on_about_action(self, *args):
         """Callback for the app.about action."""
         about = Adw.AboutDialog.new_from_appdata("io/github/fizzyizzy05/binary/metainfo.xml", "5.3")
-        about.set_developers(["Isabelle Jackson https://fizzyizzy05.codeberg.page"])
+        about.set_developers(["Isabelle Jackson https://fizzyizzy05.dev"])
         about.set_designers(["Gregor Niehl https://gitlab.gnome.org/gregorni"])
         # Translators: Replace "translator-credits" with your names, one name per line
         about.set_translator_credits(_("translator-credits"))
