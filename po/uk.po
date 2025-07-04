@@ -30,12 +30,12 @@ msgstr "Бінарність"
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr ""
-"binary;decimal;hexadecimal;base;convert;бінарність;десятковий;шістнадцятковий;база;конвертація;конвертувати;число;числа;цифра;цифру;"
+"binary;decimal;hexadecimal;base;convert;бінарність;десятковий;шістнадцятковий;база;основа;конвертація;конвертувати;число;числа;цифра;цифру;"
 ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
 msgid "Convert numbers between bases"
-msgstr "Конвертація чисел між базами"
+msgstr "Конвертація чисел між основами"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -48,121 +48,125 @@ msgstr ""
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
 msgstr ""
-"Вікно \"Бінарності\", конвертація 101010 у двійковому форматі в 42 в "
+"Вікно \"Бінарність\", конвертація 101010 у двійковому форматі в 42 в "
 "десятковий"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
 msgstr ""
-"Вікно \"Бінарності\", конвертація 1201 в десятковому форматі в 4B1 в "
+"Вікно \"Бінарність\", конвертація 1201 в десятковому форматі в 4B1 в "
 "шістнадцятковий"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr ""
+"Вікно \"Бінарність\", конвертація 17 в вісімковому форматі в F у "
+"шістнадцятковому"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Загальні"
 
 #: src/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr ""
+msgstr "Нове вікно"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Close Window"
-msgstr ""
+msgstr "Закрити вікно"
 
 #: src/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Показати клавіатурні скорочення"
 
 #: src/gtk/help-overlay.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "freeducks-debug"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
 msgid "bits"
-msgstr ""
+msgstr "біти"
 
 #: src/window.py:51
 msgid "Octal"
-msgstr ""
+msgstr "Вісімкове число"
 
 #: src/window.py:52
 msgid "Decimal"
-msgstr ""
+msgstr "Десяткове число"
 
 #: src/window.py:53
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Шістнадцяткове число"
 
 #: src/window.py:54
 msgid "Other"
-msgstr ""
+msgstr "Інше"
 
 #: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
 #: src/window.py:170 src/window.py:172
 msgid "Invalid input"
-msgstr ""
+msgstr "Не правильно введені дані"
 
 #: src/window.py:208
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(in_count)d біт"
+msgstr[1] "%(in_count)d біти"
+msgstr[2] "%(in_count)d бітів"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(out_count)d біт"
+msgstr[1] "%(out_count)d біти"
+msgstr[2] "%(out_count)d бітів"
 
 #: src/window.blp:21
 msgid "Main Menu"
-msgstr ""
+msgstr "Головне меню"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr ""
+msgstr "Ввідна база"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
-msgstr ""
+msgstr "Введіть числа"
 
 #: src/window.blp:80 src/window.blp:141
 msgid "Enter numbers…"
-msgstr ""
+msgstr "Введіть числа…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr ""
+msgstr "Вихідна база"
 
 #: src/window.blp:180
 msgid "New Window"
-msgstr ""
+msgstr "Нове вікно"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Клавіатурні скорочення"
 
 #: src/window.blp:191
 msgid "_About Binary"
-msgstr ""
+msgstr "_Про \"Бінарність\""
 
 #: src/preferences.blp:5
 msgid "Preferences"
-msgstr ""
+msgstr "Налаштування"
