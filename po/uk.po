@@ -141,7 +141,7 @@ msgstr "Головне меню"
 
 #: src/window.blp:45
 msgid "Input Base"
-msgstr "Ввідна база"
+msgstr "Ввідна основа"
 
 #: src/window.blp:75 src/window.blp:136
 msgid "Enter numbers"
@@ -153,7 +153,7 @@ msgstr "Введіть числа…"
 
 #: src/window.blp:106
 msgid "Output Base"
-msgstr "Вихідна база"
+msgstr "Вихідна основа"
 
 #: src/window.blp:180
 msgid "New Window"
