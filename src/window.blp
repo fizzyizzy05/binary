@@ -59,15 +59,24 @@ template $BinaryWindow: Adw.ApplicationWindow {
             }
 
             [end]
-            MenuButton in_bit_label {
-              hexpand: false;
-              halign: start;
-              popover: in_bit_popover;
+            Box in_binary_tools {
+              MenuButton in_bit_label {
+                hexpand: false;
+                halign: start;
+                popover: in_bit_popover;
 
-              styles [
-                "bitLbl",
-                "flat",
-              ]
+                styles [
+                  "bitLbl",
+                  "flat",
+                ]
+              }
+
+              ToggleButton in_twos_compliment {
+                halign: center;
+                valign: center;
+                icon-name: "minus-symbolic";
+                tooltip-text: _("Use two's compliment for input");
+              }
             }
           }
 
@@ -120,15 +129,24 @@ template $BinaryWindow: Adw.ApplicationWindow {
             }
 
             [end]
-            MenuButton out_bit_label {
-              hexpand: false;
-              halign: start;
-              popover: out_bit_popover;
+            Box out_binary_tools {
+              MenuButton out_bit_label {
+                hexpand: false;
+                halign: start;
+                popover: out_bit_popover;
 
-              styles [
-                "bitLbl",
-                "flat",
-              ]
+                styles [
+                  "bitLbl",
+                  "flat",
+                ]
+              }
+
+              ToggleButton out_twos_compliment {
+                halign: center;
+                valign: center;
+                icon-name: "minus-symbolic";
+                tooltip-text: _("Use two's compliment for input");
+              }
             }
           }
 
