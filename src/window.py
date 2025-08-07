@@ -87,7 +87,7 @@ class BinaryWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def change_input_base(self, *kwargs):
         try:
-            self.output_handler()
+            # self.output_handler()
             self.toggle_bit_counter()
             self.toggle_base_spin()
             self.editable = True
@@ -239,14 +239,14 @@ class BinaryWindow(Adw.ApplicationWindow):
 
     def toggle_mono(self, *kwargs):
         if self.input_entry.get_text() != "":
-            self.input_entry.add_css_class("mono")
+            self.input_entry.add_css_class("monospace")
         else:
-            self.input_entry.remove_css_class("mono")
+            self.input_entry.remove_css_class("monospace")
 
         if self.output_entry.get_text() != "":
-            self.output_entry.add_css_class("mono")
+            self.output_entry.add_css_class("monospace")
         else:
-            self.output_entry.remove_css_class("mono")
+            self.output_entry.remove_css_class("monospace")
 
     def toggle_bit_counter(self, *kwargs):
         if self.out_dropdown.get_selected() == 0 and self.in_dropdown.get_selected() == 0:
