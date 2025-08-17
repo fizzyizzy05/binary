@@ -1,0 +1,159 @@
+# Telugu Translation for Binary.
+# Copyright (C) 2025
+# This file is distributed under the same license as the binary package.
+# Aryan Karamtoth <spaciouscoder78@disroot.org>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: binary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"PO-Revision-Date: 2025-08-17 12:02+0530\n"
+"Last-Translator: Aryan Karamtoth <spaciouscoder78@disroot.org>\n"
+"Language-Team: Telugu l10n Translation Team <ubuntu-l10n-te@lists.launchpad."
+"net>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 48.0\n"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:3
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+msgid "Binary"
+msgstr "బైనరీ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.github.fizzyizzy05.binary.desktop.in:10
+msgid "binary;decimal;hexadecimal;base;convert;"
+msgstr "binary;decimal;hexadecimal;base;convert;"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "సంఖ్యలను స్థావరాల మధ్య మార్చండి"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
+msgid ""
+"A small and simple app used to convert between different hexadecimal and "
+"binary numbers"
+msgstr ""
+"వివిధ హెక్సాడెసిమల్ మరియు బైనరీ సంఖ్యల మధ్య మార్చడానికి ఉపయోగించే ఒక చిన్న మరియు సరళమైన అనువర్తనం"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
+msgid "Binary window converting 101010 in binary to 42 in decimal"
+msgstr "బైనరీ విండో బైనరీలో 101010 ను దశాంశంలో 42 గా మారుస్తుంది."
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
+msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
+msgstr "బైనరీ విండో దశాంశంలో 1201 ను హెక్సాడెసిమల్‌లో 4B1 గా మారుస్తుంది"
+
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
+msgid "Binary window converting 17 in octal to F in hexadecimal"
+msgstr "బైనరీ విండో అష్టాంశంలో 17 ను హెక్సాడెసిమల్‌లో F గా మారుస్తుంది"
+
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "జనరల్"
+
+#: src/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "కొత్త విండో"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "విండోను మూసివేయండి"
+
+#: src/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "సత్వరమార్గాలను చూపు"
+
+#: src/gtk/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "నిష్క్రమించు"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/main.py:65
+msgid "translator-credits"
+msgstr "Aryan Karamtoth"
+
+#. Translators: this string is used to describe how many bits there are.
+#: src/window.py:47
+msgid "bits"
+msgstr "బిట్స్"
+
+#: src/window.py:51
+msgid "Octal"
+msgstr "ఆక్టల్"
+
+#: src/window.py:52
+msgid "Decimal"
+msgstr "దశాంశం"
+
+#: src/window.py:53
+msgid "Hexadecimal"
+msgstr "హెక్సాడెసిమల్"
+
+#: src/window.py:54
+msgid "Other"
+msgstr "ఇతర"
+
+#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
+#: src/window.py:170 src/window.py:172
+msgid "Invalid input"
+msgstr "చెల్లని ఇన్‌పుట్"
+
+#: src/window.py:208
+#, python-format
+msgid "%(in_count)d bit"
+msgid_plural "%(in_count)d bits"
+msgstr[0] "%(in_count)d బిట్"
+msgstr[1] "%(in_count)d బిట్స్"
+
+#: src/window.py:217
+#, python-format
+msgid "%(out_count)d bit"
+msgid_plural "%(out_count)d bits"
+msgstr[0] "%(out_count)d బిట్స్"
+msgstr[1] "%(out_count)d బిట్స్"
+
+#: src/window.blp:21
+msgid "Main Menu"
+msgstr "ప్రధాన మెనూ"
+
+#: src/window.blp:45
+msgid "Input Base"
+msgstr "ఇన్పుట్ బేస్"
+
+#: src/window.blp:75 src/window.blp:136
+msgid "Enter numbers"
+msgstr "సంఖ్యలను నమోదు చేయండి"
+
+#: src/window.blp:80 src/window.blp:141
+msgid "Enter numbers…"
+msgstr "నంబర్లను నమోదు చేయండి..."
+
+#: src/window.blp:106
+msgid "Output Base"
+msgstr "అవుట్పుట్ బేస్"
+
+#: src/window.blp:180
+msgid "New Window"
+msgstr "కొత్త విండో"
+
+#: src/window.blp:186
+msgid "_Keyboard Shortcuts"
+msgstr "కీబోర్డ్ సత్వరమార్గాలు (_K)"
+
+#: src/window.blp:191
+msgid "_About Binary"
+msgstr "బైనరీ గురించి (_A)"
+
+#: src/preferences.blp:5
+msgid "Preferences"
+msgstr "ప్రాధాన్యతలు"
