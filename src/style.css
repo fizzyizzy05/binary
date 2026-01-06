@@ -7,8 +7,6 @@
   box-shadow: none;
 }
 
-.typing-label {
-  font-size: 0.9em;
+.arrows {
   opacity: 0.5;
-  font-weight: 700;
 }

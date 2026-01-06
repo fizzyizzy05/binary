@@ -9,8 +9,6 @@
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
 
     <file>style.css</file>
-    <file>style-hc.css</file>
-
 
     <file preprocess="xml-stripblanks">icons/scalable/actions/vertical-arrows-symbolic.svg</file>
     <file alias="metainfo.xml" preprocess="xml-stripblanks">../data/io.github.fizzyizzy05.binary.metainfo.xml</file>
