@@ -3,6 +3,54 @@ using Adw 1;
 
 template $BinaryInputView : Adw.Bin {
   child: Gtk.Box {
+    orientation: vertical;
+    spacing: 6;
+    margin-start: 6;
+    margin-end: 6;
+    margin-top: 6;
+    margin-bottom: 6;
 
+    CenterBox {
+      [start]
+      Box {
+        spacing: 6;
+        DropDown in_dropdown {
+          tooltip-text: _("Input Base");
+
+          styles [
+            "flat-dropdown",
+          ]
+        }
+
+        SpinButton in_spin {
+          numeric: true;
+        }
+      }
+
+      [end]
+      MenuButton in_bit_label {
+        hexpand: false;
+        halign: start;
+        popover: Gtk.Popover {
+          child: Label {
+            label: _("Hello!");
+          };
+        };
+
+        styles [
+          "bitLbl",
+          "flat",
+        ]
+      }
+    }
+
+    Entry input_entry {
+      placeholder-text: _("Enter numbers");
+      enable-undo: false;
+
+      accessibility {
+        label: _("Enter numbers…");
+      }
+    }
   };
 }
