@@ -28,8 +28,28 @@ template $BinaryWindow: Adw.ApplicationWindow {
         maximum-size: 600;
         tightening-threshold: 1000;
 
-        $BinaryInputView input_view {}
-        $BinaryInputView output_view {}
+        child: Box {
+          orientation: vertical;
+          halign: center;
+          valign: center;
+
+          margin-top: 24;
+          margin-bottom: 50;
+          margin-end: 24;
+          margin-start: 24;
+
+          $BinaryInputView input_view {}
+
+          Image {
+            margin-top: 18;
+            margin-bottom: 18;
+
+            icon-size: normal;
+            icon-name: "vertical-arrows-symbolic";
+          }
+
+          $BinaryInputView output_view {}
+        };
       }
     };
   };
