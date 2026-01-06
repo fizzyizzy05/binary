@@ -5,6 +5,7 @@ gnome = import('gnome')
 blueprints = custom_target('blueprints',
   input: files(
     'gtk/help-overlay.blp',
+    'widgets/input_view.blp',
     'preferences.blp',
     'window.blp',
   ),
@@ -49,6 +50,11 @@ binary_libs = [
   'lib/get_answer.py',
 ]
 
+binary_widgets = [
+  'widgets/input_view.py',
+]
+
 binary_sources += binary_libs
+binary_sources += binary_widgets
 
 install_data(binary_sources, install_dir: moduledir)

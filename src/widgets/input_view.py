@@ -1,6 +1,6 @@
 # window.py
 #
-# Copyright 2023-2024 Isabelle Jackson
+# Copyright 2026 Isabelle Jackson
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,21 +21,11 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Gio
-import math
-import re
 from gettext import ngettext, dgettext
 
-# Scripts used to calculate numbers
-from .bit_count import *
-from .get_answer import *
-
-# Widgets
-from .input_view import InputView
-
-@Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/window.ui')
-class BinaryWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'BinaryWindow'
+@Gtk.Template(resource_path='/io/github/fizzyizzy05/binary/widgets/input_view.ui')
+class InputView(Adw.Bin):
+    __gtype_name__ = 'BinaryInputView'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-
