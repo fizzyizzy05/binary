@@ -36,6 +36,12 @@ from .input_view import InputView
 class BinaryWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'BinaryWindow'
 
+    arrows = Gtk.Template.Child()
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+        self.arrows.add_css_class("arrows")
+
+
 
