@@ -27,5 +27,23 @@ from gettext import ngettext, dgettext
 class InputView(Adw.Bin):
     __gtype_name__ = 'BinaryInputView'
 
+    base_selector = Gtk.Template.Child()
+
+    bases_dict = {
+        2:_("Binary"),
+        8:_("Octal"),
+        10:_("Decimal"),
+        16:_("Hexadecimal"),
+        -1:_("Other")
+    }
+
+    bases = Gtk.StringList.new(None)
+
+    for x in bases_dict:
+        bases.append(bases_dict[x])
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+        self.base_selector.set_model(self.bases)
+

@@ -14,7 +14,7 @@ template $BinaryInputView : Adw.Bin {
       [start]
       Box {
         spacing: 6;
-        DropDown in_dropdown {
+        DropDown base_selector {
           tooltip-text: _("Input Base");
 
           styles [
@@ -28,7 +28,7 @@ template $BinaryInputView : Adw.Bin {
       }
 
       [end]
-      MenuButton in_bit_label {
+      MenuButton bit_counter {
         hexpand: false;
         halign: start;
         popover: Gtk.Popover {
