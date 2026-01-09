@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2025-12-24 16:00+0000\n"
+"PO-Revision-Date: 2026-01-10 12:01+0000\n"
 "Last-Translator: Flynn <cirilla@tuta.io>\n"
 "Language-Team: Cornish <https://hosted.weblate.org/projects/binary/binary-"
 "app/kw/>\n"
@@ -49,15 +49,15 @@ msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Fenester Dewek kedreylyow 101010 yn dewek dhe 42 yn degek"
+msgstr "Fenester Dewek ow kedreylya 101010 yn dewek dhe 42 yn degek"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
-msgstr "Fenester Dewek kedreylyow 1201 yn degek dhe 4B1 yn hweghdegek"
+msgstr "Fenester Dewek ow kedreylya 1201 yn degek dhe 4B1 yn hweghdegek"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:26
 msgid "Binary window converting 17 in octal to F in hexadecimal"
-msgstr "Fenester Dewek kedreylyow 17 yn ethek dhe F yn hweghdegek"
+msgstr "Fenester Dewek ow kedreylya 17 yn ethek dhe F yn hweghdegek"
 
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
