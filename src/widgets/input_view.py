@@ -28,6 +28,8 @@ class InputView(Adw.Bin):
     __gtype_name__ = 'BinaryInputView'
 
     base_selector = Gtk.Template.Child()
+    bit_counter = Gtk.Template.Child()
+    input_entry = Gtk.Template.Child()
 
     bases_dict = {
         2:_("Binary"),
@@ -46,4 +48,13 @@ class InputView(Adw.Bin):
         super().__init__(**kwargs)
 
         self.base_selector.set_model(self.bases)
+
+    @Gtk.Template.Callback()
+    def change_bases(self, *kwargs):
+        selected_base = list(self.bases_dict.keys())[self.base_selector.get_selected()]
+
+        if selected_base == 2:
+            self.bit_counter.set_visible(True)
+        else:
+            self.bit_counter.set_visible(False)
 

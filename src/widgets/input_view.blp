@@ -20,6 +20,8 @@ template $BinaryInputView : Adw.Bin {
           styles [
             "flat-dropdown",
           ]
+
+          notify::selected-item => $change_bases();
         }
 
         SpinButton in_spin {
