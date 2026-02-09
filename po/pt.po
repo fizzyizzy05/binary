@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2025-04-10 14:57+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/"
-"binary-app/pt/>\n"
+"PO-Revision-Date: 2026-02-10 20:09+0000\n"
+"Last-Translator: Bernardo Mota <bernardomotaferrari@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/binary/binary-"
+"app/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -81,7 +81,7 @@ msgstr "Desistir"
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/main.py:65
 msgid "translator-credits"
-msgstr ""
+msgstr "créditos-do-tradutor"
 
 #. Translators: this string is used to describe how many bits there are.
 #: src/window.py:47
