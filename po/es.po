@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 00:36+0100\n"
-"PO-Revision-Date: 2025-03-16 13:07+0000\n"
-"Last-Translator: Sergio Quesada <sergioquesada35@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/binary/"
-"binary-app/es/>\n"
+"PO-Revision-Date: 2026-02-18 17:09+0000\n"
+"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/binary/binary-"
+"app/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: data/io.github.fizzyizzy05.binary.desktop.in:3
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
@@ -43,7 +43,7 @@ msgstr ""
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:18
 msgid "Binary window converting 101010 in binary to 42 in decimal"
-msgstr "Ventana binaria convirtiendo 101010 en binario a 42 en decimal"
+msgstr "Ventana binaria que convierte 101010 en binario a 42 en decimal"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:22
 msgid "Binary window converting 1201 in decimal to 4B1 in hexadecimal"
@@ -114,14 +114,14 @@ msgstr "Entrada inválida"
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
 msgstr[0] "bit"
-msgstr[1] "bits"
+msgstr[1] "bit"
 
 #: src/window.py:217
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
 msgstr[0] "Bit"
-msgstr[1] "Bits"
+msgstr[1] "Bit"
 
 #: src/window.blp:21
 msgid "Main Menu"
