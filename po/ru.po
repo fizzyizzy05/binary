@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2025-07-05 14:01+0000\n"
 "Last-Translator: freeducks-debug <209897795+freeducks-"
 "debug@users.noreply.github.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/binary/"
-"binary-app/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/binary/binary-"
+"app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +21,24 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.13-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "Binary"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "Преобразование чисел между основаниями"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "двоичная;десятичная;шестнадцатеричная;база;конвертировать;числа;число;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "Преобразование чисел между основаниями"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "Новое окно"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -58,63 +63,63 @@ msgstr ""
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "Преобразование 17 в восьмеричной системе в F в шестнадцатеричной"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Общие"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Новое окно"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Закрыть окно"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Показать горячие клавиши"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Завершить"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr ""
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "бит"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "Восьмеричное"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "Десятичное"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "Шестнадцатеричное"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "Другое"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "Неверный ввод"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
@@ -122,7 +127,7 @@ msgstr[0] "%(in_count)d бит"
 msgstr[1] "%(in_count)d бита"
 msgstr[2] "%(in_count)d бит"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -149,10 +154,6 @@ msgstr "Введите числа…"
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "Выходное основание"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "Новое окно"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"

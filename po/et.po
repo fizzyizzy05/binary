@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2025-04-01 18:09+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/binary/"
-"binary-app/et/>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/binary/binary-"
+"app/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,21 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.11-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "Binaar"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "Konverteeri numbreid arvusüsteemi aluste vahel"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
-"binary;decimal;hexadecimal;base;convert;konverteerimine;konvertimine;kahendsüsteem;binaarsüsteem;binaarne;kümnendsüsteem;detsimaalsüsteem;detsimaalne;kuueteistkümnendsüsteem;heksadetsimaalsüsteem;seksadetsimaalsüsteem;"
-""
+msgstr "binary;decimal;hexadecimal;base;convert;konverteerimine;konvertimine;kahendsüsteem;binaarsüsteem;binaarne;kümnendsüsteem;detsimaalsüsteem;detsimaalne;kuueteistkümnendsüsteem;heksadetsimaalsüsteem;seksadetsimaalsüsteem;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "Konverteeri numbreid arvusüsteemi aluste vahel"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "Uus aken"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -61,70 +64,70 @@ msgstr ""
 "Binaari aken, kus kuvatakse kaheksandsüsteem 17 konverteerimine "
 "kuueteistkümnendsüsteem F-ks"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Üldised"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Uus aken"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Sulge aken"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Näita kiirklahve"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Välju"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr "Priit Jõerüüt 2025"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "bitti"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "Kaheksandarv"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "Kümnendarv"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "Kuueteistkümnendarv"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "Muu"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "Vigane sisend"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
 msgstr[0] "%(in_count)d bitt"
 msgstr[1] "%(in_count)d bitti"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -150,10 +153,6 @@ msgstr "Sisesta numbrid…"
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "Väljundalus"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "Uus aken"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"

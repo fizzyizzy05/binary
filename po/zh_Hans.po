@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2025-01-26 15:16+0000\n"
 "Last-Translator: Meng <mdog888888do@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -19,19 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.10-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "Binary"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "转换不同进制的数字"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "二进制;十进制;十六进制;基数;转换;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "转换不同进制的数字"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "新窗口"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -51,69 +56,69 @@ msgstr "Bianry 窗口，将十进制的 1201 转换为十六进制的 4B1"
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "Binary 窗口，将八进制的 17 转换为十六进制的 F"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "一般"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "新窗口"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "关闭窗口"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "显示键盘快捷键"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "退出"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr "孟祥旭 <email@xiangxume.ng>"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "位"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "八进制"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "十进制"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "十六进制"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "其他"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "无效输入"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
 msgstr[0] "%(in_count)d 位"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -138,10 +143,6 @@ msgstr "输入数字…"
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "输出进制"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "新窗口"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"

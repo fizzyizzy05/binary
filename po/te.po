@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2025-08-17 12:02+0530\n"
 "Last-Translator: Aryan Karamtoth <spaciouscoder78@disroot.org>\n"
-"Language-Team: Telugu l10n Translation Team <ubuntu-l10n-te@lists.launchpad."
-"net>\n"
+"Language-Team: Telugu l10n Translation Team <ubuntu-l10n-"
+"te@lists.launchpad.net>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,19 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 48.0\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "బైనరీ"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "సంఖ్యలను స్థావరాల మధ్య మార్చండి"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "binary;decimal;hexadecimal;base;convert;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "సంఖ్యలను స్థావరాల మధ్య మార్చండి"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "కొత్త విండో"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -52,70 +57,70 @@ msgstr "బైనరీ విండో దశాంశంలో 1201 ను హ
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "బైనరీ విండో అష్టాంశంలో 17 ను హెక్సాడెసిమల్‌లో F గా మారుస్తుంది"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "జనరల్"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "కొత్త విండో"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "విండోను మూసివేయండి"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "సత్వరమార్గాలను చూపు"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "నిష్క్రమించు"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr "Aryan Karamtoth"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "బిట్స్"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "ఆక్టల్"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "దశాంశం"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "హెక్సాడెసిమల్"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "ఇతర"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "చెల్లని ఇన్‌పుట్"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
 msgstr[0] "%(in_count)d బిట్"
 msgstr[1] "%(in_count)d బిట్స్"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -141,10 +146,6 @@ msgstr "నంబర్లను నమోదు చేయండి..."
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "అవుట్పుట్ బేస్"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "కొత్త విండో"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"

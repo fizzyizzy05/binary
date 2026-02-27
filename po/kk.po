@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2026-01-25 22:02+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -19,19 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "Binary"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "Сандарды санау жүйелері арасында түрлендіру"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
 msgstr "екілік;ондық;он алтылық;негіз;түрлендіру;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "Сандарды санау жүйелері арасында түрлендіру"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "Жаңа терезе"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -53,70 +58,70 @@ msgstr "1201 ондық санын 4B1 он алтылық санына түрл
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "17 сегіздік санын F он алтылық санына түрлендіретін Binary терезесі"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Жалпы"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Жаңа терезе"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Терезені жабу"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Жарлықтарды көрсету"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Шығу"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "бит"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "Сегіздік"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "Ондық"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "Он алтылық"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "Басқа"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "Қате енгізу"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
 msgstr[0] "%(in_count)d бит"
 msgstr[1] "%(in_count)d бит"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -142,10 +147,6 @@ msgstr "Сандарды енгізу…"
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "Шығыс негізі"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "Жаңа терезе"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"

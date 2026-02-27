@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 00:36+0100\n"
+"POT-Creation-Date: 2026-02-27 19:00+0000\n"
 "PO-Revision-Date: 2024-11-26 13:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/binary/binary-app/"
@@ -20,20 +20,24 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.9-dev\n"
 
-#: data/io.github.fizzyizzy05.binary.desktop.in:3
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:50
+#: data/io.github.fizzyizzy05.binary.desktop.in:2
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:6 src/window.py:51
 msgid "Binary"
 msgstr "בינרי"
+
+#: data/io.github.fizzyizzy05.binary.desktop.in:5
+#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
+msgid "Convert numbers between bases"
+msgstr "המרת מספרים בין בסיסי מספרים שונים"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.github.fizzyizzy05.binary.desktop.in:10
 msgid "binary;decimal;hexadecimal;base;convert;"
-msgstr ""
-"בינרי;בינארי;דצימלי;עשרוני;הקסדצימלי;הקסהדצימלי;בסיס;ייצוג;המרה;מספר;מספרים;"
+msgstr "בינרי;בינארי;דצימלי;עשרוני;הקסדצימלי;הקסהדצימלי;בסיס;ייצוג;המרה;מספר;מספרים;"
 
-#: data/io.github.fizzyizzy05.binary.metainfo.xml.in:7
-msgid "Convert numbers between bases"
-msgstr "המרת מספרים בין בסיסי מספרים שונים"
+#: data/io.github.fizzyizzy05.binary.desktop.in:16 src/window.blp:180
+msgid "New Window"
+msgstr "חלון חדש"
 
 #: data/io.github.fizzyizzy05.binary.metainfo.xml.in:9
 msgid ""
@@ -53,65 +57,65 @@ msgstr "חלון בינרי ממיר את המספר 1201 מבסיס עשרונ�
 msgid "Binary window converting 17 in octal to F in hexadecimal"
 msgstr "חלון בינרי ממיר את המספר 17 מבסיס אוקטלי למספר F בבסיס הקסדצימלי"
 
-#: src/gtk/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "כללי"
 
-#: src/gtk/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "חלון חדש"
 
-#: src/gtk/help-overlay.blp:19
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "סגירת חלון"
 
-#: src/gtk/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "הצגת צירופי מקשים"
 
-#: src/gtk/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "יציאה"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/main.py:65
+#: src/main.py:80
 msgid "translator-credits"
 msgstr ""
 "יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
 "מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
 
 #. Translators: this string is used to describe how many bits there are.
-#: src/window.py:47
+#: src/window.py:48
 msgid "bits"
 msgstr "סיביות"
 
-#: src/window.py:51
+#: src/window.py:52
 msgid "Octal"
 msgstr "אוקטלי"
 
-#: src/window.py:52
+#: src/window.py:53
 msgid "Decimal"
 msgstr "עשרוני"
 
-#: src/window.py:53
+#: src/window.py:54
 msgid "Hexadecimal"
 msgstr "הקסדצימלי"
 
-#: src/window.py:54
+#: src/window.py:55
 msgid "Other"
 msgstr "אחר"
 
-#: src/window.py:123 src/window.py:127 src/window.py:129 src/window.py:166
-#: src/window.py:170 src/window.py:172
+#: src/window.py:124 src/window.py:128 src/window.py:130 src/window.py:168
+#: src/window.py:172 src/window.py:174
 msgid "Invalid input"
 msgstr "קלט לא תקין"
 
-#: src/window.py:208
+#: src/window.py:212
 #, python-format
 msgid "%(in_count)d bit"
 msgid_plural "%(in_count)d bits"
@@ -120,7 +124,7 @@ msgstr[1] "שתי סיביות"
 msgstr[2] "%(in_count)d סיביות"
 msgstr[3] "%(in_count)d סיביות"
 
-#: src/window.py:217
+#: src/window.py:221
 #, python-format
 msgid "%(out_count)d bit"
 msgid_plural "%(out_count)d bits"
@@ -148,10 +152,6 @@ msgstr "יש להזין מספר…"
 #: src/window.blp:106
 msgid "Output Base"
 msgstr "בסיס הפלט"
-
-#: src/window.blp:180
-msgid "New Window"
-msgstr "חלון חדש"
 
 #: src/window.blp:186
 msgid "_Keyboard Shortcuts"
