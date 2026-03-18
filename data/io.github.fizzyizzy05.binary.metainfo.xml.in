@@ -27,6 +27,30 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.4" date="2026-03-18">
+      <description>
+        <p>Binary 5.4 is a small update with some important new refinements and updated translations</p>
+        <ul>
+          <li>Binary now uses the system's monospace font by default</li>
+          <li>The keyboard shortcuts view has been ported to AdwShortcutsDialog</li>
+        </ul>
+        <p>Updated/added translations</p>
+        <ul>
+          <li>Czech - Fjuro, </li>
+          <li>Russian - freeducks-debug</li>
+          <li>Ukranian - freeducks-debug</li>
+          <li>Malayalam - AKHI</li>
+          <li>French - David D</li>
+          <li>Croatian - Milo Ivir</li>
+          <li>Telugu - Aryan Karamtoth</li>
+          <li>Bulgarian - Kiril Panayotov</li>
+          <li>Basque - Asier Sarutsua Garmendia</li>
+          <li>Cornish - Flynn</li>
+          <li>Kazakh - Baurzhan Muftakhidinov</li>
+          <li>Catalan - PereMarco</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.3" date="2025-05-10">
       <description>
         <p>Binary 5.3 is a small update with some small updates and updated translations</p>
