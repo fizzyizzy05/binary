@@ -32,7 +32,7 @@
         <p>Binary 5.4 is a small update with some important new refinements and updated translations</p>
         <ul>
           <li>Binary now uses the system's monospace font by default</li>
-          <li>The keyboard shortcuts view has been ported to AdwShortcutsDialog</li>
+          <li>The keyboard shortcuts view has been ported to AdwShortcutsDialog (Laurie Turnbull)</li>
         </ul>
         <p>Updated/added translations</p>
         <ul>
